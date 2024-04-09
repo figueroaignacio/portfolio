@@ -1,0 +1,16 @@
+.projectsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.projectsSectionTitle {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.projectsBox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.25rem;
+}

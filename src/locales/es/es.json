@@ -1,0 +1,46 @@
+{
+  "greeting": "Hola Mundo!",
+  "hero": {
+    "title": "Ignacio Figueroa",
+    "description": "Desarrollador de Software con un fuerte enfoque en el Desarrollo Frontend",
+    "location": "Buenos Aires, Argentina."
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "description": "Hace casi tres años me metí de lleno en el ecosistema web por mi cuenta durante casi tres años, enfocándome en el Desarrollo Frontend, absorbiendo todo lo que puedo sobre la creación de interfaces de usuario increíbles. ¡Siempre con ganas de aprender y estar al tanto de la última tecnología web!"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "places": [
+      {
+        "company": "Pawtrics Software LLC",
+        "date": "2023 - Actualidad",
+        "description": "En Pawtrics Software LLC, mi rol principal fue en el Desarrollo Frontend utilizando Next.js y MUI. Mi enfoque se centra en optimizar la estructura del código y mejorar la experiencia del usuario para crear interfaces intuitivas.",
+        "position": "Desarrollador Frontend"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "myProjects": [
+      {
+        "name": "DevHub",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
+        "github": "https://github.com/ignaciofigueroadev/devhub",
+        "url": "https://google.com"
+      },
+      {
+        "name": "BSCSS",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
+        "github": "https://github.com/ignaciofigueroadev/bscss",
+        "url": "https://google.com"
+      },
+      {
+        "name": "harmony/ui",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
+        "github": "https://github.com/ignaciofigueroadev/harmony-ui",
+        "url": "https://google.com"
+      }
+    ]
+  }
+}

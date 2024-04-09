@@ -1,0 +1,21 @@
+.contactsBox {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.contactItem {
+  color: #666;
+  border: 1px solid #201f1f;
+  background: transparent;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4375rem;
+  transition: background 0.2s ease;
+}
+
+.contactItem:hover {
+  background-color: #0f0f0f;
+}

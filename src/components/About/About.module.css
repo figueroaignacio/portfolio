@@ -1,0 +1,11 @@
+.aboutBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.aboutTitle {
+  font-weight: 400;
+  font-size: 1.5rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+}

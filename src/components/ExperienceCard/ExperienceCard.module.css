@@ -1,0 +1,28 @@
+.experienceCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border: 1px solid #201f1f;
+  padding: 1rem;
+  border-radius: 0.4375rem;
+}
+
+.experienceCompany {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experienceCompanyName {
+  font-size: 1.2rem;
+}
+
+.experienceDate {
+  font-size: 0.8rem;
+}
+
+.experienceDescriptionBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}

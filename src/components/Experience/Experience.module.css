@@ -1,0 +1,10 @@
+.experienceBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.experienceTitle {
+  font-weight: 400;
+  font-size: 1.5rem;
+}

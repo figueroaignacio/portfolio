@@ -1,0 +1,22 @@
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.heroLocationBox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heroLocation {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}

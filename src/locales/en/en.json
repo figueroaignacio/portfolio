@@ -1,0 +1,46 @@
+{
+  "greeting": "Hello World!",
+  "hero": {
+    "title": "Ignacio Figueroa",
+    "description": "Software developer with a strong focus in the Frontend development",
+    "location": "Buenos Aires, Argentina."
+  },
+  "aboutMe": {
+    "title": "About me",
+    "description": "I've been diving into the web ecosystem on my own for nearly three years now focusing on the Frontend Development, soaking up everything I can about crafting awesome user interfaces. Always hungry to learn and stay on top of the latest web tech!"
+  },
+  "experience": {
+    "title": "Experience",
+    "places": [
+      {
+        "company": "Pawtrics Software LLC",
+        "date": "2023 - Present",
+        "description": "At Pawtrics Software LLC, My main role was specialize in frontend development using Next.js and MUI. I focus on optimizing code structure and enhancing user experience to create intuitive interfaces.",
+        "position": "Frontend Developer"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "myProjects": [
+      {
+        "name": "DevHub",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
+        "github": "https://github.com/ignaciofigueroadev/devhub",
+        "url": "https://google.com"
+      },
+      {
+        "name": "BSCSS",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
+        "github": "https://github.com/ignaciofigueroadev/bscss",
+        "url": "https://google.com"
+      },
+      {
+        "name": "harmony/ui",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
+        "github": "https://github.com/ignaciofigueroadev/harmony-ui",
+        "url": "https://google.com"
+      }
+    ]
+  }
+}
