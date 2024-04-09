@@ -42,5 +42,8 @@
         "url": "https://google.com"
       }
     ]
+  },
+  "skills": {
+    "title": "Skills"
   }
 }
