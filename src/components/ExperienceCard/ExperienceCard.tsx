@@ -18,7 +18,7 @@ export function ExperienceCard({
   return (
     <article className={styles.experienceCard}>
       <div className={styles.experienceCompany}>
-        <h3 className={styles.experienceCompanyName}>{company} 💻</h3>
+        <h3 className={styles.experienceCompanyName}>{company}</h3>
         <p className={styles.experienceDate}>{date}</p>
       </div>
       <div className={styles.experienceDescriptionBox}>
