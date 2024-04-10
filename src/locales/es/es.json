@@ -44,6 +44,16 @@
     ]
   },
   "skills": {
-    "title": "Habilidades"
+    "title": "Habilidades",
+    "mySkills": [
+      "HTML",
+      "CSS",
+      "Typescript",
+      "Javascript",
+      "Tailwind",
+      "React",
+      "Next.js",
+      "Astro"
+    ]
   }
 }
