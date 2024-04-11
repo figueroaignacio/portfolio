@@ -22,7 +22,7 @@ export function ProjectCard({
     <a
       href={url}
       title={name}
-      className={styles.projectCard}
+      className={`${styles.projectCard} fade`}
       target="_blank"
       rel="noopener noreferrer"
     >

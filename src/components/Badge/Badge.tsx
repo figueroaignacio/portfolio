@@ -7,7 +7,7 @@ import styles from "./Badge.module.css";
 
 export function Badge({ skill }: BadgeProps) {
   return (
-    <div className={styles.badge}>
+    <div className={`${styles.badge}`}>
       <span>{skill}</span>
     </div>
   );

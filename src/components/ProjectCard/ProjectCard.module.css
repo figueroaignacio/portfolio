@@ -1,3 +1,4 @@
+/* ProjectCard.module.css */
 .projectCard {
   display: flex;
   flex-direction: column;
@@ -5,13 +6,12 @@
   border: 1px solid #201f1f;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: background 0.2s ease;
 }
 
 .projectCard:hover {
-  transform: translateY(-0.125rem);
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+  background-color: rgba(37, 37, 37, 0.2);
 }
 
 .projectsName {
