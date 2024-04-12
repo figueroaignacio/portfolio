@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 // i18n
 import { useTranslation } from "react-i18next";
 
+// Icons
+import { Lang } from "../../icons/Lang";
+
 // Styles
 import styles from "./SelectLanguage.module.css";
 
@@ -29,13 +32,16 @@ export function SelectLanguage() {
   return (
     <div className={styles.selectContainer}>
       <select
-        className={styles.select}
+        className={styles.selectBox}
         value={selectedLang || undefined}
         onChange={changeLanguage}
       >
-        <option value="en">EN</option>
-        <option value="es">ES</option>
+        <option value="en">English</option>
+        <option value="es">Español</option>
       </select>
+      <div className={styles.selectIconContainer}>
+        <Lang />
+      </div>
     </div>
   );
 }

@@ -1,14 +1,17 @@
-.select {
+.selectContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.selectBox {
+  color: white;
+  padding: 0.6rem 2.1875rem 0.6rem 1.0625rem;
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding: 8px;
-  border: 1px solid #201f1f;
-  color: #f5f5f5;
-  border-radius: 5px;
-  background-color: transparent;
-  cursor: pointer;
-  width: auto;
+  border: 0.0625rem solid #201f1f;
+  border-radius: 0.4375rem;
+  background: #0b0b0b;
+  display: flex;
 }
 
 .select:hover {
@@ -16,5 +19,15 @@
 }
 
 .select:focus {
-  outline: 1px solid #666;
+  outline: 0.0625rem solid #666;
+}
+
+.selectContainer .selectIconContainer {
+  width: 50px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
