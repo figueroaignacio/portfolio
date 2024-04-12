@@ -21,7 +21,9 @@ export function Hero() {
       </div>
       <div className={style.heroLocation}>
         <World />
-        <span>{t("hero.location")}</span>
+        <address>
+          <span>{t("hero.location")}</span>
+        </address>
       </div>
       <Contacts />
     </section>
