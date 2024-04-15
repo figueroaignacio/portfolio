@@ -47,13 +47,19 @@
     "title": "Habilidades",
     "mySkills": [
       "HTML",
-      "CSS",
       "Typescript",
       "Javascript",
+      "CSS",
+      "CSS Modules",
       "Tailwind",
+      "Material UI",
+      "NextUI",
       "React",
       "Next.js",
-      "Astro"
+      "Astro",
+      "Git",
+      "GitHub",
+      "Vite"
     ]
   }
 }
