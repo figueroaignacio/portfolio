@@ -24,21 +24,21 @@
     "title": "Proyectos",
     "myProjects": [
       {
-        "name": "DevHub",
+        "name": "iCoded",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
-        "github": "https://github.com/ignaciofigueroadev/devhub",
+        "github": "https://github.com/figueroaignacio/icoded",
         "url": "https://google.com"
       },
       {
         "name": "BSCSS",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
-        "github": "https://github.com/ignaciofigueroadev/bscss",
+        "github": "https://github.com/figueroaignacio/bsscs",
         "url": "https://google.com"
       },
       {
-        "name": "harmony/ui",
+        "name": "nio/ui",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
-        "github": "https://github.com/ignaciofigueroadev/harmony-ui",
+        "github": "https://github.com/figueroaignacio/ui.nio",
         "url": "https://google.com"
       }
     ]
