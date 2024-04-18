@@ -1,13 +1,19 @@
 export default function OgImage() {
   return (
     <div>
-      <h1 style={{ fontSize: "3rem", fontWeight: "bold", opacity: ".9" }}>
-        Hey, I'm Ignacio Figueroa
-      </h1>
-      <p style={{ fontSize: "1rem", fontWeight: "bold" }}>
-        Software Developer with a strong focus in the Frontend side.
+      <p
+        style={{
+          fontSize: "2rem",
+          fontWeight: "bold",
+          letterSpacing: "-0.090rem",
+        }}
+      >
+        Hey! this is the Personal Portfolio of Ignacio Figueroa, Software
+        Developer with a strong focus in the Frontend side.
       </p>
-      <p>Let's work together! 🚀</p>
+      <p style={{ fontSize: "1rem" }}>
+        Let's get in touch and work together! 🚀
+      </p>
     </div>
   );
 }
