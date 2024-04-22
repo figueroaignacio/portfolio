@@ -7,10 +7,15 @@ import { useTranslation } from "react-i18next";
 // Styles
 import styles from "./Skills.module.css";
 
+type mySkills = {
+  skill: string;
+  icon: string;
+};
+
 export function Skills() {
   const { t } = useTranslation();
 
-  const skills: string[] = t("skills.mySkills", {
+  const skills: mySkills[] = t("skills.mySkills", {
     returnObjects: true,
   });
 
@@ -18,9 +23,9 @@ export function Skills() {
     <section className={styles.skillsBox}>
       <h2 className={styles.skillsTitle}>{t("skills.title")}</h2>
       <div className={styles.skills}>
-        {skills.map((skill: string, index: number) => (
+        {skills.map((skill: mySkills, index: number) => (
           <div key={index}>
-            <Badge skill={skill} />
+            <Badge skill={skill.skill} icon={skill.icon} />
           </div>
         ))}
       </div>
