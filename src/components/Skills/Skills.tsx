@@ -12,12 +12,25 @@ type mySkills = {
   icon: string;
 };
 
+const skills = [
+  { skill: "HTML", icon: "/icons/html.svg" },
+  { skill: "Markdown", icon: "/icons/markdown.svg" },
+  { skill: "CSS", icon: "/icons/css.svg" },
+  { skill: "Material UI", icon: "/icons/mui.svg" },
+  { skill: "Tailwind", icon: "/icons/tailwind.svg" },
+  { skill: "CSS Modules", icon: "/icons/css.svg" },
+  { skill: "Typescript", icon: "/icons/ts.svg" },
+  { skill: "Javascript", icon: "/icons/js.svg" },
+  { skill: "React", icon: "/icons/react.svg" },
+  { skill: "Next.js", icon: "/icons/nextjs.svg" },
+  { skill: "Astro", icon: "/icons/astro.svg" },
+  { skill: "Git", icon: "/icons/git.svg" },
+  { skill: "GitHub", icon: "/icons/github.svg" },
+  { skill: "Visual Studio Code", icon: "/icons/vscode.svg" },
+];
+
 export function Skills() {
   const { t } = useTranslation();
-
-  const skills: mySkills[] = t("skills.mySkills", {
-    returnObjects: true,
-  });
 
   return (
     <section className={styles.skillsBox}>
