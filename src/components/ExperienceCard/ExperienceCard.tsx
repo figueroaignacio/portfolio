@@ -1,3 +1,6 @@
+// Icons
+import { Building } from "../../icons/Building";
+
 // Interface
 interface ExperienceCardProps {
   company: string;
@@ -18,12 +21,15 @@ export function ExperienceCard({
   return (
     <article className={styles.experienceCard}>
       <div className={styles.experienceCompany}>
-        <h3 className={styles.experienceCompanyName}>{company}</h3>
+        <div className={styles.experienceCompanyBox}>
+          <Building />
+          <h3 className={styles.experienceCompanyName}>{company}</h3>
+        </div>
         <p className={styles.experienceDate}>{date}</p>
       </div>
+      <h4 className={styles.experiencePosition}>{position}</h4>
       <div className={styles.experienceDescriptionBox}>
-        <h4>{position}</h4>
-        <p>{description}</p>
+        <p className={styles.experienceDescription}>{description}</p>
       </div>
     </article>
   );

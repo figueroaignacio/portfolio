@@ -7,22 +7,38 @@
   border-radius: 0.4375rem;
 }
 
+.experiencePosition {
+  font-size: 0.8rem;
+}
+
 .experienceCompany {
   display: flex;
   align-items: center;
+  gap: 0.3rem;
   justify-content: space-between;
 }
 
+.experienceCompanyBox {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
 .experienceCompanyName {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .experienceDate {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
+  color: #f5f5f5;
 }
 
 .experienceDescriptionBox {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+}
+
+.experienceDescription {
+  font-size: 0.84rem;
 }
