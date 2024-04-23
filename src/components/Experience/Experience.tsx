@@ -12,7 +12,6 @@ type ExperiencePlace = {
   date: string;
   description: string;
   position: string;
-  techStack: string[];
 };
 
 export function Experience() {
@@ -32,7 +31,6 @@ export function Experience() {
             company={place.company}
             date={place.date}
             description={place.description}
-            techStack={place.techStack}
           />
         ))}
       </div>
