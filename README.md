@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# Ignacio Figueroa's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Sample](https://ignaciofigueroa.vercel.app/og-image.png)
 
-Currently, two official plugins are available:
+Welcome to my portfolio! This is a space where I share some of my projects and works. Below, you'll find a brief description of each section:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About Me
 
-## Expanding the ESLint configuration
+I'm Ignacio Figueroa, a web developer passionate about creating innovative and unique solutions. My experience spans various programming languages and web technologies, and I love tackling new challenges.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Featured Projects
 
-- Configure the top-level `parserOptions` property like this:
+Here you'll find a selection of my most prominent projects. Each project includes a brief description and a link to access it.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **iCoded**: Site built by a developer for developers.
+  [iCoded](https://icoded.vercel.app/)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Project 2**: An UI kit/library with components made by me built under Tailwind CSS for React projects.
+  [nio/ui](https://ui-nio.vercel.app/)
+
+## Technologies Used in this Project
+
+- HTML5
+- CSS Modules
+- Typescript
+- React.js
+- i18n
+- Vite
+
+## Contact
+
+If you're interested in collaborating on a project or simply want to get in touch, feel free to email me at [ignaciofigueroadev@gmail.com](mailto:ignaciofigueroadev@gmail.com).
+
+Thank you for visiting my portfolio!
