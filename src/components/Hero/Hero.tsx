@@ -5,7 +5,7 @@ import { Contacts } from "../Contacts/Contacts";
 import { useTranslation } from "react-i18next";
 
 // Icons
-import World from "../../icons/World";
+import { Location } from "../../icons/Location";
 
 // Styles
 import style from "./Hero.module.css";
@@ -20,7 +20,7 @@ export function Hero() {
         <p>{t("hero.description")}</p>
       </div>
       <div className={style.heroLocation}>
-        <World />
+        <Location />
         <address>
           <span>{t("hero.location")}</span>
         </address>
