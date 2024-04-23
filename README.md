@@ -1,22 +1,24 @@
-# Ignacio Figueroa's Portfolio
+# Welcome!
 
 ![Sample](https://ignaciofigueroa.vercel.app/og-image.png)
 
-Welcome to my portfolio! This is a space where I share some of my projects and works. Below, you'll find a brief description of each section:
+This is a space where I share some of my projects and works. Below, you'll find a brief description of each section:
 
 ## About Me
 
-I'm Ignacio Figueroa, a web developer passionate about creating innovative and unique solutions. My experience spans various programming languages and web technologies, and I love tackling new challenges.
+I'm Ignacio Figueroa, software developer with a strong focus in the Frontend development. I've been diving into the web ecosystem on my own for nearly three years now focusing on the Frontend Development, soaking up everything I can about crafting awesome user interfaces. Always hungry to learn and stay on top of the latest web tech!
 
 ## Featured Projects
 
 Here you'll find a selection of my most prominent projects. Each project includes a brief description and a link to access it.
 
 - **iCoded**: Site built by a developer for developers.
-  [iCoded](https://icoded.vercel.app/)
 
-- **Project 2**: An UI kit/library with components made by me built under Tailwind CSS for React projects.
-  [nio/ui](https://ui-nio.vercel.app/)
+  [Live URL](https://icoded.vercel.app/)
+
+- **nio/ui**: An UI kit/library with components made by me built under Tailwind CSS for React projects.
+
+  [Live URL](https://ui-nio.vercel.app/)
 
 ## Technologies Used in this Project
 
