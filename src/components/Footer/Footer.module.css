@@ -30,6 +30,10 @@ a + img {
   transition: transform 0.3s ease;
 }
 
+a:hover {
+  color: #f5f5f5;
+}
+
 a:hover + img {
   transform: translateX(0.155rem);
 }
