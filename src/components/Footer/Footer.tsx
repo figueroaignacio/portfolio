@@ -33,7 +33,7 @@ export function Footer() {
         </ul>
       </div>
       <div>
-        <p>Built in React, CSS Modules & i18n</p>
+        <p>Built in React, CSS Modules and i18n</p>
       </div>
     </footer>
   );
