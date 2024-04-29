@@ -10,3 +10,25 @@
   align-items: center;
   gap: 0.3rem;
 }
+
+.footerTitle {
+  margin-bottom: 0.75rem;
+}
+
+.footerList {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.footerListItem {
+  display: flex;
+  align-items: center;
+}
+
+a + img {
+  transition: transform 0.3s ease;
+}
+
+a:hover + img {
+  transform: translateX(0.155rem);
+}

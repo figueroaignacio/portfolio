@@ -15,25 +15,28 @@ export function Footer() {
         <p>{t("footer.paragraph")}</p>
       </div>
       <div>
-        <h2>{t("footer.contactTitle")}</h2>
-        <ul>
-          <li>
+        <h2 className={styles.footerTitle}>{t("footer.contactTitle")}</h2>
+        <ul className={styles.footerList}>
+          <li className={styles.footerListItem}>
             <a href="mailto:ignaciofigueroadev@gmail.com" target="_blank">
               Mail
             </a>
+            <img src="/icons/chevron.svg" alt="" />
           </li>
-          <li>
+          <li className={styles.footerListItem}>
             <a
               href="https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/"
               target="_blank"
             >
               LinkedIn
             </a>
+            <img src="/icons/chevron.svg" alt="" />
           </li>
-          <li>
+          <li className={styles.footerListItem}>
             <a href="https://github.com/figueroaignacio" target="_blank">
               Github
             </a>
+            <img src="/icons/chevron.svg" alt="" />
           </li>
         </ul>
       </div>
