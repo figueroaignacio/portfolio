@@ -45,5 +45,12 @@
   },
   "skills": {
     "title": "Habilidades"
+  },
+  "footer": {
+    "title": "Empecemos a trabajar juntos!",
+    "subtitle": "Gracias por visitar mi web",
+    "paragraph": "Desarrollado por Ignacio Figueroa",
+    "contactTitle": "Contáctame",
+    "builtIn": "Construido con React, CSS modules e i18n"
   }
 }

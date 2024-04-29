@@ -1,16 +1,21 @@
+// i18n
+import { useTranslation } from "react-i18next";
+
 // Styles
 import styles from "./Footer.module.css";
 
 export function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className={styles.footer}>
       <div>
-        <h2>Let's work together</h2>
-        <p>Thanks for visiting my website.</p>
-        <p>Proudly developed by Ignacio Figueroa</p>
+        <h2>{t("footer.title")}</h2>
+        <p>{t("footer.subtitle")}</p>
+        <p>{t("footer.paragraph")}</p>
       </div>
       <div>
-        <h2>Contact me</h2>
+        <h2>{t("footer.contactTitle")}</h2>
         <ul>
           <li>
             <a href="mailto:ignaciofigueroadev@gmail.com" target="_blank">
@@ -33,7 +38,7 @@ export function Footer() {
         </ul>
       </div>
       <div>
-        <p>Built in React, CSS Modules and i18n</p>
+        <p>{t("footer.builtIn")}</p>
       </div>
     </footer>
   );
