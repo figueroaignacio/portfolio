@@ -17,12 +17,13 @@
 
 .footerList {
   display: grid;
-  gap: 0.35rem;
+  gap: 0.8rem;
 }
 
 .footerListItem {
   display: flex;
   align-items: center;
+  gap: 0.3rem;
 }
 
 a + img {
