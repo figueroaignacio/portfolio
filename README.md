@@ -12,13 +12,13 @@ I'm Ignacio Figueroa, software developer with a strong focus in the Frontend dev
 
 Here you'll find a selection of my most prominent projects. Each project includes a brief description and a link to access it.
 
-- **iCoded**: Site built by a developer for developers.
+- **Front Society**: Site built by a developer for developers.
 
   [Live URL](https://icoded.vercel.app/)
 
-- **nio/ui**: An UI kit/library with components made by me built under Tailwind CSS for React projects.
+- **nachio/ui**: An UI kit/library with components made by me built under Tailwind CSS for React projects.
 
-  [Live URL](https://ui-nio.vercel.app/)
+  [Live URL](https://ui-nachio.vercel.app/)
 
 ## Technologies Used in this Project
 
