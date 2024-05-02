@@ -25,6 +25,12 @@
   align-items: center;
   gap: 0.3rem;
 }
+.footerListItem a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
 
 a + img {
   transition: transform 0.3s ease;

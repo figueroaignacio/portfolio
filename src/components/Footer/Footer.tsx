@@ -4,6 +4,11 @@ import { useTranslation } from "react-i18next";
 // Styles
 import styles from "./Footer.module.css";
 
+// Icons
+import { Github } from "../../icons/Github";
+import { LinkedIn } from "../../icons/LinkedIn";
+import { Mail } from "../../icons/Mail";
+
 export function Footer() {
   const { t } = useTranslation();
 
@@ -19,24 +24,27 @@ export function Footer() {
         <ul className={styles.footerList}>
           <li className={styles.footerListItem}>
             <a href="mailto:ignaciofigueroadev@gmail.com" target="_blank">
+              <Mail />
               Mail
             </a>
-            <img src="/icons/chevron.svg" alt="" />
+            <img src="/icons/chevron.svg" alt="Arrow" />
           </li>
           <li className={styles.footerListItem}>
             <a
               href="https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/"
               target="_blank"
             >
+              <LinkedIn />
               LinkedIn
             </a>
-            <img src="/icons/chevron.svg" alt="" />
+            <img src="/icons/chevron.svg" alt="Arrow" />
           </li>
           <li className={styles.footerListItem}>
             <a href="https://github.com/figueroaignacio" target="_blank">
+              <Github />
               Github
             </a>
-            <img src="/icons/chevron.svg" alt="" />
+            <img src="/icons/chevron.svg" alt="Arrow" />
           </li>
         </ul>
       </div>
