@@ -24,21 +24,21 @@
     "title": "Projects",
     "myProjects": [
       {
-        "name": "iCoded",
+        "name": "Front Society",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
-        "github": "https://github.com/figueroaignacio/icoded",
-        "url": "https://icoded.vercel.app/"
+        "github": "https://github.com/figueroaignacio/frontsociety",
+        "url": "https://frontsociety.vercel.app/"
       },
       {
-        "name": "Trainme",
+        "name": "nachio/ui",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
-        "github": "https://github.com/figueroaignacio/trainme",
+        "github": "https://github.com/figueroaignacio/nachio-ui",
         "url": "https://google.com"
       },
       {
-        "name": "nio/ui",
+        "name": "Bscss",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
-        "github": "https://github.com/figueroaignacio/ui.nio",
+        "github": "https://github.com/figueroaignacio/bscss",
         "url": "https://google.com"
       }
     ]
