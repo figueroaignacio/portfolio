@@ -27,7 +27,7 @@ export function Contacts() {
         <LinkedIn />
       </a>
       <a
-        href="https://github.com/ignaciofigueroadev"
+        href="https://github.com/figueroaignacio/"
         target="_blank"
         className={style.contactItem}
       >
