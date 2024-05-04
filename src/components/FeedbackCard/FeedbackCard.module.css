@@ -1,0 +1,20 @@
+.feedbackCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border: 1px solid #201f1f;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.feedbackProfile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feedbackAvatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}

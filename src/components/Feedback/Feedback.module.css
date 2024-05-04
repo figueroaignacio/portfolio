@@ -1,0 +1,15 @@
+.feedbackSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.feedbackTitle {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.feedbackBox {
+  display: grid;
+  gap: 0.8rem;
+}
