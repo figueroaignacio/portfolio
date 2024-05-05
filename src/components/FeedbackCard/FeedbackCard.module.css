@@ -23,3 +23,22 @@
   height: 3rem;
   border-radius: 50%;
 }
+
+.feedbackLink {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-inline: 0.5rem;
+}
+
+.feedbackLink span + svg {
+  transition: transform 0.3s ease;
+}
+
+.feedbackLink span:hover {
+  color: #f5f5f5;
+}
+
+.feedbackLink span:hover + svg {
+  transform: translateX(0.155rem);
+}

@@ -9,6 +9,7 @@ type MyFeedbacks = {
   name: string;
   role: string;
   description: string;
+  linkedInProfile: string;
 };
 
 // Styles
@@ -17,7 +18,6 @@ import styles from "./Feedback.module.css";
 export function Feedback() {
   const { t } = useTranslation();
 
-  // Asegúrate de que el objeto que obtienes de t("feedback.myRecomendations") tiene la estructura correcta
   const feedbacks: MyFeedbacks[] = t("feedback.myRecomendations", {
     returnObjects: true,
   });
@@ -29,6 +29,7 @@ export function Feedback() {
         {feedbacks.map((feedback: MyFeedbacks, index: number) => (
           <div key={index} className={`${styles.feedbackItem} fade`}>
             <FeedbackCard
+              linkedInProfile={feedback.linkedInProfile}
               avatar={feedback.avatar}
               description={feedback.description}
               name={feedback.name}
