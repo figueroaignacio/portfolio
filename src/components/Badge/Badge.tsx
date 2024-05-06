@@ -8,7 +8,7 @@ import styles from "./Badge.module.css";
 
 export function Badge({ skill, icon }: BadgeProps) {
   return (
-    <div className={`${styles.badge}`}>
+    <div className={`${styles.badge} fade`}>
       <img src={icon} alt="Tech icon" />
       <span>{skill}</span>
     </div>
