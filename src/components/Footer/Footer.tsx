@@ -25,7 +25,9 @@ export function Footer() {
         <ul className={styles.footerList}>
           {CONTACTS.map((item, index: number) => (
             <li key={index} className={styles.footerListItem}>
-              <a href={item.href}>{item.title}</a>
+              <a href={item.href} target="_blank">
+                {item.title}
+              </a>
               <Chevron />
             </li>
           ))}
