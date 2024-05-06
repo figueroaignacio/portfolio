@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import styles from "./Footer.module.css";
 
 // Icons
+import { Chevron } from "../../icons/Chevron";
 import { Github } from "../../icons/Github";
 import { LinkedIn } from "../../icons/LinkedIn";
 import { Mail } from "../../icons/Mail";
@@ -27,7 +28,7 @@ export function Footer() {
               <Mail />
               Mail
             </a>
-            <img src="/icons/chevron.svg" alt="Arrow" />
+            <Chevron />
           </li>
           <li className={styles.footerListItem}>
             <a
@@ -37,14 +38,14 @@ export function Footer() {
               <LinkedIn />
               LinkedIn
             </a>
-            <img src="/icons/chevron.svg" alt="Arrow" />
+            <Chevron />
           </li>
           <li className={styles.footerListItem}>
             <a href="https://github.com/figueroaignacio" target="_blank">
               <Github />
               Github
             </a>
-            <img src="/icons/chevron.svg" alt="Arrow" />
+            <Chevron />
           </li>
         </ul>
       </div>
