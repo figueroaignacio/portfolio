@@ -7,33 +7,42 @@ import { LinkedIn } from "../../icons/LinkedIn";
 import { Mail } from "../../icons/Mail";
 
 // Styles
-import style from "./Contacts.module.css";
+import styles from "./Contacts.module.css";
+
+// Constants
+import { CONTACTS } from "../../constants/contact";
 
 export function Contacts() {
   return (
-    <div className={style.contactsBox}>
-      <a
-        href="mailto:figueroaignaciodev@gmail.com"
-        target="_blank"
-        className={style.contactItem}
-      >
-        <Mail />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/"
-        target="_blank"
-        className={style.contactItem}
-      >
-        <LinkedIn />
-      </a>
-      <a
-        href="https://github.com/figueroaignacio/"
-        target="_blank"
-        className={style.contactItem}
-      >
-        <Github />
-      </a>
+    <ul className={styles.contactsBox}>
+      {CONTACTS.map((contact, index) => {
+        let IconComponent;
+        switch (contact.icon) {
+          case "mail":
+            IconComponent = <Mail />;
+            break;
+          case "linkedin":
+            IconComponent = <LinkedIn />;
+            break;
+          case "github":
+            IconComponent = <Github />;
+            break;
+          default:
+            IconComponent = null;
+        }
+        return (
+          <li key={index}>
+            <a
+              href={contact.href}
+              className={styles.contactItem}
+              target="_blank"
+            >
+              {IconComponent}
+            </a>
+          </li>
+        );
+      })}
       <SelectLanguage />
-    </div>
+    </ul>
   );
 }
