@@ -16,19 +16,19 @@ export function Contacts() {
   return (
     <ul className={styles.contactsBox}>
       {CONTACTS.map((contact, index) => {
-        let IconComponent;
+        let iconComponent;
         switch (contact.icon) {
           case "mail":
-            IconComponent = <Mail />;
+            iconComponent = <Mail />;
             break;
           case "linkedin":
-            IconComponent = <LinkedIn />;
+            iconComponent = <LinkedIn />;
             break;
           case "github":
-            IconComponent = <Github />;
+            iconComponent = <Github />;
             break;
           default:
-            IconComponent = null;
+            iconComponent = null;
         }
         return (
           <li key={index}>
@@ -37,7 +37,7 @@ export function Contacts() {
               className={styles.contactItem}
               target="_blank"
             >
-              {IconComponent}
+              {iconComponent}
             </a>
           </li>
         );
