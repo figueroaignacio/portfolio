@@ -24,6 +24,7 @@ const skills = [
   { skill: "React", icon: "/icons/react.svg" },
   { skill: "Next.js", icon: "/icons/nextjs.svg" },
   { skill: "Astro", icon: "/icons/astro.svg" },
+  { skill: "Sanity", icon: "/icons/sanity.svg" },
   { skill: "Git", icon: "/icons/git.svg" },
   { skill: "GitHub", icon: "/icons/github.svg" },
   { skill: "Visual Studio Code", icon: "/icons/vscode.svg" },
