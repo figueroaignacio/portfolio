@@ -1,5 +1,5 @@
 // Components
-import { Badge } from "../Badge/Badge";
+import { Badge } from "../../components/Badge/Badge";
 
 // i18n
 import { useTranslation } from "react-i18next";

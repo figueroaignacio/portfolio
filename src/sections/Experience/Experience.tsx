@@ -1,5 +1,5 @@
 // Components
-import { ExperienceCard } from "../ExperienceCard/ExperienceCard";
+import { ExperienceCard } from "../../components/ExperienceCard/ExperienceCard";
 
 // i18n
 import { useTranslation } from "react-i18next";

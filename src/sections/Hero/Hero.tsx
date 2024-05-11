@@ -1,5 +1,5 @@
 // Components
-import { Contacts } from "../Contacts/Contacts";
+import { Contacts } from "../../components/Contacts/Contacts";
 
 // i18n
 import { useTranslation } from "react-i18next";

@@ -1,5 +1,5 @@
 // Components
-import { FeedbackCard } from "../FeedbackCard/FeedbackCard";
+import { FeedbackCard } from "../../components/FeedbackCard/FeedbackCard";
 
 // i18n
 import { useTranslation } from "react-i18next";

@@ -1,12 +1,12 @@
 // Components
-import { About } from "./components/About/About";
-import { Experience } from "./components/Experience/Experience";
-import { Feedback } from "./components/Feedback/Feedback";
 import { Footer } from "./components/Footer/Footer";
-import { Hero } from "./components/Hero/Hero";
-import { Projects } from "./components/Projects/Projects";
 import { Separator } from "./components/Separator/Separator";
-import { Skills } from "./components/Skills/Skills";
+import { About } from "./sections/About/About";
+import { Experience } from "./sections/Experience/Experience";
+import { Feedback } from "./sections/Feedback/Feedback";
+import { Hero } from "./sections/Hero/Hero";
+import { Projects } from "./sections/Projects/Projects";
+import { Skills } from "./sections/Skills/Skills";
 
 // Styles
 import styles from "./App.module.css";
