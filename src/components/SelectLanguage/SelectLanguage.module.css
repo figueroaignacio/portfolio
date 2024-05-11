@@ -10,13 +10,13 @@
   appearance: none;
   border: 0.0625rem solid #201f1f;
   border-radius: 0.4375rem;
-  background: #0b0b0b;
+  background: #0d0a12;
   display: flex;
 }
 
 .selectBox:hover {
   cursor: pointer;
-  background-color: #0f0f0f;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .selectBox:focus {
