@@ -24,21 +24,21 @@
     "title": "Proyectos",
     "myProjects": [
       {
-        "name": "Front Society",
+        "name": "Frontend Society",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
         "github": "https://github.com/figueroaignacio/frontsociety",
-        "url": "https://frontsociety.vercel.app.com/"
+        "url": "https://frontsociety.netlify.app.com/"
       },
       {
-        "name": "nio/ui",
+        "name": "NeroUI",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
-        "github": "https://github.com/figueroaignacio/nachio-ui",
-        "url": "https://google.com"
+        "github": "https://github.com/figueroaignacio/nero-ui",
+        "url": "https://neroui.netlify.app/"
       },
       {
-        "name": "Bscss",
+        "name": "Sneakerf",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
-        "github": "https://github.com/figueroaignacio/bscss",
+        "github": "https://github.com/figueroaignacio/sneakerf",
         "url": "https://google.com"
       }
     ]
