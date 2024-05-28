@@ -25,15 +25,15 @@
     "myProjects": [
       {
         "name": "Frontend Society",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
+        "description": "Discover tech posts, learn about Frontend stuff, and participate on challenges.",
         "github": "https://github.com/figueroaignacio/frontsociety",
-        "url": "https://frontsociety.netlify.app.com/"
+        "url": "https://frontsociety.netlify.app/"
       },
       {
         "name": "NeroUI",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
+        "description": "Copy and Paste simple and modern components to your React - Next.js projects, Simple. Modern. Open source",
         "github": "https://github.com/figueroaignacio/nero-ui",
-        "url": "https://neroui.netlify.app/"
+        "url": "https://neroui.vercel.app/"
       },
       {
         "name": "Sneakerf",
