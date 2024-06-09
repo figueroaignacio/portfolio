@@ -4,5 +4,5 @@ import { defineConfig } from "vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "https://figueroaignacio.github.io/portfolio",
+  base: "https://figueroaignacio.dev.ar",
 });
