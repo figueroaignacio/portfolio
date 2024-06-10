@@ -1,5 +1,3 @@
-// Components
-
 // Icons
 import { Github } from "../../icons/Github";
 import { Link } from "../../icons/Link";
