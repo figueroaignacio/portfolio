@@ -18,11 +18,14 @@ export function CallToAction() {
         <h3>{t("callToAction.subtitle")}</h3>
       </div>
       <div className={styles.buttonGroup}>
-        <a href="" className={styles.button}>
+        <a href="mailto:ignaciofigueroadev@gmail.com" className={styles.button}>
           <Mail />
           Mail
         </a>
-        <a href="" className={styles.button}>
+        <a
+          href="https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/"
+          className={styles.button}
+        >
           <LinkedIn />
           LinkedIn
         </a>
