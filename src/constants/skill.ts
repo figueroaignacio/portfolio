@@ -1,6 +1,6 @@
 export const skills: { skill: string; icon: string }[] = [
   { skill: "HTML", icon: "/icons/html.svg" },
-  { skill: "Markdown", icon: "/icons/markdown.svg" },
+  { skill: "Markdown - MDX", icon: "/icons/markdown.svg" },
   { skill: "CSS", icon: "/icons/css.svg" },
   { skill: "Material UI", icon: "/icons/mui.svg" },
   { skill: "Tailwind", icon: "/icons/tailwind.svg" },
