@@ -11,6 +11,7 @@ type MyProjects = {
   name: string;
   description: string;
   github: string;
+  technologies: string[];
   url: string;
 };
 
@@ -32,6 +33,7 @@ export function Projects() {
               name={project.name}
               github={project.github}
               url={project.url}
+              technologies={project.technologies}
             />
           </div>
         ))}

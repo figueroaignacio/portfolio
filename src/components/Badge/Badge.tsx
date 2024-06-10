@@ -1,6 +1,6 @@
 interface BadgeProps {
-  skill: string;
-  icon: string;
+  skill?: string;
+  icon?: string;
 }
 
 // Styles

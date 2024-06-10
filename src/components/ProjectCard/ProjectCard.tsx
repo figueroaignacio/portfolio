@@ -1,3 +1,5 @@
+// Components
+
 // Icons
 import { Github } from "../../icons/Github";
 import { Link } from "../../icons/Link";
@@ -9,6 +11,7 @@ interface ProjectCardProps {
   name: string;
   description: string;
   github: string;
+  technologies: string[];
   url: string;
 }
 
@@ -17,6 +20,7 @@ export function ProjectCard({
   github,
   name,
   url,
+  technologies,
 }: ProjectCardProps) {
   return (
     <a
@@ -28,6 +32,11 @@ export function ProjectCard({
     >
       <h3 className={styles.projectsName}>{name}</h3>
       <p>{description}</p>
+      {technologies.map((tech) => (
+        <div>
+          Tech Stack: <span>{tech}</span>
+        </div>
+      ))}
       <div className={styles.projectUrls}>
         <a
           href={github}
