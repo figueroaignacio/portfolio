@@ -88,5 +88,9 @@
         "linkedInProfile": "https://www.linkedin.com/in/zroosen/"
       }
     ]
+  },
+  "callToAction": {
+    "title": "Do you have a project?",
+    "subtitle": "Let's work together"
   }
 }

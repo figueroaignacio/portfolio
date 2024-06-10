@@ -2,6 +2,7 @@
 import { Footer } from "./components/Footer/Footer";
 import { Separator } from "./components/Separator/Separator";
 import { About } from "./sections/About/About";
+import { CallToAction } from "./sections/CallToAction/CallToAction";
 import { Experience } from "./sections/Experience/Experience";
 import { Feedback } from "./sections/Feedback/Feedback";
 import { Hero } from "./sections/Hero/Hero";
@@ -19,6 +20,8 @@ function App() {
       <About />
       <Experience />
       <Projects />
+      <CallToAction />
+      <Separator />
       <Feedback />
       <Skills />
       <Footer />
