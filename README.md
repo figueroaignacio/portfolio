@@ -12,13 +12,17 @@ I'm Ignacio Figueroa, software developer with a strong focus in the Frontend dev
 
 Here you'll find a selection of my most prominent projects. Each project includes a brief description and a link to access it.
 
-- **Front Society**: Site built by a developer for developers.
+- **Frontend Society**: Site built by a developer for developers.
 
-  [Live URL](https://icoded.vercel.app/)
+  [Live URL](https://frontendsociety.netlify.app)
 
-- **nachio/ui**: An UI kit/library with components made by me built under Tailwind CSS for React projects.
+- **NeroUI**: An UI kit/library with components made by me built under Tailwind CSS for React projects.
 
-  [Live URL](https://ui-nachio.vercel.app/)
+  [Live URL](https://neroui.vercel.app/)
+
+- **IMC App**: Handle your inventory with IMC.
+
+  [Live URL](https://imc-app.vercel.app/)
 
 ## Technologies Used in this Project
 
