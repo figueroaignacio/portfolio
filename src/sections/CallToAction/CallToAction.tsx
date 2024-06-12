@@ -25,6 +25,7 @@ export function CallToAction() {
         <a
           href="https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/"
           className={styles.button}
+          target="_blank"
         >
           <LinkedIn />
           LinkedIn
