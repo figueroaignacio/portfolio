@@ -33,7 +33,7 @@
   grid-column: span 2;
 }
 
-@media (max-width: 600px) {
+@media (width < 600px) {
   .feedbackBox {
     grid-template-columns: 1fr;
   }
