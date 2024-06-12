@@ -11,5 +11,35 @@
 
 .feedbackBox {
   display: grid;
-  gap: 0.8rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.feedbackItem {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.feedbackItem:nth-child(1) {
+  grid-column: span 2;
+}
+
+.feedbackItem:nth-child(2),
+.feedbackItem:nth-child(3) {
+  grid-column: span 1;
+}
+
+.feedbackItem:nth-child(4) {
+  grid-column: span 2;
+}
+
+@media (max-width: 600px) {
+  .feedbackBox {
+    grid-template-columns: 1fr;
+  }
+
+  .feedbackItem:nth-child(1),
+  .feedbackItem:nth-child(4) {
+    grid-column: span 1;
+  }
 }

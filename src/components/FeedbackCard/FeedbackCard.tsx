@@ -7,7 +7,6 @@ interface FeedbackCardProps {
 }
 
 // Icons
-import { Chevron } from "../../icons/Chevron";
 import { Quotes } from "../../icons/Quotes";
 
 // Styles
@@ -26,17 +25,20 @@ export function FeedbackCard({
         <div className={styles.feedbackProfile}>
           <img src={avatar} alt={name} className={styles.feedbackAvatar} />
           <div>
-            <h3>{name}</h3>
+            <a
+              href={linkedInProfile}
+              target="_blank"
+              className={styles.feedbackLink}
+              title="Go to LinkedIn profile"
+            >
+              <h3>{name}</h3>
+            </a>
             <span>{role}</span>
           </div>
         </div>
         <Quotes />
       </div>
-      <p>{description}</p>
-      <a href={linkedInProfile} target="_blank" className={styles.feedbackLink}>
-        <span>See LinkedIn Profile</span>
-        <Chevron />
-      </a>
+      <p className={styles.feedbackContent}>{description}</p>
     </div>
   );
 }
