@@ -12,11 +12,12 @@
   border-radius: 0.4375rem;
   background: #040407;
   display: flex;
+  cursor: pointer;
 }
 
 .selectBox:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid transparent;
 }
 
 .selectBox:focus {
