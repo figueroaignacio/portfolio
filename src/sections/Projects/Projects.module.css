@@ -11,5 +11,20 @@
 
 .projectsBox {
   display: grid;
-  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+  gap: 3rem;
+}
+
+.projectsBox > :nth-child(3) {
+  grid-column: span 2;
+}
+
+@media (width < 768px) {
+  .projectsBox {
+    grid-template-columns: 1fr;
+  }
+
+  .projectsBox > :nth-child(3) {
+    grid-column: span 1;
+  }
 }

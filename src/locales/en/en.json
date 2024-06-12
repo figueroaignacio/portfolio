@@ -24,6 +24,7 @@
     "title": "Projects",
     "myProjects": [
       {
+        "image": "/assets/frontend-society.png",
         "name": "Frontend Society",
         "description": "Discover tech posts, learn about Frontend stuff, and participate on challenges.",
         "github": "https://github.com/figueroaignacio/frontsociety",
@@ -31,6 +32,7 @@
         "technologies": ["Next.js, React, Tailwind, Velite, MDX"]
       },
       {
+        "image": "/assets/frontend-society.png",
         "name": "NeroUI",
         "description": "Copy and Paste simple and modern components to your React - Next.js projects, Simple. Modern. Open source",
         "github": "https://github.com/figueroaignacio/nero-ui",
@@ -38,6 +40,7 @@
         "technologies": ["Next.js, React, Tailwind, Velite, MDX"]
       },
       {
+        "image": "/assets/frontend-society.png",
         "name": "IMC App",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
         "github": "https://github.com/figueroaignacio/sneakerf",

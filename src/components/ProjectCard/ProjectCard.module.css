@@ -4,13 +4,21 @@
   gap: 0.8rem;
   border: 1px solid #201f1f;
   padding: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
   transition: background 0.2s ease;
 }
 
 .projectCard:hover {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
   background-color: rgba(37, 37, 37, 0.2);
+}
+
+.projectImage {
+  width: 100%;
+  height: 250px;
+  display: block;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
 .projectsName {
@@ -20,7 +28,7 @@
 }
 
 .projectDescription {
-  font-size: 1.1rem;
+  font-size: 0.75rem;
   line-height: 1.4;
 }
 

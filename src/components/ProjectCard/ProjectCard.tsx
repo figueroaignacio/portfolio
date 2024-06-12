@@ -11,6 +11,7 @@ interface ProjectCardProps {
   github: string;
   technologies: string[];
   url: string;
+  image: string;
 }
 
 export function ProjectCard({
@@ -19,35 +20,39 @@ export function ProjectCard({
   name,
   url,
   technologies,
+  image,
 }: ProjectCardProps) {
   return (
-    <a
-      href={url}
-      title={name}
-      className={`${styles.projectCard} fade`}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <h3 className={styles.projectsName}>{name}</h3>
-      <p>{description}</p>
-      {technologies.map((tech) => (
-        <div>
-          Tech Stack: <span>{tech}</span>
+    <div className="fade">
+      <img src={image} alt="Image project" className={styles.projectImage} />
+      <a
+        href={url}
+        title={name}
+        className={`${styles.projectCard}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h3 className={styles.projectsName}>{name}</h3>
+        <p className={styles.projectDescription}>{description}</p>
+        {technologies.map((tech) => (
+          <div>
+            Tech Stack: <span>{tech}</span>
+          </div>
+        ))}
+        <div className={styles.projectUrls}>
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Github"
+          >
+            <Github />
+          </a>
+          <a href={url} title="Live URL">
+            <Link />
+          </a>
         </div>
-      ))}
-      <div className={styles.projectUrls}>
-        <a
-          href={github}
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Github"
-        >
-          <Github />
-        </a>
-        <a href={url} title="Live URL">
-          <Link />
-        </a>
-      </div>
-    </a>
+      </a>
+    </div>
   );
 }
