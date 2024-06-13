@@ -21,7 +21,6 @@ function App() {
       <Experience />
       <Projects />
       <CallToAction />
-      <Separator />
       <Feedback />
       <Skills />
       <Footer />
