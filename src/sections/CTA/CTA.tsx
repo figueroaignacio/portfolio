@@ -6,9 +6,9 @@ import { LinkedIn } from "../../icons/LinkedIn";
 import { Mail } from "../../icons/Mail";
 
 // Styles
-import styles from "./CallToAction.module.css";
+import styles from "./CTA.module.css";
 
-export function CallToAction() {
+export function CTA() {
   const { t } = useTranslation();
 
   return (
