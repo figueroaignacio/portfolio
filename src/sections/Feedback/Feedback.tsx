@@ -27,7 +27,7 @@ export function Feedback() {
       <h2 className={styles.feedbackTitle}>{t("feedback.title")}</h2>
       <div className={styles.feedbackBox}>
         {feedbacks.map((feedback: MyFeedbacks, index: number) => (
-          <div key={index} className={`${styles.feedbackItem} fade`}>
+          <div key={index} className={`${styles.feedbackItem}`}>
             <FeedbackCard
               linkedInProfile={feedback.linkedInProfile}
               avatar={feedback.avatar}
