@@ -53,11 +53,11 @@
     "title": "Skills"
   },
   "footer": {
-    "title": "Let's start work together!",
+    "title": "Let's talk and work together!",
     "subtitle": "Thanks for visiting my website.",
-    "paragraph": "Proudly developed by Ignacio Figueroa",
+    "paragraph": "",
     "contactTitle": "Contact me",
-    "builtIn": "Built in React, CSS Modules and i18n"
+    "builtIn": "Proudly developed by Ignacio Figueroa, built in React, CSS Modules and i18n"
   },
   "feedback": {
     "title": "Feedback",
