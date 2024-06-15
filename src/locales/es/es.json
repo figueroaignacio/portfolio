@@ -32,7 +32,7 @@
         "technologies": ["Next.js, React, Tailwind, Velite, MDX"]
       },
       {
-        "image": "/assets/frontend-society.png",
+        "image": "/assets/in-development.png",
         "name": "NeroUI",
         "description": "Copie y pegue componentes simples y modernos para sus proyectos React - Next.js, simple. Moderno. Código abierto",
         "github": "https://github.com/figueroaignacio/nero-ui",
@@ -40,7 +40,7 @@
         "technologies": ["Next.js, React, Tailwind, Contentlayer, MDX"]
       },
       {
-        "image": "/assets/frontend-society.png",
+        "image": "/assets/in-development.png",
         "name": "IMC App",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
         "github": "https://github.com/figueroaignacio/sneakerf",
