@@ -1,8 +1,11 @@
 // Main
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "../src/styles/index.css";
 import App from "./App.tsx";
+
+// CSS
+import "../src/styles/animations.css";
+import "../src/styles/index.css";
 
 // Font
 import "@fontsource-variable/onest";
