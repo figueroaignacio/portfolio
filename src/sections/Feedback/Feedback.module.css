@@ -32,6 +32,9 @@
 .feedbackItem:nth-child(4) {
   grid-column: span 2;
 }
+.feedbackItem:nth-child(5) {
+  grid-column: span 2;
+}
 
 @media (width < 600px) {
   .feedbackBox {
@@ -39,7 +42,8 @@
   }
 
   .feedbackItem:nth-child(1),
-  .feedbackItem:nth-child(4) {
+  .feedbackItem:nth-child(4),
+  .feedbackItem:nth-child(5) {
     grid-column: span 1;
   }
 }
