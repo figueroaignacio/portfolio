@@ -13,7 +13,6 @@ import { Quotes } from "../../icons/Quotes";
 import styles from "./FeedbackCard.module.css";
 
 export function FeedbackCard({
-  avatar,
   description,
   name,
   role,
@@ -23,7 +22,6 @@ export function FeedbackCard({
     <div className={`${styles.feedbackCard} fade`}>
       <div className={styles.feedbackBox}>
         <div className={styles.feedbackProfile}>
-          <img src={avatar} alt={name} className={styles.feedbackAvatar} />
           <div>
             <a
               href={linkedInProfile}
