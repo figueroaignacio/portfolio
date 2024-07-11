@@ -11,20 +11,23 @@ import { Skills } from "./sections/Skills/Skills";
 
 // Styles
 import styles from "./App.module.css";
+import { FadeUp } from "./components/FramerAnimations/FadeUp";
 
 function App() {
   return (
-    <main className={styles.appBox}>
-      <Hero />
-      <Separator />
-      <About />
-      <Experience />
-      <Projects />
-      <CTA />
-      <Feedback />
-      <Skills />
-      <Footer />
-    </main>
+    <FadeUp>
+      <main className={styles.appBox}>
+        <Hero />
+        <Separator />
+        <About />
+        <Experience />
+        <Projects />
+        <CTA />
+        <Feedback />
+        <Skills />
+        <Footer />
+      </main>
+    </FadeUp>
   );
 }
 

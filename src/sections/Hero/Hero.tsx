@@ -1,5 +1,6 @@
 // Components
 import { Contacts } from "../../components/Contacts/Contacts";
+import { FadeUp } from "../../components/FramerAnimations/FadeUp";
 
 // i18n
 import { useTranslation } from "react-i18next";
@@ -16,16 +17,24 @@ export function Hero() {
   return (
     <section className={style.heroSection}>
       <div>
-        <h1 className={style.heroTitle}>{t("hero.title")}</h1>
-        <p>{t("hero.description")}</p>
+        <FadeUp>
+          <h1 className={style.heroTitle}>{t("hero.title")}</h1>
+        </FadeUp>
+        <FadeUp>
+          <p>{t("hero.description")}</p>
+        </FadeUp>
       </div>
-      <div className={style.heroLocation}>
-        <Location />
-        <address>
-          <span>{t("hero.location")}</span>
-        </address>
-      </div>
-      <Contacts />
+      <FadeUp>
+        <div className={style.heroLocation}>
+          <Location />
+          <address>
+            <span>{t("hero.location")}</span>
+          </address>
+        </div>
+      </FadeUp>
+      <FadeUp>
+        <Contacts />
+      </FadeUp>
     </section>
   );
 }
