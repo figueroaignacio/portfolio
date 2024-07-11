@@ -1,5 +1,6 @@
 // Components
 import { ExperienceCard } from "../../components/ExperienceCard/ExperienceCard";
+import { FadeUp } from "../../components/FramerAnimations/FadeUp";
 
 // i18n
 import { useTranslation } from "react-i18next";
@@ -21,19 +22,21 @@ export function Experience() {
   });
 
   return (
-    <section className={styles.experienceBox}>
-      <h2 className={styles.experienceTitle}>{t("experience.title")}</h2>
-      <div>
-        {experienceData.map((place: ExperiencePlace, index: number) => (
-          <ExperienceCard
-            position={place.position}
-            key={index}
-            company={place.company}
-            date={place.date}
-            description={place.description}
-          />
-        ))}
-      </div>
-    </section>
+    <FadeUp>
+      <section className={styles.experienceBox}>
+        <h2 className={styles.experienceTitle}>{t("experience.title")}</h2>
+        <div>
+          {experienceData.map((place: ExperiencePlace, index: number) => (
+            <ExperienceCard
+              position={place.position}
+              key={index}
+              company={place.company}
+              date={place.date}
+              description={place.description}
+            />
+          ))}
+        </div>
+      </section>
+    </FadeUp>
   );
 }
