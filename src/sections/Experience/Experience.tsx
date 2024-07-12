@@ -22,7 +22,7 @@ export function Experience() {
   });
 
   return (
-    <FadeUp delay={0.7}>
+    <FadeUp delay={0.8}>
       <section className={styles.experienceBox}>
         <h2 className={styles.experienceTitle}>{t("experience.title")}</h2>
 
