@@ -13,6 +13,7 @@ import styles from "./SelectLanguage.module.css";
 export function SelectLanguage() {
   const { i18n } = useTranslation();
   const [selectedLang, setSelectedLang] = useState<string | null>(null);
+  const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     const lang = localStorage.getItem("language");
@@ -22,25 +23,58 @@ export function SelectLanguage() {
     }
   }, [i18n]);
 
-  const changeLanguage = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const lang = event.target.value;
+  const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
     setSelectedLang(lang);
     localStorage.setItem("language", lang);
+    setModalOpen(false);
+  };
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
   };
 
   return (
-    <div className={styles.selectContainer}>
-      <select
-        className={styles.selectBox}
-        value={selectedLang || undefined}
-        onChange={changeLanguage}
+    <div>
+      <div className={styles.box}>
+        <button onClick={openModal} className={styles.selectLanguageButton}>
+          {selectedLang ? selectedLang.toUpperCase() : "Select Language"}
+        </button>
+        <div className={styles.selectIconContainer}>
+          <Lang />
+        </div>
+      </div>
+      <div
+        className={`${styles.modalBackdrop} ${modalOpen ? styles.open : ""}`}
       >
-        <option value="en">English</option>
-        <option value="es">Español</option>
-      </select>
-      <div className={styles.selectIconContainer}>
-        <Lang />
+        <div className={styles.modalContent}>
+          <span className={styles.closeButton} onClick={closeModal}>
+            &times;
+          </span>
+          <h2>Select Language</h2>
+          <div className={styles.languageButtons}>
+            <button
+              className={`${styles.languageButton} ${
+                selectedLang === "en" ? styles.selected : ""
+              }`}
+              onClick={() => changeLanguage("en")}
+            >
+              English
+            </button>
+            <button
+              className={`${styles.languageButton} ${
+                selectedLang === "es" ? styles.selected : ""
+              }`}
+              onClick={() => changeLanguage("es")}
+            >
+              Español
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
