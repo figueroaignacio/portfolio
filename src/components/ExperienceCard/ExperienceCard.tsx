@@ -1,5 +1,4 @@
 // Icons
-import { Building } from "../../icons/Building";
 
 // Interface
 interface ExperienceCardProps {
@@ -19,18 +18,15 @@ export function ExperienceCard({
   position,
 }: ExperienceCardProps) {
   return (
-    <article className={styles.experienceCard}>
-      <div className={styles.experienceCompany}>
-        <div className={styles.experienceCompanyBox}>
-          <Building />
-          <h3 className={styles.experienceCompanyName}>{company}</h3>
+    <div className={styles.content}>
+      <div className={styles.box}>
+        <div>
+          <h3 className={styles.experienceCompany}>{company}</h3>
+          <h2>{position}</h2>
         </div>
-        <p className={styles.experienceDate}>{date}</p>
+        <span>{date}</span>
+        <p>{description}</p>
       </div>
-      <h4 className={styles.experiencePosition}>{position}</h4>
-      <div className={styles.experienceDescriptionBox}>
-        <p className={styles.experienceDescription}>{description}</p>
-      </div>
-    </article>
+    </div>
   );
 }
