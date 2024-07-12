@@ -17,14 +17,14 @@ export function Hero() {
   return (
     <section className={style.heroSection}>
       <div>
-        <FadeUp>
+        <FadeUp delay={0.3}>
           <h1 className={style.heroTitle}>{t("hero.title")}</h1>
         </FadeUp>
-        <FadeUp>
+        <FadeUp delay={0.4}>
           <p>{t("hero.description")}</p>
         </FadeUp>
       </div>
-      <FadeUp>
+      <FadeUp delay={0.5}>
         <div className={style.heroLocation}>
           <Location />
           <address>
@@ -32,7 +32,7 @@ export function Hero() {
           </address>
         </div>
       </FadeUp>
-      <FadeUp>
+      <FadeUp delay={0.6}>
         <Contacts />
       </FadeUp>
     </section>

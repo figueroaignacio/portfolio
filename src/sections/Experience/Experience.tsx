@@ -22,19 +22,22 @@ export function Experience() {
   });
 
   return (
-    <FadeUp>
+    <FadeUp delay={0.7}>
       <section className={styles.experienceBox}>
         <h2 className={styles.experienceTitle}>{t("experience.title")}</h2>
+
         <div>
-          {experienceData.map((place: ExperiencePlace, index: number) => (
-            <ExperienceCard
-              position={place.position}
-              key={index}
-              company={place.company}
-              date={place.date}
-              description={place.description}
-            />
-          ))}
+          <FadeUp delay={0.8}>
+            {experienceData.map((place: ExperiencePlace, index: number) => (
+              <ExperienceCard
+                position={place.position}
+                key={index}
+                company={place.company}
+                date={place.date}
+                description={place.description}
+              />
+            ))}
+          </FadeUp>
         </div>
       </section>
     </FadeUp>

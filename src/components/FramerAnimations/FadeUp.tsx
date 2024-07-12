@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 interface FadeUpProps {
   children: React.ReactNode;
-  delay?: 0;
+  delay?: number;
 }
 
 export const FadeUp = ({ children, delay }: FadeUpProps) => {
