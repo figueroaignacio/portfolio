@@ -11,7 +11,7 @@ import { Lang } from "../../icons/Lang";
 import styles from "./SelectLanguage.module.css";
 
 export function SelectLanguage() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [selectedLang, setSelectedLang] = useState<string | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -22,6 +22,24 @@ export function SelectLanguage() {
       i18n.changeLanguage(lang);
     }
   }, [i18n]);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setModalOpen(false);
+      }
+    };
+
+    if (modalOpen) {
+      window.addEventListener("keydown", handleKeyDown);
+    } else {
+      window.removeEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [modalOpen]);
 
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
@@ -50,12 +68,13 @@ export function SelectLanguage() {
       </div>
       <div
         className={`${styles.modalBackdrop} ${modalOpen ? styles.open : ""}`}
+        onClick={closeModal}
       >
         <div className={styles.modalContent}>
           <span className={styles.closeButton} onClick={closeModal}>
             &times;
           </span>
-          <h2>Select Language</h2>
+          <h2>{t("selectLanguage.title")}</h2>
           <div className={styles.languageButtons}>
             <button
               className={`${styles.languageButton} ${

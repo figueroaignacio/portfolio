@@ -102,5 +102,8 @@
   "callToAction": {
     "title": "Tenés un proyecto?",
     "subtitle": "Trabajemos juntos."
+  },
+  "selectLanguage": {
+    "title": "Seleccionar Lenguaje"
   }
 }

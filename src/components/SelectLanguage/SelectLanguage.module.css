@@ -33,7 +33,7 @@
   width: 100%;
   height: 100vh;
   z-index: 500;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(8px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,18 +48,12 @@
 }
 
 .modalContent {
+  position: relative;
   background-color: #000;
-  color: white;
   padding: 1.25rem;
   border-radius: 0.5rem;
   width: 18.75rem;
   border: 0.0625rem solid #201f1f;
-  transform: translateY(-20px);
-  transition: transform 0.3s ease;
-}
-
-.modalBackdrop.open .modalContent {
-  transform: translateY(0);
 }
 
 .closeButton {
