@@ -1,5 +1,6 @@
 // Components
 import { Footer } from "./components/Footer/Footer";
+import { FadeUp } from "./components/FramerAnimations/FadeUp";
 import { Separator } from "./components/Separator/Separator";
 import { About } from "./sections/About/About";
 import { CTA } from "./sections/CTA/CTA";
@@ -11,7 +12,6 @@ import { Skills } from "./sections/Skills/Skills";
 
 // Styles
 import styles from "./App.module.css";
-import { FadeUp } from "./components/FramerAnimations/FadeUp";
 
 function App() {
   return (
