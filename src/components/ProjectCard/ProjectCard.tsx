@@ -46,7 +46,7 @@ export function ProjectCard({
             rel="noopener noreferrer"
             title="Github"
           >
-            <Github />
+            <Github width="20" height="20" />
           </a>
           <a href={url} title="Live URL">
             <Link />
