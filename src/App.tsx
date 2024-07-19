@@ -11,6 +11,7 @@ import { Skills } from "./sections/Skills/Skills";
 
 // Styles
 import styles from "./App.module.css";
+import { Contacts } from "./components/Contacts/Contacts";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Projects />
       <CTA />
       <Feedback />
+      <Contacts />
       <Skills />
       <Footer />
     </main>

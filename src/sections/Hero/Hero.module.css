@@ -9,14 +9,14 @@
   font-weight: 700;
 }
 
-.heroLocationBox {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
 .heroLocation {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  justify-content: space-between;
+}
+
+.heroLocationBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }

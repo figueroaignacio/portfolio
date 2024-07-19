@@ -1,9 +1,14 @@
-export function Mail() {
+interface IconProps {
+  width: string;
+  height: string;
+}
+
+export function Mail({ height, width }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       stroke="#f5f5f5"

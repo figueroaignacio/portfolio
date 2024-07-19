@@ -1,8 +1,13 @@
-export function LinkedIn() {
+interface IconProps {
+  width: string;
+  height: string;
+}
+
+export function LinkedIn({ height, width }: IconProps) {
   return (
     <svg
-      height="16"
-      width="16"
+      height={height}
+      width={width}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

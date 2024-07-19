@@ -1,5 +1,4 @@
 // Components
-import { Contacts } from "../Contacts/Contacts";
 
 // i18n
 import { useTranslation } from "react-i18next";
@@ -15,10 +14,6 @@ export function Footer() {
       <div>
         <h2>{t("footer.title")}</h2>
         <p>{t("footer.subtitle")}</p>
-      </div>
-      <div>
-        <h2 className={styles.footerTitle}>{t("footer.contactTitle")}</h2>
-        <Contacts />
       </div>
       <div>
         <p>{t("footer.builtIn")}</p>
