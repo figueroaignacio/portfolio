@@ -3,9 +3,7 @@ import { useEffect, useState } from "react";
 
 // i18n
 import { useTranslation } from "react-i18next";
-
-// Icons
-
+//
 // Styles
 import styles from "./SelectLanguage.module.css";
 
