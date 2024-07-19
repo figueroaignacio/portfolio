@@ -106,5 +106,9 @@
   },
   "selectLanguage": {
     "title": "Seleccionar Lenguaje"
+  },
+  "contact": {
+    "title": "Contactame",
+    "description": "Podes contactarme en las siguientes redes."
   }
 }

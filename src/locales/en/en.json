@@ -106,5 +106,9 @@
   },
   "selectLanguage": {
     "title": "Select Language"
+  },
+  "contact": {
+    "title": "Contact me",
+    "description": "You can reach me in the following social medias."
   }
 }
