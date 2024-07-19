@@ -2,7 +2,6 @@
 import { useTranslation } from "react-i18next";
 
 // Icons
-import { LinkedIn } from "../../icons/LinkedIn";
 import { Mail } from "../../icons/Mail";
 
 // Styles
@@ -19,16 +18,8 @@ export function CTA() {
       </div>
       <div className={styles.buttonGroup}>
         <a href="mailto:ignaciofigueroadev@gmail.com" className={styles.button}>
-          <Mail />
-          Mail
-        </a>
-        <a
-          href="https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/"
-          className={styles.button}
-          target="_blank"
-        >
-          <LinkedIn />
-          LinkedIn
+          <Mail width="16" height="16" />
+          {t("callToAction.button")}
         </a>
       </div>
     </section>

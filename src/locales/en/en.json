@@ -100,8 +100,9 @@
     ]
   },
   "callToAction": {
-    "title": "Do you have a project?",
-    "subtitle": "Let's work together"
+    "title": "Do you have a project in mind?",
+    "subtitle": "Let's work together!",
+    "button": "Send me a Mail"
   },
   "selectLanguage": {
     "title": "Select Language"
