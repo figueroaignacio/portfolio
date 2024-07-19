@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 // Icons
-import { Lang } from "../../icons/Lang";
 
 // Styles
 import styles from "./SelectLanguage.module.css";
@@ -62,9 +61,6 @@ export function SelectLanguage() {
         <button onClick={openModal} className={styles.selectLanguageButton}>
           {selectedLang ? selectedLang.toUpperCase() : "Select Language"}
         </button>
-        <div className={styles.selectIconContainer}>
-          <Lang />
-        </div>
       </div>
       <div
         className={`${styles.modalBackdrop} ${modalOpen ? styles.open : ""}`}

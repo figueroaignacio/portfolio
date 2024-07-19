@@ -1,6 +1,5 @@
 // Components
 import { FadeUp } from "../../components/FramerAnimations/FadeUp";
-import { SelectLanguage } from "../../components/SelectLanguage/SelectLanguage";
 
 // i18n
 import { useTranslation } from "react-i18next";
@@ -9,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import { Location } from "../../icons/Location";
 
 // Styles
+import { SelectLanguage } from "../../components/SelectLanguage/SelectLanguage";
 import style from "./Hero.module.css";
 
 export function Hero() {
@@ -16,6 +16,7 @@ export function Hero() {
 
   return (
     <section className={style.heroSection}>
+      <SelectLanguage />
       <div>
         <FadeUp delay={0.3}>
           <h1 className={style.heroTitle}>{t("hero.title")}</h1>
@@ -32,7 +33,6 @@ export function Hero() {
               <span>{t("hero.location")}</span>
             </address>
           </div>
-          <SelectLanguage />
         </div>
       </FadeUp>
     </section>

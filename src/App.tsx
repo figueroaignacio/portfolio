@@ -1,4 +1,5 @@
 // Components
+import { Contacts } from "./components/Contacts/Contacts";
 import { Footer } from "./components/Footer/Footer";
 import { Separator } from "./components/Separator/Separator";
 import { About } from "./sections/About/About";
@@ -11,7 +12,6 @@ import { Skills } from "./sections/Skills/Skills";
 
 // Styles
 import styles from "./App.module.css";
-import { Contacts } from "./components/Contacts/Contacts";
 
 function App() {
   return (
