@@ -57,7 +57,7 @@ export function SelectLanguage() {
     <div>
       <div className={styles.box}>
         <button onClick={openModal} className={styles.selectLanguageButton}>
-          {selectedLang ? selectedLang.toUpperCase() : "Select Language"}
+          {selectedLang ? selectedLang.toUpperCase() : ""}
         </button>
       </div>
       <div
