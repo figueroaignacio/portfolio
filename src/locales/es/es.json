@@ -110,5 +110,8 @@
   "contact": {
     "title": "Contactame",
     "description": "Podes contactarme en las siguientes redes."
+  },
+  "activeToWork": {
+    "title": "Activo para trabajar"
   }
 }
