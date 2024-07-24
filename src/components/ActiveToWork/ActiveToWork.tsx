@@ -9,8 +9,8 @@ export function ActiveToWork() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.pulsatingDot} />
       <span>{t("activeToWork.title")}</span>
+      <div className={styles.pulsatingDot} />
     </div>
   );
 }
