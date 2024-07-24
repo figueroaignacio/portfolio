@@ -3,8 +3,13 @@
   align-items: center;
   gap: 0.5rem;
   border: 0.0625rem solid #201f1f;
-  padding: 0.3rem 0.5rem;
+  padding: 0.44rem 1.5rem;
   border-radius: 0.4375rem;
+  position: fixed;
+  top: 1rem;
+  right: 7rem;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
 }
 
 .pulsatingDot {

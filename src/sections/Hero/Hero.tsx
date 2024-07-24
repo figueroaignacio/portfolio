@@ -18,12 +18,10 @@ export function Hero() {
   return (
     <section className={style.heroSection}>
       <SelectLanguage />
+      <ActiveToWork />
       <div>
         <FadeUp delay={0.3}>
-          <div className={style.heroMain}>
-            <h1 className={style.heroTitle}>{t("hero.title")}</h1>
-            <ActiveToWork />
-          </div>
+          <h1 className={style.heroTitle}>{t("hero.title")}</h1>
         </FadeUp>
         <FadeUp delay={0.4}>
           <p>{t("hero.description")}</p>
