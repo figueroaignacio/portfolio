@@ -3,7 +3,10 @@ import { useEffect, useState } from "react";
 
 // i18n
 import { useTranslation } from "react-i18next";
-//
+
+// Icons
+import { Lang } from "../../icons/Lang";
+
 // Styles
 import styles from "./SelectLanguage.module.css";
 
@@ -57,6 +60,7 @@ export function SelectLanguage() {
     <div>
       <div className={styles.box}>
         <button onClick={openModal} className={styles.selectLanguageButton}>
+          <Lang />
           {selectedLang ? selectedLang.toUpperCase() : ""}
         </button>
       </div>
