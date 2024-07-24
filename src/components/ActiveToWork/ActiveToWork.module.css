@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pulsatingDot {
+  animation: pulseDot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+  background-color: #00ff33;
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 10px;
+  width: 10px;
+}
+
+.pulsatingDot:before {
+  animation: pulseRing 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  background-color: #00ff33;
+  border-radius: 45px;
+  content: "";
+  display: block;
+  height: 300%;
+  left: -100%;
+  position: relative;
+  top: -100%;
+  width: 300%;
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.5);
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulseDot {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
