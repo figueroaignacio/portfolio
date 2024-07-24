@@ -1,6 +1,6 @@
 // Components
 import { ActiveToWork } from "../../components/ActiveToWork/ActiveToWork";
-import { FadeUp } from "../../components/FramerAnimations/FadeUp";
+import { FadeUp } from "../../components/Framer/FadeUp";
 import { SelectLanguage } from "../../components/SelectLanguage/SelectLanguage";
 
 // i18n

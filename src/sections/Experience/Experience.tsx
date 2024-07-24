@@ -1,6 +1,6 @@
 // Components
 import { ExperienceCard } from "../../components/ExperienceCard/ExperienceCard";
-import { FadeUp } from "../../components/FramerAnimations/FadeUp";
+import { FadeUp } from "../../components/Framer/FadeUp";
 
 // i18n
 import { useTranslation } from "react-i18next";

@@ -1,5 +1,5 @@
 // Styles
-import { FadeUp } from "../FramerAnimations/FadeUp";
+import { FadeUp } from "../Framer/FadeUp";
 import styles from "./Separator.module.css";
 
 export function Separator() {

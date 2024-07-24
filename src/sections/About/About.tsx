@@ -2,7 +2,7 @@
 import { useTranslation } from "react-i18next";
 
 // Styles
-import { FadeUp } from "../../components/FramerAnimations/FadeUp";
+import { FadeUp } from "../../components/Framer/FadeUp";
 import styles from "./About.module.css";
 
 export function About() {
