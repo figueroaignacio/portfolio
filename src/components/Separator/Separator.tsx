@@ -1,13 +1,19 @@
+// Components
+import { FramerDiv } from "../Framer";
+
+// Constants
+import { FADE_DOWN_ANIMATION_VARIANTS } from "../../constants/animations";
+
 // Styles
-import { FadeUp } from "../Framer/FadeUp";
 import styles from "./Separator.module.css";
 
 export function Separator() {
   return (
-    <FadeUp delay={0.5}>
-      <div className={styles.container}>
-        <div className={styles.border} />
-      </div>
-    </FadeUp>
+    <FramerDiv
+      variants={FADE_DOWN_ANIMATION_VARIANTS}
+      className={styles.container}
+    >
+      <div className={styles.border} />
+    </FramerDiv>
   );
 }
