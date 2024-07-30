@@ -1,8 +1,12 @@
-// Components
-import { FeedbackCard } from "../../components/FeedbackCard/FeedbackCard";
-
 // i18n
 import { useTranslation } from "react-i18next";
+
+// Components
+import { FeedbackCard } from "../../components/FeedbackCard/FeedbackCard";
+import { FramerDiv, FramerH2 } from "../../components/Framer";
+
+// Constants
+import { FADE_DOWN_ANIMATION_VARIANTS } from "../../constants/animations";
 
 type MyFeedbacks = {
   avatar: string;
@@ -24,10 +28,19 @@ export function Feedback() {
 
   return (
     <section className={styles.feedbackSection}>
-      <h2 className={styles.feedbackTitle}>{t("feedback.title")}</h2>
+      <FramerH2
+        variants={FADE_DOWN_ANIMATION_VARIANTS}
+        className={styles.feedbackTitle}
+      >
+        {t("feedback.title")}
+      </FramerH2>
       <div className={styles.feedbackBox}>
         {feedbacks.map((feedback: MyFeedbacks, index: number) => (
-          <div key={index} className={`${styles.feedbackItem}`}>
+          <FramerDiv
+            key={index}
+            className={`${styles.feedbackItem}`}
+            variants={FADE_DOWN_ANIMATION_VARIANTS}
+          >
             <FeedbackCard
               linkedInProfile={feedback.linkedInProfile}
               avatar={feedback.avatar}
@@ -35,7 +48,7 @@ export function Feedback() {
               name={feedback.name}
               role={feedback.role}
             />
-          </div>
+          </FramerDiv>
         ))}
       </div>
     </section>

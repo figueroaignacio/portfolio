@@ -1,6 +1,6 @@
 // Components
 import { ActiveToWork } from "../../components/ActiveToWork/ActiveToWork";
-import { FadeUp } from "../../components/Framer/FadeUp";
+import { FramerDiv, FramerH1, FramerParagraph } from "../../components/Framer";
 import { SelectLanguage } from "../../components/SelectLanguage/SelectLanguage";
 
 // i18n
@@ -8,6 +8,12 @@ import { useTranslation } from "react-i18next";
 
 // Icons
 import { Location } from "../../icons/Location";
+
+// Constants
+import {
+  FADE_DOWN_ANIMATION_VARIANTS,
+  FADE_LEFT_ANIMATION_VARIANTS,
+} from "../../constants/animations";
 
 // Styles
 import style from "./Hero.module.css";
@@ -20,23 +26,27 @@ export function Hero() {
       <SelectLanguage />
       <ActiveToWork />
       <div>
-        <FadeUp delay={0.3}>
-          <h1 className={style.heroTitle}>{t("hero.title")}</h1>
-        </FadeUp>
-        <FadeUp delay={0.4}>
-          <p>{t("hero.description")}</p>
-        </FadeUp>
+        <FramerH1
+          className={style.heroTitle}
+          variants={FADE_LEFT_ANIMATION_VARIANTS}
+        >
+          {t("hero.title")}
+        </FramerH1>
+        <FramerParagraph variants={FADE_DOWN_ANIMATION_VARIANTS}>
+          {t("hero.description")}
+        </FramerParagraph>
       </div>
-      <FadeUp delay={0.5}>
-        <div className={style.heroLocation}>
-          <div className={style.heroLocationBox}>
-            <Location />
-            <address>
-              <span>{t("hero.location")}</span>
-            </address>
-          </div>
+      <FramerDiv
+        className={style.heroLocation}
+        variants={FADE_DOWN_ANIMATION_VARIANTS}
+      >
+        <div className={style.heroLocationBox}>
+          <Location />
+          <address>
+            <span>{t("hero.location")}</span>
+          </address>
         </div>
-      </FadeUp>
+      </FramerDiv>
     </section>
   );
 }

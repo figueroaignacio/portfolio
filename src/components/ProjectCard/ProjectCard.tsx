@@ -23,7 +23,7 @@ export function ProjectCard({
   image,
 }: ProjectCardProps) {
   return (
-    <div className="fade">
+    <div>
       <img src={image} alt="Image project" className={styles.projectImage} />
       <a
         href={url}

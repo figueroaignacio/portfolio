@@ -1,6 +1,9 @@
 // i18n
 import { useTranslation } from "react-i18next";
 
+// Components
+import { FramerDiv, FramerH2, FramerParagraph } from "../Framer";
+
 // Icons
 import { Github } from "../../icons/Github";
 import { LinkedIn } from "../../icons/LinkedIn";
@@ -10,6 +13,7 @@ import { Mail } from "../../icons/Mail";
 import styles from "./Contacts.module.css";
 
 // Constants
+import { FADE_DOWN_ANIMATION_VARIANTS } from "../../constants/animations";
 import { CONTACTS } from "../../constants/contact";
 
 export function Contacts() {
@@ -17,9 +21,19 @@ export function Contacts() {
 
   return (
     <section className={styles.contactsSection}>
-      <h2 className={styles.contactsTitle}>{t("contact.title")}</h2>
-      <p>{t("contact.description")}</p>
-      <div className={styles.contactsBox}>
+      <FramerH2
+        variants={FADE_DOWN_ANIMATION_VARIANTS}
+        className={styles.contactsTitle}
+      >
+        {t("contact.title")}
+      </FramerH2>
+      <FramerParagraph variants={FADE_DOWN_ANIMATION_VARIANTS}>
+        {t("contact.description")}
+      </FramerParagraph>
+      <FramerDiv
+        className={styles.contactsBox}
+        variants={FADE_DOWN_ANIMATION_VARIANTS}
+      >
         {CONTACTS.map((contact, index) => {
           let iconComponent;
           switch (contact.icon) {
@@ -46,7 +60,7 @@ export function Contacts() {
             </a>
           );
         })}
-      </div>
+      </FramerDiv>
     </section>
   );
 }

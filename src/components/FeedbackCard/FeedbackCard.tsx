@@ -19,7 +19,7 @@ export function FeedbackCard({
   linkedInProfile,
 }: FeedbackCardProps) {
   return (
-    <div className={`${styles.feedbackCard} fade`}>
+    <div className={styles.feedbackCard}>
       <div className={styles.feedbackBox}>
         <div className={styles.feedbackProfile}>
           <div>
