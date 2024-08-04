@@ -1,6 +1,6 @@
 .selectLanguageButton {
   border: var(--border);
-  background-color: var(--bg-card);
+  background: transparent;
   color: white;
   padding: 0.5rem 1.5rem;
   display: flex;
