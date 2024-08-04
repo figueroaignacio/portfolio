@@ -1,6 +1,6 @@
 .badge {
-  background: transparent;
-  border: 0.0625rem solid #201f1f;
+  background-color: var(--bg-card);
+  border: var(--border);
   border-radius: 0.7rem;
   padding: 0.5rem 1rem;
   font-size: 0.7rem;

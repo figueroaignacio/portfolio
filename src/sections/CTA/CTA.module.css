@@ -22,12 +22,12 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  border: 1px solid #201f1f;
+  border: var(--border);
   border-radius: 0.75rem;
   transition: filter 0.3s ease;
 }
 
 .button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--bg-foreground);
   border: 1px solid transparent;
 }

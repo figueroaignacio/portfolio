@@ -4,7 +4,7 @@
 }
 
 .border {
-  border-bottom: 1px solid #201f1f;
+  border-bottom: var(--border);
   width: 100%;
 }
 

@@ -1,5 +1,3 @@
-// Icons
-
 // Interface
 interface ExperienceCardProps {
   company: string;

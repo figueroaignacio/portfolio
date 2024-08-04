@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  border: 0.0625rem solid #201f1f;
+  border: var(--border);
   padding: 0.44rem 1.5rem;
   border-radius: 0.4375rem;
   position: fixed;

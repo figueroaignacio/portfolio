@@ -7,7 +7,7 @@
 }
 
 .content {
-  border-left: 0.0625rem solid #201f1f;
+  border-left: var(--border);
   padding-left: 2rem;
 }
 

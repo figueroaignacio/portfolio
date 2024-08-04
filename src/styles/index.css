@@ -1,7 +1,18 @@
+/* Variables */
+:root {
+  --bg-color: #0a0a0f;
+  --bg-foreground: rgba(255, 255, 255, 0.03);
+  --text-color: #f5f5f5;
+  --text-foreground: #9d9d9d;
+  --bg-card: hsl(240, 20%, 6%);
+  --border: 0.0625rem solid rgb(255, 255, 255, 0.05);
+  --font-family: "Onest Variable", sans-serif;
+}
+
 html {
-  font-family: "Onest Variable", sans-serif;
-  background: #0a0a0f;
-  color: #f5f5f5;
+  font-family: var(--font-family);
+  background: var(--bg-color);
+  color: var(--text-color);
   letter-spacing: -0.025rem;
   display: flex;
   justify-content: center;
@@ -22,7 +33,7 @@ body {
 }
 
 a {
-  color: #f5f5f5;
+  color: var(--color);
   text-decoration: initial;
 }
 
@@ -51,7 +62,7 @@ h4 {
 p,
 span,
 li a {
-  color: #9d9d9d;
+  color: var(--text-foreground);
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 0;
