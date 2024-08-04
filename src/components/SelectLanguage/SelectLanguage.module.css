@@ -48,26 +48,40 @@
 
 .modalContent {
   position: relative;
-  background-color: #000;
-  padding: 1.25rem;
+  background-color: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
   border-radius: 0.5rem;
   width: 18.75rem;
-  border: 0.0625rem solid #201f1f;
+  border: var(--border);
 }
 
-.closeButton {
-  position: absolute;
-  top: 0.325rem;
-  right: 0.625rem;
+.modalTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalClose {
+  background-color: transparent;
+  border: none;
+  color: var(--text-foreground);
+  border: var(--border);
+  border-radius: 7px;
+  font-size: 1.5rem;
   cursor: pointer;
-  font-size: 32px;
+}
+
+.modalTitleContainer > span {
+  font-size: 2rem;
 }
 
 .languageButtons {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
-  margin-top: 24px;
 }
 
 .languageButton {
@@ -75,8 +89,8 @@
   border: none;
   cursor: pointer;
   padding: 0.3125rem 0.625rem;
-  color: #666;
-  border: 0.0625rem solid #201f1f;
+  color: var(--text-foreground);
+  border: var(--border);
   background: transparent;
   color: white;
   padding: 8px;
@@ -88,10 +102,10 @@
 }
 
 .languageButton:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--bg-foreground);
   border: 0.0625rem solid transparent;
 }
 
 .languageButton.selected {
-  font-weight: bold;
+  font-weight: 700;
 }

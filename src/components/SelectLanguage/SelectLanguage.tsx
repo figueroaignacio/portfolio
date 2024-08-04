@@ -69,10 +69,12 @@ export function SelectLanguage() {
         onClick={closeModal}
       >
         <div className={styles.modalContent}>
-          <span className={styles.closeButton} onClick={closeModal}>
-            &times;
-          </span>
-          <h2>{t("selectLanguage.title")}</h2>
+          <div className={styles.modalTitleContainer}>
+            <h2>{t("selectLanguage.title")}</h2>
+            <button className={styles.modalClose} onClick={closeModal}>
+              &times;
+            </button>
+          </div>
           <div className={styles.languageButtons}>
             <button
               className={`${styles.languageButton} ${
