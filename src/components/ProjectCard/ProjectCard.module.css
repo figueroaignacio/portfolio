@@ -5,7 +5,7 @@
   gap: 0.8rem;
   border: var(--border);
   padding: 1.5rem;
-  border-radius: 7px;
+  border-radius: var(--border-radius);
   background-color: var(--bg-card);
   min-height: 100%;
 }
@@ -16,7 +16,6 @@
 }
 
 .projectDescription {
-  /* font-size: 1rem; */
   line-height: 1.4;
 }
 
@@ -24,7 +23,6 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  /* background-color: red; */
 }
 
 .projectUrl {

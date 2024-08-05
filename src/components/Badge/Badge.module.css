@@ -1,7 +1,7 @@
 .badge {
   background-color: var(--bg-card);
   border: var(--border);
-  border-radius: 0.7rem;
+  border-radius: var(--border-radius);
   padding: 0.5rem 1rem;
   font-size: 0.7rem;
   display: flex;

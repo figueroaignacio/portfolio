@@ -21,8 +21,9 @@
   justify-content: center;
   align-items: center;
   padding: 3rem;
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   transition: background 0.2s ease;
+  background-color: var(--bg-card);
 }
 
 .contactsItem:hover {
