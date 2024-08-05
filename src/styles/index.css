@@ -1,4 +1,3 @@
-/* Variables */
 :root {
   --bg-color: hsl(240, 11%, 2%);
   --bg-foreground: hsla(0, 0%, 100%, 0.03);
@@ -68,6 +67,11 @@ li a {
   line-height: 1.5;
   margin: 0;
   text-wrap: pretty;
+}
+
+a,
+button {
+  cursor: default;
 }
 
 span {
