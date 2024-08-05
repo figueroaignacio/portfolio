@@ -1,10 +1,10 @@
 /* Variables */
 :root {
-  --bg-color: hsl(240, 20%, 5%);
+  --bg-color: hsl(240, 11%, 2%);
   --bg-foreground: hsla(0, 0%, 100%, 0.03);
   --text-color: hsl(0, 0%, 96%);
   --text-foreground: hsl(0, 0%, 62%);
-  --bg-card: hsl(240, 20%, 6%);
+  --bg-card: #060606;
   --border: 0.0625rem solid hsla(0, 0%, 100%, 0.05);
   --font-family: "Onest Variable", sans-serif;
 }
