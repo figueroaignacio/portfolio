@@ -29,7 +29,7 @@
         "description": "Descubrí posts tecnológicos, aprende sobre desarrollo frontend y participá en desafíos.",
         "github": "https://github.com/figueroaignacio/frontsociety",
         "url": "https://frontendsociety.netlify.app/",
-        "technologies": ["Next.js, React, Tailwind, Velite, MDX"]
+        "technologies": ["Next.js", "React", "Tailwind", "Velite", "MDX"]
       },
       {
         "image": "/assets/in-development.png",
@@ -37,7 +37,7 @@
         "description": "Copie y pegue componentes simples y modernos para sus proyectos React - Next.js, simple. Moderno. Código abierto",
         "github": "https://github.com/figueroaignacio/nero-ui",
         "url": "https://neroui.vercel.app/",
-        "technologies": ["Next.js, React, Tailwind, Contentlayer, MDX"]
+        "technologies": ["Next.js", "React", "Tailwind", "Velite", "MDX"]
       },
       {
         "image": "/assets/in-development.png",
@@ -45,7 +45,7 @@
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
         "github": "https://github.com/figueroaignacio/sneakerf",
         "url": "https://google.com",
-        "technologies": ["Next.js, React, NextUI, Tailwind, Supabase"]
+        "technologies": ["Next.js", "React", "NextUI", "Tailwind", "Supabase"]
       }
     ]
   },

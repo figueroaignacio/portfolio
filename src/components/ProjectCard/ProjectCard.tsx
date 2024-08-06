@@ -25,11 +25,13 @@ export function ProjectCard({
     <div className={styles.projectCard}>
       <h3 className={styles.projectsName}>{name}</h3>
       <p className={styles.projectDescription}>{description}</p>
-      {technologies.map((tech) => (
-        <div>
-          Tech Stack: <span>{tech}</span>
-        </div>
-      ))}
+      <div className={styles.projectSkills}>
+        {technologies.map((tech) => (
+          <div key={tech} className={styles.projectSkill}>
+            <span>{tech}</span>
+          </div>
+        ))}
+      </div>
       <div className={styles.projectUrls}>
         <a
           href={github}
