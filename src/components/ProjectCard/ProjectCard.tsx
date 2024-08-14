@@ -43,7 +43,13 @@ export function ProjectCard({
           <Github width="20" height="20" />
           <span>Source Code</span>
         </a>
-        <a href={url} title="Live URL" className={styles.projectUrl}>
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Live Site"
+          className={styles.projectUrl}
+        >
           <Link width="20" height="20" />
           <span>Live Site</span>
         </a>
