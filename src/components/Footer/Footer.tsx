@@ -15,9 +15,7 @@ export function Footer() {
         <h2>{t("footer.title")}</h2>
         <p>{t("footer.subtitle")}</p>
       </div>
-      <div>
-        <p>{t("footer.builtIn")}</p>
-      </div>
+      <p>{t("footer.builtIn")}</p>
     </footer>
   );
 }
