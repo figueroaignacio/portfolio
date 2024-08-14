@@ -9,27 +9,30 @@
   --border-radius: 0.4375rem;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: var(--font-family);
   background: var(--bg-color);
   color: var(--text-color);
   letter-spacing: -0.025rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 body,
 figure {
-  margin: 0;
-  padding: 0;
   padding-inline: 1rem;
 }
 
 body {
-  width: 100vw;
   max-width: 768px;
   padding-block: 4rem;
+  margin-inline: auto;
 }
 
 a {
@@ -41,12 +44,6 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 h1,
@@ -74,9 +71,9 @@ button {
   cursor: default;
 }
 
-span {
+/* span {
   font-size: 0.75rem;
-}
+} */
 
 ::-webkit-scrollbar {
   width: 0.3rem;
