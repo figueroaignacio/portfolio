@@ -2,12 +2,12 @@
   "greeting": "Hello World!",
   "hero": {
     "title": "Ignacio Figueroa",
-    "description": "Software Developer with a strong focus in the Frontend side Delivering High-Quality Solutions for Enhanced User Experiences.",
+    "description": "Web developer with a strong focus in the frontend side delivering high-quality solutions for enhanced user experiences.",
     "location": "Buenos Aires, Argentina."
   },
   "aboutMe": {
     "title": "About me",
-    "description": "I've been diving into the web ecosystem on my own for nearly three years now focusing on the Frontend Development, soaking up everything I can about crafting awesome user interfaces. Always hungry to learn and stay on top of the latest web tech!"
+    "description": "I've been diving into the web ecosystem on my own for nearly two years now focusing on the Frontend Development, soaking up everything I can about crafting awesome user interfaces. Always hungry to learn and stay on top of the latest web tech."
   },
   "experience": {
     "title": "Experience",
@@ -40,17 +40,17 @@
       },
       {
         "image": "/assets/in-development.png",
-        "name": "NeroUI",
+        "name": "aspen/ui",
         "description": "Copy and Paste simple and modern components to your React - Next.js projects, Simple. Modern. Open source",
-        "github": "https://github.com/figueroaignacio/nero-ui",
+        "github": "https://github.com/figueroaignacio/aspenui",
         "url": "https://neroui.vercel.app/",
         "technologies": ["Next.js", "React", "Tailwind", "Velite", "MDX"]
       },
       {
         "image": "/assets/in-development.png",
-        "name": "IMC App",
+        "name": "Aspen Icons",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
-        "github": "https://github.com/figueroaignacio/sneakerf",
+        "github": "https://github.com/figueroaignacio/aspenicons",
         "url": "https://google.com",
         "technologies": ["Next.js", "React", "NextUI", "Tailwind", "Supabase"]
       }

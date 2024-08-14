@@ -2,12 +2,12 @@
   "greeting": "Hola Mundo!",
   "hero": {
     "title": "Ignacio Figueroa",
-    "description": "Desarrollador de software con un fuerte enfoque en el lado frontend que ofrece soluciones de alta calidad para experiencias de usuario mejoradas.",
+    "description": "Desarrollador Web con un fuerte enfoque en el lado frontend centrado en ofrecer soluciones de alta calidad para experiencias de usuario mejoradas.",
     "location": "Buenos Aires, Argentina."
   },
   "aboutMe": {
     "title": "Sobre mí",
-    "description": "Hace casi tres años me metí de lleno en el ecosistema web por mi cuenta durante casi tres años, enfocándome en el Desarrollo Frontend, absorbiendo todo lo que puedo sobre la creación de interfaces de usuario increíbles. ¡Siempre con ganas de aprender y estar al tanto de la última tecnología web!"
+    "description": "Me metí de lleno en el ecosistema web por mi cuenta durante dos años, enfocándome en el Desarrollo Frontend, absorbiendo todo lo que puedo sobre la creación de interfaces de usuario increíbles. Siempre con ganas de aprender y estar al tanto de la última tecnología web"
   },
   "experience": {
     "title": "Experiencia",
@@ -15,7 +15,7 @@
       {
         "company": "Pawtrics Software LLC",
         "date": "May 2023 - Feb 2024",
-        "description": "En Pawtrics Software LLC, mi rol principal fue en el Desarrollo Frontend utilizando Next.js y MUI. Mi enfoque se centra en optimizar la estructura del código y mejorar la experiencia del usuario para crear interfaces intuitivas.",
+        "description": "En Pawtrics Software LLC, mi rol principal fue en el Desarrollo Frontend utilizando Next.js y MUI. Mi enfoque se centró en optimizar la estructura del código y mejorar la experiencia del usuario para crear interfaces intuitivas.",
         "position": "Desarrollador Frontend"
       }
     ]
@@ -33,7 +33,7 @@
       },
       {
         "image": "/assets/in-development.png",
-        "name": "NeroUI",
+        "name": "aspen/ui",
         "description": "Copie y pegue componentes simples y modernos para sus proyectos React - Next.js, simple. Moderno. Código abierto",
         "github": "https://github.com/figueroaignacio/nero-ui",
         "url": "https://neroui.vercel.app/",
@@ -41,7 +41,7 @@
       },
       {
         "image": "/assets/in-development.png",
-        "name": "IMC App",
+        "name": "Aspen Icons",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
         "github": "https://github.com/figueroaignacio/sneakerf",
         "url": "https://google.com",
