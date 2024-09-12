@@ -1,6 +1,11 @@
 // Components
 import { ActiveToWork } from "../../components/ActiveToWork/ActiveToWork";
-import { FramerDiv, FramerH1, FramerParagraph } from "../../components/Framer";
+import {
+  FramerDiv,
+  FramerH1,
+  FramerH2,
+  FramerParagraph,
+} from "../../components/Framer";
 import { SelectLanguage } from "../../components/SelectLanguage/SelectLanguage";
 
 // i18n
@@ -32,7 +37,13 @@ export function Hero() {
         >
           {t("hero.title")}
         </FramerH1>
-        <FramerParagraph variants={FADE_DOWN_ANIMATION_VARIANTS}>
+        <FramerH2 variants={FADE_LEFT_ANIMATION_VARIANTS}>
+          {t("hero.subtitle")}
+        </FramerH2>
+        <FramerParagraph
+          variants={FADE_DOWN_ANIMATION_VARIANTS}
+          className={style.heroDescription}
+        >
           {t("hero.description")}
         </FramerParagraph>
       </div>

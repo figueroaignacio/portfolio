@@ -2,12 +2,13 @@
   "greeting": "Hello World!",
   "hero": {
     "title": "Ignacio Figueroa",
-    "description": "Web developer with a strong focus in the frontend side delivering high-quality solutions for enhanced user experiences.",
+    "subtitle": "Web Developer",
+    "description": "Specialized in frontend, focused on offering high quality solutions that improve the user experience.",
     "location": "Buenos Aires, Argentina."
   },
   "aboutMe": {
     "title": "About me",
-    "description": "I've been diving into the web ecosystem on my own for nearly two years now focusing on the Frontend Development, soaking up everything I can about crafting awesome user interfaces. Always hungry to learn and stay on top of the latest web tech."
+    "description": "I've been deeply involved in the web ecosystem for nearly two years, focusing on frontend development. I'm passionate about creating outstanding user interfaces, always eager to learn, and staying up to date with the latest web technologies."
   },
   "experience": {
     "title": "Experience",

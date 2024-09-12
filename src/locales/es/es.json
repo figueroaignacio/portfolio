@@ -2,12 +2,13 @@
   "greeting": "Hola Mundo!",
   "hero": {
     "title": "Ignacio Figueroa",
-    "description": "Desarrollador Web con un fuerte enfoque en el lado frontend centrado en ofrecer soluciones de alta calidad para experiencias de usuario mejoradas.",
+    "subtitle": "Desarrollador Web",
+    "description": "Especializado en frontend, enfocado en ofrecer soluciones de alta calidad que mejoren la experiencia del usuario.",
     "location": "Buenos Aires, Argentina."
   },
   "aboutMe": {
     "title": "Sobre mí",
-    "description": "Me metí de lleno en el ecosistema web por mi cuenta durante dos años, enfocándome en el Desarrollo Frontend, absorbiendo todo lo que puedo sobre la creación de interfaces de usuario increíbles. Siempre con ganas de aprender y estar al tanto de la última tecnología web"
+    "description": "Llevo más de dos años inmerso en el ecosistema web de forma autodidacta, enfocándome en el desarrollo frontend. Me apasiona crear interfaces de usuario atractivas y funcionales, manteniéndome siempre al día con las últimas tecnologías."
   },
   "experience": {
     "title": "Experiencia",

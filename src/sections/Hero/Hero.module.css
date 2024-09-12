@@ -9,6 +9,10 @@
   font-weight: 700;
 }
 
+.heroDescription {
+  max-width: 30rem;
+}
+
 .heroLocation {
   display: flex;
   align-items: center;
