@@ -18,6 +18,7 @@ type MyProjects = {
   technologies: string[];
   url: string;
   image: string;
+  status: string;
 };
 
 export function Projects() {
@@ -45,6 +46,7 @@ export function Projects() {
               url={project.url}
               technologies={project.technologies}
               image={project.image}
+              disabled={project.status === "Project in mind"}
             />
           </FramerDiv>
         ))}

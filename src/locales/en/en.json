@@ -26,10 +26,10 @@
     "myProjects": [
       {
         "image": "/assets/frontend-society.png",
-        "name": "Frontend Society",
-        "description": "Discover tech posts, learn about Frontend stuff, and participate on challenges.",
-        "github": "https://github.com/figueroaignacio/frontsociety",
-        "url": "https://frontendsociety.netlify.app/",
+        "name": "Web society",
+        "description": "Discover tech posts, learn about web development, and participate on challenges.",
+        "github": "https://github.com/figueroaignacio/websociety",
+        "url": "https://websociety.netlify.app/en",
         "technologies": [
           "Next.js",
           "React",
@@ -41,8 +41,8 @@
       },
       {
         "image": "/assets/in-development.png",
-        "name": "aspen/ui",
-        "description": "Copy and Paste simple and modern components to your React - Next.js projects, Simple. Modern. Open source",
+        "name": "AspenUI",
+        "description": "A modern collection of UI components tailored specifically for React applications.",
         "github": "https://github.com/figueroaignacio/aspenui",
         "url": "https://neroui.vercel.app/",
         "technologies": ["Next.js", "React", "Tailwind", "Velite", "MDX"]
@@ -53,7 +53,8 @@
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
         "github": "https://github.com/figueroaignacio/aspenicons",
         "url": "https://google.com",
-        "technologies": ["Next.js", "React", "NextUI", "Tailwind", "Supabase"]
+        "technologies": ["Next.js", "React", "NextUI", "Tailwind", "Supabase"],
+        "status": "Project in mind"
       }
     ]
   },

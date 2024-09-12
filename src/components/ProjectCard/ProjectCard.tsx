@@ -12,6 +12,7 @@ interface ProjectCardProps {
   technologies: string[];
   url: string;
   image: string;
+  disabled?: boolean;
 }
 
 export function ProjectCard({
@@ -20,9 +21,10 @@ export function ProjectCard({
   name,
   url,
   technologies,
+  disabled,
 }: ProjectCardProps) {
   return (
-    <div className={styles.projectCard}>
+    <div className={`${styles.projectCard} ${disabled ? styles.disabled : ""}`}>
       <h3 className={styles.projectsName}>{name}</h3>
       <p className={styles.projectDescription}>{description}</p>
       <div className={styles.projectSkills}>

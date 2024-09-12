@@ -8,6 +8,41 @@
   border-radius: var(--border-radius);
   background-color: var(--bg-card);
   min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.projectCard::before {
+  content: "Project in mind";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: var(--border);
+  background: transparent;
+  padding: 0.63rem 1.5rem;
+  color: white;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.disabled::before {
+  opacity: 1;
+  transform: translate(-50%, -45%);
 }
 
 .projectsName {
@@ -47,6 +82,7 @@
   gap: 0.5rem;
   border-radius: 7px;
   padding: 0.5rem;
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .projectUrl:hover {
