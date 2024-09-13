@@ -31,4 +31,8 @@
   .projectsBox > :nth-child(3) {
     grid-column: span 1;
   }
+
+  .projectsBox > :nth-child(4) {
+    grid-column: span 1;
+  }
 }
