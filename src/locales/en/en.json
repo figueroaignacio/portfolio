@@ -8,7 +8,12 @@
   },
   "aboutMe": {
     "title": "About me",
-    "description": "I've been deeply involved in the web ecosystem for nearly two years, focusing on frontend development. I'm passionate about creating outstanding user interfaces, always eager to learn, and staying up to date with the latest web technologies."
+    "description": "I've been deeply involved in the web ecosystem for nearly two years, focusing on frontend development. I'm passionate about creating outstanding user interfaces, always eager to learn, and staying up to date with the latest web technologies.",
+    "downloadCV": {
+      "title": "Download CV",
+      "path": "/assets/pdf/cv-english.pdf",
+      "downloadName": "ignaciofigueroa-cv-english.pdf"
+    }
   },
   "experience": {
     "title": "Experience",

@@ -8,7 +8,12 @@
   },
   "aboutMe": {
     "title": "Sobre mí",
-    "description": "Llevo más de dos años inmerso en el ecosistema web de forma autodidacta, enfocándome en el desarrollo frontend. Me apasiona crear interfaces de usuario atractivas y funcionales, manteniéndome siempre al día con las últimas tecnologías."
+    "description": "Llevo más de dos años inmerso en el ecosistema web de forma autodidacta, enfocándome en el desarrollo frontend. Me apasiona crear interfaces de usuario atractivas y funcionales, manteniéndome siempre al día con las últimas tecnologías.",
+    "downloadCV": {
+      "title": "Descargar CV",
+      "path": "/assets/pdf/cv-español.pdf",
+      "downloadName": "ignaciofigueroa-cv-español.pdf"
+    }
   },
   "experience": {
     "title": "Experiencia",

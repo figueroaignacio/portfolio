@@ -2,7 +2,7 @@
 import { useTranslation } from "react-i18next";
 
 // Components
-import { FramerSection } from "../../components/Framer";
+import { FramerDiv, FramerSection } from "../../components/Framer";
 
 // Constants
 import { FADE_DOWN_ANIMATION_VARIANTS } from "../../constants/animations";
@@ -20,6 +20,16 @@ export function About() {
     >
       <h2 className={styles.aboutTitle}>{t("aboutMe.title")}</h2>
       <p>{t("aboutMe.description")}</p>
+      <FramerDiv variants={FADE_DOWN_ANIMATION_VARIANTS}>
+        <a
+          href={t("aboutMe.downloadCV.path")}
+          download={t("aboutMe.downloadCV.downloadName")}
+        >
+          <button className={styles.aboutButton}>
+            {t("aboutMe.downloadCV.title")}
+          </button>
+        </a>
+      </FramerDiv>
     </FramerSection>
   );
 }
