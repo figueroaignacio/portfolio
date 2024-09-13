@@ -1,4 +1,4 @@
-// i18n
+// Hooks
 import { useTranslation } from "react-i18next";
 
 // Icons

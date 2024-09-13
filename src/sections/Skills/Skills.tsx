@@ -1,7 +1,7 @@
 // Components
 import { Badge } from "../../components/Badge/Badge";
 
-// i18n
+// Hooks
 import { useTranslation } from "react-i18next";
 
 // Styles

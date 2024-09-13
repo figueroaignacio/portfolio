@@ -1,7 +1,5 @@
-// React
+// Hooks
 import { useEffect, useState } from "react";
-
-// i18n
 import { useTranslation } from "react-i18next";
 
 // Icons

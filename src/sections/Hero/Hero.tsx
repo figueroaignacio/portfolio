@@ -8,7 +8,7 @@ import {
 } from "../../components/Framer";
 import { SelectLanguage } from "../../components/SelectLanguage/SelectLanguage";
 
-// i18n
+// Hooks
 import { useTranslation } from "react-i18next";
 
 // Icons
