@@ -13,6 +13,10 @@
       "title": "Descargar CV",
       "path": "/assets/pdf/cv-español.pdf",
       "downloadName": "ignaciofigueroa-cv-español.pdf"
+    },
+    "viewCV": {
+      "title": "Ver CV en Línea",
+      "path": "https://ignaciofigueroa.vercel.app/assets/pdf/cv-español.pdf"
     }
   },
   "experience": {

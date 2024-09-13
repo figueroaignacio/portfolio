@@ -1,23 +1,36 @@
 .aboutBox {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .aboutTitle {
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.aboutDescription {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  max-width: 60ch;
+}
+
+.aboutLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .aboutButton {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: var(--border);
   width: 100%;
-  gap: 0.5rem;
-  margin-block: 2rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 7px;
-  padding: 0.5rem;
-  transition: background-color 0.1s ease-in-out;
+  background-color: var(--bg-foreground);
+  color: var(--button-text);
+  font-size: 1rem;
+  cursor: pointer;
 }
