@@ -61,6 +61,15 @@
         "url": "https://google.com",
         "technologies": ["Next.js", "React", "NextUI", "Tailwind", "Supabase"],
         "status": "Project in mind"
+      },
+      {
+        "image": "/assets/in-development.png",
+        "name": "Coded by Nacho",
+        "description": "Collection of challenges completed by me.",
+        "github": "https://github.com/figueroaignacio/sneakerf",
+        "url": "https://google.com",
+        "technologies": ["React", "Tailwind", "Sanity"],
+        "status": "Project in mind"
       }
     ]
   },

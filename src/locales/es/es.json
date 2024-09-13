@@ -54,6 +54,21 @@
         "url": "https://google.com",
         "technologies": ["Next.js", "React", "NextUI", "Tailwind", "Supabase"],
         "status": "Project in mind"
+      },
+      {
+        "image": "/assets/in-development.png",
+        "name": "Coded by Nacho",
+        "description": "Colección de desafíos completados por mi.",
+        "github": "https://github.com/figueroaignacio/codedbynacho",
+        "url": "https://google.com",
+        "technologies": [
+          "React",
+          "Tailwind",
+          "Sanity",
+          "React Router",
+          "React Query"
+        ],
+        "status": "Project in mind"
       }
     ]
   },
