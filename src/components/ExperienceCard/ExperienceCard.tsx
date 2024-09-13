@@ -1,7 +1,6 @@
-// Interface
 interface ExperienceCardProps {
   company: string;
-  description: string;
+  workItems: string[];
   date: string;
   position: string;
 }
@@ -10,21 +9,29 @@ interface ExperienceCardProps {
 import styles from "./ExperienceCard.module.css";
 
 export function ExperienceCard({
-  date,
-  description,
   company,
   position,
+  date,
+  workItems,
 }: ExperienceCardProps) {
   return (
-    <div className={styles.content}>
-      <div className={styles.box}>
+    <article className={styles.experienceBox}>
+      <header className={styles.experienceInfo}>
         <div>
-          <h3 className={styles.experienceCompany}>{company}</h3>
-          <h2>{position}</h2>
+          <h3 className={styles.experienceTitle}>{company}</h3>
+          <h4 className={styles.position}>{position}</h4>
         </div>
-        <span>{date}</span>
-        <p>{description}</p>
-      </div>
-    </div>
+        <time className={styles.date} dateTime={date}>
+          {date}
+        </time>
+      </header>
+      {workItems.length > 0 && (
+        <ul className={styles.experienceWorkItems}>
+          {workItems.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      )}
+    </article>
   );
 }

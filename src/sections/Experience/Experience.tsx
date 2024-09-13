@@ -14,7 +14,7 @@ import styles from "./Experience.module.css";
 type ExperiencePlace = {
   company: string;
   date: string;
-  description: string;
+  workItems: string[];
   position: string;
 };
 
@@ -40,7 +40,7 @@ export function Experience() {
             key={index}
             company={place.company}
             date={place.date}
-            description={place.description}
+            workItems={place.workItems}
           />
         ))}
       </FramerH2>

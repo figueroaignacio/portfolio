@@ -16,7 +16,13 @@
       {
         "company": "Pawtrics Software LLC",
         "date": "May 2023 - Feb 2024",
-        "description": "At Pawtrics Software LLC, My main role was specialize in frontend development using Next.js and MUI. I focus on optimizing code structure and enhancing user experience to create intuitive interfaces.",
+        "workItems": [
+          "Designed and developed user interface components using Next.js.",
+          "Integrated and managed data using PostgreSQL (via Supabase).",
+          "Implemented MaterialUI for consistent design across the project.",
+          "Developed visual CRUD interfaces and managed data tables.",
+          "Code Management with Git and GitHub"
+        ],
         "position": "Frontend Developer"
       }
     ]
