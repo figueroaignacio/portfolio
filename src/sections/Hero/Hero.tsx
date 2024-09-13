@@ -21,18 +21,18 @@ import {
 } from "../../constants/animations";
 
 // Styles
-import style from "./Hero.module.css";
+import styles from "./Hero.module.css";
 
 export function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section className={style.heroSection}>
+    <section className={styles.heroSection}>
       <SelectLanguage />
       <ActiveToWork />
       <div>
         <FramerH1
-          className={style.heroTitle}
+          className={styles.heroTitle}
           variants={FADE_LEFT_ANIMATION_VARIANTS}
         >
           {t("hero.title")}
@@ -42,16 +42,16 @@ export function Hero() {
         </FramerH2>
         <FramerParagraph
           variants={FADE_DOWN_ANIMATION_VARIANTS}
-          className={style.heroDescription}
+          className={styles.heroDescription}
         >
           {t("hero.description")}
         </FramerParagraph>
       </div>
       <FramerDiv
-        className={style.heroLocation}
+        className={styles.heroLocation}
         variants={FADE_DOWN_ANIMATION_VARIANTS}
       >
-        <div className={style.heroLocationBox}>
+        <div className={styles.heroLocationBox}>
           <Location />
           <address>
             <span>{t("hero.location")}</span>
