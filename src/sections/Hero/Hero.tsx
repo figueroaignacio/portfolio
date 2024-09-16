@@ -1,3 +1,6 @@
+// Hooks
+import { useTranslation } from "react-i18next";
+
 // Components
 import { ActiveToWork } from "../../components/ActiveToWork/ActiveToWork";
 import {
@@ -7,9 +10,6 @@ import {
   FramerParagraph,
 } from "../../components/Framer";
 import { SelectLanguage } from "../../components/SelectLanguage/SelectLanguage";
-
-// Hooks
-import { useTranslation } from "react-i18next";
 
 // Icons
 import { Location } from "../../icons/Location";
@@ -31,15 +31,20 @@ export function Hero() {
       <SelectLanguage />
       <ActiveToWork />
       <div>
-        <FramerH1
-          className={styles.heroTitle}
-          variants={FADE_LEFT_ANIMATION_VARIANTS}
-        >
-          {t("hero.title")}
-        </FramerH1>
-        <FramerH2 variants={FADE_LEFT_ANIMATION_VARIANTS}>
-          {t("hero.subtitle")}
-        </FramerH2>
+        <div>
+          <FramerH1
+            className={styles.heroTitle}
+            variants={FADE_LEFT_ANIMATION_VARIANTS}
+          >
+            {t("hero.title")}
+          </FramerH1>
+          <FramerH2
+            variants={FADE_LEFT_ANIMATION_VARIANTS}
+            className={styles.heroSubtitle}
+          >
+            {t("hero.subtitle")}
+          </FramerH2>
+        </div>
         <FramerParagraph
           variants={FADE_DOWN_ANIMATION_VARIANTS}
           className={styles.heroDescription}

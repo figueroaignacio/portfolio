@@ -1,11 +1,6 @@
 .heroSection {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-}
-
-.textContainer {
-  max-width: 80rem;
 }
 
 .heroTitle {
@@ -15,18 +10,19 @@
 }
 
 .heroSubtitle {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
 .heroDescription {
   font-size: 1rem;
-  max-width: 40rem;
+  max-width: 30rem;
 }
 
 .heroLocation {
   gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 .heroLocationBox {
