@@ -47,3 +47,22 @@
     grid-column: span 1;
   }
 }
+
+.loadMoreButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: var(--border);
+  background-color: var(--bg-background);
+  color: white;
+  width: 100%;
+  gap: 0.5rem;
+  border-radius: 7px;
+  padding: 0.75rem;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.loadMoreButton:hover {
+  background-color: var(--bg-foreground);
+  border: 1px solid transparent;
+}

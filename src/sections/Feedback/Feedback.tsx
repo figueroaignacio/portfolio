@@ -1,4 +1,4 @@
-// Hooks
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 // Components
@@ -8,6 +8,9 @@ import { FramerDiv, FramerH2 } from "../../components/Framer";
 // Constants
 import { FADE_DOWN_ANIMATION_VARIANTS } from "../../constants/animations";
 
+// Styles
+import styles from "./Feedback.module.css";
+
 type MyFeedbacks = {
   avatar: string;
   name: string;
@@ -16,15 +19,17 @@ type MyFeedbacks = {
   linkedInProfile: string;
 };
 
-// Styles
-import styles from "./Feedback.module.css";
-
 export function Feedback() {
   const { t } = useTranslation();
-
   const feedbacks: MyFeedbacks[] = t("feedback.myRecomendations", {
     returnObjects: true,
   });
+
+  const [visibleFeedbacks, setVisibleFeedbacks] = useState(3);
+
+  const handleLoadMore = () => {
+    setVisibleFeedbacks((prevVisible) => prevVisible + 2);
+  };
 
   return (
     <section className={styles.feedbackSection}>
@@ -35,10 +40,10 @@ export function Feedback() {
         {t("feedback.title")}
       </FramerH2>
       <div className={styles.feedbackBox}>
-        {feedbacks.map((feedback: MyFeedbacks, index: number) => (
+        {feedbacks.slice(0, visibleFeedbacks).map((feedback, index) => (
           <FramerDiv
             key={index}
-            className={`${styles.feedbackItem}`}
+            className={styles.feedbackItem}
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
             <FeedbackCard
@@ -51,6 +56,11 @@ export function Feedback() {
           </FramerDiv>
         ))}
       </div>
+      {visibleFeedbacks < feedbacks.length && (
+        <button onClick={handleLoadMore} className={styles.loadMoreButton}>
+          {t("feedback.loadMore")}
+        </button>
+      )}
     </section>
   );
 }
