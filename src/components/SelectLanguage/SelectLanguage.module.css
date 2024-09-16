@@ -68,9 +68,8 @@
   background-color: transparent;
   border: none;
   color: var(--text-foreground);
-  border: var(--border);
   border-radius: 7px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
