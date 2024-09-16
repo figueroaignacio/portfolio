@@ -1,12 +1,12 @@
 :root {
-  --bg-color: hsl(240, 11%, 2%);
-  --bg-foreground: hsla(0, 0%, 100%, 0.03);
-  --text-color: hsl(0, 0%, 96%);
-  --text-foreground: hsl(0, 0%, 62%);
-  --bg-card: #060606;
-  --border: 0.0625rem solid hsla(0, 0%, 100%, 0.05);
+  --bg-color: hsl(240, 10%, 4%);
+  --bg-foreground: hsla(0, 0%, 100%, 0.02);
+  --text-color: hsl(0, 0%, 92%);
+  --text-foreground: hsl(0, 0%, 75%);
+  --bg-card: hsl(240, 12%, 5%);
+  --border: 0.0625rem solid hsla(0, 0%, 100%, 0.1);
   --font-family: "Onest Variable", sans-serif;
-  --border-radius: 0.4375rem;
+  --border-radius: 0.5rem;
 }
 
 *,
