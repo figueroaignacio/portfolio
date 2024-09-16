@@ -64,20 +64,20 @@
       },
       {
         "image": "/assets/in-development.png",
+        "name": "Frontend Triumphs",
+        "description": "Collection of challenges completed by me.",
+        "github": "https://github.com/figueroaignacio/frontend-triumphs",
+        "url": "https://google.com",
+        "technologies": ["React", "Tailwind", "Sanity"],
+        "status": "Project in mind"
+      },
+      {
+        "image": "/assets/in-development.png",
         "name": "Aspen Icons",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa autem esse distinctio nisi magni laboriosam iste quibusdam nam officia.",
         "github": "https://github.com/figueroaignacio/aspenicons",
         "url": "https://google.com",
         "technologies": ["Next.js", "React", "NextUI", "Tailwind", "Supabase"],
-        "status": "Project in mind"
-      },
-      {
-        "image": "/assets/in-development.png",
-        "name": "Coded by Nacho",
-        "description": "Collection of challenges completed by me.",
-        "github": "https://github.com/figueroaignacio/sneakerf",
-        "url": "https://google.com",
-        "technologies": ["React", "Tailwind", "Sanity"],
         "status": "Project in mind"
       }
     ]
