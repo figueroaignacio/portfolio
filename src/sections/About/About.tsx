@@ -4,6 +4,10 @@ import { useTranslation } from "react-i18next";
 // Components
 import { FramerDiv, FramerSection } from "../../components/Framer";
 
+// Icons
+import { ArrowUp } from "../../icons/ArrowUp";
+import { Document } from "../../icons/Document";
+
 // Constants
 import { FADE_DOWN_ANIMATION_VARIANTS } from "../../constants/animations";
 
@@ -30,6 +34,7 @@ export function About() {
           target="_blank"
         >
           {t("aboutMe.viewCV.title")}
+          <ArrowUp />
         </a>
         <a
           href={t("aboutMe.downloadCV.path")}
@@ -37,6 +42,7 @@ export function About() {
           className={styles.aboutButton}
         >
           {t("aboutMe.downloadCV.title")}
+          <Document />
         </a>
       </FramerDiv>
     </FramerSection>
