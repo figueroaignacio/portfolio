@@ -6,7 +6,7 @@
   --bg-card: hsl(240, 12%, 5%);
   --border: 0.0625rem solid hsla(0, 0%, 100%, 0.1);
   --font-family: "Onest Variable", sans-serif;
-  --border-radius: 0.5rem;
+  --border-radius: 14px;
 }
 
 *,
