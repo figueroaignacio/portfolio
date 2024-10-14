@@ -80,7 +80,7 @@
   border: var(--border);
   width: 100%;
   gap: 0.5rem;
-  border-radius: 7px;
+  border-radius: var(--border-radius);
   padding: 0.5rem;
   transition: background-color 0.1s ease-in-out;
 }
