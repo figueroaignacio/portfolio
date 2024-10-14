@@ -49,10 +49,10 @@
       },
       {
         "image": "/assets/in-development.png",
-        "name": "AspenUI",
+        "name": "Aspen UI",
         "description": "Una colección moderna de componentes de UI diseñados específicamente para aplicaciones React.",
-        "github": "https://github.com/figueroaignacio/nero-ui",
-        "url": "https://neroui.vercel.app/",
+        "github": "https://github.com/figueroaignacio/aspen-ui",
+        "url": "https://aspen-ui.netlify.app/es",
         "technologies": ["Next.js", "React", "Tailwind", "Velite", "MDX"]
       },
       {
