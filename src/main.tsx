@@ -4,7 +4,6 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 
 // CSS
-import "../src/styles/animations.css";
 import "../src/styles/index.css";
 
 // Font
