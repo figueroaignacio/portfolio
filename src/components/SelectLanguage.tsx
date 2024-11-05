@@ -82,16 +82,16 @@ export function SelectLanguage() {
             </div>
             <div className="flex flex-col gap-y-2">
               <button
-                className={`p-2 rounded-lg border-border border-[1px] ${
-                  selectedLang === "en" ? "bg-card border-[2px] font-bold" : ""
+                className={`p-2 rounded-lg hover:bg-primary-foreground duration-100 ${
+                  selectedLang === "en" ? "bg-primary-foreground font-bold" : ""
                 }`}
                 onClick={() => changeLanguage("en")}
               >
                 English
               </button>
               <button
-                className={`p-2 rounded-lg border-border border-[1px] ${
-                  selectedLang === "es" ? "bg-card border-[2px] font-bold" : ""
+                className={`p-2 rounded-lg hover:bg-primary-foreground duration-100 ${
+                  selectedLang === "es" ? "bg-primary-foreground" : ""
                 }`}
                 onClick={() => changeLanguage("es")}
               >
