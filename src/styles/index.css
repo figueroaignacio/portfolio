@@ -26,6 +26,7 @@
     --muted: hsl(240 3.8% 25.1%);
     --muted-foreground: hsl(240 3.8% 50.1%);
     --border: hsl(210, 20%, 85%);
+    --radius: 1rem;
   }
 
   .dark {

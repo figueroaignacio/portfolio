@@ -7,8 +7,11 @@ import { routes } from "@/config/navigation.tsx";
 export function AppRouter() {
   return (
     <Routes>
-      {routes.map((route) => (
-        <Route element={route.element} path={route.path} />
+      {routes.map((route, index: number) => (
+        <Route
+          element={route.element}
+          path={route.path}
+          key={index} />
       ))}
     </Routes>
   )

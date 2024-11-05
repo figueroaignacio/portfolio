@@ -15,5 +15,11 @@
         "title": "Seleccionar Idioma"
       }
     }
+  },
+  "sections": {
+    "home": {
+      "title": "Hola, soy Ignacio",
+      "subtitle": "Creando Experiencias Web Interactivas y Funcionales"
+    }
   }
 }

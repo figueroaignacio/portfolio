@@ -23,11 +23,7 @@ export function Navbar() {
 
   return (
     <>
-      <header className="flex justify-between items-center py-4 z-20">
-        <Link to="/"
-              className="text-xl font-bold">
-          nacho.dev
-        </Link>
+      <header className="flex justify-end items-center py-4 z-20">
         <div className="md:hidden"
              onClick={toggleMenu}>
           <Menu />

@@ -15,6 +15,12 @@
         "title": "Select Language"
       }
     }
+  },
+  "sections": {
+    "home": {
+      "title": "Hey! I'm Ignacio",
+      "subtitle": "Creating Interactive and Functional Web Experiences."
+    }
   }
 }
 
