@@ -9,6 +9,11 @@
         "label": "Sobre",
         "href": "/about"
       }
-    ]
+    ],
+    "language": {
+      "selectLanguage": {
+        "title": "Seleccionar Idioma"
+      }
+    }
   }
 }

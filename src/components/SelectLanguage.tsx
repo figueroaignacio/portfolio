@@ -4,17 +4,20 @@ import { useTranslation } from "react-i18next";
 
 // Icons
 import { Lang } from "../icons/Lang.tsx";
+import { X } from "@/icons/X.tsx";
 
 export function SelectLanguage() {
   const { i18n, t } = useTranslation();
-  const [selectedLang, setSelectedLang] = useState<string | null>(null);
+  const [selectedLang, setSelectedLang] = useState<string | null>("en");
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    const lang = localStorage.getItem("language");
+    const lang = localStorage.getItem("ui.language");
     if (lang) {
       setSelectedLang(lang);
       i18n.changeLanguage(lang);
+    } else {
+      i18n.changeLanguage("en");
     }
   }, [i18n]);
 
@@ -39,7 +42,7 @@ export function SelectLanguage() {
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
     setSelectedLang(lang);
-    localStorage.setItem("language", lang);
+    localStorage.setItem("ui.language", lang);
     setModalOpen(false);
   };
 
@@ -52,52 +55,43 @@ export function SelectLanguage() {
   };
 
   return (
-    <div>
-      <div>
-        <button
-          onClick={openModal}
-          className="flex items-center gap-2 p-2 rounded-lg"
-        >
-          <Lang />
-          {selectedLang ? selectedLang.toUpperCase() : ""}
-        </button>
-      </div>
+    <>
+      <button
+        onClick={openModal}
+        className="flex items-center gap-2 p-2 rounded-lg bg-background border-[1px] border-border"
+      >
+        <Lang />
+        <span className="text-xs">{selectedLang ? selectedLang.toUpperCase() : ""}</span>
+      </button>
       {modalOpen && (
         <div
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
           onClick={closeModal}
         >
           <div
-            className="bg-white p-6 rounded-lg shadow-lg max-w-sm mx-auto"
+            className="bg-card border-[1px] border-border p-6 rounded-lg max-w-sm w-full mx-4"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-semibold">
                 {t("selectLanguage.title")}
               </h2>
-              <button
-                className="text-gray-500 hover:text-gray-700"
-                onClick={closeModal}
-              >
-                &times;
+              <button onClick={closeModal}>
+                <X />
               </button>
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-col gap-y-2">
               <button
-                className={`p-2 rounded-lg ${
-                  selectedLang === "en"
-                    ? "bg-blue-500 text-white"
-                    : "bg-gray-200 text-gray-700"
+                className={`p-2 rounded-lg border-border border-[1px] ${
+                  selectedLang === "en" ? "bg-card border-[2px] font-bold" : ""
                 }`}
                 onClick={() => changeLanguage("en")}
               >
                 English
               </button>
               <button
-                className={`p-2 rounded-lg ${
-                  selectedLang === "es"
-                    ? "bg-blue-500 text-white"
-                    : "bg-gray-200 text-gray-700"
+                className={`p-2 rounded-lg bg-background border-border border-[1px] ${
+                  selectedLang === "es" ? "bg-card border-[2px] font-bold" : ""
                 }`}
                 onClick={() => changeLanguage("es")}
               >
@@ -107,6 +101,6 @@ export function SelectLanguage() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

@@ -4,7 +4,6 @@ import { useState } from "react";
 
 // Components
 import { Link } from "react-router-dom";
-import { SelectLanguage } from "@/components/SelectLanguage.tsx";
 
 // Icons
 import { Menu } from "@/icons/Menu.tsx";
@@ -24,15 +23,15 @@ export function Navbar() {
 
   return (
     <>
-      <header className="flex justify-between items-center p-4 z-20">
+      <header className="flex justify-between items-center py-4 z-20">
         <Link to="/" className="text-xl font-bold">
-          Ignacio Figueroa
+          nacho.dev
         </Link>
         <div className="md:hidden" onClick={toggleMenu}>
           <Menu />
         </div>
         <nav
-          className={`absolute top-0 left-0 w-52 transition-transform duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:static md:flex md:items-center md:translate-x-0 md:h-auto z-30`}>
+          className={`absolute top-0 left-0 w-52 transition-transform bg-background min-h-dvh lg:min-h-0 duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:static md:flex md:items-center md:translate-x-0 md:h-auto z-30`}>
           {isOpen && (
             <div className="flex justify-end p-2">
               <button onClick={toggleMenu} aria-label="Close menu">
@@ -40,17 +39,14 @@ export function Navbar() {
               </button>
             </div>
           )}
-          <ul className="flex flex-col md:flex-row md:space-x-4">
+          <ul className="flex flex-col md:flex-row space-y-5 px-5 md:space-y-0 md:px-0 md:space-x-6">
             {navItems.map((navItem, index) => (
               <li key={index}>
-                <Link to={navItem.href} className="hover:underline block py-2 px-4">
+                <Link to={navItem.href}>
                   {navItem.label}
                 </Link>
               </li>
             ))}
-            <li>
-              <SelectLanguage />
-            </li>
           </ul>
         </nav>
       </header>

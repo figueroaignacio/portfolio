@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: hsl(210, 37%, 95%);
+    --foreground: hsl(0, 0%, 31%);
+    --card: hsl(210, 37%, 95%);
+    --border: hsl(240, 15%, 90%);
+  }
+
+  .dark {
+    --background: hsl(240, 15%, 3%);
+    --foreground: hsl(0, 0%, 98%);
+    --card: hsl(240, 15%, 3%);
+    --border: hsl(240, 5%, 17%);
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
