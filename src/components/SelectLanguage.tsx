@@ -58,14 +58,14 @@ export function SelectLanguage() {
     <>
       <button
         onClick={openModal}
-        className="flex items-center gap-2 p-2 rounded-lg bg-background border-[1px] border-border"
+        className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary-foreground duration-100 border-[1px] border-border"
       >
         <Lang />
         <span className="text-xs">{selectedLang ? selectedLang.toUpperCase() : ""}</span>
       </button>
       {modalOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+          className="fixed inset-0 flex items-center justify-center backdrop-blur-sm z-30"
           onClick={closeModal}
         >
           <div
@@ -90,7 +90,7 @@ export function SelectLanguage() {
                 English
               </button>
               <button
-                className={`p-2 rounded-lg bg-background border-border border-[1px] ${
+                className={`p-2 rounded-lg border-border border-[1px] ${
                   selectedLang === "es" ? "bg-card border-[2px] font-bold" : ""
                 }`}
                 onClick={() => changeLanguage("es")}

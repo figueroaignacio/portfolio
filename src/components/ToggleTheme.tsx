@@ -40,7 +40,7 @@ export function ToggleTheme() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg bg-background border border-border transition-colors flex justify-center"
+      className="px-4 py-2 rounded-lg bg-primary hover:bg-primary-foreground border border-border transition-colors flex justify-center"
       aria-label={isDarkMode ? "Light" : "Dark"}
     >
       {isDarkMode ? (
