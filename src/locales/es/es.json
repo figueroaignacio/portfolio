@@ -1,7 +1,14 @@
-[
-  {
-    "ui": {
-      "navbar": []
-    }
+{
+  "ui": {
+    "navigation": [
+      {
+        "label": "Inicio",
+        "href": "/"
+      },
+      {
+        "label": "Sobre",
+        "href": "/about"
+      }
+    ]
   }
-]
+}

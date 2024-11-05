@@ -53,10 +53,10 @@ export function SelectLanguage() {
 
   return (
     <div>
-      <div className="flex items-center justify-center">
+      <div>
         <button
           onClick={openModal}
-          className="flex items-center gap-2 p-2 text-gray-600 bg-gray-200 rounded-lg hover:bg-gray-300"
+          className="flex items-center gap-2 p-2 rounded-lg"
         >
           <Lang />
           {selectedLang ? selectedLang.toUpperCase() : ""}

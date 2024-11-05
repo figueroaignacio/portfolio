@@ -1,7 +1,15 @@
-[
-  {
-    "ui": {
-      "navbar": []
-    }
+{
+  "ui": {
+    "navigation": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      }
+    ]
   }
-]
+}
+
