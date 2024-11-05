@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Onest Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(@fontsource-variable/onest/files/onest-latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
 @layer base {
   :root {
     --background: hsl(0, 0%, 98%);
@@ -12,7 +22,7 @@
     --secondary: hsl(200, 60%, 50%);
     --secondary-foreground: hsl(210, 30%, 98%);
     --accent: hsl(340, 70%, 60%);
-    --accent-foreground: hsl(210, 30%, 98%);
+    --accent-foreground: hsl(200, 27%, 98%);
     --muted: hsl(240 3.8% 25.1%);
     --muted-foreground: hsl(240 3.8% 50.1%);
     --border: hsl(210, 20%, 85%);
@@ -37,5 +47,6 @@
 @layer base {
   body {
     @apply bg-background text-foreground;
+    font-family: 'Onest Variable', sans-serif;
   }
 }
