@@ -15,9 +15,9 @@ type NavItem = {
 };
 
 export function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
   const navItems = t('ui.navigation', { returnObjects: true }) as NavItem[];
-  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -31,7 +31,7 @@ export function Navbar() {
           <Menu />
         </div>
         <nav
-          className={`absolute top-0 left-0 w-52 transition-transform bg-background min-h-dvh lg:min-h-0 duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:static md:flex md:items-center md:translate-x-0 md:h-auto z-30`}>
+          className={`absolute top-0 left-0 w-52 transition-transform bg-background md:bg-transparent min-h-dvh lg:min-h-0 duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:static md:flex md:items-center md:translate-x-0 md:h-auto z-30`}>
           {isOpen && (
             <div className="flex justify-end p-2">
               <button onClick={toggleMenu} aria-label="Close menu">
