@@ -30,11 +30,12 @@ export function Navbar() {
         <div>
           <Logo />
         </div>
-        <div className="md:hidden flex items-center gap-x-3"
-             onClick={toggleMenu}>
+        <div className="md:hidden flex items-center gap-x-3">
           <ToggleTheme />
           <SelectLanguage />
-          <Menu />
+          <div onClick={toggleMenu}>
+            <Menu />
+          </div>
         </div>
         <nav className={`absolute top-0 left-0 w-52 transition-transform bg-background md:bg-transparent min-h-dvh lg:min-h-[0dvh] duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:static md:flex md:items-center md:translate-x-0 md:h-auto z-30`}>
           <div className="flex justify-end p-2">
