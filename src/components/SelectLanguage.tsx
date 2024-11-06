@@ -42,7 +42,7 @@ export function SelectLanguage() {
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
     setSelectedLang(lang);
-    localStorage.setItem("ui.language", lang);
+    localStorage.setItem("ui.language.selectLanguage.title", lang);
     setModalOpen(false);
   };
 
@@ -74,7 +74,7 @@ export function SelectLanguage() {
           >
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-semibold">
-                {t("selectLanguage.title")}
+                {t("ui.language.selectLanguage.title")}
               </h2>
               <button onClick={closeModal}>
                 <X />
