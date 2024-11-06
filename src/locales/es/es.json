@@ -8,6 +8,14 @@
       {
         "label": "Sobre",
         "href": "/about"
+      },
+      {
+        "label": "Proyectos",
+        "href": "/projects"
+      },
+      {
+        "label": "Notas",
+        "href": "/notes"
       }
     ],
     "language": {

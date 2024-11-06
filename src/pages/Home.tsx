@@ -44,11 +44,13 @@ export function Home() {
         variants={fadeUpVariants}>
         {t("sections.home.subtitle")}
       </motion.h2>
-      <motion.div
+      <div
         className="flex gap-x-2"
-        variants={fadeUpVariants}>
+      >
         {links.map((link, index) => (
-          <div key={index}>
+          <motion.div
+            key={index}
+            variants={fadeUpVariants}>
             <Link
               to={link.href}
               className="flex items-center gap-2 px-6 py-2 rounded-md text-sm bg-primary hover:bg-primary-foreground duration-100 border-[1px] border-border"
@@ -56,9 +58,9 @@ export function Home() {
               {link.label}
               {link.icon}
             </Link>
-          </div>
+          </motion.div>
         ))}
-      </motion.div>
+      </div>
     </motion.section>
   )
 }
