@@ -16,12 +16,12 @@ export function Home() {
 
   const links: { href: string; label: string; icon: React.ReactNode }[] = [
     {
-      label: t("sections.home.link.projects.label"),
+      label: t("sections.home.links.projects.label"),
       href: "/projects",
       icon: <Chevron />,
     },
     {
-      label: t("sections.home.link.about.label"),
+      label: t("sections.home.links.about.label"),
       href: "/about",
       icon: <User />,
     },
