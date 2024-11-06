@@ -65,7 +65,7 @@ export function SelectLanguage() {
       </button>
       {modalOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center backdrop-blur-sm z-30"
+          className="fixed inset-0 flex items-center justify-center backdrop-blur-md z-30"
           onClick={closeModal}
         >
           <div
