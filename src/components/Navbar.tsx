@@ -37,7 +37,7 @@ export function Navbar() {
             <Menu />
           </div>
         </div>
-        <nav className={`absolute top-0 left-0 w-52 transition-transform bg-background md:bg-transparent min-h-dvh md:min-h-0 duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:static md:flex md:items-center md:translate-x-0 md:h-auto z-30`}>
+        <nav className={`absolute top-0 left-0 transition-transform bg-background md:bg-transparent min-h-dvh md:min-h-0 duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:static md:flex md:items-center md:translate-x-0 md:h-auto z-30`}>
           <div className="flex justify-end p-2">
             <button onClick={toggleMenu}
                     aria-label="Close menu"
@@ -45,7 +45,7 @@ export function Navbar() {
               <X />
             </button>
           </div>
-          <ul className="flex flex-col md:items-center md:flex-row space-y-5 px-5 md:space-y-0 md:px-5 rounded-md md:space-x-3">
+          <ul className="flex flex-col md:items-center md:flex-row space-y-5 md:space-y-0 rounded-md md:space-x-3">
             {navItems.map((navItem, index) => (
               <li key={index}>
                 <Link to={navItem.href}
