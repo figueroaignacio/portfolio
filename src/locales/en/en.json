@@ -36,6 +36,46 @@
           "label": "About"
         }
       }
+    },
+    "experience": {
+      "title": "Experience",
+      "items": [
+        {
+          "role": "Frontend Developer",
+          "description": "Provides software to veterinary offices to streamline processes and increase efficiency.",
+          "company": "Pawtrics Software LLC | Florida, USA",
+          "datetime": "May 2023 - Apr 2024",
+          "responsibilities": [
+            "Designed and developed user interface components using Next.js.",
+            "Integrated and managed data using PostgreSQL (via Supabase).",
+            "Implemented MaterialUI for consistent design across the project.",
+            "Developed CRUD operations and managed data tables.",
+            "Code Management with Git and GitHub"
+          ],
+          "techStack": [
+            "TypeScript",
+            "Next.js",
+            "React",
+            "React Hook Form",
+            "SWR",
+            "MaterialUI",
+            "PostgreSQL",
+            "Supabase",
+            "Git",
+            "GitHub"
+          ]
+        }
+      ]
+    }
+  },
+  "components": {
+    "experienceCard": {
+      "responsibilities": {
+        "label": "Main Responsibilities"
+      },
+      "techStack": {
+        "label": "Tech Stack"
+      }
     }
   }
 }

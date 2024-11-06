@@ -36,6 +36,46 @@
           "label": "Sobre mí"
         }
       }
+    },
+    "experience": {
+      "title": "Experiencia",
+      "items": [
+        {
+          "role": "Desarrollador Frontend",
+          "description": "Proporciona software a clínicas veterinarias para optimizar procesos y aumentar la eficiencia.\n",
+          "company": "Pawtrics Software LLC | Florida, USA",
+          "datetime": "May 2023 - Abr 2024",
+          "responsibilities": [
+            "Diseñé y desarrollé componentes de la interfaz de usuario utilizando Next.js.",
+            "Integré y gestioné datos con PostgreSQL (a través de Supabase).",
+            "Implementé MaterialUI para un diseño consistente en todo el proyecto.",
+            "Desarrollé operaciones CRUD y gestioné tablas de datos.",
+            "Gestión de código con Git y GitHub."
+          ],
+          "techStack": [
+            "TypeScript",
+            "Next.js",
+            "React",
+            "React Hook Form",
+            "SWR",
+            "MaterialUI",
+            "PostgreSQL",
+            "Supabase",
+            "Git",
+            "GitHub"
+          ]
+        }
+      ]
+    }
+  },
+  "components": {
+    "experienceCard": {
+      "responsibilities": {
+        "label": "Responsabilidades Principales"
+      },
+      "techStack": {
+        "label": "Stack de Tecnologías"
+      }
     }
   }
 }
