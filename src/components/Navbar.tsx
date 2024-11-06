@@ -30,7 +30,7 @@ export function Navbar() {
         <div>
           <Logo />
         </div>
-        <div className="md:hidden flex gap-x-3">
+        <div className="md:hidden flex items-center gap-x-3">
           <ToggleTheme />
           <SelectLanguage />
           <div onClick={toggleMenu}>
