@@ -49,6 +49,7 @@ export function Navbar() {
             {navItems.map((navItem, index) => (
               <li key={index}>
                 <Link to={navItem.href}
+                      onClick={toggleMenu}
                       className="text-muted-foreground hover:text-muted font-semibold duration-100">
                   {navItem.label}
                 </Link>
