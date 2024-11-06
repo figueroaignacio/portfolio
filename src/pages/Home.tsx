@@ -29,25 +29,26 @@ export function Home() {
 
   return (
     <motion.section
-      className="min-h-[85dvh] flex flex-col justify-center gap-y-3"
+      className="min-h-[80dvh] flex flex-col justify-center gap-y-3"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
-      <motion.h1 className="text-4xl font-bold"
-                 variants={fadeUpVariants}>
+      <motion.h1
+        className="text-5xl font-bold gradient-text py-2"
+        variants={fadeUpVariants}>
         {t("sections.home.title")}
       </motion.h1>
-      <motion.h2 className="text-muted-foreground"
-                 variants={fadeUpVariants}>
+      <motion.h2
+        className="text-muted-foreground"
+        variants={fadeUpVariants}>
         {t("sections.home.subtitle")}
       </motion.h2>
-      <motion.div className="flex gap-x-2"
-                  variants={fadeUpVariants}>
+      <motion.div
+        className="flex gap-x-2"
+        variants={fadeUpVariants}>
         {links.map((link, index) => (
-          <div
-            key={index}
-          >
+          <div key={index}>
             <Link
               to={link.href}
               className="flex items-center gap-2 px-6 py-2 rounded-md text-sm bg-primary hover:bg-primary-foreground duration-100 border-[1px] border-border"
