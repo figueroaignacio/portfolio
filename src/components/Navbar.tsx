@@ -52,7 +52,7 @@ export function Navbar() {
             <Menu />
           </div>
         </div>
-        <nav className={`absolute top-0 left-0 transition-transform bg-background md:bg-transparent min-h-dvh md:min-h-0 duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:static md:hidden z-30`}>
+        <nav className={`w-60 absolute top-0 left-0 transition-transform bg-background md:bg-transparent min-h-dvh md:min-h-0 duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:static md:hidden z-30`}>
           <div className="flex justify-end p-2">
             <button
               onClick={toggleMenu}
@@ -61,29 +61,23 @@ export function Navbar() {
               <X />
             </button>
           </div>
-          <ul className="flex flex-col space-y-5 rounded-md">
+          <ul className="flex flex-col space-y-8 rounded-md ml-5 mt-6">
             {navItems.map((navItem, index) => (
               <li key={index}>
                 <Link
                   to={navItem.href}
                   onClick={toggleMenu}
-                  className="text-muted-foreground hover:text-muted font-semibold duration-100">
+                  className="text-muted-foreground hover:text-muted font-semibold duration-100 text-xl">
                   {navItem.label}
                 </Link>
               </li>
             ))}
-            <li>
-              <SelectLanguage />
-            </li>
-            <li>
-              <ToggleTheme />
-            </li>
           </ul>
         </nav>
       </header>
       {isOpen && (
         <div
-          className="fixed inset-0 backdrop-blur-sm z-10"
+          className="fixed inset-0 backdrop-blur-md z-10"
           onClick={toggleMenu} />
       )}
     </>
