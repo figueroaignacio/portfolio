@@ -14,7 +14,7 @@
 
 @layer base {
   :root {
-    --background: #fafafa;
+    --background: hsl(0, 0%, 98%);
     --foreground: hsl(220, 20%, 20%);
     --card: hsl(210, 25%, 96%);
     --primary: hsl(0, 0%, 100%);
@@ -30,7 +30,7 @@
   }
 
   .dark {
-    --background: #16181d;
+    --background: hsl(223, 14%, 10%);
     --foreground: hsl(210, 20%, 98%);
     --card: hsl(220, 15%, 15%);
     --primary: hsl(220, 15%, 14%);

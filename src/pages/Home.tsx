@@ -1,7 +1,7 @@
 import React from "react"
 
 // Hooks
-import { useTranslation } from "react-i18next"
+import { Trans, useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
 
 // Icons
@@ -16,13 +16,13 @@ export function Home() {
 
   const links: { href: string; label: string; icon: React.ReactNode }[] = [
     {
+      label: t("sections.home.link.projects.label"),
       href: "/projects",
-      label: "Projects",
       icon: <Chevron />,
     },
     {
+      label: t("sections.home.link.about.label"),
       href: "/about",
-      label: "About me",
       icon: <User />,
     },
   ]
@@ -35,14 +35,17 @@ export function Home() {
       animate="visible"
     >
       <motion.h1
-        className="text-5xl font-bold gradient-text py-2"
+        className="text-5xl font-bold py-2"
         variants={fadeUpVariants}>
         {t("sections.home.title")}
       </motion.h1>
       <motion.h2
         className="text-muted-foreground"
         variants={fadeUpVariants}>
-        {t("sections.home.subtitle")}
+        <Trans
+          i18nKey="sections.home.subtitle"
+          components={{ span: <span className="gradient-text" /> }}
+        />
       </motion.h2>
       <div
         className="flex gap-x-2"

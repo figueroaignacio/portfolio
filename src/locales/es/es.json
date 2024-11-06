@@ -27,7 +27,15 @@
   "sections": {
     "home": {
       "title": "Hola, soy Ignacio",
-      "subtitle": "Creando Experiencias Web Interactivas y Funcionales"
+      "subtitle": "Desarrollador Web Creando Experiencias Web <span>Interactivas y Funcionales</span>",
+      "links": {
+        "projects": {
+          "label": "Proyectos"
+        },
+        "about": {
+          "label": "Sobre mí"
+        }
+      }
     }
   }
 }

@@ -27,7 +27,15 @@
   "sections": {
     "home": {
       "title": "Hey! I'm Ignacio",
-      "subtitle": "Creating Interactive and Functional Web Experiences."
+      "subtitle": "Web Developer Creating <span>Interactive and Functional</span> Web Experiences.",
+      "links": {
+        "projects": {
+          "label": "Projects"
+        },
+        "about": {
+          "label": "About"
+        }
+      }
     }
   }
 }
