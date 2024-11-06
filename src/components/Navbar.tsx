@@ -5,12 +5,12 @@ import { useState } from "react";
 // Components
 import { Link } from "react-router-dom";
 import { Logo } from "@/components/Logo.tsx";
+import { SelectLanguage } from "@/components/SelectLanguage.tsx";
+import { ToggleTheme } from "@/components/ToggleTheme.tsx";
 
 // Icons
 import { Menu } from "@/icons/Menu.tsx";
 import { X } from "@/icons/X.tsx";
-import { SelectLanguage } from "@/components/SelectLanguage.tsx";
-import { ToggleTheme } from "@/components/ToggleTheme.tsx";
 
 type NavItem = {
   label: string;
@@ -27,17 +27,31 @@ export function Navbar() {
   return (
     <>
       <header className="flex justify-between items-center py-4 z-20">
-        <div>
+        <div className="flex items-center gap-x-5">
           <Logo />
+          <nav>
+            <ul className="hidden md:flex md:items-center space-x-5">
+              {navItems.map((navItem, index) => (
+                <li key={index}>
+                  <Link
+                    to={navItem.href}
+                    className="text-muted-foreground hover:text-muted font-semibold duration-100">
+                    {navItem.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
-        <div className="md:hidden flex items-center gap-x-3">
+        <div className="flex items-center gap-x-3">
           <ToggleTheme />
           <SelectLanguage />
-          <div onClick={toggleMenu}>
+          <div className="md:hidden"
+               onClick={toggleMenu}>
             <Menu />
           </div>
         </div>
-        <nav className={`absolute top-0 left-0 transition-transform bg-background md:bg-transparent min-h-dvh md:min-h-0 duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:static md:flex md:items-center md:translate-x-0 md:h-auto z-30`}>
+        <nav className={`absolute top-0 left-0 transition-transform bg-background md:bg-transparent min-h-dvh md:min-h-0 duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:static md:hidden z-30`}>
           <div className="flex justify-end p-2">
             <button onClick={toggleMenu}
                     aria-label="Close menu"
@@ -45,7 +59,7 @@ export function Navbar() {
               <X />
             </button>
           </div>
-          <ul className="flex flex-col md:items-center md:flex-row space-y-5 md:space-y-0 rounded-md md:space-x-3">
+          <ul className="flex flex-col space-y-5 rounded-md">
             {navItems.map((navItem, index) => (
               <li key={index}>
                 <Link to={navItem.href}
@@ -55,10 +69,10 @@ export function Navbar() {
                 </Link>
               </li>
             ))}
-            <li className="hidden md:block">
+            <li>
               <SelectLanguage />
             </li>
-            <li className="hidden md:block">
+            <li>
               <ToggleTheme />
             </li>
           </ul>
@@ -69,5 +83,6 @@ export function Navbar() {
              onClick={toggleMenu} />
       )}
     </>
+
   );
 }
