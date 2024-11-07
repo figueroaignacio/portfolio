@@ -25,9 +25,9 @@ export function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <>
-      <header className="flex justify-between items-center py-4 z-20">
-        <div className="flex items-center gap-x-5">
+    <header className="sticky inset-0 py-4 z-20 backdrop-blur-lg">
+      <div className="flex justify-between items-center max-w-4xl mx-auto px-4 lg:px-0">
+        <div className="flex flex-c items-center gap-x-5">
           <Logo />
           <nav>
             <ul className="hidden md:flex md:items-center space-x-5">
@@ -74,13 +74,13 @@ export function Navbar() {
             ))}
           </ul>
         </nav>
-      </header>
+      </div>
       {isOpen && (
         <div
           className="fixed inset-0 backdrop-blur-md z-10"
           onClick={toggleMenu} />
       )}
-    </>
+    </header>
 
   );
 }

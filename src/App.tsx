@@ -7,11 +7,13 @@ import { Footer } from "@/components/Footer.tsx";
 function App() {
   return (
     <Router>
-      <main className="container max-w-4xl mx-auto px-4 relative">
+      <div className="grid-main-container">
         <Navbar />
-        <AppRouter />
+        <main className="container max-w-4xl mx-auto px-4 relative">
+          <AppRouter />
+        </main>
         <Footer />
-      </main>
+      </div>
     </Router>
   )
 }
