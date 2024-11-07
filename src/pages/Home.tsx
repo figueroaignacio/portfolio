@@ -6,6 +6,7 @@ import { Trans, useTranslation } from "react-i18next"
 // Components
 import { Link } from "react-router-dom"
 import { ExperienceCard } from "@/components/ExperienceCard.tsx";
+import { CallToAction } from "@/components/CallToAction.tsx";
 
 // Icons
 import { Chevron, User } from "@/components/Icons.tsx"
@@ -44,7 +45,9 @@ export function Home() {
     <motion.div
       variants={containerVariants}
       initial="hidden"
-      animate="visible">
+      animate="visible"
+      className="space-y-12 pb-12"
+    >
       <section
         className="min-h-[80dvh] flex flex-col justify-center gap-y-3"
       >
@@ -100,6 +103,9 @@ export function Home() {
             </motion.li>
           ))}
         </ul>
+      </section>
+      <section>
+        <CallToAction />
       </section>
     </motion.div>
   )

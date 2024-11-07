@@ -79,6 +79,11 @@
     },
     "footer": {
       "description": "Desarrollador web especializado en Desarrollo Frontend y diseño de interfaces de usuario, ampliando conocimientos en Desarrollo Backend para desarrollar soluciones modernas y eficientes."
+    },
+    "callToAction": {
+      "title": "¿Tenés un proyecto en mente?",
+      "subtitle": "Contactame y trabajemos juntos.",
+      "link": "Mándame un Email"
     }
   }
 }

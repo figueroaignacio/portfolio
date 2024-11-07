@@ -79,6 +79,11 @@
     },
     "footer": {
       "description": "Web developer specialized in Frontend Development and user interface design, expanding knowledge in Backend Development to build modern and efficient solutions."
+    },
+    "callToAction": {
+      "title": "Do you have a project in mind?",
+      "subtitle": "Reach me and let's work together.",
+      "link": "Send Me an Email"
     }
   }
 }
