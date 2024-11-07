@@ -12,7 +12,6 @@ export function Footer() {
           <h2 className="text-2xl font-semibold">Ignacio Figueroa</h2>
           <p className="text-sm max-w-xl text-muted-foreground leading-6">
             {t("components.footer.description")}
-            />
           </p>
           <div className="text-sm">
             © {currentYear} Ignacio Figueroa. All rights reserved.
