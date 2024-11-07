@@ -76,6 +76,9 @@
       "techStack": {
         "label": "Tech Stack"
       }
+    },
+    "footer": {
+      "description": "Web developer specialized in Frontend Development and user interface design, expanding knowledge in Backend Development to build modern and efficient solutions."
     }
   }
 }

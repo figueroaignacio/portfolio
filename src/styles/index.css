@@ -56,4 +56,12 @@
   .gradient-text {
     @apply bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text;
   }
+
+  .highlighted-text {
+    @apply bg-purple-400 px-2 py-0.5 rounded-md text-white
+  }
+
+  .grid-main-container {
+    @apply grid grid-rows-[auto_1fr_auto]
+  }
 }
