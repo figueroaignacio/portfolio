@@ -12,7 +12,7 @@ export function CallToAction() {
       className="flex items-center justify-between py-12">
       <div className="space-y-2">
         <h3 className="text-3xl font-bold">{t("components.callToAction.title")}</h3>
-        <h4>{t("components.callToAction.subtitle")}</h4>
+        <h4 className="text-muted-foreground">{t("components.callToAction.subtitle")}</h4>
       </div>
       <div>
         <a
