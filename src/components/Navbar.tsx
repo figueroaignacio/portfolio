@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { SelectLanguage } from "@/components/SelectLanguage.tsx";
 import { ToggleTheme } from "@/components/ToggleTheme.tsx";
+import { Container } from "@/components/Container.tsx";
 
 // Icons
 import { Menu } from "@/icons/Menu.tsx";
@@ -25,8 +26,8 @@ export function Navbar() {
 
   return (
     <header className="sticky inset-0 py-4 z-20 bg-background">
-      <div className="flex justify-between items-center max-w-4xl mx-auto px-4 lg:px-0">
-        <div className="flex flex-c items-center gap-x-5">
+      <Container className="flex justify-between items-center">
+        <div className="flex items-center gap-x-5">
           <nav>
             <ul className="hidden md:flex md:items-center space-x-5">
               {navItems.map((navItem, index) => (
@@ -72,7 +73,7 @@ export function Navbar() {
             ))}
           </ul>
         </nav>
-      </div>
+      </Container>
       {isOpen && (
         <div
           className="fixed inset-0 backdrop-blur-md z-10"

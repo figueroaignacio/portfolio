@@ -1,13 +1,16 @@
 // Hooks
 import { useTranslation } from "react-i18next";
 
+// Components
+import { Container } from "@/components/Container.tsx";
+
 export function Footer() {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear()
 
   return (
     <footer className="bg-background border-t border-border">
-      <div className="container max-w-4xl mx-auto px-4">
+      <Container>
         <div className="container max-w-4xl space-y-6">
           <div className="container max-w-4xl mx-auto py-12 space-y-4">
             <h2 className="text-2xl font-semibold">Ignacio Figueroa</h2>
@@ -19,7 +22,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   )
 }
