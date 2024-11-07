@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className="grid-main-container">
         <Navbar />
-        <main className="container max-w-4xl mx-auto px-4 relative">
+        <main className="container max-w-4xl mx-auto px-4 lg:px-0 relative">
           <AppRouter />
         </main>
         <Footer />

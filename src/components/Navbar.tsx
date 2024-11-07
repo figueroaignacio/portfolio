@@ -4,7 +4,6 @@ import { useState } from "react";
 
 // Components
 import { Link } from "react-router-dom";
-import { Logo } from "@/components/Logo.tsx";
 import { SelectLanguage } from "@/components/SelectLanguage.tsx";
 import { ToggleTheme } from "@/components/ToggleTheme.tsx";
 
@@ -28,7 +27,6 @@ export function Navbar() {
     <header className="sticky inset-0 py-4 z-20 bg-background">
       <div className="flex justify-between items-center max-w-4xl mx-auto px-4 lg:px-0">
         <div className="flex flex-c items-center gap-x-5">
-          <Logo />
           <nav>
             <ul className="hidden md:flex md:items-center space-x-5">
               {navItems.map((navItem, index) => (
