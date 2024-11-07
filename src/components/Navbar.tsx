@@ -25,7 +25,7 @@ export function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="sticky inset-0 py-4 z-20 backdrop-blur-lg">
+    <header className="sticky inset-0 py-4 z-20 bg-background">
       <div className="flex justify-between items-center max-w-4xl mx-auto px-4 lg:px-0">
         <div className="flex flex-c items-center gap-x-5">
           <Logo />
