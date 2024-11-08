@@ -1,12 +1,14 @@
 // Hooks
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 // Utils
 import { motion } from 'framer-motion';
 
+// Components
+import { Badge } from "@/components/Badge.tsx";
+
 // Constants
 import { containerVariants, fadeUpVariants, listItemVariants } from "@/constants/animations.ts";
-import { Badge } from "@/components/Badge.tsx";
 
 
 export function About() {
@@ -39,13 +41,19 @@ export function About() {
         {t("pages.about.title")}
       </motion.h1>
       <motion.h2 variants={fadeUpVariants}>
-        {t("pages.about.greeting")}
+        <Trans
+          i18nKey={t("pages.about.greeting")}
+          components={{ span: <span className="text-accent" /> }} />
       </motion.h2>
       <motion.p variants={fadeUpVariants}>
-        {t("pages.about.intro")}
+        <Trans
+          i18nKey={t("pages.about.intro")}
+          components={{ span: <span className="text-accent"></span> }} />
       </motion.p>
       <motion.p variants={fadeUpVariants}>
-        {t("pages.about.collaboration")}
+        <Trans
+          i18nKey={t("pages.about.collaboration")}
+          components={{ span: <span className="text-accent"></span> }} />
       </motion.p>
       <motion.div variants={fadeUpVariants}>
         <h3 className="text-2xl font-semibold mt-6">

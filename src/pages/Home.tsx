@@ -72,7 +72,7 @@ export function Home() {
           variants={fadeUpVariants}>
           <Trans
             i18nKey="sections.home.subtitle"
-            components={{ span: <span className="gradient-text font-bold" /> }}
+            components={{ span: <span className="text-accent" /> }}
           />
         </motion.h2>
         <div

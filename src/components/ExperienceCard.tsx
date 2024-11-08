@@ -17,7 +17,7 @@ export function ExperienceCard({ company, datetime, responsibilities, role, desc
     <div className="bg-card rounded-lg p-8 my-6 transition-all duration-300 border-[1px] border-border">
       <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
         <div className="flex-grow">
-          <h3 className="text-2xl font-bold mb-1 gradient-text">{role}</h3>
+          <h3 className="text-2xl font-bold mb-1">{role}</h3>
           <h4 className="text-base font-medium text-muted-foreground">{company}</h4>
         </div>
         <span className="text-sm mt-2 md:mt-0 text-muted-foreground whitespace-nowrap">{datetime}</span>

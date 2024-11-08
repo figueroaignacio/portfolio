@@ -107,9 +107,9 @@
   "pages": {
     "about": {
       "title": "About me",
-      "greeting": "👋 Hey, how's it going? I'm Ignacio, a web developer focus on creating technology experiences that connect with users.",
-      "intro": "I work with React (TypeScript, Next.js) to create intuitive solutions that add value to businesses. I enjoy challenging projects and am expanding my backend skills (Node.js, Express.js, Nest.js) to have a complete stack. I believe in continuous learning and projects with real impact.",
-      "collaboration": "I enjoy collaborating with diverse teams and creating innovative products that generate meaningful results. I'm always looking for challenges that allow me to grow and contribute to the tech world.",
+      "greeting": "👋 Hi, I'm Ignacio, a <span>Web Developer</span> specializing in <span>Frontend</span>, with a focus on creating <span>technological experiences</span> that establish a meaningful connection with users.",
+      "intro": "I work with <span>React</span> (<span>TypeScript</span>, <span>Next.js</span>) to develop <span>intuitive solutions</span> that bring tangible value to businesses. I thrive on <span>challenging projects</span> and am currently expanding my knowledge in <span>backend</span> (<span>Node.js</span>, <span>Express.js</span>, <span>Nest.js</span>) to build a comprehensive <span>technology stack</span>. I strongly believe in <span>continuous learning</span> and creating projects with <span>real impact</span>.",
+      "collaboration": "I am passionate about collaborating with <span>diverse teams</span> and developing <span>innovative products</span> that generate <span>meaningful results</span>. I am always looking for challenges that allow me to continue growing and contribute to the advancement of the <span>tech</span> world.",
       "techStack": {
         "title": "My Tech Stack"
       }
