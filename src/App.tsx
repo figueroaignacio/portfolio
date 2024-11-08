@@ -11,7 +11,7 @@ function App() {
       <div className="grid-main-container">
         <Navbar />
         <Container>
-          <main>
+          <main className="py-12">
             <AppRouter />
           </main>
         </Container>

@@ -57,10 +57,10 @@ export function Home() {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="space-y-14 pb-12"
+      className="space-y-14"
     >
       <section
-        className="min-h-[80dvh] flex flex-col justify-center gap-y-3"
+        className="min-h-[60dvh] flex flex-col justify-center gap-y-3"
       >
         <motion.h1
           className="text-5xl font-bold py-2"

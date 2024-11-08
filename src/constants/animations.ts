@@ -31,6 +31,19 @@ const fadeInVariants = {
   },
 }
 
+const listItemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      damping: 25,
+    },
+  },
+};
+
 const modalVariants = {
   hidden: { opacity: 1, scale: 0.5 },
   visible: {
@@ -46,4 +59,4 @@ const modalVariants = {
   exit: { opacity: 0, scale: 0.5, transition: { duration: 0.15 } },
 };
 
-export { containerVariants, fadeInVariants, fadeUpVariants, modalVariants }
+export { containerVariants, fadeInVariants, fadeUpVariants, modalVariants, listItemVariants }

@@ -104,6 +104,17 @@
       ]
     }
   },
+  "pages": {
+    "about": {
+      "title": "Sobre mí",
+      "greeting": "👋 Hey, ¿cómo estás? Soy Ignacio, desarrollador web enfocado en crear experiencias tecnológicas que conecten con los usuarios.",
+      "intro": "Trabajo con React (TypeScript, Next.js) para desarrollar soluciones intuitivas que agreguen valor a los negocios. Me gustan los proyectos desafiantes y estoy ampliando mis habilidades en backend (Node.js, Express.js, Nest.js) para tener un stack completo. Creo en el aprendizaje continuo y en proyectos con impacto real.",
+      "collaboration": "Disfruto colaborar con equipos diversos y crear productos innovadores que generen resultados significativos. Siempre busco desafíos que me permitan crecer y aportar al mundo tecnológico.",
+      "techStack": {
+        "title": "Mi stack de Tecnologías"
+      }
+    }
+  },
   "components": {
     "experienceCard": {
       "responsibilities": {
