@@ -78,7 +78,7 @@ export function SelectLanguage() {
               <div className="flex flex-col gap-y-2">
                 <button
                   className={`p-2 rounded-md hover:bg-primary-foreground duration-100 ${
-                    selectedLang === "en" ? "bg-primary-foreground font-bold" : ""
+                    selectedLang === "en" ? "bg-primary-foreground" : ""
                   }`}
                   onClick={() => changeLanguage("en")}
                 >
