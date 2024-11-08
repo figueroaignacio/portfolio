@@ -66,6 +66,42 @@
           ]
         }
       ]
+    },
+    "mainProjects": {
+      "title": "Main Projects",
+      "items": [
+        {
+          "name": "Web Society Project",
+          "description": "Discover the latest web trends, refine your web development skills, and explore innovative resources. Take on new challenges that propel your career to success.",
+          "technologies": [
+            "TypeScript",
+            "Next.js",
+            "React",
+            "Tailwind",
+            "Velite",
+            "shadcn/ui",
+            "Nest",
+            "PostgreSQL"
+          ],
+          "code": "https://github.com/figueroaignacio/websociety",
+          "site": "https://websociety.onrender.com/en",
+          "status": "In Development"
+        },
+        {
+          "name": "AspenUI",
+          "description": "Enhance your workflow with pre-built, fully customizable, open-source components ready to deploy.",
+          "technologies": [
+            "TypeScript",
+            "Next.js",
+            "React",
+            "Tailwind",
+            "Velite"
+          ],
+          "code": "https://github.com/figueroaignacio/aspen-ui",
+          "site": "https://aspen-ui.netlify.app/en",
+          "status": "In Development"
+        }
+      ]
     }
   },
   "components": {

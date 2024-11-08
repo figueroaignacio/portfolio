@@ -7,6 +7,7 @@ import { Trans, useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
 import { ExperienceCard } from "@/components/ExperienceCard.tsx";
 import { CallToAction } from "@/components/CallToAction.tsx";
+import { ProjectCard } from "@/components/ProjectCard.tsx";
 
 // Icons
 import { Chevron, User } from "@/components/Icons.tsx"
@@ -24,9 +25,19 @@ type Experience = {
   techStack: string[];
 }
 
+type Project = {
+  name: string
+  description: string
+  technologies: string[]
+  code: string
+  site: string
+  status: "In Development" | "Completed" | "Under maintenance"
+}
+
 export function Home() {
   const { t } = useTranslation()
   const experience = t("sections.experience.items", { returnObjects: true }) as Experience[]
+  const mainProjects = t("sections.mainProjects.items", { returnObjects: true }) as Project[]
 
   const links: { href: string; label: string; icon: React.ReactNode }[] = [
     {
@@ -46,7 +57,7 @@ export function Home() {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="space-y-12 pb-12"
+      className="space-y-14 pb-12"
     >
       <section
         className="min-h-[80dvh] flex flex-col justify-center gap-y-3"
@@ -106,6 +117,26 @@ export function Home() {
       </section>
       <section>
         <CallToAction />
+      </section>
+      <section>
+        <h2
+          className="font-bold text-xl mb-5"
+        >
+          {t("sections.mainProjects.title")}
+        </h2>
+        <ul className="space-y-5 items-center">
+          {mainProjects.map((item, index) => (
+            <li key={index}>
+              <ProjectCard
+                description={item.description}
+                code={item.code}
+                site={item.site}
+                status={item.status}
+                technologies={item.technologies}
+                name={item.name} />
+            </li>
+          ))}
+        </ul>
       </section>
     </motion.div>
   )
