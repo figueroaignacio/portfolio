@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
 // Components
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"
 import { SelectLanguage } from "@/components/SelectLanguage.tsx";
 import { ToggleTheme } from "@/components/ToggleTheme.tsx";
 import { Container } from "@/components/Container.tsx";
@@ -19,8 +19,12 @@ type NavItem = {
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   const { t } = useTranslation();
   const navItems = t('ui.navigation', { returnObjects: true }) as NavItem[];
+
+  const location = useLocation();
+  const pathname = location.pathname;
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -34,7 +38,8 @@ export function Navbar() {
                 <li key={index}>
                   <Link
                     to={navItem.href}
-                    className="text-muted-foreground hover:text-muted font-semibold duration-100">
+                    className={`text-muted-foreground hover:text-muted font-semibold duration-100 ${pathname === navItem.href ? "text-muted" : ""}`}
+                  >
                     {navItem.label}
                   </Link>
                 </li>
@@ -66,7 +71,8 @@ export function Navbar() {
                 <Link
                   to={navItem.href}
                   onClick={toggleMenu}
-                  className="text-muted-foreground hover:text-muted font-semibold duration-100 text-xl">
+                  className={`text-muted-foreground hover:text-muted font-semibold duration-100 ${pathname === navItem.href ? "text-muted" : ""}`}
+                >
                   {navItem.label}
                 </Link>
               </li>
