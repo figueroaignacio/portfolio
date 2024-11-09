@@ -5,14 +5,23 @@ import { Trans, useTranslation } from "react-i18next";
 import { motion } from 'framer-motion';
 
 // Components
-import { Badge } from "@/components/Badge.tsx";
+import { TestimoniesCard } from "@/components/TestimoniesCard.tsx";
 
 // Constants
 import { containerVariants, fadeUpVariants, listItemVariants } from "@/constants/animations.ts";
+import { Badge } from "@/components/Badge.tsx";
+
+type Testinomies = {
+  body: string;
+  name: string;
+  role: string;
+  profile: string;
+}
 
 
 export function About() {
   const { t } = useTranslation();
+  const testimones = t("sections.testimonies.items", { returnObjects: true }) as Testinomies[]
   const techStack = [
     "HTML",
     "CSS",
@@ -29,7 +38,7 @@ export function About() {
 
   return (
     <motion.section
-      className="min-h-[60dvh] flex flex-col justify-center gap-6"
+      className="min-h-[60dvh] flex flex-col justify-center gap-10"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -55,6 +64,30 @@ export function About() {
           i18nKey={t("pages.about.collaboration")}
           components={{ span: <span className="text-accent"></span> }} />
       </motion.p>
+      <div className="my-2">
+        <div className="space-y-2 mb-3">
+          <motion.h3
+            variants={fadeUpVariants}
+            className="text-2xl font-semibold mt-6">{t("sections.testimonies.title")}</motion.h3>
+          <motion.p
+            variants={fadeUpVariants}
+            className="text-sm text-muted-foreground">{t("sections.testimonies.description")}</motion.p>
+        </div>
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {testimones.map((testimony, index) => (
+            <motion.li
+              variants={fadeUpVariants}
+              key={index}>
+              <TestimoniesCard
+                role={testimony.role}
+                name={testimony.name}
+                body={testimony.body}
+                profile={testimony.profile}
+              />
+            </motion.li>
+          ))}
+        </ul>
+      </div>
       <motion.div variants={fadeUpVariants}>
         <h3 className="text-2xl font-semibold mt-6">
           {t("pages.about.techStack.title")}

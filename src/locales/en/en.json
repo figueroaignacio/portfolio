@@ -102,6 +102,42 @@
           "status": "In Development"
         }
       ]
+    },
+    "testimonies": {
+      "title": "Some Testimonies",
+      "description": "Would you like to know what my colleagues said about me?",
+      "items": [
+        {
+          "body": "I had the privilege of working with Ignacio at Pawtrics Software, where he demonstrated a strong aptitude for learning and applying React web development skills. Ignacio has an impressive understanding of web technologies and consistently sought to enhance his coding skill set. His proactive attitude and ability to contribute effectively made him a valuable team member. I highly recommend Ignacio to any team looking for a developer with a dedication to quality and growth.",
+          "name": "Kiefer Aland",
+          "role": "Software Developer",
+          "profile": "https://www.linkedin.com/in/kieferaland/"
+        },
+        {
+          "body": "Working with Ignacio has been a great experience from day one. He is a very complete developer, with a great emphasis on details and a great ability to solve problems that may arise. He is also a very good coworker, always helping others, either by taking the time to explain concepts that you do not understand or by contributing his vision to the ideas that are being developed.",
+          "name": "Manuel Zarraga",
+          "role": "Fullstack Developer",
+          "profile": "https://www.linkedin.com/in/manuel-zarraga/"
+        },
+        {
+          "body": "Having worked with Ignacio for about a year I have seen his growth as a developer. He is someone who will go above and beyond, communicating very well with the team. He also is great at working with his peers in group coding sessions and ensuring there is consistency and quality in the code base. I would recommend him to someone looking to grow their development team.",
+          "name": "Joseph Pisani",
+          "role": "IT Software Support",
+          "profile": "https://www.linkedin.com/in/josephpisani/"
+        },
+        {
+          "body": "Ignacio is an exceptional Front-End Developer with a unique combination of technical expertise, positive attitude, and a strong work ethic. He is a highly motivated and results-oriented individual who consistently produces high-quality work. I have no doubt that Ignacio would be a valuable asset to your team, not only for his technical skills but also for his collaborative and helpful nature.",
+          "name": "Zachary Roosen",
+          "role": "Senior IT System Analyst",
+          "profile": "https://www.linkedin.com/in/zroosen/"
+        },
+        {
+          "body": "In the time I've known Ignacio, he's transformed into an outstanding developer. He's not one to settle for mediocrity; instead, he consistently pushes himself to exceed expectations. What distinguishes Ignacio is his engaging nature and relentless pursuit of learning. He approaches every task with humility and a strong work ethic, always striving to expand his knowledge and skills. His dedication ensures a seamless collaboration within the team. If you're seeking a developer committed to continual improvement and fostering teamwork, Ignacio is the ideal choice.",
+          "name": "Pia Walcott",
+          "role": "Software Engineer",
+          "profile": "https://www.linkedin.com/in/pia-walcott/"
+        }
+      ]
     }
   },
   "pages": {
