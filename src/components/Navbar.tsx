@@ -38,7 +38,7 @@ export function Navbar() {
                 <li key={index}>
                   <Link
                     to={navItem.href}
-                    className={`text-muted-foreground hover:text-muted font-semibold duration-100 ${pathname === navItem.href ? "text-muted" : ""}`}
+                    className={`font-semibold duration-100 ${pathname === navItem.href ? "text-muted" : "text-muted-foreground hover:text-muted"}`}
                   >
                     {navItem.label}
                   </Link>
@@ -71,7 +71,7 @@ export function Navbar() {
                 <Link
                   to={navItem.href}
                   onClick={toggleMenu}
-                  className={`text-muted-foreground hover:text-muted font-semibold duration-100 ${pathname === navItem.href ? "text-muted" : ""}`}
+                  className={`font-semibold duration-100 ${pathname === navItem.href ? "text-muted" : "text-muted-foreground hover:text-muted"}`}
                 >
                   {navItem.label}
                 </Link>
