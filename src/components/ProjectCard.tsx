@@ -1,6 +1,9 @@
+// Components
+import { Badge } from "@/components/Badge.tsx";
+
+// Icons
 import { Github } from "@/icons/Github.tsx";
 import { ArrowUp } from "@/icons/ArrowUp.tsx";
-import { Badge } from "@/components/Badge.tsx";
 
 interface ProjectCardProps {
   name: string

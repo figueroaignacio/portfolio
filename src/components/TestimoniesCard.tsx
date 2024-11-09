@@ -1,3 +1,4 @@
+// Icons
 import { ArrowUp } from "@/icons/ArrowUp.tsx";
 
 interface TestimoniesCardProps {
