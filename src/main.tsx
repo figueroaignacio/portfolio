@@ -1,7 +1,9 @@
-// Main
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
+
+// Providers
+import { LanguageProvider } from "./contexts/LanguageContext.tsx";
 
 // CSS
 import "../src/styles/index.css";
@@ -34,6 +36,8 @@ i18next.use(initReactI18next).init({
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <LanguageProvider>
+      <App />
+    </LanguageProvider>
   </React.StrictMode>
 );

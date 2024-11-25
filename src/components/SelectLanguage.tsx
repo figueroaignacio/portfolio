@@ -1,36 +1,20 @@
 // Hooks
-import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
+import { useLanguage } from "@/contexts/LanguageContext.tsx";
 import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 // Icons
-import { Lang } from "../icons/Lang.tsx";
 import { X } from "@/icons/X.tsx";
+import { Lang } from "../icons/Lang.tsx";
 
 // Utils
-import { modalVariants } from "@/constants/animations.ts"
+import { modalVariants } from "@/constants/animations.ts";
 
 export function SelectLanguage() {
-  const { i18n, t } = useTranslation();
-  const [selectedLang, setSelectedLang] = useState<string | null>("en");
+  const { t } = useTranslation();
+  const { language, changeLanguage } = useLanguage();
   const [modalOpen, setModalOpen] = useState(false);
-
-  useEffect(() => {
-    const lang = localStorage.getItem("ui.language");
-    if (lang) {
-      setSelectedLang(lang);
-      i18n.changeLanguage(lang);
-    } else {
-      i18n.changeLanguage("en");
-    }
-  }, [i18n]);
-
-  const changeLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
-    setSelectedLang(lang);
-    localStorage.setItem("ui.language.selectLanguage.title", lang);
-    setModalOpen(false);
-  };
 
   const openModal = () => {
     setModalOpen(true);
@@ -47,7 +31,7 @@ export function SelectLanguage() {
         className="flex items-center gap-2 px-4 py-2 rounded-md bg-primary hover:bg-primary-foreground duration-100 border-[1px] border-border"
       >
         <Lang />
-        <span className="text-xs">{selectedLang ? selectedLang.toUpperCase() : ""}</span>
+        <span className="text-xs">{language.toUpperCase()}</span>
       </button>
       <AnimatePresence>
         {modalOpen && (
@@ -78,17 +62,23 @@ export function SelectLanguage() {
               <div className="flex flex-col gap-y-2">
                 <button
                   className={`p-2 rounded-md hover:bg-primary-foreground duration-100 ${
-                    selectedLang === "en" ? "bg-primary-foreground" : ""
+                    language === "en" ? "bg-primary-foreground" : ""
                   }`}
-                  onClick={() => changeLanguage("en")}
+                  onClick={() => {
+                    changeLanguage("en");
+                    closeModal();
+                  }}
                 >
                   English
                 </button>
                 <button
                   className={`p-2 rounded-md hover:bg-primary-foreground duration-100 ${
-                    selectedLang === "es" ? "bg-primary-foreground" : ""
+                    language === "es" ? "bg-primary-foreground" : ""
                   }`}
-                  onClick={() => changeLanguage("es")}
+                  onClick={() => {
+                    changeLanguage("es");
+                    closeModal();
+                  }}
                 >
                   Español
                 </button>
