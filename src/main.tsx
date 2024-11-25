@@ -2,9 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 
-// Providers
-import { LanguageProvider } from "./contexts/LanguageContext.tsx";
-import { ThemeProvider } from "./contexts/ThemeContext.tsx";
+// Components
+import { Providers } from "./components/Providers.tsx";
 
 // CSS
 import "../src/styles/index.css";
@@ -37,10 +36,8 @@ i18next.use(initReactI18next).init({
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ThemeProvider>
-      <LanguageProvider>
-        <App />
-      </LanguageProvider>
-    </ThemeProvider>
+    <Providers>
+      <App />
+    </Providers>
   </React.StrictMode>
 );
