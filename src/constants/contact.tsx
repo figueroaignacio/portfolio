@@ -1,4 +1,4 @@
-import { Github, LinkedIn, Mail } from "@/components/Icons.tsx";
+import { GitHub, LinkedIn, Mail } from "@/components/Icons.tsx";
 
 export const CONTACTS = [
   {
@@ -14,6 +14,6 @@ export const CONTACTS = [
   {
     title: "GitHub",
     href: "https://github.com/figueroaignacio/",
-    icon: <Github />,
+    icon: <GitHub />,
   },
 ];
