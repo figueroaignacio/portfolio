@@ -46,10 +46,10 @@
           "company": "Pawtrics Software LLC | Florida, USA",
           "datetime": "May 2023 - Abr 2024",
           "responsibilities": [
-            "Diseñé y desarrollé componentes de la interfaz de usuario utilizando Next.js.",
-            "Integré y gestioné datos con PostgreSQL (a través de Supabase).",
-            "Implementé MaterialUI para un diseño consistente en todo el proyecto.",
-            "Desarrollé operaciones CRUD y gestioné tablas de datos.",
+            "Diseño y desarrollo de componentes de interfaz de usuario utilizando Next.js, React y MUI",
+            "Integración y gestion de datos con PostgreSQL (a través de Supabase).",
+            "Implementación de MaterialUI para un diseño consistente en todo el proyecto.",
+            "Desarrollo de operaciones CRUD y gestion de tablas de datos.",
             "Gestión de código con Git y GitHub."
           ],
           "techStack": [
