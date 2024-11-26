@@ -40,7 +40,7 @@ export function Navbar() {
                     to={navItem.href}
                     className={`font-semibold duration-100 ${
                       pathname === navItem.href
-                        ? "text-muted border-b"
+                        ? "text-muted underline"
                         : "text-muted-foreground hover:text-muted"
                     }`}
                   >
@@ -54,7 +54,9 @@ export function Navbar() {
         <div className="flex items-center gap-x-3">
           <ToggleTheme />
           <SelectLanguage />
-          <div className="md:hidden" onClick={toggleMenu}>
+          <div
+            className="md:hidden"
+            onClick={toggleMenu}>
             <Menu />
           </div>
         </div>
