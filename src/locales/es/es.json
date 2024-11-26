@@ -143,9 +143,9 @@
   "pages": {
     "about": {
       "title": "Sobre mí",
-      "greeting": "👋 Hola, soy Ignacio, <span>Desarrollador Web</span> especializado en <span>Desarrollo Frontend</span>, con un enfoque en crear <span>experiencias tecnológicas</span> que establezcan una conexión significativa con los usuarios.",
-      "intro": "Trabajo con <span>React</span> (<span>TypeScript</span>, <span>Next.js</span>) para desarrollar <span>soluciones intuitivas</span> que aporten valor tangible a los negocios. Me apasionan los proyectos <span>desafiantes</span> y actualmente estoy ampliando mis conocimientos en <span>Desarrollo Backend</span> (<span>Node.js</span>, <span>Express.js</span>, <span>Nest.js</span>) para construir un <span>stack tecnológico completo</span>. Creo firmemente en el <span>aprendizaje continuo</span> y en la creación de proyectos con <span>impacto real</span>.",
-      "collaboration": "Me motiva colaborar con equipos <span>diversos</span> y desarrollar productos <span>innovadores</span> que generen <span>resultados significativos</span>. Siempre busco desafíos que me permitan seguir creciendo y contribuir al avance del mundo <span>tecnológico</span>.",
+      "greeting": "👋 Hola, soy Ignacio, Desarrollador Web especializado en <span>Desarrollo Frontend</span>, con un enfoque en crear experiencias tecnológicas que establezcan una conexión significativa con los usuarios.",
+      "intro": "Trabajo con <span>React</span> (TypeScript, Next.js) para desarrollar <span>soluciones intuitivas</span> que aporten valor tangible a los negocios. Me apasionan los proyectos desafiantes y actualmente estoy ampliando mis conocimientos en Desarrollo Backend (Node.js, Express.js, Nest.js) para construir un stack tecnológico completo. Creo firmemente en el <span>aprendizaje continuo</span> y en la creación de proyectos con <span>impacto real</span>.",
+      "collaboration": "Me motiva colaborar con equipos diversos y desarrollar productos innovadores que generen resultados significativos. Siempre busco desafíos que me permitan seguir creciendo y contribuir al avance del mundo <span>tecnológico</span>.",
       "techStack": {
         "title": "Mi stack de Tecnologías"
       }

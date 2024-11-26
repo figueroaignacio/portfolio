@@ -142,10 +142,10 @@
   },
   "pages": {
     "about": {
-      "title": "About me",
-      "greeting": "👋 Hi, I'm Ignacio, a <span>Web Developer</span> specializing in <span>Frontend Development</span>, with a focus on creating <span>technological experiences</span> that establish a meaningful connection with users.",
-      "intro": "I work with <span>React</span> (<span>TypeScript</span>, <span>Next.js</span>) to develop <span>intuitive solutions</span> that bring tangible value to businesses. I thrive on <span>challenging projects</span> and am currently expanding my knowledge in <span>Backend Development</span> (<span>Node.js</span>, <span>Express.js</span>, <span>Nest.js</span>) to build a comprehensive <span>technology stack</span>. I strongly believe in <span>continuous learning</span> and creating projects with <span>real impact</span>.",
-      "collaboration": "I am passionate about collaborating with <span>diverse teams</span> and developing <span>innovative products</span> that generate <span>meaningful results</span>. I am always looking for challenges that allow me to continue growing and contribute to the advancement of the <span>tech</span> world.",
+      "title": "About Me",
+      "greeting": "👋 Hi, I'm Ignacio, a Web Developer specialized in <span>Frontend Development</span>, with a focus on creating technological experiences that build meaningful connections with users.",
+      "intro": "I work with <span>React</span> (TypeScript, Next.js) to develop <span>intuitive solutions</span> that bring tangible value to businesses. I am passionate about challenging projects and am currently expanding my knowledge in Backend Development (Node.js, Express.js, Nest.js) to build a complete tech stack. I strongly believe in <span>continuous learning</span> and creating projects with <span>real impact</span>.",
+      "collaboration": "I am motivated by collaborating with diverse teams and developing innovative products that generate significant results. I am always looking for challenges that allow me to keep growing and contribute to the advancement of the <span>tech world</span>.",
       "techStack": {
         "title": "My Tech Stack"
       }
