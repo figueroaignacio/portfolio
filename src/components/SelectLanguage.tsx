@@ -1,5 +1,5 @@
 // Hooks
-import { useLanguage } from "@/contexts/LanguageContext.tsx";
+import { useLanguage } from "@/hooks/useLanguage.tsx";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

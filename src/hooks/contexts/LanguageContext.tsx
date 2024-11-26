@@ -1,5 +1,5 @@
 // React
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 
 // i18n
 import i18next from "i18next";
@@ -9,7 +9,7 @@ interface LanguageContextProps {
   changeLanguage: (lng: string) => void;
 }
 
-const LanguageContext = createContext<LanguageContextProps | undefined>(
+export const LanguageContext = createContext<LanguageContextProps | undefined>(
   undefined
 );
 
@@ -31,14 +31,4 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
       {children}
     </LanguageContext.Provider>
   );
-};
-
-export const useLanguage = (): LanguageContextProps => {
-  const context = useContext(LanguageContext);
-
-  if (!context) {
-    throw new Error("useI18n debe usarse dentro de un I18nProvider");
-  }
-
-  return context;
 };

@@ -1,16 +1,16 @@
-import { useTheme } from "@/contexts/ThemeContext";
+import { useTheme } from "@/hooks/useTheme";
 import { MoonIcon, SunIcon } from "./Icons";
 
 export function ToggleTheme() {
-  const { isDarkMode, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <button
       onClick={toggleTheme}
       className="px-4 py-2 rounded-md bg-primary hover:bg-primary-foreground border border-border transition-colors flex justify-center"
-      aria-label={isDarkMode ? "Light" : "Dark"}
+      aria-label={theme ? "Light" : "Dark"}
     >
-      {isDarkMode ? <SunIcon /> : <MoonIcon />}
+      {theme === "light" ? <MoonIcon /> : <SunIcon />}
     </button>
   );
 }
