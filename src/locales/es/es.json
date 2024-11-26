@@ -84,7 +84,7 @@
             "PostgreSQL"
           ],
           "code": "https://github.com/figueroaignacio/websociety",
-          "site": "https://websociety.onrender.com/es",
+          "site": "https://websociety.vercel.app/es",
           "status": "En desarollo"
         },
         {
@@ -98,7 +98,7 @@
             "Velite"
           ],
           "code": "https://github.com/figueroaignacio/aspen-ui",
-          "site": "https://aspen-ui.netlify.app/es",
+          "site": "https://aspen-ui.vercel.app/es",
           "status": "En Desarrollo"
         }
       ]
