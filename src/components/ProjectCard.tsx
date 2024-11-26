@@ -2,8 +2,8 @@
 import { Badge } from "@/components/Badge.tsx";
 
 // Icons
-import { Github } from "@/icons/Github.tsx";
 import { ArrowUp } from "@/icons/ArrowUp.tsx";
+import { Document, GitHub } from "@/components/Icons.tsx";
 
 interface ProjectCardProps {
   name: string
@@ -16,10 +16,13 @@ interface ProjectCardProps {
 
 export function ProjectCard({ code, site, technologies, name, status, description }: ProjectCardProps) {
   return (
-    <div className="bg-card rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow duration-300">
+    <div className="bg-card rounded-lg border border-border shadow-sm transition-shadow duration-300">
       <div className="p-6 space-y-4">
         <div className="flex justify-between items-start">
-          <h3 className="text-xl font-bold tracking-tight">{name}</h3>
+          <div className="flex items-center gap-2">
+            <Document />
+            <h3 className="text-xl font-bold tracking-tight">{name}</h3>
+          </div>
           <span
             className="px-4 py-1 text-xs rounded-full border border-border">
             {status}
@@ -44,7 +47,7 @@ export function ProjectCard({ code, site, technologies, name, status, descriptio
             rel="noopener noreferrer"
             className="flex-1 inline-flex items-center justify-center px-4 py-2 gap-2 border border-border rounded-md text-sm bg-primary hover:bg-primary-foreground transition-colors duration-100"
           >
-            <Github />
+            <GitHub />
             <span>Código fuente</span>
           </a>
           <a

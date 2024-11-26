@@ -1,6 +1,9 @@
 // Hooks
 import { useTranslation } from "react-i18next";
 
+// Icons
+import { Building } from "@/components/Icons.tsx";
+
 interface ExperienceCardProps {
   role: string;
   description: string;
@@ -18,7 +21,10 @@ export function ExperienceCard({ company, datetime, responsibilities, role, desc
       <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
         <div className="flex-grow">
           <h3 className="text-2xl font-bold mb-1">{role}</h3>
-          <h4 className="text-base font-medium text-muted-foreground">{company}</h4>
+          <div className="flex items-center gap-x-2">
+            <Building />
+            <h4 className="text-base font-medium text-muted-foreground">{company}</h4>
+          </div>
         </div>
         <span className="text-sm mt-2 md:mt-0 text-muted-foreground whitespace-nowrap">{datetime}</span>
       </div>
