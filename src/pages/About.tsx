@@ -7,17 +7,13 @@ import { motion } from 'framer-motion';
 // Components
 import { TestimoniesCard } from "@/components/TestimoniesCard.tsx";
 import { Badge } from "@/components/Badge.tsx";
+import { Contacts } from "@/components/Contacts.tsx";
 
 // Constants
 import { containerVariants, fadeUpVariants, listItemVariants } from "@/constants/animations.ts";
 
-type Testinomies = {
-  body: string;
-  name: string;
-  role: string;
-  profile: string;
-}
-
+// Types
+import { Testinomies } from "@/types/types.ts";
 
 export function About() {
   const { t } = useTranslation();
@@ -64,6 +60,9 @@ export function About() {
           i18nKey={t("pages.about.collaboration")}
           components={{ span: <span className="text-accent"></span> }} />
       </motion.p>
+      <div>
+        <Contacts />
+      </div>
       <div className="my-2">
         <div className="space-y-2 mb-3">
           <motion.h3

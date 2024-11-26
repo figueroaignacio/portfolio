@@ -103,6 +103,9 @@
         }
       ]
     },
+    "contacts": {
+      "title": "You can reach me with the following medias 👇"
+    },
     "testimonies": {
       "title": "Some Testimonies",
       "description": "Would you like to know what my colleagues said about me?",

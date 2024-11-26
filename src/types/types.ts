@@ -15,3 +15,10 @@ export type Experience = {
   description: string;
   techStack: string[];
 }
+
+export type Testinomies = {
+  body: string;
+  name: string;
+  role: string;
+  profile: string;
+}

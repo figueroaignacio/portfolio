@@ -103,6 +103,9 @@
         }
       ]
     },
+    "contacts": {
+      "title": "Puedes comunicarte conmigo a través de los siguientes medios 👇  "
+    },
     "testimonies": {
       "title": "Algunos Testimonios",
       "description": "¿Te gustaría saber lo que mis compañeros dijeron de mi?",
