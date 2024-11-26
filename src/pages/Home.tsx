@@ -49,12 +49,12 @@ export function Home() {
         className="min-h-[60dvh] flex flex-col justify-center gap-y-3"
       >
         <motion.h1
-          className="text-5xl font-bold py-2"
+          className="text-4xl font-bold py-2"
           variants={fadeUpVariants}>
           {t("sections.home.title")}
         </motion.h1>
         <motion.h2
-          className="text-muted-foreground"
+          className="text-muted-foreground text-sm"
           variants={fadeUpVariants}>
           <Trans
             i18nKey="sections.home.subtitle"
