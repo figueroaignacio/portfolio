@@ -149,6 +149,42 @@
       "techStack": {
         "title": "Mi stack de Tecnologías"
       }
+    },
+    "projects": {
+      "title": "Proyectos",
+      "items": [
+        {
+          "name": "Web Society Project",
+          "description": "Descubre las últimas tendencias web, perfecciona tus habilidades en desarrollo web y explora recursos innovadores. Acepta nuevos desafíos que catapulten tu carrera hacia el éxito.",
+          "technologies": [
+            "TypeScript",
+            "Next.js",
+            "React",
+            "Tailwind",
+            "Velite",
+            "shadcn/ui",
+            "Nest",
+            "PostgreSQL"
+          ],
+          "code": "https://github.com/figueroaignacio/websociety",
+          "site": "https://websociety.vercel.app/es",
+          "status": "En desarollo"
+        },
+        {
+          "name": "AspenUI",
+          "description": "Mejora tu flujo de trabajo con componentes preconstruidos, totalmente personalizables y de código abierto, listos para implementar.",
+          "technologies": [
+            "TypeScript",
+            "Next.js",
+            "React",
+            "Tailwind",
+            "Velite"
+          ],
+          "code": "https://github.com/figueroaignacio/aspen-ui",
+          "site": "https://aspen-ui.vercel.app/es",
+          "status": "En Desarrollo"
+        }
+      ]
     }
   },
   "components": {
