@@ -9,8 +9,7 @@ import { ToggleTheme } from "@/components/ToggleTheme.tsx";
 import { Link, useLocation } from "react-router-dom";
 
 // Icons
-import { Menu } from "@/icons/Menu.tsx";
-import { X } from "@/icons/X.tsx";
+import { Menu, X } from "@/components/Icons.tsx"
 
 type NavItem = {
   label: string;

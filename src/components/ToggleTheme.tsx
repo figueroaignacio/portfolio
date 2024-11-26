@@ -1,4 +1,7 @@
+// Hooks
 import { useTheme } from "@/hooks/useTheme";
+
+// Icons
 import { MoonIcon, SunIcon } from "./Icons";
 
 export function ToggleTheme() {

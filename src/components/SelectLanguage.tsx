@@ -5,8 +5,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 // Icons
-import { X } from "@/icons/X.tsx";
-import { Lang } from "../icons/Lang.tsx";
+import { Lang, X } from "@/components/Icons.tsx"
 
 // Utils
 import { modalVariants } from "@/constants/animations.ts";

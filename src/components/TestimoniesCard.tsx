@@ -1,5 +1,5 @@
 // Icons
-import { ArrowUp } from "@/icons/ArrowUp.tsx";
+import { ArrowUp } from "@/components/Icons.tsx";
 
 interface TestimoniesCardProps {
   body: string;

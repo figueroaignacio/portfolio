@@ -2,7 +2,7 @@
 import { useTranslation } from "react-i18next";
 
 // Icons
-import { Mail } from "@/icons/Mail.tsx";
+import { Mail } from "@/components/Icons.tsx";
 
 export function CallToAction() {
   const { t } = useTranslation();
@@ -19,9 +19,7 @@ export function CallToAction() {
           href="mailto:ignaciofigueroadev@gmail.com"
           className="flex items-center gap-2 px-6 py-2 rounded-md text-sm bg-primary hover:bg-primary-foreground duration-100 border-[1px] border-border"
         >
-          <Mail
-            height="16"
-            width="16" />
+          <Mail />
           {t("components.callToAction.link")}
         </a>
       </div>

@@ -2,8 +2,7 @@
 import { Badge } from "@/components/Badge.tsx";
 
 // Icons
-import { ArrowUp } from "@/icons/ArrowUp.tsx";
-import { Document, GitHub } from "@/components/Icons.tsx";
+import { ArrowUp, Document, GitHub } from "@/components/Icons.tsx";
 
 interface ProjectCardProps {
   name: string

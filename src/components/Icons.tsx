@@ -185,5 +185,101 @@ function Location() {
   );
 }
 
+function ArrowUp() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+      fill="currentColor"
+      width="12"
+      height="12"
+    >
+      <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
+    </svg>
+  );
+}
 
-export { SunIcon, MoonIcon, Chevron, User, Mail, LinkedIn, GitHub, Building, Document, Location }
+function X() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className="lucide lucide-x">
+      <path d="M18 6 6 18" />
+      <path d="m6 6 12 12" />
+    </svg>
+  )
+}
+
+function Lang() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 -960 960 960"
+      width="12"
+      height="12"
+      fill="currentColor"
+    >
+      <title>Language</title>
+      <path
+        d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z" />
+    </svg>
+  );
+}
+
+function Menu() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="lucide lucide-menu">
+      <line
+        x1="4"
+        x2="20"
+        y1="12"
+        y2="12" />
+      <line
+        x1="4"
+        x2="20"
+        y1="6"
+        y2="6" />
+      <line
+        x1="4"
+        x2="20"
+        y1="18"
+        y2="18" />
+    </svg>
+  )
+}
+
+
+export {
+  SunIcon,
+  MoonIcon,
+  Chevron,
+  User,
+  Mail,
+  LinkedIn,
+  GitHub,
+  Building,
+  Document,
+  Location,
+  ArrowUp,
+  X,
+  Lang,
+  Menu
+}
