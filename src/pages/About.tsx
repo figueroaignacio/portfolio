@@ -6,10 +6,10 @@ import { motion } from 'framer-motion';
 
 // Components
 import { TestimoniesCard } from "@/components/TestimoniesCard.tsx";
+import { Badge } from "@/components/Badge.tsx";
 
 // Constants
 import { containerVariants, fadeUpVariants, listItemVariants } from "@/constants/animations.ts";
-import { Badge } from "@/components/Badge.tsx";
 
 type Testinomies = {
   body: string;
