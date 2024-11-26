@@ -21,7 +21,7 @@ type Testinomies = {
 
 export function About() {
   const { t } = useTranslation();
-  const testimones = t("sections.testimonies.items", { returnObjects: true }) as Testinomies[]
+  const testimonies = t("sections.testimonies.items", { returnObjects: true }) as Testinomies[]
   const techStack = [
     "HTML",
     "CSS",
@@ -74,7 +74,7 @@ export function About() {
             className="text-sm text-muted-foreground">{t("sections.testimonies.description")}</motion.p>
         </div>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          {testimones.map((testimony, index) => (
+          {testimonies.map((testimony, index) => (
             <motion.li
               variants={fadeUpVariants}
               key={index}>
