@@ -1,10 +1,7 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -14,20 +11,20 @@ export default {
         card: "var(--card)",
         primary: {
           DEFAULT: "var(--primary)",
-          foreground: "var(--primary-foreground)"
+          foreground: "var(--primary-foreground)",
         },
         secondary: {
           DEFAULT: "var(--secondary)",
-          foreground: "var(--secondary-foreground)"
+          foreground: "var(--secondary-foreground)",
         },
         accent: {
           DEFAULT: "var(--accent)",
-          foreground: "var(--accent-foreground)"
+          foreground: "var(--accent-foreground)",
         },
         muted: {
           DEFAULT: "var(--muted)",
           foreground: "var(--muted-foreground)",
-        }
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -36,5 +33,5 @@ export default {
       },
     },
   },
-  plugins: [],
-} satisfies Config
+  plugins: [require("@tailwindcss/typography")],
+} satisfies Config;

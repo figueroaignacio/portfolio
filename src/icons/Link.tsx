@@ -3,7 +3,7 @@ interface IconProps {
   height: string;
 }
 
-export function Link({ height, width }: IconProps) {
+export function LinkIcon({ height, width }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

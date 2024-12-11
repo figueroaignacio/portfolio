@@ -1,21 +1,25 @@
 // Pages
-import { About, Home, Notes, Projects } from "@/pages";
+import { About, Home, NoteDetails, Notes, Projects } from "@/pages";
 
 export const routes = [
   {
     path: "/",
-    element: <Home />
+    element: <Home />,
   },
   {
     path: "/about",
-    element: <About />
+    element: <About />,
   },
   {
     path: "/projects",
-    element: <Projects />
+    element: <Projects />,
   },
   {
     path: "/notes",
-    element: <Notes />
-  }
-]
+    element: <Notes />,
+  },
+  {
+    path: "/notes/:slug",
+    element: <NoteDetails />,
+  },
+];

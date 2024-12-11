@@ -11,7 +11,13 @@
   },
   "dependencies": {
     "@fontsource-variable/onest": "^5.1.0",
+    "@portabletext/react": "^3.2.0",
+    "@portabletext/types": "^2.0.13",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/client": "^6.24.1",
+    "@tailwindcss/typography": "^0.5.15",
     "@types/node": "^22.9.4",
+    "date-fns": "^4.1.0",
     "framer-motion": "^11.11.17",
     "i18next": "^23.16.8",
     "react": "^18.3.1",
