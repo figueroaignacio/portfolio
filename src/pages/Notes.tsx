@@ -49,7 +49,7 @@ export function Notes() {
     <section>
       <h1 className="text-4xl font-bold my-5">{t("pages.notes.title")}</h1>
       <p className="mb-6">{t("pages.notes.description")}</p>
-      <ul className="space-y-6">
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {notes.map((note) => (
           <li key={note.slug}>
             <NoteCard
