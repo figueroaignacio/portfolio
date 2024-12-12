@@ -3,9 +3,9 @@ import { useSanityFetch } from "@/hooks/useSanityFetch";
 
 // Components
 import { NoteCard } from "@/components/NoteCard";
+import { Spinner } from "@/components/Spinner";
 
 // Config
-import { Spinner } from "@/components/Spinner";
 import { QUERY } from "@/config/queries";
 
 interface Note {

@@ -1,6 +1,7 @@
 // Components
 import { Link } from "react-router-dom";
 
+// Icons
 import { ArrowUp } from "./Icons";
 
 interface NoteCardProps {
