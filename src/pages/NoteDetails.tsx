@@ -1,9 +1,14 @@
-import { Spinner } from "@/components/Spinner";
-import { QUERY } from "@/config/queries";
+// Hooks
 import { useSanityFetch } from "@/hooks/useSanityFetch";
-import { PortableText } from "@portabletext/react";
-import { TypedObject } from "@portabletext/types";
 import { useParams } from "react-router-dom";
+
+// Components
+import { Spinner } from "@/components/Spinner";
+import { PortableText } from "@portabletext/react";
+
+// Config
+import { QUERY } from "@/config/queries";
+import { TypedObject } from "@portabletext/types";
 
 interface Note {
   title: string;
