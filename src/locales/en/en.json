@@ -153,6 +153,10 @@
         "title": "My Tech Stack"
       }
     },
+    "notes": {
+      "title": "Notes",
+      "description": "A curated collection of my personal insights, tips, quick posts, and code snippets that I frequently use across my projects."
+    },
     "projects": {
       "title": "Projects",
       "items": [

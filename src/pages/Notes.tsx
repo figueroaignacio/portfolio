@@ -1,5 +1,6 @@
 // Hooks
 import { useSanityFetch } from "@/hooks/useSanityFetch";
+import { useTranslation } from "react-i18next";
 
 // Components
 import { NoteCard } from "@/components/NoteCard";
@@ -24,16 +25,14 @@ interface Note {
 }
 
 export function Notes() {
+  const { t } = useTranslation();
   const { data: notes, error, isLoading } = useSanityFetch<Note[]>(QUERY.NOTE);
 
   if (isLoading) {
     return (
       <section>
-        <h1 className="text-4xl font-bold my-5">Notes</h1>
-        <p className="mb-6">
-          A collection of my personal brief notes, tips, short-form posts, or
-          snippets I use throughout my projects.
-        </p>
+        <h1 className="text-4xl font-bold my-5">{t("pages.notes.title")}</h1>
+        <p className="mb-6">{t("pages.notes.description")}</p>
         <div className="min-h-[70dvh] w-full flex justify-center items-center">
           <Spinner />
         </div>
@@ -48,11 +47,8 @@ export function Notes() {
 
   return (
     <section>
-      <h1 className="text-4xl font-bold my-5">Notes</h1>
-      <p className="mb-6">
-        A collection of my personal brief notes, tips, short-form posts, or
-        snippets I use throughout my projects.
-      </p>
+      <h1 className="text-4xl font-bold my-5">{t("pages.notes.title")}</h1>
+      <p className="mb-6">{t("pages.notes.description")}</p>
       <ul className="space-y-6">
         {notes.map((note) => (
           <li key={note.slug}>

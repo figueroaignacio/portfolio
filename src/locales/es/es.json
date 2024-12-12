@@ -153,6 +153,10 @@
         "title": "Mi stack de Tecnologías"
       }
     },
+    "notes": {
+      "title": "Notas",
+      "description": "Una colección seleccionada de mis apuntes personales, consejos, publicaciones breves y fragmentos de código que utilizo frecuentemente en mis proyectos."
+    },
     "projects": {
       "title": "Proyectos",
       "items": [

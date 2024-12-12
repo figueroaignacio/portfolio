@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 
 interface Note {
   title: string;
+  description: string;
   body: TypedObject[];
   publishedAt: string;
   mainImage: {
@@ -37,8 +38,11 @@ export function NoteDetails() {
 
   return (
     <article>
-      <h1 className="text-4xl mb-5 font-bold">{note.title}</h1>
-      <div className="prose-invert space-y-6">
+      <div className="border-b border-border pb-6 mb-6">
+        <h1 className="text-4xl mb-5 font-bold">{note.title}</h1>
+        <p>{note.description}</p>
+      </div>
+      <div className="prose prose-invert space-y-6">
         <PortableText value={note.body} />
       </div>
     </article>
