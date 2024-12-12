@@ -47,7 +47,7 @@ export function NoteDetails() {
         <h1 className="text-4xl mb-5 font-bold">{note.title}</h1>
         <p>{note.description}</p>
       </div>
-      <div className="prose prose-invert space-y-6">
+      <div className="prose dark:prose-invert space-y-6">
         <PortableText value={note.body} />
       </div>
     </article>
