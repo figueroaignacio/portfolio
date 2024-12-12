@@ -1,4 +1,5 @@
 // Hooks
+import { useLanguage } from "@/hooks/useLanguage";
 import { useSanityFetch } from "@/hooks/useSanityFetch";
 import { useTranslation } from "react-i18next";
 
@@ -12,7 +13,9 @@ import { QUERY } from "@/config/queries";
 interface Note {
   title: string;
   description: string;
-  slug: string;
+  slug: {
+    current: string;
+  };
   body: string;
   publishedAt: string;
   mainImage: {
@@ -26,7 +29,12 @@ interface Note {
 
 export function Notes() {
   const { t } = useTranslation();
-  const { data: notes, error, isLoading } = useSanityFetch<Note[]>(QUERY.NOTE);
+  const { language } = useLanguage();
+  const {
+    data: notes,
+    error,
+    isLoading,
+  } = useSanityFetch<Note[]>(QUERY.NOTE(language));
 
   if (isLoading) {
     return (
@@ -49,13 +57,13 @@ export function Notes() {
     <section>
       <h1 className="text-4xl font-bold my-5">{t("pages.notes.title")}</h1>
       <p className="mb-6">{t("pages.notes.description")}</p>
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <ul className="space-y-3">
         {notes.map((note) => (
-          <li key={note.slug}>
+          <li key={note.slug.current}>
             <NoteCard
               title={note.title}
               description={note.description}
-              slug={`/notes/${note.slug}`}
+              slug={`/notes/${note.slug.current}`}
             />
           </li>
         ))}

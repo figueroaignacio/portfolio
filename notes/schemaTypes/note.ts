@@ -48,13 +48,31 @@ export default defineType({
       title: 'Body',
       type: 'blockContent',
     }),
+    defineField({
+      name: 'locale',
+      title: 'Locale',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'English', value: 'en'},
+          {title: 'Español', value: 'es'},
+        ],
+        layout: 'radio',
+      },
+    }),
   ],
-
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
+      locale: 'locale',
       media: 'mainImage',
+    },
+    prepare(selection) {
+      const {title, locale, media} = selection
+      return {
+        title: `${title} (${locale})`,
+        media,
+      }
     },
   },
 })

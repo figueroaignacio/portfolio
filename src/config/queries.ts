@@ -1,28 +1,32 @@
 export const QUERY = {
-  NOTE: `*[_type == "note"] {
-    title,
-    "slug": slug.current,
-    body,
-    description,
-    publishedAt,
-    mainImage {
-      asset -> {
-        _id,
-        url
-      },
-      alt,
+  NOTE: (locale: string) => `
+    *[_type == "note" && locale == "${locale}"] | order(publishedAt desc) {
+      title,
+      description,
+      slug,
+      body,
+      publishedAt,
+      mainImage {
+        asset -> {
+          _id,
+          url
+        },
+        alt
+      }
     }
-  } | order(publishedAt desc)`,
-  NOTE_DETAILS: `*[_type == "note" && slug.current == $slug][0] {
-    title,
-    description,
-    body,
-    publishedAt,
-    mainImage {
-      asset -> {
-        url
-      },
-      alt,
+  `,
+  NOTE_DETAILS: (slug: string, locale: string) => `
+    *[_type == "note" && slug.current == "${slug}" && locale == "${locale}"][0] {
+      title,
+      description,
+      body,
+      publishedAt,
+      mainImage {
+        asset -> {
+          url
+        },
+        alt,
+      }
     }
-  }`,
+  `,
 };

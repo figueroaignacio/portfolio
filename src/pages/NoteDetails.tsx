@@ -1,4 +1,5 @@
 // Hooks
+import { useLanguage } from "@/hooks/useLanguage";
 import { useSanityFetch } from "@/hooks/useSanityFetch";
 import { useParams } from "react-router-dom";
 
@@ -25,12 +26,12 @@ interface Note {
 
 export function NoteDetails() {
   const { slug } = useParams<{ slug: string }>();
-
+  const { language } = useLanguage();
   const {
     data: note,
     isLoading,
     error,
-  } = useSanityFetch<Note>(QUERY.NOTE_DETAILS, { slug });
+  } = useSanityFetch<Note>(QUERY.NOTE_DETAILS(slug!, language));
 
   if (isLoading)
     return (
