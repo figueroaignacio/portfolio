@@ -4,6 +4,7 @@ import { useSanityFetch } from "@/hooks/useSanityFetch";
 import { useParams } from "react-router-dom";
 
 // Components
+import { BackButton } from "@/components/BackButton";
 import { Spinner } from "@/components/Spinner";
 import { PortableText } from "@portabletext/react";
 
@@ -44,6 +45,7 @@ export function NoteDetails() {
 
   return (
     <article>
+      <BackButton />
       <div className="border-b border-border pb-6 mb-6">
         <h1 className="text-4xl mb-5 font-bold">{note.title}</h1>
         <p>{note.description}</p>
