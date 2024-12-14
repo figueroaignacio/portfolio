@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 
 // Components
 import { NoteCard } from "@/components/NoteCard";
+import { Seo } from "@/components/Seo";
 import { Spinner } from "@/components/Spinner";
 
 // Config
@@ -47,6 +48,7 @@ export function Notes() {
       </section>
     );
   }
+
   if (error) return <p className="text-red-500">Error: {error.message}</p>;
 
   if (!notes || notes.length === 0) {
@@ -55,6 +57,10 @@ export function Notes() {
 
   return (
     <section>
+      <Seo
+        title={t("siteConfig.notes.title")}
+        description={t("siteConfig.notes.description")}
+      />
       <h1 className="text-4xl font-bold my-5">{t("pages.notes.title")}</h1>
       <p className="mb-6">{t("pages.notes.description")}</p>
       <ul className="space-y-3">

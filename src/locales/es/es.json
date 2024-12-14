@@ -211,5 +211,23 @@
       "subtitle": "Contactame y trabajemos juntos.",
       "link": "Mándame un Email"
     }
+  },
+  "siteConfig": {
+    "home": {
+      "title": "Ignacio Figueroa - Desarrollador Web",
+      "description": "Hola, soy Ignacio Figueroa, un desarrollador web apasionado por crear experiencias modernas y funcionales. Descubre mi portafolio y conectemos para colaborar en proyectos innovadores."
+    },
+    "about": {
+      "title": "Ignacio Figueroa - Sobre mí",
+      "description": "Soy Ignacio Figueroa, un desarrollador web comprometido con la excelencia y la innovación. Aquí puedes conocer más sobre mi trayectoria, habilidades y enfoque en el desarrollo web."
+    },
+    "projects": {
+      "title": "Ignacio Figueroa - Proyectos",
+      "description": "Estos son algunos de los proyectos en los que he trabajado, combinando diseño moderno, funcionalidad y tecnologías de vanguardia. Explóralos y descubre cómo puedo ayudarte a hacer realidad tus ideas."
+    },
+    "notes": {
+      "title": "Ignacio Figueroa - Notas",
+      "description": "En esta sección comparto reflexiones, aprendizajes y recursos útiles sobre desarrollo web y tendencias tecnológicas."
+    }
   }
 }

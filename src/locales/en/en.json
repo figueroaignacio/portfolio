@@ -211,5 +211,23 @@
       "subtitle": "Reach me and let's work together.",
       "link": "Send Me an Email"
     }
+  },
+  "siteConfig": {
+    "home": {
+      "title": "Ignacio Figueroa - Web Developer",
+      "description": "Hi, I’m Ignacio Figueroa, a web developer passionate about building modern and functional experiences. Explore my portfolio and let’s connect to collaborate on innovative projects."
+    },
+    "about": {
+      "title": "Ignacio Figueroa - About Me",
+      "description": "I’m Ignacio Figueroa, a web developer dedicated to excellence and innovation. Here you can learn more about my journey, skills, and approach to web development."
+    },
+    "projects": {
+      "title": "Ignacio Figueroa - Projects",
+      "description": "Here are some of the projects I’ve worked on, blending modern design, functionality, and cutting-edge technologies. Explore them and see how I can help bring your ideas to life."
+    },
+    "notes": {
+      "title": "Ignacio Figueroa - Notes",
+      "description": "In this section, I share my thoughts, lessons learned, and useful resources about web development and tech trends."
+    }
   }
 }
