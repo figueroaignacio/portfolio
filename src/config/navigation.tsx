@@ -1,5 +1,9 @@
 // Pages
-import { About, Home, NoteDetails, Notes, Projects } from "@/pages";
+import { About } from "@/pages/About";
+import { Home } from "@/pages/Home";
+import { NoteDetails } from "@/pages/NoteDetails";
+import { Notes } from "@/pages/Notes";
+import { Projects } from "@/pages/Projects";
 
 export const routes = [
   {
