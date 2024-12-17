@@ -3,11 +3,13 @@ import { useTranslation } from "react-i18next";
 
 // Components
 import { Seo } from "@/components/Seo";
-import { Contacts } from "@/sections/Contacts";
 
-// Types
+// Sections
+import { Contacts } from "@/sections/Contacts";
 import { Prologe } from "@/sections/Prologe";
 import { Stack } from "@/sections/Stack";
+
+// Types
 import { Testimonies } from "@/sections/Testimonies";
 
 export function About() {
