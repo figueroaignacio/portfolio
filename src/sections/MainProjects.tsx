@@ -15,7 +15,7 @@ export function MainProjects() {
   }) as Project[];
 
   return (
-    <section>
+    <div>
       <h2 className="font-bold text-xl mb-5">
         {t("sections.mainProjects.title")}
       </h2>
@@ -26,13 +26,12 @@ export function MainProjects() {
               description={item.description}
               code={item.code}
               site={item.site}
-              status={item.status}
               technologies={item.technologies}
               name={item.name}
             />
           </li>
         ))}
       </ul>
-    </section>
+    </div>
   );
 }
