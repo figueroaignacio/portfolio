@@ -16,10 +16,10 @@
 
 @layer base {
   :root {
-    --background: hsl(210, 25%, 96%);
+    --background: hsl(210, 25%, 91%);
     --foreground: hsl(220, 20%, 20%);
-    --card: hsl(0, 0%, 98%);
-    --primary: hsl(0, 0%, 100%);
+    --card: hsl(210, 25%, 92.5%);
+    --primary: hsl(210, 21%, 93%);
     --primary-foreground: hsl(212, 24%, 89%);
     --secondary: hsl(200, 60%, 50%);
     --secondary-foreground: hsl(210, 30%, 98%);

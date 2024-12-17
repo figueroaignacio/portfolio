@@ -10,11 +10,9 @@ const SunIcon = () => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-sun">
-      <circle
-        cx="12"
-        cy="12"
-        r="4" />
+      className="lucide lucide-sun"
+    >
+      <circle cx="12" cy="12" r="4" />
       <path d="M12 2v2" />
       <path d="M12 20v2" />
       <path d="m4.93 4.93 1.41 1.41" />
@@ -24,8 +22,8 @@ const SunIcon = () => {
       <path d="m6.34 17.66-1.41 1.41" />
       <path d="m19.07 4.93-1.41 1.41" />
     </svg>
-  )
-}
+  );
+};
 
 const MoonIcon = () => {
   return (
@@ -39,11 +37,12 @@ const MoonIcon = () => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-moon">
+      className="lucide lucide-moon"
+    >
       <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
     </svg>
-  )
-}
+  );
+};
 
 function Chevron() {
   return (
@@ -68,13 +67,15 @@ function User() {
       strokeWidth={1.5}
       stroke="currentColor"
       width="16"
-      height="16">
+      height="16"
+    >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
-        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+      />
     </svg>
-  )
+  );
 }
 
 function GitHub() {
@@ -104,13 +105,12 @@ function LinkedIn() {
     >
       <title>LinkedIn</title>
       <path
-        fill="#f5f5f5"
+        fill="currentColor"
         d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
       ></path>
     </svg>
   );
 }
-
 
 function Mail() {
   return (
@@ -126,12 +126,7 @@ function Mail() {
       strokeLinejoin="round"
     >
       <title>Mail Icon</title>
-      <rect
-        width="20"
-        height="16"
-        x="2"
-        y="4"
-        rx="2"></rect>
+      <rect width="20" height="16" x="2" y="4" rx="2"></rect>
       <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
     </svg>
   );
@@ -165,7 +160,8 @@ function Document() {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-folder">
+      className="lucide lucide-folder"
+    >
       <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
     </svg>
   );
@@ -211,11 +207,12 @@ function X() {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-x">
+      className="lucide lucide-x"
+    >
       <path d="M18 6 6 18" />
       <path d="m6 6 12 12" />
     </svg>
-  )
+  );
 }
 
 function Lang() {
@@ -228,8 +225,7 @@ function Lang() {
       fill="currentColor"
     >
       <title>Language</title>
-      <path
-        d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z" />
+      <path d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z" />
     </svg>
   );
 }
@@ -246,40 +242,28 @@ function Menu() {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-menu">
-      <line
-        x1="4"
-        x2="20"
-        y1="12"
-        y2="12" />
-      <line
-        x1="4"
-        x2="20"
-        y1="6"
-        y2="6" />
-      <line
-        x1="4"
-        x2="20"
-        y1="18"
-        y2="18" />
+      className="lucide lucide-menu"
+    >
+      <line x1="4" x2="20" y1="12" y2="12" />
+      <line x1="4" x2="20" y1="6" y2="6" />
+      <line x1="4" x2="20" y1="18" y2="18" />
     </svg>
-  )
+  );
 }
-
 
 export {
-  SunIcon,
-  MoonIcon,
-  Chevron,
-  User,
-  Mail,
-  LinkedIn,
-  GitHub,
-  Building,
-  Document,
-  Location,
   ArrowUp,
-  X,
+  Building,
+  Chevron,
+  Document,
+  GitHub,
   Lang,
-  Menu
-}
+  LinkedIn,
+  Location,
+  Mail,
+  Menu,
+  MoonIcon,
+  SunIcon,
+  User,
+  X,
+};
