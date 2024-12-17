@@ -40,6 +40,7 @@ export function NoteDetails() {
         <Spinner />
       </div>
     );
+
   if (error) return <p className="text-red-500">Error: {error.message}</p>;
   if (!note) return <p>No post found.</p>;
 
