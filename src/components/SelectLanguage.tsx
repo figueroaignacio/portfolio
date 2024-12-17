@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 // Icons
-import { Lang, X } from "@/components/Icons.tsx"
+import { Lang, X } from "@/components/Icons.tsx";
 
 // Utils
 import { modalVariants } from "@/constants/animations.ts";
@@ -27,7 +27,7 @@ export function SelectLanguage() {
     <>
       <button
         onClick={openModal}
-        className="flex items-center gap-2 px-4 py-2 rounded-md bg-primary hover:bg-primary-foreground duration-100 border-[1px] border-border"
+        className="flex items-center gap-2 px-4 py-2 rounded-md bg-primary hover:bg-primary-foreground duration-100 border-[1px] border-border shadow-md"
       >
         <Lang />
         <span className="text-xs">{language.toUpperCase()}</span>
