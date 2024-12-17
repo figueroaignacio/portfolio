@@ -5,8 +5,8 @@ import { useTranslation } from "react-i18next";
 
 // Components
 import { NoteCard } from "@/components/NoteCard";
+import { NoteCardSkeleton } from "@/components/NoteCardSkeleton";
 import { Seo } from "@/components/Seo";
-import { Spinner } from "@/components/Spinner";
 
 // Config
 import { QUERY } from "@/config/queries";
@@ -42,9 +42,13 @@ export function Notes() {
       <section>
         <h1 className="text-4xl font-bold my-5">{t("pages.notes.title")}</h1>
         <p className="mb-6">{t("pages.notes.description")}</p>
-        <div className="min-h-[70dvh] w-full flex justify-center items-center">
-          <Spinner />
-        </div>
+        <ul className="space-y-3">
+          {Array.from({ length: 5 }).map((_, index) => (
+            <li key={index}>
+              <NoteCardSkeleton />
+            </li>
+          ))}
+        </ul>
       </section>
     );
   }
