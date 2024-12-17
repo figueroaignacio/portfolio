@@ -28,7 +28,6 @@ export function Projects() {
               description={item.description}
               code={item.code}
               site={item.site}
-              status={item.status}
               technologies={item.technologies}
               name={item.name}
             />

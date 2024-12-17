@@ -174,8 +174,7 @@
             "PostgreSQL"
           ],
           "code": "https://github.com/figueroaignacio/websociety",
-          "site": "https://websociety.vercel.app/en",
-          "status": "In Development"
+          "site": "https://websociety.vercel.app/en"
         },
         {
           "name": "AspenUI",
@@ -188,8 +187,7 @@
             "Velite"
           ],
           "code": "https://github.com/figueroaignacio/aspen-ui",
-          "site": "https://aspen-ui.vercel.app/en",
-          "status": "In Development"
+          "site": "https://aspen-ui.vercel.app/en"
         }
       ]
     }

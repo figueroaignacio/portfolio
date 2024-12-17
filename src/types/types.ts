@@ -1,11 +1,10 @@
 export type Project = {
-  name: string
-  description: string
-  technologies: string[]
-  code: string
-  site: string
-  status: "In Development" | "Completed" | "Under maintenance"
-}
+  name: string;
+  description: string;
+  technologies: string[];
+  code: string;
+  site: string;
+};
 
 export type Experience = {
   company: string;
@@ -14,11 +13,11 @@ export type Experience = {
   responsibilities: string[];
   description: string;
   techStack: string[];
-}
+};
 
 export type Testinomies = {
   body: string;
   name: string;
   role: string;
   profile: string;
-}
+};

@@ -5,15 +5,20 @@ import { Badge } from "@/components/Badge.tsx";
 import { ArrowUp, Document, GitHub } from "@/components/Icons.tsx";
 
 interface ProjectCardProps {
-  name: string
-  description: string
-  technologies: string[]
-  code: string
-  site: string
-  status: string;
+  name: string;
+  description: string;
+  technologies: string[];
+  code: string;
+  site: string;
 }
 
-export function ProjectCard({ code, site, technologies, name, status, description }: ProjectCardProps) {
+export function ProjectCard({
+  code,
+  site,
+  technologies,
+  name,
+  description,
+}: ProjectCardProps) {
   return (
     <div className="bg-card rounded-lg border border-border shadow-sm transition-shadow duration-300">
       <div className="p-6 space-y-4">
@@ -22,20 +27,14 @@ export function ProjectCard({ code, site, technologies, name, status, descriptio
             <Document />
             <h3 className="text-xl font-bold tracking-tight">{name}</h3>
           </div>
-          <span
-            className="px-4 py-1 text-xs rounded-full border border-border">
-            {status}
-          </span>
         </div>
-        <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          {description}
+        </p>
         {technologies.length > 0 && (
           <div className="flex flex-wrap gap-2">
             {technologies.map((tech, index) => (
-              <Badge
-                key={index}
-              >
-                {tech}
-              </Badge>
+              <Badge key={index}>{tech}</Badge>
             ))}
           </div>
         )}
@@ -61,5 +60,5 @@ export function ProjectCard({ code, site, technologies, name, status, descriptio
         </div>
       </div>
     </div>
-  )
+  );
 }
