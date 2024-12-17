@@ -14,7 +14,7 @@ export function LatestExperience() {
   }) as Experience[];
 
   return (
-    <section>
+    <div>
       <h2 className="font-bold text-xl">{t("sections.experience.title")}</h2>
       <ul>
         {experience.map((item, index) => (
@@ -30,6 +30,6 @@ export function LatestExperience() {
           </li>
         ))}
       </ul>
-    </section>
+    </div>
   );
 }
