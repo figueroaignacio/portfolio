@@ -8,9 +8,14 @@ interface TestimoniesCardProps {
   profile: string;
 }
 
-export function TestimoniesCard({ body, name, role, profile }: TestimoniesCardProps) {
+export function TestimoniesCard({
+  body,
+  name,
+  role,
+  profile,
+}: TestimoniesCardProps) {
   return (
-    <div className="bg-card rounded-lg p-6 space-y-6 h-full flex flex-col justify-between border border-border shadow-sm transition-shadow duration-200 hover:shadow-md">
+    <div className="bg-card rounded-lg p-6 space-y-6 h-full flex flex-col justify-between border border-border shadow-md">
       <p className="text-sm leading-relaxed tracking-tight text-muted-foreground">
         "{body}"
       </p>
@@ -23,12 +28,12 @@ export function TestimoniesCard({ body, name, role, profile }: TestimoniesCardPr
           href={profile}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs font-medium flex items-center gap-1 hover:bg-primary-foreground p-2 rounded-md transition-colors duration-200"
+          className="text-xs font-medium flex items-center gap-1 underline"
         >
           LinkedIn
           <ArrowUp />
         </a>
       </div>
     </div>
-  )
+  );
 }

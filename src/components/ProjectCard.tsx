@@ -20,7 +20,7 @@ export function ProjectCard({
   description,
 }: ProjectCardProps) {
   return (
-    <div className="bg-card rounded-lg border border-border shadow-sm transition-shadow duration-300">
+    <div className="bg-card rounded-lg border border-border shadow-md transition-shadow duration-300">
       <div className="p-6 space-y-4">
         <div className="flex justify-between items-start">
           <div className="flex items-center gap-2">
