@@ -1,13 +1,14 @@
+// Hooks
+import { useLanguage } from "@/hooks/useLanguage.tsx";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
+// Components
 import {
   ModalContent,
   ModalOverlay,
   ModalTrigger,
 } from "@/components/Modal.tsx";
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-
-// Hooks
-import { useLanguage } from "@/hooks/useLanguage.tsx";
 
 // Icons
 import { Lang, X } from "@/components/Icons.tsx";
