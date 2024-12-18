@@ -16,17 +16,17 @@
 
 @layer base {
   :root {
-    --background: hsl(210, 25%, 93%);
-    --foreground: hsl(220, 20%, 20%);
-    --card: hsl(210, 25%, 94.5%);
-    --primary: hsl(210, 25%, 94.5%);
-    --primary-foreground: hsl(212, 24%, 89%);
-    --secondary: hsl(200, 60%, 50%);
+    --background: hsl(210, 30%, 94%);
+    --foreground: hsl(220, 15%, 20%);
+    --card: hsl(210, 30%, 98%);
+    --primary: hsl(210, 25%, 96%);
+    --primary-foreground: hsl(212, 24%, 92%);
+    --secondary: hsl(200, 50%, 55%);
     --secondary-foreground: hsl(210, 30%, 98%);
-    --accent: hsl(200, 60%, 50%);
-    --accent-foreground: hsl(200, 27%, 98%);
-    --muted: hsl(240 3.8% 25.1%);
-    --muted-foreground: hsl(240 3.8% 50.1%);
+    --accent: hsl(200, 60%, 55%);
+    --accent-foreground: hsl(200, 30%, 98%);
+    --muted: hsl(240, 5%, 35%);
+    --muted-foreground: hsl(240, 5%, 60%);
     --border: hsl(210, 20%, 85%);
     --radius: 1rem;
   }
