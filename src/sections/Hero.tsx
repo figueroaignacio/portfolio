@@ -21,8 +21,8 @@ export function Hero() {
 
   return (
     <div className="min-h-[60dvh] flex flex-col justify-center gap-y-3">
-      <h1 className="text-4xl font-bold py-2">{t("sections.home.title")}</h1>
-      <h2 className="text-muted-foreground text-sm">
+      <h1 className="text-4xl font-bold">{t("sections.home.title")}</h1>
+      <h2 className="text-lg">
         <Trans
           i18nKey="sections.home.subtitle"
           components={{ span: <span className="text-accent" /> }}
