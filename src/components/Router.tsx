@@ -1,19 +1,20 @@
-// Components
 import { Route, Routes } from "react-router-dom";
 
 // Config
 import { routes } from "@/config/navigation.tsx";
 
 export function AppRouter() {
-  return (
-    <Routes>
-      {routes.map((route, index: number) => (
-        <Route
-          element={route.element}
-          path={route.path}
-          key={index} />
-      ))}
-    </Routes>
-  )
-}
+  const renderRoutes = (
+    routes: Array<{ path: string; element: any; children?: any }>
+  ) =>
+    routes.map((route, index) => (
+      <Route
+        key={index}
+        path={route.path}
+        element={route.element}
+        children={route.children ? renderRoutes(route.children) : null}
+      />
+    ));
 
+  return <Routes>{renderRoutes(routes)}</Routes>;
+}
