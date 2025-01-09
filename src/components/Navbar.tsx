@@ -19,27 +19,23 @@ export function Navbar() {
   const pathname = location.pathname;
 
   return (
-    <header className="sticky inset-0 py-4 z-20 bg-background">
-      <div className="flex items-center gap-x-5">
-        <nav>
-          <ul className="flex md:items-center space-x-5">
-            {navItems.map((navItem, index) => (
-              <li key={index}>
-                <Link
-                  to={navItem.href}
-                  className={`font-semibold duration-100 ${
-                    pathname === navItem.href
-                      ? "text-muted underline"
-                      : "text-muted-foreground hover:text-muted"
-                  }`}
-                >
-                  {navItem.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
+    <header className="sticky mb-10 top-4 px-2 my-4 lg:flex lg:justify-normal lg:px-0">
+      <nav className="border border-border rounded-md backdrop-blur-2xl px-7 py-2">
+        <ul className="flex items-start gap-12 justify-around">
+          {navItems.map((navItem, index) => (
+            <li key={index}>
+              <Link
+                to={navItem.href}
+                className={`text-sm duration-100 ${
+                  pathname === navItem.href ? "underline" : ""
+                }`}
+              >
+                {navItem.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 }

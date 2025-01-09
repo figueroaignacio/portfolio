@@ -5,7 +5,7 @@ import { ToggleTheme } from "./ToggleTheme";
 
 export function ProfileInfo() {
   return (
-    <section className="lg:border-r lg:border-border h-full p-3 lg:p-10 space-y-3">
+    <section className="lg:border-r lg:border-border h-full p-3 lg:p-6 space-y-3">
       <Link to="/" className="text-xs underline">
         ignaciofigueroa.vercel.app
       </Link>
