@@ -4,8 +4,6 @@ import { useTranslation } from "react-i18next";
 // Components
 import { Link, useLocation } from "react-router-dom";
 
-// Icons
-
 type NavItem = {
   label: string;
   href: string;
