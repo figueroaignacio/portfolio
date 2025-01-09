@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 // Config
-import { routes } from "@/config/navigation.tsx";
+import { routes } from "@/lib/navigation";
 
 export function AppRouter() {
   const renderRoutes = (

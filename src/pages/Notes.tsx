@@ -1,6 +1,6 @@
 // Hooks
 import { useLanguage } from "@/hooks/useLanguage";
-import { useSanityFetch } from "@/hooks/useSanityFetch";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 // Components
@@ -8,34 +8,29 @@ import { NoteCard } from "@/components/NoteCard";
 import { NoteCardSkeleton } from "@/components/NoteCardSkeleton";
 import { Seo } from "@/components/Seo";
 
-// Config
-import { QUERY } from "@/config/queries";
-
-interface Note {
-  title: string;
-  description: string;
-  slug: {
-    current: string;
-  };
-  body: string;
-  publishedAt: string;
-  mainImage: {
-    asset: {
-      _id: string;
-      url: string;
-    };
-    alt: string;
-  };
-}
+// Services
+import { Note } from "@/lib/definitions";
+import { getNotes } from "@/lib/services";
 
 export function Notes() {
   const { t } = useTranslation();
   const { language } = useLanguage();
-  const {
-    data: notes,
-    error,
-    isLoading,
-  } = useSanityFetch<Note[]>(QUERY.NOTE(language));
+  const [notes, setNotes] = useState<Note[] | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    setIsLoading(true);
+    getNotes(language)
+      .then((data) => {
+        setNotes(data);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message);
+        setIsLoading(false);
+      });
+  }, [language]);
 
   if (isLoading) {
     return (
@@ -53,7 +48,9 @@ export function Notes() {
     );
   }
 
-  if (error) return <p className="text-red-500">Error: {error.message}</p>;
+  if (error) {
+    return <p>Error: {error}</p>;
+  }
 
   if (!notes || notes.length === 0) {
     return <p>No notes available.</p>;

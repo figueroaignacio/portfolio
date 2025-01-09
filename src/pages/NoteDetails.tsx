@@ -1,6 +1,6 @@
 // Hooks
 import { useLanguage } from "@/hooks/useLanguage";
-import { useSanityFetch } from "@/hooks/useSanityFetch";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 // Components
@@ -9,31 +9,33 @@ import { Seo } from "@/components/Seo";
 import { Spinner } from "@/components/Spinner";
 import { PortableText } from "@portabletext/react";
 
-// Config
-import { QUERY } from "@/config/queries";
-import { TypedObject } from "@portabletext/types";
+// Services
+import { getNoteDetails } from "@/lib/services";
 
-interface Note {
-  title: string;
-  description: string;
-  body: TypedObject[];
-  publishedAt: string;
-  mainImage: {
-    asset: {
-      url: string;
-    };
-    alt: string;
-  };
-}
+// Config
+import { Note } from "@/lib/definitions";
 
 export function NoteDetails() {
   const { slug } = useParams<{ slug: string }>();
   const { language } = useLanguage();
-  const {
-    data: note,
-    isLoading,
-    error,
-  } = useSanityFetch<Note>(QUERY.NOTE_DETAILS(slug!, language));
+  const [note, setNote] = useState<Note | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!slug) return;
+    setIsLoading(true);
+    setError(null);
+    getNoteDetails(slug, language)
+      .then((data) => {
+        setNote(data);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message);
+        setIsLoading(false);
+      });
+  }, [slug, language]);
 
   if (isLoading)
     return (
@@ -42,7 +44,7 @@ export function NoteDetails() {
       </div>
     );
 
-  if (error) return <p className="text-red-500">Error: {error.message}</p>;
+  if (error) return <p className="text-red-500">Error: {error}</p>;
   if (!note) return <p>No post found.</p>;
 
   return (
