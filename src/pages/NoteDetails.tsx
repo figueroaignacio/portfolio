@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 // Components
-import { BackButton } from "@/components/BackButton";
 import { Seo } from "@/components/Seo";
 import { Spinner } from "@/components/Spinner";
 import { PortableText } from "@portabletext/react";
@@ -50,7 +49,6 @@ export function NoteDetails() {
   return (
     <article>
       <Seo title={`Note - ${note.title}`} description={note.description} />
-      <BackButton />
       <div className="border-b border-border pb-6 mb-6">
         <h1 className="text-4xl mb-5 font-bold">{note.title}</h1>
         <p>{note.description}</p>

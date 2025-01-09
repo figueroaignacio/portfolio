@@ -37,7 +37,7 @@ export function Notes() {
       <section>
         <h1 className="text-4xl font-bold my-5">{t("pages.notes.title")}</h1>
         <p className="mb-6">{t("pages.notes.description")}</p>
-        <ul className="space-y-3">
+        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-3">
           {Array.from({ length: 5 }).map((_, index) => (
             <li key={index}>
               <NoteCardSkeleton />
@@ -64,7 +64,7 @@ export function Notes() {
       />
       <h1 className="text-4xl font-bold my-5">{t("pages.notes.title")}</h1>
       <p className="mb-6">{t("pages.notes.description")}</p>
-      <ul className="space-y-3">
+      <ul className="grid grid-cols-1 lg:grid-cols-2 gap-3">
         {notes.map((note) => (
           <li key={note.slug.current}>
             <NoteCard
