@@ -17,7 +17,7 @@ export function ExperienceCard({
   const { t } = useTranslation();
 
   return (
-    <div className="bg-card rounded-lg p-8 my-6 transition-all duration-300 border-[1px] border-border shadow-md">
+    <div className="rounded-lg p-8 my-6 transition-all duration-300 border-[1px] border-border">
       <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
         <div className="flex-grow">
           <h3 className="text-2xl font-bold mb-1">{role}</h3>

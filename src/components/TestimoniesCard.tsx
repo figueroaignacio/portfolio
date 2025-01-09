@@ -15,7 +15,7 @@ export function TestimoniesCard({
   profile,
 }: TestimoniesCardProps) {
   return (
-    <div className="bg-card rounded-lg p-6 space-y-6 h-full flex flex-col justify-between border border-border shadow-md">
+    <div className="bg-card rounded-lg p-6 space-y-6 h-full flex flex-col justify-between border border-border">
       <p className="text-sm leading-relaxed tracking-tight text-muted-foreground">
         "{body}"
       </p>
