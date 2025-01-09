@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { TestimoniesCard } from "@/components/TestimoniesCard";
 
 // Types
-import { Testinomies } from "@/types/types";
+import { Testinomies } from "@/lib/definitions";
 
 export function Testimonies() {
   const { t } = useTranslation();

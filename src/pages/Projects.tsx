@@ -6,7 +6,7 @@ import { ProjectCard } from "@/components/ProjectCard.tsx";
 import { Seo } from "@/components/Seo";
 
 // Types
-import { Project } from "@/types/types.ts";
+import { Project } from "@/lib/definitions";
 
 export function Projects() {
   const { t } = useTranslation();

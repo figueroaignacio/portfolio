@@ -4,14 +4,7 @@ import { useTranslation } from "react-i18next";
 // Icons
 import { Building } from "@/components/Icons.tsx";
 
-interface ExperienceCardProps {
-  role: string;
-  description: string;
-  company: string;
-  datetime: string;
-  responsibilities: string[];
-  techStack: string[];
-}
+import { Experience } from "@/lib/definitions";
 
 export function ExperienceCard({
   company,
@@ -20,7 +13,7 @@ export function ExperienceCard({
   role,
   description,
   techStack,
-}: ExperienceCardProps) {
+}: Experience) {
   const { t } = useTranslation();
 
   return (
