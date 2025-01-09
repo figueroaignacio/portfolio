@@ -24,7 +24,7 @@ export function Testimonies() {
           {t("sections.testimonies.description")}
         </p>
       </div>
-      <ul className="grid grid-cols-1  gap-3">
+      <ul className="grid grid-cols-1 lg:grid-cols-2 gap-3">
         {testimonies.map((testimony, index) => (
           <li key={index}>
             <TestimoniesCard
