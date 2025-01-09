@@ -49,15 +49,18 @@
 
 @layer base {
   ::-webkit-scrollbar {
-    @apply w-[0.5rem];
+    width: 5px;
   }
-
   ::-webkit-scrollbar-track {
-    @apply bg-transparent;
+    background: transparent;
   }
-
   ::-webkit-scrollbar-thumb {
-    @apply bg-slate-400 dark:bg-gray-500 rounded-md;
+    background: var(--border);
+    border-radius: 5px;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
   }
 
   body {
