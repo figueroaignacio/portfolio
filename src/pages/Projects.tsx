@@ -20,7 +20,6 @@ export function Projects() {
         title={t("siteConfig.projects.title")}
         description={t("siteConfig.projects.description")}
       />
-      <h1 className="text-4xl font-bold my-5">{t("pages.projects.title")}</h1>
       <ul className="space-y-5 items-center">
         {mainProjects.map((item, index) => (
           <li key={index}>

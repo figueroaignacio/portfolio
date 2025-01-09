@@ -11,7 +11,7 @@ export function Layout() {
       </div>
       <main className="col-span-7 lg:p-6">
         <Navbar />
-        <div className="lg:max-h-[78dvh] lg:overflow-y-scroll px-3">
+        <div className="lg:max-h-[80dvh] lg:overflow-y-scroll px-3">
           <Outlet />
         </div>
       </main>
