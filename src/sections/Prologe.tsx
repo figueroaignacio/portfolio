@@ -4,14 +4,13 @@ export function Prologe() {
   const { t } = useTranslation();
 
   return (
-    <div className="space-y-10">
-      <h1 className="text-4xl font-bold my-2">{t("pages.about.title")}</h1>
-      <h2>
+    <div className="space-y-5 text-base">
+      <p>
         <Trans
           i18nKey={t("pages.about.greeting")}
           components={{ span: <span className="text-accent" /> }}
         />
-      </h2>
+      </p>
       <p>
         <Trans
           i18nKey={t("pages.about.intro")}

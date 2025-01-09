@@ -17,14 +17,14 @@ export function Testimonies() {
   return (
     <div className="my-2">
       <div className="space-y-2 mb-3">
-        <h3 className="text-2xl font-semibold mt-6">
+        <h3 className=" font-semibold mt-6">
           {t("sections.testimonies.title")}
         </h3>
         <p className="text-sm text-muted-foreground">
           {t("sections.testimonies.description")}
         </p>
       </div>
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <ul className="grid grid-cols-1  gap-3">
         {testimonies.map((testimony, index) => (
           <li key={index}>
             <TestimoniesCard

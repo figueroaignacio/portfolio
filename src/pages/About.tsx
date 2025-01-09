@@ -8,6 +8,7 @@ import { Seo } from "@/components/Seo";
 import { Prologe } from "@/sections/Prologe";
 
 // Types
+import { Separator } from "@/components/Separator";
 import { Testimonies } from "@/sections/Testimonies";
 
 export function About() {
@@ -20,6 +21,7 @@ export function About() {
         description={t("siteConfig.about.description")}
       />
       <Prologe />
+      <Separator className="my-16" />
       <Testimonies />
     </section>
   );
