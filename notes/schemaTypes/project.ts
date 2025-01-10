@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity'
+import {defineField, defineType} from 'sanity'
 
 export default defineType({
   name: 'project',
@@ -33,8 +33,8 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'techStack',
-      title: 'TechStack',
+      name: 'technologies',
+      title: 'Technologies',
       type: 'array',
       of: [{type: 'reference', to: {type: 'category'}}],
     }),
@@ -59,6 +59,18 @@ export default defineType({
         ],
         layout: 'radio',
       },
+    }),
+    defineField({
+      name: 'liveSite',
+      title: 'Live Site',
+      type: 'url',
+      description: 'Link to the live version of the project.',
+    }),
+    defineField({
+      name: 'sourceCode',
+      title: 'Source Code',
+      type: 'url',
+      description: 'Link to the source code repository.',
     }),
   ],
   preview: {

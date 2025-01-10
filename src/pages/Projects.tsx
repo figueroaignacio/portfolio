@@ -61,6 +61,8 @@ export function Projects() {
         {projects.map((project, index) => (
           <li key={index}>
             <ProjectCard
+              liveSite={project.liveSite}
+              sourceCode={project.sourceCode}
               slug={`/projects/${project.slug.current}`}
               title={project.title}
               description={project.description}

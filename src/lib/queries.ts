@@ -35,6 +35,11 @@ export const QUERY = {
     description,
     slug,
     body,
+    liveSite,
+    sourceCode,
+    technologies[]->{
+      title
+    },  
     publishedAt,
     mainImage {
       asset -> {
@@ -51,6 +56,11 @@ export const QUERY = {
   description,
   body,
   publishedAt,
+  liveSite,
+  sourceCode,
+  technologies[]->{
+    title
+  },  
   mainImage {
     asset -> {
       url

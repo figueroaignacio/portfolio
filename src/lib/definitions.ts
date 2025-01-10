@@ -17,7 +17,13 @@ export interface Note {
   };
 }
 
-export interface Project extends Note {}
+export interface Project extends Note {
+  liveSite: string;
+  sourceCode: string;
+  technologies: {
+    title: string;
+  }[];
+}
 
 export interface Experience {
   company: string;
