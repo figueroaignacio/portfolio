@@ -1,4 +1,3 @@
-// Skeleton for ProjectCard
 export function ProjectCardSkeleton() {
   return (
     <div className="bg-card rounded-lg border border-border animate-pulse">
