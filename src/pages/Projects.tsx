@@ -41,10 +41,6 @@ export function Projects() {
   if (isLoading) {
     return (
       <section>
-        <Seo
-          title={t("siteConfig.projects.title")}
-          description={t("siteConfig.projects.description")}
-        />
         <ul className="space-y-5 items-center">
           {Array.from({ length: 6 }).map((_, index) => (
             <li key={index}>
