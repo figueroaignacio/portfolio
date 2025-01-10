@@ -4,6 +4,7 @@ import { NoteDetails } from "@/pages/NoteDetails";
 import { Notes } from "@/pages/Notes";
 import { ProjectDetails } from "@/pages/ProjectDetails";
 import { Projects } from "@/pages/Projects";
+import { LatestExperience } from "@/sections/LatestExperience";
 
 // Layouts
 import { Layout } from "@/layout/Layout";
@@ -17,6 +18,7 @@ export const routes = [
       { path: "/", element: <About /> },
       { path: "/projects", element: <Projects /> },
       { path: "/notes", element: <Notes /> },
+      { path: "/experience", element: <LatestExperience /> },
     ],
   },
   {

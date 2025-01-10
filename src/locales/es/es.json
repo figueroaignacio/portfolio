@@ -6,6 +6,10 @@
         "href": "/"
       },
       {
+        "label": "Experiencia",
+        "href": "/experience"
+      },
+      {
         "label": "Proyectos",
         "href": "/projects"
       },

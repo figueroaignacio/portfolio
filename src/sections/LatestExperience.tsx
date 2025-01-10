@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { ExperienceCard } from "@/components/ExperienceCard";
 
 // Types
-import { Experience } from "@/types/types";
+import { Experience } from "@/lib/definitions";
 
 export function LatestExperience() {
   const { t } = useTranslation();
@@ -15,7 +15,6 @@ export function LatestExperience() {
 
   return (
     <div>
-      <h2 className="font-bold text-xl">{t("sections.experience.title")}</h2>
       <ul>
         {experience.map((item, index) => (
           <li key={index}>

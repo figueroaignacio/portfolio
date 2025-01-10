@@ -18,13 +18,13 @@ export function Navbar() {
 
   return (
     <header className="sticky mb-10 top-4 px-2 lg:flex lg:justify-normal lg:px-0">
-      <nav className="border border-border rounded-md backdrop-blur-2xl px-7 py-2">
+      <nav className="lg:border lg:border-border rounded-md backdrop-blur-2xl px-3 py-2">
         <ul className="flex items-start gap-12 justify-around">
           {navItems.map((navItem, index) => (
             <li key={index}>
               <Link
                 to={navItem.href}
-                className={`text-sm duration-100 ${
+                className={`hover:underline text-xs lg:text-sm ${
                   pathname === navItem.href ? "underline" : ""
                 }`}
               >

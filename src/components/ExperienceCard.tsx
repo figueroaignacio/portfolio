@@ -2,7 +2,6 @@
 import { useTranslation } from "react-i18next";
 
 // Icons
-import { Building } from "@/components/Icons.tsx";
 
 import { Experience } from "@/lib/definitions";
 
@@ -17,24 +16,21 @@ export function ExperienceCard({
   const { t } = useTranslation();
 
   return (
-    <div className="rounded-lg p-8 my-6 transition-all duration-300 border-[1px] border-border">
-      <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
+    <div>
+      <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-1">
         <div className="flex-grow">
-          <h3 className="text-2xl font-bold mb-1">{role}</h3>
+          <h3 className="font-bold mb-1">{role}</h3>
           <div className="flex items-center gap-x-2">
-            <Building />
-            <h4 className="text-base font-medium text-muted-foreground">
-              {company}
-            </h4>
+            <h4 className=" font-medium text-muted-foreground">{company}</h4>
           </div>
         </div>
-        <span className="text-sm mt-2 md:mt-0 text-muted-foreground whitespace-nowrap">
+        <span className="text-xs mt-2 md:mt-0 text-muted-foreground whitespace-nowrap">
           {datetime}
         </span>
       </div>
       <p className="mb-6 text-sm leading-relaxed">{description}</p>
       <div className="mb-6">
-        <h5 className="font-semibold text-sm mb-3">
+        <h5 className="font-semibold text-xs mb-3">
           {t("components.experienceCard.responsibilities.label")}
         </h5>
         <ul className="space-y-2">
@@ -50,7 +46,7 @@ export function ExperienceCard({
         </ul>
       </div>
       <div>
-        <h5 className="font-semibold text-sm mb-3">
+        <h5 className="font-semibold text-xs mb-3">
           {t("components.experienceCard.techStack.label")}
         </h5>
         <ul className="flex flex-wrap gap-2">
