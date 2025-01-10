@@ -12,7 +12,10 @@ export function BackButton() {
   };
 
   return (
-    <button onClick={handleBack} className="mb-5 flex items-center gap-3">
+    <button
+      onClick={handleBack}
+      className="mb-5 flex items-center gap-3 backdrop-blur-xl p-2 lg:p-0  rounded-md"
+    >
       <ArrowLeftIcon /> Back to all notes
     </button>
   );
