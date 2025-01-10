@@ -29,4 +29,34 @@ export const QUERY = {
       }
     }
   `,
+  PROJECT: (locale: string) => `
+  *[_type == "project" && locale == "${locale}"] | order(publishedAt desc) {
+    title,
+    description,
+    slug,
+    body,
+    publishedAt,
+    mainImage {
+      asset -> {
+        _id,
+        url
+      },
+      alt
+    }
+  }
+`,
+  PROJECT_DETAILS: (slug: string, locale: string) => `
+*[_type == "project" && slug.current == "${slug}" && locale == "${locale}"][0] {
+  title,
+  description,
+  body,
+  publishedAt,
+  mainImage {
+    asset -> {
+      url
+    },
+    alt,
+  }
+}
+`,
 };

@@ -17,13 +17,7 @@ export interface Note {
   };
 }
 
-export interface Project {
-  name: string;
-  description: string;
-  technologies: string[];
-  code: string;
-  site: string;
-}
+export interface Project extends Note {}
 
 export interface Experience {
   company: string;

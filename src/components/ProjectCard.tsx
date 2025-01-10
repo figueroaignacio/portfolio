@@ -1,45 +1,41 @@
 // Components
-import { Badge } from "@/components/Badge.tsx";
+// import { Badge } from "@/components/Badge.tsx";
 
 // Icons
-import { ArrowUp, Document, GitHub } from "@/components/Icons.tsx";
+// import { ArrowUp, Document, GitHub } from "@/components/Icons.tsx";
+import { Link } from "react-router-dom";
+import { Document } from "./Icons";
 
 interface ProjectCardProps {
-  name: string;
+  title: string;
   description: string;
-  technologies: string[];
-  code: string;
-  site: string;
+  slug: string;
 }
 
-export function ProjectCard({
-  code,
-  site,
-  technologies,
-  name,
-  description,
-}: ProjectCardProps) {
+export function ProjectCard({ description, title, slug }: ProjectCardProps) {
   return (
     <div className="bg-card rounded-lg border border-border">
       <div className="p-6 space-y-2">
         <div className="flex justify-between items-start">
           <div className="flex items-center gap-2">
             <Document />
-            <h3 className="font-bold tracking-tight">{name}</h3>
+            <Link to={slug}>
+              <h3 className="font-bold tracking-tight">{title}</h3>
+            </Link>
           </div>
         </div>
         <p className="text-sm leading-relaxed text-muted-foreground">
           {description}
         </p>
-        {technologies.length > 0 && (
+        {/* {technologies.length > 0 && (
           <div className="flex flex-wrap gap-2">
             {technologies.map((tech, index) => (
               <Badge key={index}>{tech}</Badge>
             ))}
           </div>
-        )}
+        )} */}
         <div className="flex justify-between pt-4 space-x-4">
-          <a
+          {/* <a
             href={code}
             target="_blank"
             rel="noopener noreferrer"
@@ -56,7 +52,7 @@ export function ProjectCard({
           >
             <span>Ver proyecto</span>
             <ArrowUp />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
