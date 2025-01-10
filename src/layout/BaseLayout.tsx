@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-export function ProjectLayout() {
+export function BaseLayout() {
   return (
     <div>
       <Outlet />
