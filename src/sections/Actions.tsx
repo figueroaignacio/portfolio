@@ -1,7 +1,11 @@
+// Components
+import { SelectLanguage } from "@/components/SelectLanguage";
+import { ToggleTheme } from "@/components/ToggleTheme";
+
 // Constants
 import { CONTACTS } from "@/constants/contact.tsx";
 
-export function Contacts() {
+export function Actions() {
   return (
     <div>
       <ul className="flex gap-x-2">
@@ -23,6 +27,12 @@ export function Contacts() {
             </a>
           </li>
         ))}
+        <li>
+          <SelectLanguage />
+        </li>
+        <li>
+          <ToggleTheme />
+        </li>
       </ul>
     </div>
   );
