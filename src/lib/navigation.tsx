@@ -1,10 +1,10 @@
 // Pages
 import { About } from "@/pages/About";
+import { LatestExperience } from "@/pages/LatestExperience";
 import { NoteDetails } from "@/pages/NoteDetails";
 import { Notes } from "@/pages/Notes";
 import { ProjectDetails } from "@/pages/ProjectDetails";
 import { Projects } from "@/pages/Projects";
-import { LatestExperience } from "@/sections/LatestExperience";
 
 // Layouts
 import { BaseLayout } from "@/layout/BaseLayout";
