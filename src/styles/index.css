@@ -61,6 +61,8 @@
   * {
     scrollbar-width: thin;
     scrollbar-color: var(--border) transparent;
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
   }
 
   body {
