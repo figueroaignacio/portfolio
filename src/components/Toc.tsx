@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 
 type Heading = {
@@ -35,7 +33,6 @@ export function Toc() {
     updateHeadings();
 
     const observer = new MutationObserver(() => {
-      console.log("Mutation observed, updating headings...");
       updateHeadings();
     });
 
@@ -52,14 +49,6 @@ export function Toc() {
       clearInterval(interval);
     };
   }, []);
-
-  useEffect(() => {
-    console.log("Current headings state:", headings);
-  }, [headings]);
-
-  if (headings.length === 0) {
-    return <div>No headings found</div>;
-  }
 
   return (
     <nav className="space-y-2">
