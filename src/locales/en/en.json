@@ -60,45 +60,6 @@
         }
       ]
     },
-    "mainProjects": {
-      "title": "Main Projects",
-      "items": [
-        {
-          "name": "Web Society Project",
-          "description": "Discover the latest web trends, refine your web development skills, and explore innovative resources. Take on new challenges that propel your career to success.",
-          "technologies": [
-            "TypeScript",
-            "Next.js",
-            "React",
-            "Tailwind",
-            "Velite",
-            "shadcn/ui",
-            "Nest",
-            "PostgreSQL"
-          ],
-          "code": "https://github.com/figueroaignacio/websociety",
-          "site": "https://websociety.vercel.app/en",
-          "status": "In Development"
-        },
-        {
-          "name": "AspenUI",
-          "description": "Enhance your workflow with pre-built, fully customizable, open-source components ready to deploy.",
-          "technologies": [
-            "TypeScript",
-            "Next.js",
-            "React",
-            "Tailwind",
-            "Velite"
-          ],
-          "code": "https://github.com/figueroaignacio/aspen-ui",
-          "site": "https://aspen-ui.vercel.app/en",
-          "status": "In Development"
-        }
-      ]
-    },
-    "contacts": {
-      "title": "You can reach me with the following medias 👇"
-    },
     "testimonies": {
       "title": "Some Testimonies",
       "description": "Would you like to know what my colleagues said about me?",
