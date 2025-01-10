@@ -23,10 +23,9 @@ export function Projects() {
 
   useEffect(() => {
     const fetchProjects = async () => {
-      setIsLoading(true);
-      setError(null);
-
       try {
+        setIsLoading(true);
+        setError(null);
         const data = await getProjects(language);
         setProjects(data);
       } catch (err: any) {

@@ -24,10 +24,9 @@ export function ProjectDetails() {
     if (!slug) return;
 
     const fetchProjectDetails = async () => {
-      setIsLoading(true);
-      setError(null);
-
       try {
+        setIsLoading(true);
+        setError(null);
         const data = await getProjectDetails(slug, language);
         if (!data) {
           setError("Note not found.");

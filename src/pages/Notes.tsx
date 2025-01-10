@@ -20,16 +20,20 @@ export function Notes() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    setIsLoading(true);
-    getNotes(language)
-      .then((data) => {
+    const fetchNotes = async () => {
+      try {
+        setIsLoading(true);
+        setError(null);
+        const data = await getNotes(language);
         setNotes(data);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : "An error occurred");
+      } finally {
         setIsLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setIsLoading(false);
-      });
+      }
+    };
+
+    fetchNotes();
   }, [language]);
 
   if (isLoading) {

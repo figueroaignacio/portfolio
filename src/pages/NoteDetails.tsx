@@ -1,11 +1,16 @@
-import { Seo } from "@/components/Seo";
-import { Spinner } from "@/components/Spinner";
+// Hooks
 import { useLanguage } from "@/hooks/useLanguage";
-import { Note } from "@/lib/definitions";
-import { getNoteDetails } from "@/lib/services";
-import { PortableText } from "@portabletext/react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
+// Components
+import { Seo } from "@/components/Seo";
+import { Spinner } from "@/components/Spinner";
+import { PortableText } from "@portabletext/react";
+
+// Services
+import { Note } from "@/lib/definitions";
+import { getNoteDetails } from "@/lib/services";
 
 export function NoteDetails() {
   const { slug } = useParams<{ slug: string }>();
@@ -16,22 +21,25 @@ export function NoteDetails() {
 
   useEffect(() => {
     if (!slug) return;
-    setIsLoading(true);
-    setError(null);
 
-    getNoteDetails(slug, language)
-      .then((data) => {
+    const fetchNoteDetails = async () => {
+      try {
+        setIsLoading(true);
+        setError(null);
+        const data = await getNoteDetails(slug, language);
         if (!data) {
           setError("Note not found.");
           return;
         }
         setNote(data);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : "An error occurred");
+      } finally {
         setIsLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setIsLoading(false);
-      });
+      }
+    };
+
+    fetchNoteDetails();
   }, [slug, language]);
 
   if (isLoading)
