@@ -25,17 +25,10 @@
     }
   },
   "sections": {
-    "home": {
-      "title": "Hey! I'm Ignacio",
-      "subtitle": "Web Developer Creating <span>Interactive and Functional</span> Web Experiences.",
-      "links": {
-        "projects": {
-          "label": "Projects"
-        },
-        "about": {
-          "label": "About"
-        }
-      }
+    "profile": {
+      "welcome": "Hey 👋🏽 Welcome to my little corner of the web.",
+      "subtitle": "Web Developer Creating Interactive and Functional Web Experiences.",
+      "text": "🏠 Based in Buenos Aires, Argentina • 💻 Open to exciting web projects"
     },
     "experience": {
       "title": "Experience",
@@ -146,12 +139,9 @@
   "pages": {
     "about": {
       "title": "About Me",
-      "greeting": "👋 Hi, I'm Ignacio, a Web Developer specialized in <span>Frontend Development</span>, with a focus on creating technological experiences that build meaningful connections with users.",
-      "intro": "I work with <span>React</span> (TypeScript, Next.js) to develop <span>intuitive solutions</span> that bring tangible value to businesses. I am passionate about challenging projects and am currently expanding my knowledge in Backend Development (Node.js, Express.js, Nest.js) to build a complete tech stack. I strongly believe in <span>continuous learning</span> and creating projects with <span>real impact</span>.",
-      "collaboration": "I am motivated by collaborating with diverse teams and developing innovative products that generate significant results. I am always looking for challenges that allow me to keep growing and contribute to the advancement of the <span>tech world</span>.",
-      "techStack": {
-        "title": "My Tech Stack"
-      }
+      "greeting": "Hi 👋🏽 I'm Ignacio, a Web Developer specializing in <span>Frontend Development</span>. I craft digital experiences that forge meaningful connections between technology and users.",
+      "intro": "I leverage <span>React</span> (TypeScript, Next.js) to build <span>intuitive solutions</span> that deliver tangible business value. Driven by challenging projects, I'm currently expanding into Backend Development (Node.js, Express.js, Nest.js) to master the full technology stack. I'm committed to <span>continuous growth</span> and developing projects that make a <span>real difference</span>.",
+      "collaboration": "I thrive in diverse teams, creating innovative products that drive meaningful outcomes. I actively seek opportunities that push my boundaries and contribute to advancing the <span>tech landscape</span>."
     },
     "notes": {
       "title": "Notes",

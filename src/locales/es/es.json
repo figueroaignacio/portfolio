@@ -25,17 +25,10 @@
     }
   },
   "sections": {
-    "home": {
-      "title": "Hola, soy Ignacio",
-      "subtitle": "Desarrollador Web Creando Experiencias Web <span>Interactivas y Funcionales</span>",
-      "links": {
-        "projects": {
-          "label": "Proyectos"
-        },
-        "about": {
-          "label": "Sobre mí"
-        }
-      }
+    "profile": {
+      "welcome": "Hola 👋🏽 bienvenido a mi pequeño rincón en la web",
+      "subtitle": "Desarrollador Web Creando Experiencias Web Interactivas y Funcionales",
+      "text": "🏠 Con base en Buenos Aires, Argentina • 💻 Abierto a proyectos web interesantes"
     },
     "experience": {
       "title": "Experiencia",
@@ -146,12 +139,9 @@
   "pages": {
     "about": {
       "title": "Sobre mí",
-      "greeting": "👋 Hola, soy Ignacio, Desarrollador Web especializado en <span>Desarrollo Frontend</span>, con un enfoque en crear experiencias tecnológicas que establezcan una conexión significativa con los usuarios.",
-      "intro": "Trabajo con <span>React</span> (TypeScript, Next.js) para desarrollar <span>soluciones intuitivas</span> que aporten valor tangible a los negocios. Me apasionan los proyectos desafiantes y actualmente estoy ampliando mis conocimientos en Desarrollo Backend (Node.js, Express.js, Nest.js) para construir un stack tecnológico completo. Creo firmemente en el <span>aprendizaje continuo</span> y en la creación de proyectos con <span>impacto real</span>.",
-      "collaboration": "Me motiva colaborar con equipos diversos y desarrollar productos innovadores que generen resultados significativos. Siempre busco desafíos que me permitan seguir creciendo y contribuir al avance del mundo <span>tecnológico</span>.",
-      "techStack": {
-        "title": "Mi stack de Tecnologías"
-      }
+      "greeting": "Hola 👋🏽 soy Ignacio, Desarrollador Web especializado en <span>Desarrollo Frontend</span>. Creo experiencias digitales que construyen conexiones significativas entre la tecnología y los usuarios.",
+      "intro": "Utilizo <span>React</span> (TypeScript, Next.js) para crear <span>soluciones intuitivas</span> que aportan valor tangible a los negocios. Motivado por proyectos desafiantes, actualmente estoy expandiendo mis conocimientos en Desarrollo Backend (Node.js, Express.js, Nest.js) para dominar el stack tecnológico completo. Me comprometo con el <span>crecimiento continuo</span> y el desarrollo de proyectos de <span>impacto real</span>.",
+      "collaboration": "Prospero en equipos diversos, creando productos innovadores que impulsan resultados significativos. Busco activamente oportunidades que expandan mis límites y contribuyan al avance del <span>panorama tecnológico</span>."
     },
     "notes": {
       "title": "Notas",
