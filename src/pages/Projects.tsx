@@ -6,12 +6,12 @@ import { useTranslation } from "react-i18next";
 // Components
 import { ProjectCard } from "@/components/ProjectCard.tsx";
 import { Seo } from "@/components/Seo";
-import { Spinner } from "@/components/Spinner";
 
 // Types
 import { Project } from "@/lib/definitions";
 
 // Services
+import { ProjectCardSkeleton } from "@/components/ProjectCardSkeleton";
 import { getProjects } from "@/lib/services";
 
 export function Projects() {
@@ -39,7 +39,21 @@ export function Projects() {
   }, [language]);
 
   if (isLoading) {
-    return <Spinner />;
+    return (
+      <section>
+        <Seo
+          title={t("siteConfig.projects.title")}
+          description={t("siteConfig.projects.description")}
+        />
+        <ul className="space-y-5 items-center">
+          {Array.from({ length: 6 }).map((_, index) => (
+            <li key={index}>
+              <ProjectCardSkeleton />
+            </li>
+          ))}
+        </ul>
+      </section>
+    );
   }
 
   if (error) {
