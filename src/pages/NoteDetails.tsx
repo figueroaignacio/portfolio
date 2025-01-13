@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 // Components
+import { RichTextComponents } from "@/components/RichTextComponents";
 import { Seo } from "@/components/Seo";
 import { Spinner } from "@/components/Spinner";
 import { PortableText } from "@portabletext/react";
@@ -60,24 +61,7 @@ export function NoteDetails() {
         <p className="max-w-xl">{note.description}</p>
       </div>
       <div className="prose dark:prose-invert space-y-6">
-        <PortableText
-          value={note.body}
-          components={{
-            types: {},
-            block: {
-              h2: ({ children }) => {
-                const id =
-                  children?.toString().replace(/\s+/g, "-").toLowerCase() || "";
-                return <h2 id={id}>{children}</h2>;
-              },
-              h3: ({ children }) => {
-                const id =
-                  children?.toString().replace(/\s+/g, "-").toLowerCase() || "";
-                return <h3 id={id}>{children}</h3>;
-              },
-            },
-          }}
-        />
+        <PortableText value={note.body} components={RichTextComponents} />
       </div>
     </article>
   );

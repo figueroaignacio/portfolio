@@ -10,6 +10,7 @@ import {defineArrayMember, defineType} from 'sanity'
  *    type: 'blockContent'
  *  }
  */
+
 export default defineType({
   title: 'Block Content',
   name: 'blockContent',
@@ -59,12 +60,34 @@ export default defineType({
         ],
       },
     }),
-    // You can add additional types here. Note that you can't use
-    // primitive types such as 'string' and 'number' in the same array
-    // as a block type.
     defineArrayMember({
       type: 'image',
       options: {hotspot: true},
     }),
+    defineArrayMember({
+      type: 'code',
+      name: 'code',
+      title: 'Code Blocks',
+      options: {
+        languageAlternatives: [
+          {title: '', value: ''},
+          {title: 'Javascript', value: 'javascript'},
+          {title: 'Typescript', value: 'typescript'},
+          {title: 'HTML', value: 'html'},
+          {title: 'CSS', value: 'css'},
+          {title: 'React', value: 'react'},
+          {title: 'Node', value: 'node'},
+          {title: 'MySql', value: 'mysql'},
+        ],
+        withFilename: false,
+      },
+    }),
   ],
 })
+
+// export const blockContent = {
+//   title: 'Block Content',
+//   name: 'blockContent',
+//   type: 'array',
+//   of: [],
+// }
