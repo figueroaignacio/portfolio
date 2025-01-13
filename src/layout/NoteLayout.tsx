@@ -7,9 +7,10 @@ export function NoteLayout() {
       <div className="lg:col-span-3 sticky top-4 self-start">
         <BackButton />
       </div>
-      <div className="lg:col-span-9 overflow-y-auto">
+      <div className="lg:col-span-6 overflow-y-auto">
         <Outlet />
       </div>
+      <div className="lg:col-span-3 overflow-y-auto"></div>
     </div>
   );
 }
