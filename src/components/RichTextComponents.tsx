@@ -14,7 +14,7 @@ export const RichTextComponents: Partial<PortableTextReactComponents> = {
   },
   block: {
     h2: ({ children }) => (
-      <h2 className="text-3xl font-bold text-foreground mb-4 mt-8 scroll-mt-24 md:text-4xl">
+      <h2 className="text-2xl font-bold text-foreground mb-4 mt-8 scroll-mt-24">
         {children}
       </h2>
     ),
@@ -29,12 +29,12 @@ export const RichTextComponents: Partial<PortableTextReactComponents> = {
       </h4>
     ),
     normal: ({ children }) => (
-      <p className="text-base text-foreground leading-relaxed mb-4 md:text-lg">
+      <p className="text-foreground leading-relaxed mb-4 md:text-sm">
         {children}
       </p>
     ),
     blockquote: ({ children }) => (
-      <blockquote className="border-l-4 border-accent pl-4 italic text-muted-foreground my-6">
+      <blockquote className="border-l-4 border-purple-600 pl-4 italic text-muted-foreground my-6 text-sm">
         {children}
       </blockquote>
     ),

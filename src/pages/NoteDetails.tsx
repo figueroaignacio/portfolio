@@ -57,8 +57,8 @@ export function NoteDetails() {
     <article>
       <Seo title={`Note - ${note.title}`} description={note.description} />
       <div className="border-b border-border pb-6 mb-6">
-        <h1 className="text-4xl mb-5 font-bold">{note.title}</h1>
-        <p className="max-w-xl">{note.description}</p>
+        <h1 className="text-3xl mb-5 font-bold">{note.title}</h1>
+        <p className="max-w-xl text-sm">{note.description}</p>
       </div>
       <div className="space-y-6">
         <PortableText value={note.body} components={RichTextComponents} />
