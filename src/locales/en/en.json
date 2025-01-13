@@ -26,9 +26,8 @@
   },
   "sections": {
     "profile": {
-      "welcome": "Hey 👋🏽 Welcome to my little corner of the web.",
-      "subtitle": "Web Developer Creating Interactive and Functional Web Experiences.",
-      "text": "🏠 Based in Buenos Aires, Argentina • 💻 Open to exciting web projects"
+      "welcome": "Hey 👋🏽",
+      "subtitle": "Web Developer Creating Interactive and Functional Web Experiences."
     },
     "experience": {
       "title": "Experience",
@@ -100,7 +99,7 @@
   "pages": {
     "about": {
       "title": "About Me",
-      "greeting": "Hi 👋🏽 I'm Ignacio, a Web Developer specializing in <span>Frontend Development</span>. I craft digital experiences that forge meaningful connections between technology and users.",
+      "greeting": "I'm Ignacio Figueroa, a Web Developer specializing in <span>Frontend Development</span>. I craft digital experiences that forge meaningful connections between technology and users.",
       "intro": "I leverage <span>React</span> (TypeScript, Next.js) to build <span>intuitive solutions</span> that deliver tangible business value. Driven by challenging projects, I'm currently expanding into Backend Development (Node.js, Express.js, Nest.js) to master the full technology stack. I'm committed to <span>continuous growth</span> and developing projects that make a <span>real difference</span>.",
       "collaboration": "I thrive in diverse teams, creating innovative products that drive meaningful outcomes. I actively seek opportunities that push my boundaries and contribute to advancing the <span>tech landscape</span>."
     },

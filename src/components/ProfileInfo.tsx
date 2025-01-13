@@ -20,9 +20,6 @@ export function ProfileInfo() {
             <h3 className="text-sm">{t("sections.profile.subtitle")}</h3>
           </div>
         </div>
-        <p className="text-xs text-muted-foreground">
-          {t("sections.profile.text")}
-        </p>
         <Actions />
       </section>
 
