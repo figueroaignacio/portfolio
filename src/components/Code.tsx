@@ -7,6 +7,10 @@ export const Code = ({ value }: any) => {
       <SyntaxHighlighter
         language={value.language}
         style={atomOneDarkReasonable}
+        customStyle={{
+          borderRadius: ".75rem",
+          padding: "1.5rem",
+        }}
       >
         {value.code}
       </SyntaxHighlighter>
