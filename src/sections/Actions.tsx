@@ -8,7 +8,7 @@ import { CONTACTS } from "@/constants/contact.tsx";
 export function Actions() {
   return (
     <div>
-      <ul className="flex gap-x-2">
+      <ul className="flex gap-x-2 flex-wrap gap-y-5">
         <li>
           <a
             href=""

@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 // Components
 import { Actions } from "@/sections/Actions";
+import { Stack } from "@/sections/Stack";
 import { Separator } from "./Separator";
 
 export function ProfileInfo() {
@@ -21,6 +22,7 @@ export function ProfileInfo() {
           </div>
         </div>
         <Actions />
+        <Stack />
       </section>
 
       <Separator className="my-7 flex lg:hidden" />
