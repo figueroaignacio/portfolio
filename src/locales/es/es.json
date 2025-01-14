@@ -176,6 +176,10 @@
     "notes": {
       "title": "Ignacio Figueroa - Notas",
       "description": "En esta sección comparto reflexiones, aprendizajes y recursos útiles sobre desarrollo web y tendencias tecnológicas."
+    },
+    "experience": {
+      "title": "Ignacio Figueroa - Experiencia",
+      "description": "En esta sección comparto mis experiencias de trabajo."
     }
   }
 }

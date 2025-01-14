@@ -3,18 +3,24 @@ import { useTranslation } from "react-i18next";
 
 // Components
 import { ExperienceCard } from "@/components/ExperienceCard";
+import { Seo } from "@/components/Seo";
 
 // Types
 import { Experience } from "@/lib/definitions";
 
 export function LatestExperience() {
   const { t } = useTranslation();
+
   const experience = t("sections.experience.items", {
     returnObjects: true,
   }) as Experience[];
 
   return (
     <div>
+      <Seo
+        description={t("siteConfig.experience.description")}
+        title={t("siteConfig.experience.title")}
+      />
       <ul>
         {experience.map((item, index) => (
           <li key={index}>
