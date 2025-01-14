@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 // Icons
 import { ArrowUp, GitHub } from "@/components/Icons.tsx";
 
-interface ProjectCardProps {
-  title: string;
-  description: string;
+// Types
+import { Project } from "@/lib/definitions";
+
+interface ProjectCardProps
+  extends Pick<Project, "title" | "description" | "liveSite" | "sourceCode"> {
   slug: string;
-  liveSite: string;
-  sourceCode: string;
 }
 
 export function ProjectCard({

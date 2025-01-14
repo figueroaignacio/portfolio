@@ -1,9 +1,10 @@
 // Hooks
 import { useTranslation } from "react-i18next";
 
-// Icons
-
+// Types
 import { Experience } from "@/lib/definitions";
+
+interface ExperienceCardProps extends Experience {}
 
 export function ExperienceCard({
   company,
@@ -12,7 +13,7 @@ export function ExperienceCard({
   role,
   description,
   techStack,
-}: Experience) {
+}: ExperienceCardProps) {
   const { t } = useTranslation();
 
   return (

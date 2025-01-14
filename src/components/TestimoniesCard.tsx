@@ -1,12 +1,10 @@
 // Icons
 import { ArrowUp } from "@/components/Icons.tsx";
 
-interface TestimoniesCardProps {
-  body: string;
-  name: string;
-  role: string;
-  profile: string;
-}
+// Types
+import { Testinomies } from "@/lib/definitions";
+
+interface TestimoniesCardProps extends Testinomies {}
 
 export function TestimoniesCard({
   body,

@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 // Icons
 import { ArrowUp } from "./Icons";
 
-interface NoteCardProps {
-  title: string;
+// Types
+import { Note } from "@/lib/definitions";
+
+interface NoteCardProps extends Pick<Note, "title" | "description"> {
   slug: string;
-  description: string;
 }
 
 export function NoteCard({ title, slug, description }: NoteCardProps) {
