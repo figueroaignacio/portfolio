@@ -10,6 +10,7 @@ import { PortableText } from "@portabletext/react";
 
 // Services
 import { Badge } from "@/components/Badge";
+import { Seo } from "@/components/Seo";
 import { Project } from "@/lib/definitions";
 import { getProjectDetails } from "@/lib/services";
 
@@ -55,6 +56,7 @@ export function ProjectDetails() {
 
   return (
     <article className="grid grid-cols-1 lg:grid-cols-12 lg:border lg:border-border rounded-md min-h-dvh">
+      <Seo title={project.title} description={project.description} />
       <div className="col-span-5 lg:border-r lg:border-border h-full p-3 lg:p-6 space-y-3">
         <BackButton />
         <h1 className="text-lg font-bold">{project.title}</h1>
