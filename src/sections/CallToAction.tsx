@@ -8,7 +8,7 @@ export function CallToAction() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex items-center justify-between flex-wrap gap-y-6 py-12">
+    <div className="flex items-center justify-between flex-wrap gap-y-6 py-36">
       <div className="space-y-2">
         <h3 className="text-3xl font-bold">
           {t("components.callToAction.title")}

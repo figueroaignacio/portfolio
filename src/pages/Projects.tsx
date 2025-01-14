@@ -13,6 +13,7 @@ import { Project } from "@/lib/definitions";
 // Services
 import { ProjectCardSkeleton } from "@/components/ProjectCardSkeleton";
 import { getProjects } from "@/lib/services";
+import { CallToAction } from "@/sections/CallToAction";
 
 export function Projects() {
   const { t } = useTranslation();
@@ -79,6 +80,7 @@ export function Projects() {
           </li>
         ))}
       </ul>
+      <CallToAction />
     </section>
   );
 }
