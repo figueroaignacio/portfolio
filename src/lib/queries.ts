@@ -1,4 +1,3 @@
-// Queries para "note"
 export const GET_NOTES = (locale: string) => `
   *[_type == "note" && locale == "${locale}"] | order(publishedAt desc) {
     title,
@@ -31,7 +30,6 @@ export const GET_NOTE_DETAILS = (slug: string, locale: string) => `
   }
 `;
 
-// Queries para "project"
 export const GET_ALL_PROJECTS = (locale: string) => `
   *[_type == "project" && locale == "${locale}"] | order(publishedAt desc) {
     title,
