@@ -4,11 +4,12 @@ import { useTranslation } from "react-i18next";
 // Components
 import { Container } from "@/components/Container.tsx";
 
+// Icons
 import { Location } from "@/components/Icons.tsx";
 
 export function Footer() {
   const { t } = useTranslation();
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-background border-t border-border">
@@ -30,5 +31,5 @@ export function Footer() {
         </div>
       </Container>
     </footer>
-  )
+  );
 }

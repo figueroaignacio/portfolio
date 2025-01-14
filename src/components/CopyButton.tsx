@@ -1,4 +1,7 @@
+// Hooks
 import { useState } from "react";
+
+// Icons
 import { CheckIcon, ClipboardIcon } from "./Icons";
 
 interface CopyButtonProps {

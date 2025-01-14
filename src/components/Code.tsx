@@ -1,5 +1,8 @@
+// Highlighter
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDarkReasonable } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
+// Components
 import { CopyButton } from "./CopyButton";
 
 export const Code = ({ value }: any) => {

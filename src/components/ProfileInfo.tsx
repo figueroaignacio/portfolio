@@ -1,9 +1,11 @@
 // Hooks
 import { useTranslation } from "react-i18next";
 
-// Components
+// Sections
 import { Actions } from "@/sections/Actions";
 import { Stack } from "@/sections/Stack";
+
+// Components
 import { Separator } from "./Separator";
 
 export function ProfileInfo() {
