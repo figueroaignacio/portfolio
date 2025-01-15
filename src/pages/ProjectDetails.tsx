@@ -5,12 +5,12 @@ import { useParams } from "react-router-dom";
 
 // Components
 import { BackButton } from "@/components/BackButton";
+import { Badge } from "@/components/Badge";
+import { Seo } from "@/components/Seo";
 import { Spinner } from "@/components/Spinner";
 import { PortableText } from "@portabletext/react";
 
 // Services
-import { Badge } from "@/components/Badge";
-import { Seo } from "@/components/Seo";
 import { Project } from "@/lib/definitions";
 import { getProjectDetails } from "@/lib/services";
 
