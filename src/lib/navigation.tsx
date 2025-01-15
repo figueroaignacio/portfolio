@@ -3,6 +3,7 @@ import { About } from "@/pages/About";
 import { LatestExperience } from "@/pages/LatestExperience";
 import { NoteDetails } from "@/pages/NoteDetails";
 import { Notes } from "@/pages/Notes";
+import { NotFound } from "@/pages/NotFound";
 import { ProjectDetails } from "@/pages/ProjectDetails";
 import { Projects } from "@/pages/Projects";
 
@@ -27,6 +28,9 @@ export const routes = [
   },
   {
     element: <BaseLayout />,
-    children: [{ path: "/projects/:slug", element: <ProjectDetails /> }],
+    children: [
+      { path: "/projects/:slug", element: <ProjectDetails /> },
+      { path: "*", element: <NotFound /> },
+    ],
   },
 ];
