@@ -1,44 +1,20 @@
+// Hooks
+import { useTranslation } from "react-i18next";
+
 // Components
 import { Badge } from "@/components/Badge";
 
-const techStack = [
-  {
-    category: "Frontend",
-    items: [
-      "React",
-      "Next.js",
-      "Astro",
-      "CSS Modules",
-      "Tailwind",
-      "React Hook Form",
-      "React Router",
-    ],
-  },
-  {
-    category: "UI Component Frameworks",
-    items: ["shadcn/ui", "Radix", "MUI"],
-  },
-  {
-    category: "Backend",
-    items: ["Node.js", "Express.js", "Nest.js", "PostgreSQL", "NeonDB"],
-  },
-  {
-    category: "Tools",
-    items: [
-      "Git",
-      "GitHub",
-      "Prisma",
-      "i18n",
-      "Class Varience Authority",
-      "clsx",
-      "Auth.js",
-    ],
-  },
-];
+// Constants
+import { techStack } from "@/lib/constants";
 
 export function Stack() {
+  const { t } = useTranslation();
+
   return (
-    <div>
+    <div className="bg-card border border-border p-6 rounded-md">
+      <h3 className="text-xl font-semibold mb-5">
+        {t("components.myStack.title")}
+      </h3>
       {techStack.map(({ category, items }) => (
         <div key={category}>
           <h4>{category}</h4>

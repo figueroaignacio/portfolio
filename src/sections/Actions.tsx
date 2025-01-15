@@ -3,7 +3,7 @@ import { SelectLanguage } from "@/components/SelectLanguage";
 import { ToggleTheme } from "@/components/ToggleTheme";
 
 // Constants
-import { CONTACTS } from "@/constants/contact.tsx";
+import { CONTACTS } from "@/lib/constants";
 
 export function Actions() {
   return (
