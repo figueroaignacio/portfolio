@@ -13,7 +13,7 @@ export function Layout() {
         </div>
         <main className="col-span-7 lg:p-6 flex flex-col">
           <Navbar />
-          <div className="lg:max-h-[80dvh] lg:overflow-y-scroll px-3 flex-1 overflow-hidden">
+          <div className="lg:max-h-[80dvh] lg:overflow-y-scroll px-3 flex-1 overflow-hidden py-8">
             <Outlet />
           </div>
         </main>
