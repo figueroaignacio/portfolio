@@ -35,7 +35,6 @@ export function ModalOverlay({
 
 export function ModalContent({
   isOpen,
-  onClose,
   children,
 }: {
   isOpen: boolean;
