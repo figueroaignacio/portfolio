@@ -2,7 +2,8 @@
 import { useTranslation } from "react-i18next";
 
 // Components
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { TransitionLink } from "./TransitionLink";
 
 type NavItem = {
   label: string;
@@ -22,14 +23,14 @@ export function Navbar() {
         <ul className="flex items-start gap-12 justify-around">
           {navItems.map((navItem, index) => (
             <li key={index}>
-              <Link
+              <TransitionLink
                 to={navItem.href}
                 className={`hover:underline text-xs lg:text-sm ${
                   pathname === navItem.href ? "underline" : ""
                 }`}
               >
                 {navItem.label}
-              </Link>
+              </TransitionLink>
             </li>
           ))}
         </ul>
