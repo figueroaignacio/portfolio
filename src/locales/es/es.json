@@ -99,7 +99,7 @@
   "pages": {
     "about": {
       "title": "Sobre mí",
-      "greeting": "Soy Ignacio Figuero, Desarrollador Web especializado en <span>Desarrollo Frontend</span>. Creo experiencias digitales que construyen conexiones significativas entre la tecnología y los usuarios.",
+      "greeting": "Soy Ignacio Figueroa, Desarrollador Web especializado en <span>Desarrollo Frontend</span>. Creo experiencias digitales que construyen conexiones significativas entre la tecnología y los usuarios.",
       "intro": "Utilizo <span>React</span> (TypeScript, Next.js) para crear <span>soluciones intuitivas</span> que aportan valor tangible a los negocios. Motivado por proyectos desafiantes, actualmente estoy expandiendo mis conocimientos en Desarrollo Backend (Node.js, Express.js, Nest.js) para dominar el stack tecnológico completo. Me comprometo con el <span>crecimiento continuo</span> y el desarrollo de proyectos de <span>impacto real</span>.",
       "collaboration": "Prospero en equipos diversos, creando productos innovadores que impulsan resultados significativos. Busco activamente oportunidades que expandan mis límites y contribuyan al avance del <span>panorama tecnológico</span>."
     },
