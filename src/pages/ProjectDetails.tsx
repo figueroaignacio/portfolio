@@ -55,7 +55,7 @@ export function ProjectDetails() {
   if (!project) return <p>No post found.</p>;
 
   return (
-    <article className="grid grid-cols-1 lg:grid-cols-12 lg:border lg:border-border rounded-md min-h-dvh">
+    <article className="grid grid-cols-1 lg:grid-cols-12 lg:border lg:border-border rounded-md lg:min-h-dvh">
       <Seo title={project.title} description={project.description} />
       <div className="col-span-5 lg:border-r lg:border-border h-full p-3 lg:p-6 space-y-3">
         <BackButton />
