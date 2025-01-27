@@ -1,46 +1,31 @@
-// Components
-import { Chevron, User } from "@/components/Icons.tsx";
-import { Trans, useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Actions } from "./Actions";
 
 export function Hero() {
-  const { t } = useTranslation();
-
-  const links: { href: string; label: string; icon: React.ReactNode }[] = [
-    {
-      label: t("sections.home.links.projects.label"),
-      href: "/projects",
-      icon: <Chevron />,
-    },
-    {
-      label: t("sections.home.links.about.label"),
-      href: "/about",
-      icon: <User />,
-    },
-  ];
-
   return (
-    <div className="min-h-[60dvh] flex flex-col justify-center gap-y-3">
-      <h1 className="text-4xl font-bold">{t("sections.home.title")}</h1>
-      <h2 className="text-lg">
-        <Trans
-          i18nKey="sections.home.subtitle"
-          components={{ span: <span className="text-accent" /> }}
-        />
-      </h2>
-      <div className="flex gap-x-2">
-        {links.map((link, index) => (
-          <div key={index}>
-            <Link
-              to={link.href}
-              className="flex items-center gap-2 px-6 py-2 rounded-md text-sm bg-primary hover:bg-primary-foreground duration-100 border-[1px] border-border shadow-md"
-            >
-              {link.label}
-              {link.icon}
-            </Link>
-          </div>
-        ))}
+    <section className="relative">
+      <img
+        src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2g2OXRzd2xyMHczamJqNGRqajVzNHBhamc0bWtxcnM3cjlxZ2d3bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kjETcOXKdbYLS/giphy.gif"
+        alt=""
+        className="w-full h-80 object-cover"
+      />
+      <img
+        src="https://github.com/figueroaignacio.png"
+        alt="Gif"
+        className="size-20 rounded-md relative -top-10 left-5"
+      />
+      <div className="px-5 space-y-5">
+        <div>
+          <h1 className="text-3xl font-bold">Ignacio Figueroa</h1>
+          <p className="text-thin text-muted-foreground">Fullstack Developer</p>
+        </div>
+        <Actions />
+        <p className="text-muted-foreground">
+          Specialized in crafting efficient, intuitive, and scalable web
+          interfaces. Throughout my journey, I've come to realize the pivotal
+          role technology plays in our daily lives and its extraordinary
+          potential to drive transformation.
+        </p>
       </div>
-    </div>
+    </section>
   );
 }
