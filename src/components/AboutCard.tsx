@@ -14,7 +14,7 @@ export function AboutCard() {
         />
         <h3>Ignacio Figueroa</h3>
       </div>
-      <div className="px-12 py-6">
+      <div className="py-6">
         <h3 className="font-bold">About me</h3>
         <p className="text-muted-foreground">
           I'm Ignacio Figueroa, Web Developer specializing in Frontend
