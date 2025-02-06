@@ -18,7 +18,7 @@ export function Navbar() {
   const pathname = location.pathname;
 
   return (
-    <header>
+    <header className="sticky top-4">
       <nav className="border border-border rounded-md backdrop-blur-2xl px-3 py-2">
         <ul className="flex items-start gap-12 justify-around">
           {navItems.map((navItem, index) => (
