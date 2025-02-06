@@ -1,6 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 import { Actions } from "./Actions";
 
 export function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative">
       <img
@@ -20,10 +24,7 @@ export function Hero() {
         </div>
         <Actions />
         <p className="text-muted-foreground">
-          Specialized in crafting efficient, intuitive, and scalable web
-          interfaces. Throughout my journey, I've come to realize the pivotal
-          role technology plays in our daily lives and its extraordinary
-          potential to drive transformation.
+          {t("sections.hero.introduction")}
         </p>
       </div>
     </section>
