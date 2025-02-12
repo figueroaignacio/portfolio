@@ -102,9 +102,11 @@
   "pages": {
     "about": {
       "title": "About Me",
-      "greeting": "I'm Ignacio Figueroa, Web Developer specializing in <span>Frontend Development</span>. I craft digital experiences that forge meaningful connections between technology and users.",
-      "intro": "I leverage <span>React</span> (TypeScript, Next.js) to build <span>intuitive solutions</span> that deliver tangible business value. Driven by challenging projects, I'm currently expanding into Backend Development (Node.js, Express.js, Nest.js) to master the full technology stack. I'm committed to <span>continuous growth</span> and developing projects that make a <span>real difference</span>.",
-      "collaboration": "I thrive in diverse teams, creating innovative products that drive meaningful outcomes. I actively seek opportunities that push my boundaries and contribute to advancing the <span>tech landscape</span>."
+      "whatIUse": "Technologies I Use",
+      "myAspirations": "My Aspirations",
+      "greeting": "I'm Ignacio Figueroa, a Web Developer specializing in Frontend Development. I'm passionate about creating intuitive digital experiences that meaningfully connect users with technology.",
+      "intro": "I work with React, TypeScript, and Next.js to develop efficient and scalable solutions that bring real value to businesses. Driven by challenges, I'm currently expanding my knowledge in Backend Development (Node.js, Express.js, Nest.js) to master the full stack and enhance my ability to create impactful solutions. I'm committed to continuous learning and the development of projects that make a real difference.",
+      "collaboration": "I thrive in diverse teams where creativity and innovation shape products that deliver tangible results. I'm always seeking opportunities that challenge me, push my skills further, and contribute to the evolution of the tech landscape."
     },
     "notes": {
       "title": "Notes",

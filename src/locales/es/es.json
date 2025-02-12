@@ -102,9 +102,11 @@
   "pages": {
     "about": {
       "title": "Sobre mí",
-      "greeting": "Soy Ignacio Figueroa, Desarrollador Web especializado en <span>Desarrollo Frontend</span>. Creo experiencias digitales que construyen conexiones significativas entre la tecnología y los usuarios.",
-      "intro": "Utilizo <span>React</span> (TypeScript, Next.js) para crear <span>soluciones intuitivas</span> que aportan valor tangible a los negocios. Motivado por proyectos desafiantes, actualmente estoy expandiendo mis conocimientos en Desarrollo Backend (Node.js, Express.js, Nest.js) para dominar el stack tecnológico completo. Me comprometo con el <span>crecimiento continuo</span> y el desarrollo de proyectos de <span>impacto real</span>.",
-      "collaboration": "Prospero en equipos diversos, creando productos innovadores que impulsan resultados significativos. Busco activamente oportunidades que expandan mis límites y contribuyan al avance del <span>panorama tecnológico</span>."
+      "whatIUse": "Tecnologías que utilizo",
+      "myAspirations": "Mis aspiraciones",
+      "greeting": "Soy Ignacio Figueroa, Desarrollador Web especializado en Frontend. Me apasiona crear experiencias digitales intuitivas que conectan a los usuarios con la tecnología de manera significativa.",
+      "intro": "Trabajo con React, TypeScript y Next.js para desarrollar soluciones eficientes y escalables que generan valor real para los negocios. Impulsado por los desafíos, actualmente amplío mis conocimientos en Desarrollo Backend (Node.js, Express.js, Nest.js) con el objetivo de dominar el stack completo y fortalecer mi capacidad de creación. Estoy comprometido con el aprendizaje continuo y el desarrollo de proyectos con impacto real.",
+      "collaboration": "Disfruto colaborar en equipos diversos, donde la creatividad y la innovación dan forma a productos que generan resultados tangibles. Busco constantemente oportunidades que me reten, expandan mis habilidades y contribuyan al avance del ecosistema tecnológico."
     },
     "notes": {
       "title": "Notas",

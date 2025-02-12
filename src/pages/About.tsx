@@ -5,12 +5,23 @@ import { useTranslation } from "react-i18next";
 import { AboutCard } from "@/components/AboutCard";
 import { Seo } from "@/components/Seo";
 
-// Sections
-
-// Types
-
 export function About() {
   const { t } = useTranslation();
+
+  const aboutSections = [
+    {
+      title: t("pages.about.title"),
+      description: t("pages.about.greeting"),
+    },
+    {
+      title: t("pages.about.whatIUse"),
+      description: t("pages.about.intro"),
+    },
+    {
+      title: t("pages.about.myAspirations"),
+      description: t("pages.about.collaboration"),
+    },
+  ];
 
   return (
     <section>
@@ -18,10 +29,12 @@ export function About() {
         title={t("siteConfig.about.title")}
         description={t("siteConfig.about.description")}
       />
-      {Array.from({ length: 3 }).map((_, index) => (
-        <div key={index}>
-          <AboutCard />
-        </div>
+      {aboutSections.map((section, index) => (
+        <AboutCard
+          key={index}
+          title={section.title}
+          description={section.description}
+        />
       ))}
     </section>
   );
