@@ -23,7 +23,7 @@ export function Hero() {
           <p className="text-thin text-muted-foreground">Fullstack Developer</p>
         </div>
         <Actions />
-        <p className="text-muted-foreground">
+        <p className="text-muted-foreground text-sm">
           {t("sections.hero.introduction")}
         </p>
       </div>
