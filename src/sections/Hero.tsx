@@ -1,5 +1,7 @@
+// Components
 import { useTranslation } from "react-i18next";
 
+// Sections
 import { Actions } from "./Actions";
 
 export function Hero() {
