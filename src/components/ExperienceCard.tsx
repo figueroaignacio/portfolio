@@ -17,7 +17,7 @@ export function ExperienceCard({
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="bg-card p-6 rounded-md border border-border">
       <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-1">
         <div className="flex-grow">
           <h3 className="font-bold mb-1">{role}</h3>
@@ -54,7 +54,7 @@ export function ExperienceCard({
           {techStack.map((tech, index) => (
             <li
               key={index}
-              className="text-xs bg-primary-foreground py-1 px-3 rounded-full"
+              className="text-xs border-border border py-1 px-3 rounded-full"
             >
               {tech}
             </li>
