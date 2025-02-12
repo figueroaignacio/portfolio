@@ -5,7 +5,7 @@ interface AboutCardProps {
 
 export function AboutCard({ title, description }: AboutCardProps) {
   return (
-    <div className="border border-border p-6 rounded-md mt-4 shadow-sm">
+    <div className="bg-card border border-border p-6 rounded-md mt-4 shadow-sm">
       <div className="flex items-center space-x-3">
         <img
           src="https://github.com/figueroaignacio.png"

@@ -16,51 +16,57 @@
 
 @layer {
   :root {
-    --background: hsl(0, 0%, 100%);
-    --foreground: hsl(220, 20%, 20%);
-    --card: hsl(0, 0%, 99%);
-    --primary: hsl(0, 0%, 100%);
-    --primary-foreground: hsl(212, 24%, 89%);
+    --background: hsl(210, 20%, 98%);
+    --foreground: hsl(220, 20%, 10%);
+    --card: hsl(0, 0%, 100%);
+    --card-foreground: hsl(220, 20%, 10%);
+    --primary: hsl(220, 70%, 50%);
+    --primary-foreground: hsl(210, 20%, 98%);
     --secondary: hsl(200, 60%, 50%);
-    --secondary-foreground: hsl(210, 30%, 98%);
+    --secondary-foreground: hsl(210, 20%, 98%);
     --accent: hsl(340, 70%, 60%);
-    --accent-foreground: hsl(200, 27%, 98%);
-    --muted: hsl(240 3.8% 25.1%);
-    --muted-foreground: hsl(240 3.8% 30.1%);
-    --border: hsl(210, 20%, 89%);
+    --accent-foreground: hsl(210, 20%, 98%);
+    --muted: hsl(220, 15%, 90%);
+    --muted-foreground: hsl(220, 15%, 40%);
+    --border: hsl(220, 15%, 85%);
+    --input: hsl(220, 15%, 85%);
+    --ring: hsl(220, 70%, 50%);
     --radius: 1rem;
   }
 
-  :root.dark {
-    --background: hsl(0, 0%, 0%);
+  .dark {
+    --background: hsl(220, 15%, 5%);
     --foreground: hsl(210, 20%, 98%);
-    --card: hsl(0, 0%, 3.12%);
-    --primary: hsl(220, 15%, 14%);
-    --primary-foreground: hsl(220, 15%, 20%);
+    --card: hsl(220, 15%, 8%);
+    --card-foreground: hsl(210, 20%, 98%);
+    --primary: hsl(220, 70%, 60%);
+    --primary-foreground: hsl(220, 15%, 5%);
     --secondary: hsl(200, 60%, 60%);
-    --secondary-foreground: hsl(220, 15%, 10%);
+    --secondary-foreground: hsl(220, 15%, 5%);
     --accent: hsl(340, 70%, 70%);
-    --accent-foreground: hsl(240 5% 64.9%);
-    --muted: hsl(240 4.8% 95.9%);
-    --muted-foreground: hsl(240 3.8% 70%);
-    --border: hsl(220, 15%, 5%);
+    --accent-foreground: hsl(220, 15%, 5%);
+    --muted: hsl(220, 15%, 15%);
+    --muted-foreground: hsl(220, 15%, 70%);
+    --border: hsl(220, 15%, 10%);
+    --input: hsl(220, 15%, 20%);
+    --ring: hsl(220, 70%, 60%);
   }
 }
 
 @layer base {
   ::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: var(--muted);
   }
   ::-webkit-scrollbar-thumb {
-    background: var(--border);
-    border-radius: 5px;
+    background: var(--muted-foreground);
+    border-radius: 4px;
   }
   * {
     scrollbar-width: thin;
-    scrollbar-color: var(--border) transparent;
+    scrollbar-color: var(--muted-foreground) var(--muted);
     scroll-behavior: smooth;
     scroll-padding-top: 1rem;
   }
@@ -73,14 +79,14 @@
 
 @layer utilities {
   .gradient-text {
-    @apply bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text;
+    @apply bg-gradient-to-r from-primary via-secondary to-accent text-transparent bg-clip-text;
   }
 
   .highlighted-text {
-    @apply bg-purple-400 px-2 py-0.5 rounded-md text-white;
+    @apply bg-accent px-2 py-0.5 rounded-md text-accent-foreground;
   }
 
   .grid-main-container {
-    @apply grid grid-rows-[auto_1fr_auto];
+    @apply grid grid-rows-[auto_1fr_auto] min-h-screen;
   }
 }
