@@ -16,12 +16,12 @@ export const RichTextComponents: Partial<PortableTextReactComponents> = {
   },
   block: {
     h2: ({ children }) => (
-      <h2 className="text-2xl font-bold text-foreground mb-4 mt-8 scroll-mt-24">
+      <h2 className="text-2xl font-extrabold text-foreground mb-4 mt-8 scroll-mt-24">
         {children}
       </h2>
     ),
     h3: ({ children }) => (
-      <h3 className="text-2xl font-semibold text-muted-foreground mb-3 mt-6 scroll-mt-24 md:text-3xl">
+      <h3 className="text-xl font-semibold text-foreground mb-3 mt-6 scroll-mt-24">
         {children}
       </h3>
     ),
