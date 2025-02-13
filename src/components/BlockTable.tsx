@@ -19,7 +19,7 @@ export function BlockTable({ value }: TableProps) {
               <th
                 key={index}
                 scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider"
+                className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider"
               >
                 {cell}
               </th>
@@ -39,9 +39,7 @@ export function BlockTable({ value }: TableProps) {
                   <Component
                     key={cellIndex}
                     className={`px-6 py-4 whitespace-nowrap text-sm ${
-                      Component === "th"
-                        ? "font-medium text-foreground"
-                        : "text-muted-foreground"
+                      Component === "th" ? "font-medium " : ""
                     }`}
                   >
                     {cell}
