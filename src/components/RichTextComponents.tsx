@@ -1,4 +1,5 @@
 import { PortableTextReactComponents } from "@portabletext/react";
+import { BlockTable } from "./BlockTable";
 import { Code } from "./Code";
 
 export const RichTextComponents: Partial<PortableTextReactComponents> = {
@@ -11,6 +12,7 @@ export const RichTextComponents: Partial<PortableTextReactComponents> = {
       />
     ),
     code: Code,
+    table: BlockTable,
   },
   block: {
     h2: ({ children }) => (
