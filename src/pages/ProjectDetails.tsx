@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 // Components
 import { BackButton } from "@/components/BackButton";
 import { Badge } from "@/components/Badge";
+import { RichTextComponents } from "@/components/RichTextComponents";
 import { Seo } from "@/components/Seo";
 import { Spinner } from "@/components/Spinner";
 import { PortableText } from "@portabletext/react";
@@ -55,7 +56,7 @@ export function ProjectDetails() {
   if (!project) return <p>No post found.</p>;
 
   return (
-    <article className="grid grid-cols-1 lg:grid-cols-12 lg:border lg:border-border rounded-md lg:min-h-dvh">
+    <article className="lg:border lg:border-border lg:min-h-dvh max-w-3xl mx-auto">
       <Seo title={project.title} description={project.description} />
       <div className="col-span-5 lg:border-r lg:border-border h-full p-3 lg:p-6 space-y-3">
         <BackButton />
@@ -72,8 +73,8 @@ export function ProjectDetails() {
           </div>
         )}
       </div>
-      <div className="lg:max-h-[80dvh] lg:overflow-y-scroll px-3 col-span-7 p-3 lg:p-6">
-        <PortableText value={project.body} />
+      <div className=" px-3 col-span-7 p-3 lg:p-6">
+        <PortableText value={project.body} components={RichTextComponents} />
       </div>
     </article>
   );
