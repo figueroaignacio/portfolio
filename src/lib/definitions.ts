@@ -1,5 +1,11 @@
 import { TypedObject } from "@portabletext/types";
 
+export type NavItem = {
+  label: string;
+  href: string;
+  icon: React.ReactNode;
+};
+
 export interface Note {
   title: string;
   description: string;

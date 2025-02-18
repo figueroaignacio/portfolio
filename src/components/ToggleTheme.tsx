@@ -10,7 +10,7 @@ export function ToggleTheme() {
   return (
     <button
       onClick={toggleTheme}
-      className="px-4 py-2 rounded-md  hover:bg-primary-foreground transition-colors flex justify-center"
+      className=" rounded-md  hover:bg-primary-foreground transition-colors flex justify-center"
       aria-label={theme ? "Light" : "Dark"}
     >
       {theme === "light" ? <MoonIcon /> : <SunIcon />}
