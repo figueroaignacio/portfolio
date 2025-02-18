@@ -39,7 +39,10 @@ export function Notes() {
   if (isLoading) {
     return (
       <section className="relative mt-6 space-y-4">
-        {" "}
+        <Seo
+          title={t("siteConfig.notes.title")}
+          description={t("siteConfig.notes.description")}
+        />
         <h1>{t("pages.notes.title")}</h1>
         <p className="text-sm mb-6">{t("pages.notes.description")}</p>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-3">
