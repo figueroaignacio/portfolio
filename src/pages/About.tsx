@@ -9,17 +9,17 @@ import { LatestExperience } from "./LatestExperience";
 export function About() {
   const { t } = useTranslation();
 
-  const aboutSections = [
+  const aboutTexts = [
     {
-      title: t("pages.about.title"),
       description: t("pages.about.greeting"),
     },
     {
-      title: t("pages.about.whatIUse"),
       description: t("pages.about.intro"),
     },
     {
-      title: t("pages.about.myAspirations"),
+      description: t("pages.about.expandingKnowledge"),
+    },
+    {
       description: t("pages.about.collaboration"),
     },
   ];
@@ -35,10 +35,9 @@ export function About() {
         <h2 className="font-bold text-xl">Ignacio Figueroa</h2>
       </div>
       <div className="space-y-5 text-sm text-muted-foreground">
-        <p>{t("pages.about.greeting")}</p>
-        <p>{t("pages.about.intro")}</p>
-        <p>{t("pages.about.expandingKnowledge")}</p>
-        <p>{t("pages.about.collaboration")}</p>
+        {aboutTexts.map((text, index) => (
+          <p key={index}>{text.description}</p>
+        ))}
       </div>
       <Separator className="py-12" />
       <LatestExperience />
