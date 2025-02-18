@@ -1,5 +1,6 @@
 // Pages
 import { About } from "@/pages/About";
+import { Home } from "@/pages/Home";
 import { LatestExperience } from "@/pages/LatestExperience";
 import { NoteDetails } from "@/pages/NoteDetails";
 import { Notes } from "@/pages/Notes";
@@ -11,7 +12,6 @@ import { Projects } from "@/pages/Projects";
 import { BaseLayout } from "@/layout/BaseLayout";
 import { Layout } from "@/layout/Layout";
 import { NoteLayout } from "@/layout/NoteLayout";
-import { Home } from "@/pages/Home";
 
 export const routes = [
   {
