@@ -1,8 +1,6 @@
 // Components
 import { useTranslation } from "react-i18next";
 
-// Sections
-
 export function Hero() {
   const { t } = useTranslation();
 
