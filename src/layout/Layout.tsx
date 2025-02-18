@@ -5,13 +5,15 @@ import { Outlet } from "react-router-dom";
 
 export function Layout() {
   return (
-    <div className="max-w-3xl mx-auto">
-      <div className="px-2 grid-main-container">
+    <div>
+      <div className="grid-main-container">
         <Navbar />
-        <main className="px-2">
+        <main className="px-2 max-w-3xl mx-auto">
           <Outlet />
         </main>
-        <Footer />
+        <div>
+          <Footer />
+        </div>
       </div>
     </div>
   );
