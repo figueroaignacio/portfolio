@@ -14,7 +14,7 @@ export const useNavItems = (): NavItem[] => {
     { label: t("ui.navigation.home"), href: "/", icon: <HomeIcon /> },
     {
       label: t("ui.navigation.experience"),
-      href: "/experience",
+      href: "/about",
       icon: <AboutIcon />,
     },
     {

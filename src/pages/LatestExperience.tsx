@@ -22,6 +22,7 @@ export function LatestExperience() {
         description={t("siteConfig.experience.description")}
         title={t("siteConfig.experience.title")}
       />
+      <h2 className="mb-5">{t("sections.experience.title")}</h2>
       <ul>
         {experience.map((item, index) => (
           <li key={index}>

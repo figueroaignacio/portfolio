@@ -101,12 +101,11 @@
   },
   "pages": {
     "about": {
-      "title": "Sobre mí",
-      "whatIUse": "Tecnologías que utilizo",
-      "myAspirations": "Mis aspiraciones",
-      "greeting": "Soy Ignacio Figueroa, Desarrollador Web especializado en Frontend. Me apasiona crear experiencias digitales intuitivas que conectan a los usuarios con la tecnología de manera significativa.",
-      "intro": "Trabajo con React, TypeScript y Next.js para desarrollar soluciones eficientes y escalables que generan valor real para los negocios. Impulsado por los desafíos, actualmente amplío mis conocimientos en Desarrollo Backend (Node.js, Express.js, Nest.js) con el objetivo de dominar el stack completo y fortalecer mi capacidad de creación. Estoy comprometido con el aprendizaje continuo y el desarrollo de proyectos con impacto real.",
-      "collaboration": "Disfruto colaborar en equipos diversos, donde la creatividad y la innovación dan forma a productos que generan resultados tangibles. Busco constantemente oportunidades que me reten, expandan mis habilidades y contribuyan al avance del ecosistema tecnológico."
+      "title": "Acerca de",
+      "greeting": "👋🏽 Hola, ¿cómo estás?",
+      "intro": "Desarrollador Web especializado en desarrollo Frontend. Me apasiona crear experiencias digitales intuitivas que conecten a los usuarios con la tecnología de manera significativa. Trabajo con React, TypeScript y Next.js para desarrollar soluciones eficientes y escalables que aporten un valor real a los negocios.",
+      "expandingKnowledge": "Impulsado por los desafíos, actualmente estoy ampliando mis conocimientos en desarrollo Backend (Node.js, Express.js, Nest.js) para dominar el full stack y mejorar mi capacidad de crear soluciones impactantes. Estoy comprometido con el aprendizaje continuo y el desarrollo de proyectos que generen un cambio real.",
+      "collaboration": "Me desenvuelvo mejor en equipos diversos donde la creatividad y la innovación dan forma a productos que generan resultados tangibles. Siempre busco oportunidades que me desafíen, me ayuden a mejorar mis habilidades y contribuyan a la evolución del panorama tecnológico."
     },
     "notes": {
       "title": "Notas",
