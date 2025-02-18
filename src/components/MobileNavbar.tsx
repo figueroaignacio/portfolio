@@ -1,8 +1,7 @@
-import type React from "react";
 import { useNavItems } from "../hooks/useNavItems";
 import { NavLinks } from "./NavLinks";
 
-export const MobileNavbar: React.FC = () => {
+export const MobileNavbar = () => {
   const navItems = useNavItems();
 
   return (

@@ -1,15 +1,14 @@
-import type React from "react";
 import { useNavItems } from "../hooks/useNavItems";
 import { NavLinks } from "./NavLinks";
 import { SelectLanguage } from "./SelectLanguage";
 import { ToggleTheme } from "./ToggleTheme";
 
-export const DesktopNavbar: React.FC = () => {
+export const DesktopNavbar = () => {
   const navItems = useNavItems();
 
   return (
-    <header className="sticky shadow-lg md:shadow-none z-50 m-2 rounded-md backdrop-blur-sm opacity-70 bg-transparent">
-      <nav className="max-w-screen-xl mx-auto px-4 flex justify-between">
+    <header className="sticky shadow-lg md:shadow-none z-50 my-3 rounded-md backdrop-blur-sm bg-transparent px-3 lg:px-0">
+      <nav className="max-w-screen-xl mx-auto flex justify-between">
         <NavLinks
           navItems={navItems}
           className="lg:flex justify-start items-center space-x-1 md:space-x-4 md:py-0 hidden"
