@@ -11,13 +11,15 @@ import { Projects } from "@/pages/Projects";
 import { BaseLayout } from "@/layout/BaseLayout";
 import { Layout } from "@/layout/Layout";
 import { NoteLayout } from "@/layout/NoteLayout";
+import { Home } from "@/pages/Home";
 
 export const routes = [
   {
     element: <Layout />,
     children: [
-      { path: "/", element: <About /> },
+      { path: "/", element: <Home /> },
       { path: "/projects", element: <Projects /> },
+      { path: "/about", element: <About /> },
       { path: "/notes", element: <Notes /> },
       { path: "/experience", element: <LatestExperience /> },
     ],
