@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 
 // Components
 import { ExperienceCard } from "@/components/ExperienceCard";
-import { Seo } from "@/components/Seo";
 import { Testimonies } from "@/sections/Testimonies";
 
 // Types
@@ -18,10 +17,6 @@ export function LatestExperience() {
 
   return (
     <div>
-      <Seo
-        description={t("siteConfig.experience.description")}
-        title={t("siteConfig.experience.title")}
-      />
       <h2 className="mb-5">{t("sections.experience.title")}</h2>
       <ul>
         {experience.map((item, index) => (
