@@ -7,8 +7,8 @@ export const DesktopNavbar = () => {
   const navItems = useNavItems();
 
   return (
-    <header className="sticky top-0 left-0 my-3 px-3 py-6 lg:px-0 backdrop-blur-sm z-20">
-      <nav className="max-w-screen-xl mx-auto flex justify-between">
+    <header className="sticky top-0 left-0 px-3 py-3 lg:px-0 backdrop-blur-sm z-20 border-b border-border border-dashed">
+      <nav className="max-w-3xl mx-auto flex justify-between">
         <NavLinks
           navItems={navItems}
           className="lg:flex justify-start items-center space-x-1 md:space-x-4 md:py-0 hidden"

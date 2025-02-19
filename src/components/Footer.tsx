@@ -9,8 +9,8 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-background pb-20 lg:pb-0 border-t border-border mt-12">
-      <div className="max-w-screen-xl mx-auto space-y-6 px-4">
+    <footer className="bg-background pb-20 lg:pb-0 border-t border-border border-dashed mt-12">
+      <div className="max-w-3xl mx-auto space-y-6 px-4">
         <div className="container max-w-4xl py-12 space-y-4">
           <h2 className="text-2xl font-semibold">Ignacio Figueroa</h2>
           <div className="flex items-center gap-x-1 text-xs">
