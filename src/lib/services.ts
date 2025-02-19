@@ -4,6 +4,7 @@ import client from "@/lib/client";
 // Queries
 import {
   GET_ALL_PROJECTS,
+  GET_LATEST_NOTES,
   GET_NOTES,
   GET_NOTE_DETAILS,
   GET_PROJECT_DETAILS,
@@ -14,6 +15,21 @@ import { Note, Project } from "./definitions";
 
 export async function getNotes(locale: string): Promise<Note[]> {
   const query = GET_NOTES(locale);
+
+  try {
+    const notes = await client.fetch<Note[]>(query);
+    return notes;
+  } catch (error) {
+    throw new Error(
+      `Failed to fetch notes: ${
+        error instanceof Error ? error.message : "Unknown error"
+      }`
+    );
+  }
+}
+
+export async function getLatestNotes(locale: string): Promise<Note[]> {
+  const query = GET_LATEST_NOTES(locale);
 
   try {
     const notes = await client.fetch<Note[]>(query);

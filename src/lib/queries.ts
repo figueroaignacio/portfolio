@@ -15,6 +15,23 @@ export const GET_NOTES = (locale: string) => `
   }
 `;
 
+export const GET_LATEST_NOTES = (locale: string) => `
+  *[_type == "note" && locale == "${locale}"] | order(publishedAt desc) [0..1] {
+    title,
+    description,
+    slug,
+    body,
+    publishedAt,
+    mainImage {
+      asset -> {
+        _id,
+        url
+      },
+      alt
+    }
+  }
+`;
+
 export const GET_NOTE_DETAILS = (slug: string, locale: string) => `
   *[_type == "note" && slug.current == "${slug}" && locale == "${locale}"][0] {
     title,
