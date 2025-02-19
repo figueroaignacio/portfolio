@@ -70,7 +70,7 @@ export function LatestProjects() {
         {latestProjects.map((project) => (
           <li key={project.slug.current}>
             <TransitionLink
-              to={`/project/${project.slug.current}`}
+              to={`/projects/${project.slug.current}`}
               className="flex justify-between  w-full h-full border border-border p-5 rounded-md hover:backdrop-brightness-150 transition-all duration-150 group"
             >
               <div className="space-y-5">
