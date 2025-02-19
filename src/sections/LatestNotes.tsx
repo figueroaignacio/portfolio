@@ -1,9 +1,14 @@
-import { ArrowUp } from "@/components/Icons";
+// Hooks
 import { useLanguage } from "@/hooks/useLanguage";
+import { useEffect, useState } from "react";
+
+// Components
+import { ArrowUp } from "@/components/Icons";
+import { Link } from "react-router-dom";
+
+// Utils
 import { Note } from "@/lib/definitions";
 import { getLatestNotes } from "@/lib/services";
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 export function LatestNotes() {
   const [notes, setNotes] = useState<Note[]>([]);
