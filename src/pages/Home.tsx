@@ -12,7 +12,7 @@ export function Home() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative mt-6 space-y-20">
+    <section className="relative space-y-20">
       <Seo
         title={t("siteConfig.home.title")}
         description={t("siteConfig.home.description")}

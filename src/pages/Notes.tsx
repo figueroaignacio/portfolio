@@ -38,7 +38,7 @@ export function Notes() {
 
   if (isLoading) {
     return (
-      <section className="relative mt-6 space-y-4">
+      <section className="relative space-y-4">
         <Seo
           title={t("siteConfig.notes.title")}
           description={t("siteConfig.notes.description")}
@@ -65,7 +65,7 @@ export function Notes() {
   }
 
   return (
-    <section className="relative mt-6 space-y-4">
+    <section className="relative space-y-4">
       <Seo
         title={t("siteConfig.notes.title")}
         description={t("siteConfig.notes.description")}

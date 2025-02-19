@@ -41,7 +41,7 @@ export function Projects() {
 
   if (isLoading) {
     return (
-      <section className="relative mt-6 space-y-4">
+      <section className="relative space-y-4">
         <Seo
           title={t("siteConfig.projects.title")}
           description={t("siteConfig.projects.description")}
@@ -67,7 +67,7 @@ export function Projects() {
   }
 
   return (
-    <section className="relative mt-6 space-y-4">
+    <section className="relative space-y-4">
       <Seo
         title={t("siteConfig.projects.title")}
         description={t("siteConfig.projects.description")}

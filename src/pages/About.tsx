@@ -25,7 +25,7 @@ export function About() {
   ];
 
   return (
-    <section className="relative mt-6 space-y-4">
+    <section className="relative space-y-4">
       <Seo
         title={t("siteConfig.about.title")}
         description={t("siteConfig.about.description")}
