@@ -7,7 +7,7 @@ export function Layout() {
   return (
     <div className="grid-main-container">
       <Navbar />
-      <main className="px-4 max-w-3xl mx-auto">
+      <main className="px-4 lg:px-2 max-w-3xl mx-auto">
         <Outlet />
       </main>
       <div>
