@@ -1,6 +1,7 @@
 // Hooks
 import { useLanguage } from "@/hooks/useLanguage";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 // Components
 import { ArrowUp } from "@/components/Icons";
@@ -13,6 +14,7 @@ import { getLatestNotes } from "@/lib/services";
 export function LatestNotes() {
   const [notes, setNotes] = useState<Note[]>([]);
   const { language } = useLanguage();
+  const { t } = useTranslation();
 
   useEffect(() => {
     async function fetchNotes() {
@@ -25,7 +27,7 @@ export function LatestNotes() {
 
   return (
     <section>
-      <h2 className="mb-5">Latest Notes</h2>
+      <h2 className="mb-5">{t("sections.latestNotes.title")}</h2>
       <ul className="space-y-5">
         {notes.map((note) => (
           <li key={note.slug.current}>

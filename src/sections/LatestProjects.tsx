@@ -1,6 +1,7 @@
 // Hooks
 import { useLanguage } from "@/hooks/useLanguage";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 // Componets
 import { ArrowUp } from "@/components/Icons";
@@ -13,6 +14,7 @@ import { getLatestProjects } from "@/lib/services";
 export function LatestProjects() {
   const [latestProjects, setLatestProjects] = useState<Project[]>([]);
   const { language } = useLanguage();
+  const { t } = useTranslation();
 
   useEffect(() => {
     async function fetchLatestProjects() {
@@ -26,7 +28,7 @@ export function LatestProjects() {
 
   return (
     <section className="space-y-5">
-      <h2>Latest Projects</h2>
+      <h2 className="mb-5">{t("sections.latestProjects.title")}</h2>
       <ul className="space-y-5">
         {latestProjects.map((project) => (
           <li key={project.slug.current}>

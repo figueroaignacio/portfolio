@@ -99,6 +99,12 @@
           "profile": "https://www.linkedin.com/in/pia-walcott/"
         }
       ]
+    },
+    "latestProjects": {
+      "title": "Proyectos recientes"
+    },
+    "latestNotes": {
+      "title": "Notas recientes"
     }
   },
   "pages": {
