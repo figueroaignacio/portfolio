@@ -69,6 +69,23 @@ export const GET_ALL_PROJECTS = (locale: string) => `
   }
 `;
 
+export const GET_LATEST_PROJECTS = (locale: string) => `
+  *[_type == "project" && locale == "${locale}"] | order(publishedAt desc) [0..1] {
+    title,
+    description,
+    slug,
+    body,
+    publishedAt,
+    mainImage {
+      asset -> {
+        _id,
+        url
+      },
+      alt
+    }
+  }
+`;
+
 export const GET_PROJECT_DETAILS = (slug: string, locale: string) => `
   *[_type == "project" && slug.current == "${slug}" && locale == "${locale}"][0] {
     title,

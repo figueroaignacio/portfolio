@@ -5,6 +5,7 @@ import client from "@/lib/client";
 import {
   GET_ALL_PROJECTS,
   GET_LATEST_NOTES,
+  GET_LATEST_PROJECTS,
   GET_NOTES,
   GET_NOTE_DETAILS,
   GET_PROJECT_DETAILS,
@@ -67,6 +68,21 @@ export async function getProjects(locale: string): Promise<Project[]> {
   try {
     const projects = await client.fetch<Project[]>(query);
     return projects;
+  } catch (error) {
+    throw new Error(
+      `Failed to fetch notes: ${
+        error instanceof Error ? error.message : "Unknown error"
+      }`
+    );
+  }
+}
+
+export async function getLatestProjects(locale: string): Promise<Project[]> {
+  const query = GET_LATEST_PROJECTS(locale);
+
+  try {
+    const latestProjects = await client.fetch<Project[]>(query);
+    return latestProjects;
   } catch (error) {
     throw new Error(
       `Failed to fetch notes: ${
