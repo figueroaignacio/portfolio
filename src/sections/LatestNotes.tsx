@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 // Components
 import { ArrowUp } from "@/components/Icons";
-import { Link } from "react-router-dom";
+import { TransitionLink } from "@/components/TransitionLink";
 
 // Utils
 import { Note } from "@/lib/definitions";
@@ -29,7 +29,7 @@ export function LatestNotes() {
       <ul className="space-y-5">
         {notes.map((note) => (
           <li key={note.slug.current}>
-            <Link
+            <TransitionLink
               to={`/notes/${note.slug.current}`}
               className="flex justify-between items-center w-full h-full border border-border p-5 rounded-md hover:backdrop-brightness-150 transition-all duration-150 group"
             >
@@ -37,7 +37,7 @@ export function LatestNotes() {
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-150">
                 <ArrowUp />
               </div>
-            </Link>
+            </TransitionLink>
           </li>
         ))}
       </ul>

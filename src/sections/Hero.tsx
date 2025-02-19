@@ -2,7 +2,7 @@
 import { useTranslation } from "react-i18next";
 
 // Components
-import { Link } from "react-router-dom";
+import { TransitionLink } from "@/components/TransitionLink";
 
 export function Hero() {
   const { t } = useTranslation();
@@ -17,12 +17,12 @@ export function Hero() {
           {t("sections.hero.introduction")}
         </p>
         <div>
-          <Link
+          <TransitionLink
             className="border border-border px-4 py-2 rounded-md text-xs"
             to="/about"
           >
             {t("sections.hero.ctaButton")} 👉🏽
-          </Link>
+          </TransitionLink>
         </div>
       </div>
     </section>
