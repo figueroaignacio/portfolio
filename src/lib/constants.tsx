@@ -1,20 +1,15 @@
-import { GitHub, LinkedIn, Mail } from "@/components/Icons.tsx";
-
 export const CONTACTS = [
   {
-    title: "Mail",
+    title: "mail",
     href: "mailto:ignaciofigueroadev@gmail.com",
-    icon: <Mail />,
   },
   {
-    title: "LinkedIn",
+    title: "linkedIn",
     href: "https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/",
-    icon: <LinkedIn />,
   },
   {
-    title: "GitHub",
+    title: "github",
     href: "https://github.com/figueroaignacio/",
-    icon: <GitHub />,
   },
 ];
 

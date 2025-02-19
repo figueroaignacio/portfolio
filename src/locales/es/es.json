@@ -105,6 +105,10 @@
     },
     "latestNotes": {
       "title": "Notas recientes"
+    },
+    "contact": {
+      "title": "Ponte en contacto conmigo",
+      "description": "No dudes en comunicarse conmigo a través de las siguientes redes sociales o por correo"
     }
   },
   "pages": {

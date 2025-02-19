@@ -105,6 +105,10 @@
     },
     "latestNotes": {
       "title": "Latest Notes"
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "description": "Feel free to reach out via social media or email."
     }
   },
   "pages": {

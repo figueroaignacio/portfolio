@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 // Components
 import { Seo } from "@/components/Seo";
+import { Contact } from "@/sections/Contact";
 import { Hero } from "@/sections/Hero";
 import { LatestNotes } from "@/sections/LatestNotes";
 import { LatestProjects } from "@/sections/LatestProjects";
@@ -19,6 +20,7 @@ export function Home() {
       <Hero />
       <LatestNotes />
       <LatestProjects />
+      <Contact />
     </section>
   );
 }
