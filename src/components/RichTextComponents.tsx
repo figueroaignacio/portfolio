@@ -16,12 +16,12 @@ export const RichTextComponents: Partial<PortableTextReactComponents> = {
   },
   block: {
     h2: ({ children }) => (
-      <h2 className="text-2xl font-extrabold text-foreground mb-4 mt-8 scroll-mt-24">
+      <h2 className="text-xl pb-3 border-b border-border border-dashed font-semibold text-foreground mb-4 mt-8 scroll-mt-24">
         {children}
       </h2>
     ),
     h3: ({ children }) => (
-      <h3 className="text-xl font-semibold text-foreground mb-3 mt-6 scroll-mt-24">
+      <h3 className="text-lg font-semibold text-foreground mb-3 mt-6 scroll-mt-24">
         {children}
       </h3>
     ),
@@ -43,12 +43,12 @@ export const RichTextComponents: Partial<PortableTextReactComponents> = {
   },
   list: {
     bullet: ({ children }) => (
-      <ul className="list-disc list-inside space-y-2 text-foreground mb-4">
+      <ul className="list-disc list-inside space-y-4 text-foreground mb-4 text-sm">
         {children}
       </ul>
     ),
     number: ({ children }) => (
-      <ol className="list-decimal list-inside space-y-2 text-foreground mb-4">
+      <ol className="list-decimal list-inside space-y-4 text-foreground mb-4 text-sm">
         {children}
       </ol>
     ),

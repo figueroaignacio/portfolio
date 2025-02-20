@@ -26,13 +26,13 @@ export const routes = [
   },
   {
     element: <NoteLayout />,
-    children: [{ path: "/notes/:slug", element: <NoteDetails /> }],
+    children: [
+      { path: "/notes/:slug", element: <NoteDetails /> },
+      { path: "/projects/:slug", element: <ProjectDetails /> },
+    ],
   },
   {
     element: <BaseLayout />,
-    children: [
-      { path: "/projects/:slug", element: <ProjectDetails /> },
-      { path: "*", element: <NotFound /> },
-    ],
+    children: [{ path: "*", element: <NotFound /> }],
   },
 ];

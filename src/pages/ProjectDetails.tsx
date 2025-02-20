@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 // Components
-import { BackButton } from "@/components/BackButton";
-import { Badge } from "@/components/Badge";
 import { RichTextComponents } from "@/components/RichTextComponents";
 import { Seo } from "@/components/Seo";
 import { Spinner } from "@/components/Spinner";
 import { PortableText } from "@portabletext/react";
 
 // Services
+import { Badge } from "@/components/Badge";
+import { Separator } from "@/components/Separator";
 import { Project } from "@/lib/definitions";
 import { getProjectDetails } from "@/lib/services";
 
@@ -56,12 +56,12 @@ export function ProjectDetails() {
   if (!project) return <p>No post found.</p>;
 
   return (
-    <article className="lg:border lg:border-border lg:min-h-dvh max-w-3xl mx-auto">
+    <article>
       <Seo title={project.title} description={project.description} />
-      <div className="col-span-5 lg:border-r lg:border-border h-full p-3 lg:p-6 space-y-3">
-        <BackButton />
+      <div className="h-full space-y-5">
         <h1 className="text-lg font-bold">{project.title}</h1>
         <p className="text-sm text-foreground">{project.description}</p>
+        <Separator className="py-6" />
         {project.technologies.length > 0 && (
           <div className="border border-border p-3 rounded-md bg-card">
             <p className="text-sm mb-3">Technologies used 👇</p>
@@ -73,7 +73,7 @@ export function ProjectDetails() {
           </div>
         )}
       </div>
-      <div className=" px-3 col-span-7 p-3 lg:p-6">
+      <div className="pt-12">
         <PortableText value={project.body} components={RichTextComponents} />
       </div>
     </article>
