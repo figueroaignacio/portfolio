@@ -9,9 +9,9 @@ import { ProjectDetails } from "@/pages/ProjectDetails";
 import { Projects } from "@/pages/Projects";
 
 // Layouts
+import { ArticleLayout } from "@/layout/ArticleLayout";
 import { BaseLayout } from "@/layout/BaseLayout";
 import { Layout } from "@/layout/Layout";
-import { NoteLayout } from "@/layout/NoteLayout";
 
 export const routes = [
   {
@@ -25,7 +25,7 @@ export const routes = [
     ],
   },
   {
-    element: <NoteLayout />,
+    element: <ArticleLayout />,
     children: [
       { path: "/notes/:slug", element: <NoteDetails /> },
       { path: "/projects/:slug", element: <ProjectDetails /> },

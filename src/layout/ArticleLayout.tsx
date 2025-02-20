@@ -2,7 +2,7 @@ import { BackButton } from "@/components/BackButton";
 import { Footer } from "@/components/Footer";
 import { Outlet } from "react-router-dom";
 
-export function NoteLayout() {
+export function ArticleLayout() {
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-12 lg:p-16 min-h-screen p-6">
