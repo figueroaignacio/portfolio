@@ -43,7 +43,7 @@ export function ProjectCard({
         <TransitionLink to={slug}>
           <h3 className="underline font-semibold mb-4 relative group">
             {title}
-            <span className="absolute left-0 top-full mt-1 text-xs bg-background px-4 border border-border py-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
+            <span className="absolute left-0 top-full mt-1 text-xs backdrop-blur-md px-4 border border-border py-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
               {t("components.projectCard.actions.moreDetails")}
             </span>
           </h3>
