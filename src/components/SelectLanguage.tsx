@@ -29,12 +29,10 @@ export function SelectLanguage() {
           <span className="text-xs">{language.toUpperCase()}</span>
         </div>
       </ModalTrigger>
-
       <ModalOverlay isOpen={modalOpen} onClose={closeModal} />
-
       <ModalContent isOpen={modalOpen} onClose={closeModal}>
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-semibold">
+          <h2 className="text-sm font-semibold">
             {t("ui.language.selectLanguage.title")}
           </h2>
           <button onClick={closeModal}>
@@ -43,8 +41,8 @@ export function SelectLanguage() {
         </div>
         <div className="flex flex-col gap-y-2">
           <button
-            className={`p-2 rounded-md hover:bg-primary-foreground duration-100 ${
-              language === "en" ? "bg-primary-foreground" : ""
+            className={`p-2 rounded-md hover:hover:backdrop-brightness-200 duration-100 text-sm ${
+              language === "en" ? "backdrop-brightness-200" : ""
             }`}
             onClick={() => {
               changeLanguage("en");
@@ -54,8 +52,8 @@ export function SelectLanguage() {
             English
           </button>
           <button
-            className={`p-2 rounded-md hover:bg-primary-foreground duration-100 ${
-              language === "es" ? "bg-primary-foreground" : ""
+            className={`p-2 rounded-md hover:backdrop-brightness-200 duration-100 text-sm ${
+              language === "es" ? "backdrop-brightness-200" : ""
             }`}
             onClick={() => {
               changeLanguage("es");
