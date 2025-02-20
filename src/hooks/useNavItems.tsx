@@ -11,17 +11,21 @@ export const useNavItems = (): NavItem[] => {
   const { t } = useTranslation();
 
   return [
-    { label: t("ui.navigation.home"), href: "/", icon: <HomeIcon /> },
+    { label: t("ui.navigation.home.label"), href: "/", icon: <HomeIcon /> },
     {
-      label: t("ui.navigation.experience"),
+      label: t("ui.navigation.experience.label"),
       href: "/about",
       icon: <AboutIcon />,
     },
     {
-      label: t("ui.navigation.projects"),
+      label: t("ui.navigation.projects.label"),
       href: "/projects",
       icon: <ProjectsIcon />,
     },
-    { label: t("ui.navigation.notes"), href: "/notes", icon: <NotesIcon /> },
+    {
+      label: t("ui.navigation.notes.label"),
+      href: "/notes",
+      icon: <NotesIcon />,
+    },
   ];
 };

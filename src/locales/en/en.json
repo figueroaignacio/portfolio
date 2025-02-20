@@ -1,23 +1,11 @@
 {
   "ui": {
-    "navigation": [
-      {
-        "label": "Home",
-        "href": "/"
-      },
-      {
-        "label": "Experience",
-        "href": "/experience"
-      },
-      {
-        "label": "Projects",
-        "href": "/projects"
-      },
-      {
-        "label": "Notes",
-        "href": "/notes"
-      }
-    ],
+    "navigation": {
+      "home": { "label": "Home" },
+      "experience": { "label": "Experience" },
+      "projects": { "label": "Projects" },
+      "notes": { "label": "Notes" }
+    },
     "language": {
       "selectLanguage": {
         "title": "Select Language"
