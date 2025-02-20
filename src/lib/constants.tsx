@@ -15,6 +15,10 @@ export const CONTACTS = [
 
 export const techStack = [
   {
+    category: "Programming Languages",
+    items: ["TypeScript", "JavaScript"],
+  },
+  {
     category: "Frontend",
     items: [
       "React",
