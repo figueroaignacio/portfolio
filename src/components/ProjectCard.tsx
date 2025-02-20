@@ -1,3 +1,6 @@
+// Hooks
+import { useTranslation } from "react-i18next";
+
 // Components
 import { TransitionLink } from "./TransitionLink";
 
@@ -19,47 +22,48 @@ export function ProjectCard({
   liveSite,
   sourceCode,
 }: ProjectCardProps) {
+  const { t } = useTranslation();
+
+  const actions = [
+    {
+      icon: <GitHub />,
+      label: t("components.projectCard.actions.sourceCode"),
+      href: sourceCode,
+    },
+    {
+      icon: <ArrowUp />,
+      label: t("components.projectCard.actions.liveSite"),
+      href: liveSite,
+    },
+  ];
+
   return (
-    <div className="bg-card rounded-lg border border-border">
-      <div className="p-6 space-y-2">
-        <div className="flex justify-between items-start">
-          <div className="flex items-center gap-2">
-            <TransitionLink to={slug}>
-              <h3 className="font-bold tracking-tight">{title}</h3>
-            </TransitionLink>
-          </div>
-        </div>
-        <p className="text-sm leading-relaxed text-muted-foreground">
-          {description}
-        </p>
-        <div className="flex justify-between pt-4 space-x-4">
+    <div className="border border-border p-6 rounded-md">
+      <div className="relative w-fit">
+        <TransitionLink to={slug}>
+          <h3 className="underline font-semibold mb-4 relative group">
+            {title}
+            <span className="absolute left-0 top-full mt-1 text-xs bg-background px-4 border border-border py-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
+              {t("components.projectCard.actions.moreDetails")}
+            </span>
+          </h3>
+        </TransitionLink>
+      </div>
+      <p className="text-sm">{description}</p>
+      <div className="flex justify-end items-center gap-x-16 pt-6">
+        {actions.map((action) => (
           <a
-            href={sourceCode}
+            href={action.href}
+            className="flex items-center gap-x-3 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 inline-flex items-center justify-center px-4 py-2 gap-2 border border-border rounded-md text-sm hover:bg-primary-foreground transition-colors duration-100"
           >
-            <GitHub />
-            <span>Código fuente</span>
+            <span className="text-xs text-muted-foreground">
+              {action.label}
+            </span>
+            {action.icon}
           </a>
-          <a
-            href={liveSite}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 inline-flex items-center justify-center px-4 py-2 gap-2 border border-border rounded-md text-sm hover:bg-primary-foreground transition-colors duration-100"
-          >
-            <span>Ver proyecto</span>
-            <ArrowUp />
-          </a>
-        </div>
-        <div className="text-center">
-          <TransitionLink
-            to={slug}
-            className="flex-1 inline-flex items-center justify-center px-4 py-2 gap-2 border border-border rounded-md text-sm hover:bg-primary-foreground transition-colors duration-100 w-full"
-          >
-            More Details
-          </TransitionLink>
-        </div>
+        ))}
       </div>
     </div>
   );

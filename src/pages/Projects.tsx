@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 // Components
-import { ProjectCard } from "@/components/ProjectCard.tsx";
 import { Seo } from "@/components/Seo";
 
 // Types
 import { Project } from "@/lib/definitions";
 
 // Services
-import { ProjectCardSkeleton } from "@/components/ProjectCardSkeleton";
+import { ProjectCard } from "@/components/ProjectCard";
+import { Spinner } from "@/components/Spinner";
 import { getProjects } from "@/lib/services";
 import { CallToAction } from "@/sections/CallToAction";
 
@@ -46,14 +46,9 @@ export function Projects() {
           title={t("siteConfig.projects.title")}
           description={t("siteConfig.projects.description")}
         />
-        <h1>{t("pages.projects.title")}</h1>
-        <ul className="space-y-5 items-center">
-          {Array.from({ length: 6 }).map((_, index) => (
-            <li key={index}>
-              <ProjectCardSkeleton />
-            </li>
-          ))}
-        </ul>
+        <div className="min-h-[50dvh] flex justify-center items-center">
+          <Spinner />
+        </div>
       </section>
     );
   }
@@ -73,7 +68,7 @@ export function Projects() {
         description={t("siteConfig.projects.description")}
       />
       <h1>{t("pages.projects.title")}</h1>
-      <ul className="space-y-5 items-center">
+      <ul className="space-y-6 items-center">
         {projects.map((project, index) => (
           <li key={index}>
             <ProjectCard

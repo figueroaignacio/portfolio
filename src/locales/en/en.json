@@ -177,6 +177,13 @@
       "title": "Do you have a project in mind?",
       "subtitle": "Reach me and let's work together.",
       "link": "Send Me an Email"
+    },
+    "projectCard": {
+      "actions": {
+        "liveSite": "Live site",
+        "sourceCode": "Source code",
+        "moreDetails": "Click to see more details"
+      }
     }
   },
   "siteConfig": {
