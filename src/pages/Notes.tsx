@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 // Components
+import { NoteCard } from "@/components/NoteCard";
 import { Seo } from "@/components/Seo";
+import { Spinner } from "@/components/Spinner";
 
 // Services
-import { NoteCard } from "@/components/NoteCard";
-import { Spinner } from "@/components/Spinner";
 import { Note } from "@/lib/definitions";
 import { getNotes } from "@/lib/services";
 

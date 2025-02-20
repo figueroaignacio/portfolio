@@ -4,16 +4,16 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 // Components
+import { ProjectCard } from "@/components/ProjectCard";
 import { Seo } from "@/components/Seo";
+import { Spinner } from "@/components/Spinner";
+import { CallToAction } from "@/sections/CallToAction";
 
 // Types
 import { Project } from "@/lib/definitions";
 
 // Services
-import { ProjectCard } from "@/components/ProjectCard";
-import { Spinner } from "@/components/Spinner";
 import { getProjects } from "@/lib/services";
-import { CallToAction } from "@/sections/CallToAction";
 
 export function Projects() {
   const { t } = useTranslation();
