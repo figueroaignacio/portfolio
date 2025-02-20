@@ -11,7 +11,7 @@ export function Stack() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-card border border-border p-6 rounded-md">
+    <div>
       <h3 className="text-xl font-semibold mb-5">
         {t("components.myStack.title")}
       </h3>

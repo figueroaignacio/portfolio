@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 // Components
 import { Seo } from "@/components/Seo";
 import { Separator } from "@/components/Separator";
+import { Stack } from "@/sections/Stack";
 import { LatestExperience } from "./LatestExperience";
 
 export function About() {
@@ -41,6 +42,8 @@ export function About() {
       </div>
       <Separator className="py-12" />
       <LatestExperience />
+      <Separator className="py-12" />
+      <Stack />
     </section>
   );
 }
