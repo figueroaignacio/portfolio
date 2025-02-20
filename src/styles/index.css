@@ -55,18 +55,19 @@
 
 @layer base {
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
   }
   ::-webkit-scrollbar-track {
-    background: var(--muted);
+    background: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background: var(--muted-foreground);
-    border-radius: 4px;
+    background: var(--border);
+    border-radius: 5px;
   }
+
   * {
     scrollbar-width: thin;
-    scrollbar-color: var(--muted-foreground) var(--muted);
+    scrollbar-color: var(--muted-foreground) transparent;
     scroll-behavior: smooth;
     scroll-padding-top: 1rem;
   }
