@@ -1,4 +1,7 @@
+// Hooks
 import { useNavItems } from "../hooks/useNavItems";
+
+// Components
 import { NavLinks } from "./NavLinks";
 import { SelectLanguage } from "./SelectLanguage";
 import { ToggleTheme } from "./ToggleTheme";
