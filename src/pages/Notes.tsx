@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 // Components
-import { NoteCard } from "@/components/NoteCard";
-import { NoteCardSkeleton } from "@/components/NoteCardSkeleton";
 import { Seo } from "@/components/Seo";
 
 // Services
+import { NoteCard } from "@/components/NoteCard";
+import { Spinner } from "@/components/Spinner";
 import { Note } from "@/lib/definitions";
 import { getNotes } from "@/lib/services";
 
@@ -40,18 +40,12 @@ export function Notes() {
     return (
       <section className="relative space-y-4">
         <Seo
-          title={t("siteConfig.notes.title")}
-          description={t("siteConfig.notes.description")}
+          title={t("siteConfig.projects.title")}
+          description={t("siteConfig.projects.description")}
         />
-        <h1>{t("pages.notes.title")}</h1>
-        <p className="text-sm mb-6">{t("pages.notes.description")}</p>
-        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-3">
-          {Array.from({ length: 5 }).map((_, index) => (
-            <li key={index}>
-              <NoteCardSkeleton />
-            </li>
-          ))}
-        </ul>
+        <div className="min-h-[50dvh] flex justify-center items-center">
+          <Spinner />
+        </div>
       </section>
     );
   }
@@ -72,7 +66,7 @@ export function Notes() {
       />
       <h1>{t("pages.notes.title")}</h1>
       <p className="text-sm mb-6">{t("pages.notes.description")}</p>
-      <ul className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+      <ul className="space-y-6 gap-3">
         {notes.map((note) => (
           <li key={note.slug.current}>
             <NoteCard

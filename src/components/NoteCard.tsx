@@ -13,16 +13,21 @@ interface NoteCardProps extends Pick<Note, "title" | "description"> {
 
 export function NoteCard({ title, slug, description }: NoteCardProps) {
   return (
-    <div className="p-4 border-[1px] border-border rounded-lg bg-card space-y-4 h-full flex flex-col justify-between">
-      <h2 className="font-bold">{title}</h2>
-      <p className="text-sm">{description}</p>
-      <TransitionLink
-        to={slug}
-        className="flex items-center justify-center gap-2 px-6 py-2 rounded-md text-sm  hover:bg-primary-foreground duration-100 border-[1px] border-border"
-      >
+    <TransitionLink
+      className="flex flex-col justify-between w-full h-full border border-border p-5 rounded-md hover:backdrop-brightness-150 transition-all duration-150 group space-y-3"
+      to={slug}
+    >
+      <div className="flex justify-between items-center">
+        <h2 className="">{title}</h2>
+        <div className="lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-150">
+          <ArrowUp />
+        </div>
+      </div>
+      <p className="text-sm line-clamp-2">{description}</p>
+      {/* <TransitionLink to={slug} className="">
         Read More
         <ArrowUp />
-      </TransitionLink>
-    </div>
+      </TransitionLink> */}
+    </TransitionLink>
   );
 }
