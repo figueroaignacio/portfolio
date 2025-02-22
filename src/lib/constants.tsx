@@ -27,7 +27,8 @@ export const techStack = [
       "React Hook Form",
       "React Router",
       "React Server Components (RSC)",
-      "Velite",
+      "TanStack Query (React Query)",
+      "MDX",
     ],
   },
   {
@@ -46,7 +47,7 @@ export const techStack = [
     ],
   },
   {
-    category: "Tools",
+    category: "Other",
     items: [
       "Git",
       "GitHub",
@@ -58,6 +59,8 @@ export const techStack = [
       "Zod",
       "Velite",
       "pnpm",
+      "Vite",
+      "Markdown",
     ],
   },
 ];
