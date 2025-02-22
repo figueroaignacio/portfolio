@@ -51,8 +51,9 @@ export function ProjectCard({
       </div>
       <p className="text-sm">{description}</p>
       <div className="flex justify-end items-center gap-x-16 pt-6">
-        {actions.map((action) => (
+        {actions.map((action, index) => (
           <a
+            key={index}
             href={action.href}
             className="flex items-center gap-x-3 hover:underline"
             target="_blank"
