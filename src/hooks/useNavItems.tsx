@@ -13,7 +13,7 @@ export const useNavItems = (): NavItem[] => {
   return [
     { label: t("ui.navigation.home.label"), href: "/", icon: <HomeIcon /> },
     {
-      label: t("ui.navigation.experience.label"),
+      label: t("ui.navigation.about.label"),
       href: "/about",
       icon: <AboutIcon />,
     },

@@ -2,7 +2,7 @@
   "ui": {
     "navigation": {
       "home": { "label": "Home" },
-      "experience": { "label": "Experience" },
+      "about": { "label": "About" },
       "projects": { "label": "Projects" },
       "notes": { "label": "Notes" }
     },
