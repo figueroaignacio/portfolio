@@ -86,7 +86,9 @@
           "role": "Software Engineer",
           "profile": "https://www.linkedin.com/in/pia-walcott/"
         }
-      ]
+      ],
+      "showMore": "Ver Más",
+      "collapse": "Colapsar"
     },
     "latestProjects": {
       "title": "Proyectos recientes"
