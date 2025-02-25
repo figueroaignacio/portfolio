@@ -26,6 +26,9 @@ export default {
           DEFAULT: "var(--muted)",
           foreground: "var(--muted-foreground)",
         },
+        input: {
+          DEFAULT: "var(--input)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

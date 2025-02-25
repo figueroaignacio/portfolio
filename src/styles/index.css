@@ -35,9 +35,9 @@
   }
 
   .dark {
-    --background: hsl(220, 15%, 5%);
+    --background: hsl(214, 14%, 8%);
     --foreground: hsl(210, 20%, 98%);
-    --card: hsl(220, 15%, 8%);
+    --card: hsl(214, 14%, 10%);
     --card-foreground: hsl(210, 20%, 98%);
     --primary: hsl(220, 70%, 60%);
     --primary-foreground: hsl(220, 15%, 5%);
@@ -47,9 +47,10 @@
     --accent-foreground: hsl(220, 15%, 5%);
     --muted: hsl(220, 15%, 15%);
     --muted-foreground: hsl(220, 15%, 70%);
-    --border: hsl(220, 15%, 10%);
+    --border: hsl(220, 15%, 15%);
     --input: hsl(220, 15%, 20%);
     --ring: hsl(220, 70%, 60%);
+    --radius: 0.75rem;
   }
 }
 
