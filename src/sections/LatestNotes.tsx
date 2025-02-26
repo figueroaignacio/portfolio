@@ -70,7 +70,7 @@ export function LatestNotes() {
           <li key={note.slug.current}>
             <TransitionLink
               to={`/notes/${note.slug.current}`}
-              className="flex justify-between items-center w-full h-full border border-border p-5 rounded-md hover:backdrop-brightness-150 transition-all duration-150 group hover:rotate-1 hover:scale-[1.1]"
+              className="flex justify-between items-center w-full h-full border border-border p-5 rounded-md hover:backdrop-brightness-150 transition-all duration-150 group hover:rotate-[0.3deg] hover:scale-[1.02]"
             >
               <h3 className="text-sm">{note.title}</h3>
               <div className="lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-150">

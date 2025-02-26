@@ -35,6 +35,15 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      animation: {
+        wave: "wave 1.5s infinite ease-in-out",
+      },
+      keyframes: {
+        wave: {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "50%": { transform: "rotate(20deg)" },
+        },
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

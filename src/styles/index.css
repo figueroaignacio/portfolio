@@ -35,22 +35,19 @@
   }
 
   .dark {
-    --background: hsl(214, 14%, 8%);
+    --background: hsl(220, 15%, 5%);
     --foreground: hsl(210, 20%, 98%);
-    --card: hsl(214, 14%, 10%);
-    --card-foreground: hsl(210, 20%, 98%);
-    --primary: hsl(220, 70%, 60%);
-    --primary-foreground: hsl(220, 15%, 5%);
+    --card: hsl(216, 16%, 6%);
+    --primary: hsl(220, 15%, 20%);
+    --primary-foreground: hsl(220, 15%, 20%);
     --secondary: hsl(200, 60%, 60%);
-    --secondary-foreground: hsl(220, 15%, 5%);
+    --secondary-foreground: hsl(220, 15%, 10%);
     --accent: hsl(340, 70%, 70%);
-    --accent-foreground: hsl(220, 15%, 5%);
-    --muted: hsl(220, 15%, 15%);
-    --muted-foreground: hsl(220, 15%, 70%);
-    --border: hsl(220, 15%, 15%);
-    --input: hsl(220, 15%, 20%);
-    --ring: hsl(220, 70%, 60%);
-    --radius: 0.75rem;
+    --accent-foreground: hsl(240 5% 64.9%);
+    --muted: hsl(240 4.8% 16.1%);
+    --muted-foreground: hsl(240 3.8% 70%);
+    --input: hsl(220, 15%, 12%);
+    --border: hsl(220, 15%, 12%);
   }
 }
 
@@ -74,7 +71,7 @@
   }
 
   body {
-    @apply bg-background text-foreground tracking-wider lg:border-l lg:border-r lg:border-border lg:border-dashed lg:mx-12;
+    @apply bg-background text-foreground tracking-wider lg:border-l lg:border-r lg:border-border lg:border-dashed lg:mx-12 bg-dots;
     font-family: "Onest Variable", sans-serif;
   }
 
@@ -94,5 +91,10 @@
 
   .grid-main-container {
     @apply grid grid-rows-[auto_1fr_auto] min-h-screen;
+  }
+
+  .bg-dots {
+    background-image: radial-gradient(var(--muted) 1px, transparent 1px);
+    background-size: 16px 16px;
   }
 }
