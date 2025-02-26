@@ -3,7 +3,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-// Componets
+// Components
 import { ArrowUp } from "@/components/Icons";
 import { TransitionLink } from "@/components/TransitionLink";
 
@@ -12,28 +12,38 @@ import { Project } from "@/lib/definitions";
 import { getLatestProjects } from "@/lib/services";
 
 export function LatestProjects() {
-  const [latestProjects, setLatestProjects] = useState<Project[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [state, setState] = useState<{
+    latestProjects: Project[];
+    isLoading: boolean;
+    error: string | null;
+  }>({
+    latestProjects: [],
+    isLoading: false,
+    error: null,
+  });
+
   const { language } = useLanguage();
   const { t } = useTranslation();
 
   useEffect(() => {
     async function fetchLatestProjects() {
+      setState((prev) => ({ ...prev, isLoading: true, error: null }));
       try {
-        setIsLoading(true);
-        setError(null);
         const latestProjects = await getLatestProjects(language);
-        setLatestProjects(latestProjects);
+        setState({ latestProjects, isLoading: false, error: null });
       } catch (err) {
-        setError(err instanceof Error ? err.message : "An error occurred");
-      } finally {
-        setIsLoading(false);
+        setState({
+          latestProjects: [],
+          isLoading: false,
+          error: err instanceof Error ? err.message : "An error occurred",
+        });
       }
     }
 
     fetchLatestProjects();
   }, [language]);
+
+  const { latestProjects, isLoading, error } = state;
 
   if (isLoading) {
     return (
@@ -56,11 +66,15 @@ export function LatestProjects() {
   }
 
   if (error) {
-    return <p>Error: {error}</p>;
+    return (
+      <p className="text-red-500">
+        {t("errors.fetchProjects")} {error}
+      </p>
+    );
   }
 
-  if (!latestProjects || latestProjects.length === 0) {
-    return <p>No projects available.</p>;
+  if (latestProjects.length === 0) {
+    return <p>{t("sections.latestProjects.noProjects")}</p>;
   }
 
   return (
@@ -68,16 +82,15 @@ export function LatestProjects() {
       <h2 className="mb-5">{t("sections.latestProjects.title")}</h2>
       <ul className="space-y-5">
         {latestProjects.map((project) => (
-          <li key={project.slug.current}>
+          <li key={project.slug?.current}>
             <TransitionLink
               to={`/projects/${project.slug.current}`}
-              className="flex justify-between  w-full h-full border border-border p-5 rounded-md hover:backdrop-brightness-150 transition-all duration-150 group hover:rotate-[0.3deg] hover:scale-[1.02]"
+              className="flex justify-between w-full h-full border border-border p-5  hover:backdrop-brightness-150 rounded-md hover:shadow-[7px_7px_0px_#26afd9] hover:rotate-[0.3deg] hover:scale-[1.02] transition-all duration-150 group"
             >
               <div className="space-y-5">
                 <h3 className="text-sm">{project.title}</h3>
                 <p className="text-xs">{project.description}</p>
               </div>
-
               <div className="lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-150">
                 <ArrowUp />
               </div>
