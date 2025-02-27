@@ -43,6 +43,7 @@ export function Testimonies() {
               name={testimony.name}
               body={testimony.body}
               profile={testimony.profile}
+              avatar={testimony.avatar}
             />
           </li>
         ))}

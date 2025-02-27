@@ -45,4 +45,5 @@ export interface Testinomies {
   name: string;
   role: string;
   profile: string;
+  avatar?: string;
 }

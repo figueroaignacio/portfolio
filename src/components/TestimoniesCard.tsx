@@ -11,6 +11,7 @@ export function TestimoniesCard({
   name,
   role,
   profile,
+  avatar,
 }: TestimoniesCardProps) {
   return (
     <div className="bg-card rounded-lg p-6 space-y-6 h-full flex flex-col justify-between border border-border">
@@ -18,9 +19,12 @@ export function TestimoniesCard({
         "{body}"
       </p>
       <div className="flex items-end justify-between">
-        <div className="flex flex-col gap-1">
-          <span className="text-sm font-semibold">{name}</span>
-          <span className="text-xs text-muted-foreground">{role}</span>
+        <div className="flex items-center gap-3">
+          <img src={avatar} alt={name} className="size-7 rounded-full" />
+          <div className="flex flex-col">
+            <span className="text-sm font-semibold">{name}</span>
+            <span className="text-xs text-muted-foreground">{role}</span>
+          </div>
         </div>
         <a
           href={profile}

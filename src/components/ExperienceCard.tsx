@@ -1,8 +1,9 @@
 // Hooks
+
 import { useTranslation } from "react-i18next";
 
 // Types
-import { Experience } from "@/lib/definitions";
+import type { Experience } from "@/lib/definitions";
 
 interface ExperienceCardProps extends Experience {}
 
@@ -17,44 +18,47 @@ export function ExperienceCard({
   const { t } = useTranslation();
 
   return (
-    <div className="bg-card p-6 rounded-md border border-border">
-      <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-1">
+    <div className="space-y-4 group flex flex-col gap-4">
+      <div className="flex flex-col md:flex-row md:items-start md:justify-between">
         <div className="flex-grow">
-          <h3 className="font-bold mb-1">{role}</h3>
-          <div className="flex items-center gap-x-2">
-            <h4 className=" font-medium text-muted-foreground">{company}</h4>
+          <h3 className="text-lg font-bold tracking-tight upper">{role}</h3>
+          <div className="flex items-center gap-x-2 mt-1">
+            <h4 className="text-xs text-muted-foreground">🏢 {company}</h4>
           </div>
         </div>
-        <span className="text-xs mt-2 md:mt-0 text-muted-foreground whitespace-nowrap">
+        <span className="text-xs mt-2 md:mt-0 text-muted-foreground whitespace-nowrap font-medium">
           {datetime}
         </span>
       </div>
-      <p className="mb-6 text-sm leading-relaxed">{description}</p>
-      <div className="mb-6">
-        <h5 className="font-semibold text-xs mb-3">
+
+      <p className="text-xs leading-relaxed border-l-4 border-l-accent py-2  pl-4">
+        {description}
+      </p>
+
+      <div>
+        <h5 className="font-semibold text-xs uppercase tracking-wider mb-3">
           {t("components.experienceCard.responsibilities.label")}
         </h5>
-        <ul className="space-y-2">
+        <ul className="space-y-2.5">
           {responsibilities.map((responsibility, index) => (
-            <li
-              key={index}
-              className="flex items-start text-sm text-muted-foreground"
-            >
-              <span className="mr-2">•</span>
-              <span>{responsibility}</span>
+            <li key={index} className="flex items-start group/item text-xs">
+              <span className="text-muted-foreground group-hover/item:text-foreground transition-colors">
+                - {responsibility}
+              </span>
             </li>
           ))}
         </ul>
       </div>
+
       <div>
-        <h5 className="font-semibold text-xs mb-3">
-          {t("components.experienceCard.techStack.label")}
+        <h5 className="font-semibold text-xs uppercase tracking-wider mb-3">
+          💻 {t("components.experienceCard.techStack.label")}
         </h5>
         <ul className="flex flex-wrap gap-2">
           {techStack.map((tech, index) => (
             <li
               key={index}
-              className="text-xs border-border border py-1 px-3 rounded-full"
+              className="text-xs border-border border py-1 px-3 rounded-full hover:bg-muted hover:border-primary/20 transition-colors duration-200"
             >
               {tech}
             </li>
