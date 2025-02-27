@@ -1,7 +1,6 @@
 // Pages
 import { About } from "@/pages/About";
 import { Home } from "@/pages/Home";
-import { LatestExperience } from "@/pages/LatestExperience";
 import { NoteDetails } from "@/pages/NoteDetails";
 import { Notes } from "@/pages/Notes";
 import { NotFound } from "@/pages/NotFound";
@@ -21,7 +20,6 @@ export const routes = [
       { path: "/projects", element: <Projects /> },
       { path: "/about", element: <About /> },
       { path: "/notes", element: <Notes /> },
-      { path: "/experience", element: <LatestExperience /> },
     ],
   },
   {

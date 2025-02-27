@@ -105,9 +105,9 @@
     "about": {
       "title": "About",
       "greeting": "👋🏽 Hi, how are you?",
-      "intro": "Web Developer specializing in Frontend Development. I'm passionate about creating intuitive digital experiences that meaningfully connect users with technology.I work with React, TypeScript, and Next.js to develop efficient and scalable solutions that bring real value to businesses.",
-      "expandingKnowledge": "Driven by challenges, I'm currently expanding my knowledge in Backend Development (Node.js, Express.js, Nest.js) to master the full stack and enhance my ability to create impactful solutions. I'm committed to continuous learning and the development of projects that make a real difference.",
-      "collaboration": "I thrive in diverse teams where creativity and innovation shape products that deliver tangible results. I'm always seeking opportunities that challenge me, push my skills further, and contribute to the evolution of the tech landscape."
+      "intro": "People call me <span>Nacho</span>. I was born in Jesús María, Argentina, and I currently live in <span>Buenos Aires</span>.",
+      "expandingKnowledge": "Driven by challenges, I am currently training in <span>web development</span> and creating <span>interfaces</span> that are both attractive and functional. I’m always exploring <span>new technologies</span> and looking for ways to improve as a developer.",
+      "collaboration": "I enjoy working in <span>teams</span> where creativity and innovation come together to create products with <span>real impact</span>. I’m always open to <span>opportunities</span> that challenge me and help me grow."
     },
     "notes": {
       "title": "Notes",
