@@ -1,14 +1,14 @@
 export const CONTACTS = [
   {
-    title: "mail",
+    title: "ignaciofigueroadev@gmail.com",
     href: "mailto:ignaciofigueroadev@gmail.com",
   },
   {
-    title: "linkedIn",
+    title: "linkedin.com/in/figueroa-ignacio",
     href: "https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/",
   },
   {
-    title: "github",
+    title: "github.com/figueroaignacio",
     href: "https://github.com/figueroaignacio/",
   },
 ];

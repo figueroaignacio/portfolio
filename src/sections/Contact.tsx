@@ -10,9 +10,9 @@ export function Contact() {
     <section className="space-y-5">
       <h2 className="text-lg font-bold">{t("sections.contact.title")}</h2>
       <p className="text-sm">{t("sections.contact.description")}</p>
-      <ul className="flex gap-6">
+      <ul className="flex flex-wrap gap-6">
         {CONTACTS.map((contact, index) => (
-          <li key={index} className="flex items-center">
+          <li key={index} className="flex items-center text-xs">
             <a href={contact.href} target="_blank" className="hover:underline">
               {contact.title}
             </a>
