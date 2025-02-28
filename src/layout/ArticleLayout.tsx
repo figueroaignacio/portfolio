@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 export function ArticleLayout() {
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-12 lg:p-16 min-h-screen p-6">
+      <div className="grid grid-cols-1 lg:grid-cols-12 lg:p-16 min-h-screen p-6 bg-background">
         <div className="lg:col-span-3 sticky top-4 self-start">
           <BackButton />
         </div>
