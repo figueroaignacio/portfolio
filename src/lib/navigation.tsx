@@ -1,5 +1,6 @@
 // Pages
 import { About } from "@/pages/About";
+import { Education } from "@/pages/Education";
 import { Home } from "@/pages/Home";
 import { NoteDetails } from "@/pages/NoteDetails";
 import { Notes } from "@/pages/Notes";
@@ -20,6 +21,7 @@ export const routes = [
       { path: "/projects", element: <Projects /> },
       { path: "/about", element: <About /> },
       { path: "/notes", element: <Notes /> },
+      { path: "/education", element: <Education /> },
     ],
   },
   {

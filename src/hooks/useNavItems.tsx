@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import {
   AboutIcon,
+  GraduationCap,
   HomeIcon,
   NotesIcon,
   ProjectsIcon,
@@ -26,6 +27,11 @@ export const useNavItems = (): NavItem[] => {
       label: t("ui.navigation.notes.label"),
       href: "/notes",
       icon: <NotesIcon />,
+    },
+    {
+      label: t("ui.navigation.education.label"),
+      href: "/education",
+      icon: <GraduationCap />,
     },
   ];
 };

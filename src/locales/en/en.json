@@ -151,6 +151,31 @@
           "site": "https://aspen-ui.vercel.app/en"
         }
       ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "title": "Aspiring Student of the University Programming Technician Degree",
+          "institution": "UTN - Regional Faculty of San Nicolás",
+          "status": "In progress",
+          "description": "Developing skills in algorithms, object-oriented programming, and software architecture."
+        },
+        {
+          "title": "Self-taught Education in Web Development",
+          "institution": "Self-taught",
+          "startYear": 2022,
+          "endYear": "Present",
+          "description": "Focused on modern web technologies like React, Next.js, TypeScript, Nest, Express, and performance optimization."
+        },
+        {
+          "title": "Bachelor in Social Sciences with Basic Office Automation Training",
+          "institution": "Secondary School Number 11",
+          "startYear": 2016,
+          "endYear": 2022,
+          "description": "Comprehensive education with an emphasis on critical thinking, research methodology, social analysis, and basic skills in office tools such as word processors, spreadsheets, and presentations."
+        }
+      ]
     }
   },
   "components": {
