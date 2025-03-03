@@ -4,7 +4,8 @@
       "home": { "label": "Inicio" },
       "about": { "label": "Acerca" },
       "projects": { "label": "Proyectos" },
-      "notes": { "label": "Notas" }
+      "notes": { "label": "Notas" },
+      "education": { "label": "Educación" }
     },
     "language": {
       "selectLanguage": {

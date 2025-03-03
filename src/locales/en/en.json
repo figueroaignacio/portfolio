@@ -4,7 +4,8 @@
       "home": { "label": "Home" },
       "about": { "label": "About" },
       "projects": { "label": "Projects" },
-      "notes": { "label": "Notes" }
+      "notes": { "label": "Notes" },
+      "education": { "label": "Education" }
     },
     "language": {
       "selectLanguage": {
