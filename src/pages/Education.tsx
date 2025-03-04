@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 // Components
 import { EducationItem } from "@/components/EducationItem";
+import { Seo } from "@/components/Seo";
 
 // Definitions
 import { Education } from "@/lib/definitions";
@@ -15,6 +16,10 @@ export function EducationPage() {
 
   return (
     <section className="relative space-y-8" id="education">
+      <Seo
+        title={t("siteConfig.education.title")}
+        description={t("siteConfig.education.description")}
+      />
       <h2 className="mb-5">{t("pages.education.title")}</h2>
       <div>
         {education.map((item, index) => (

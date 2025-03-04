@@ -227,6 +227,10 @@
     "experience": {
       "title": "Ignacio Figueroa - Experiencia",
       "description": "En esta sección comparto mis experiencias de trabajo."
+    },
+    "education": {
+      "title": "Ignacio Figueroa - Educación",
+      "description": "En esta sección comparto mi formación académica y autodidacta."
     }
   }
 }
