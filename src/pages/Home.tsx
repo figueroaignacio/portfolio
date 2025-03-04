@@ -8,7 +8,7 @@ import { Hero } from "@/sections/Hero";
 import { LatestNotes } from "@/sections/LatestNotes";
 import { LatestProjects } from "@/sections/LatestProjects";
 
-export function Home() {
+export function HomePage() {
   const { t } = useTranslation();
 
   return (

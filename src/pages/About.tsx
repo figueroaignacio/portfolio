@@ -8,7 +8,7 @@ import { LatestExperience } from "@/pages/LatestExperience";
 import { Prologe } from "@/sections/Prologe";
 import { Stack } from "@/sections/Stack";
 
-export function About() {
+export function AboutPage() {
   const { t } = useTranslation();
 
   return (

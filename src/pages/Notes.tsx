@@ -12,7 +12,7 @@ import { Spinner } from "@/components/Spinner";
 import { Note } from "@/lib/definitions";
 import { getNotes } from "@/lib/services";
 
-export function Notes() {
+export function NotesPage() {
   const { t } = useTranslation();
   const { language } = useLanguage();
   const [notes, setNotes] = useState<Note[] | null>(null);

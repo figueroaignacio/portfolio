@@ -1,12 +1,12 @@
 // Pages
-import { About } from "@/pages/About";
-import { Education } from "@/pages/Education";
-import { Home } from "@/pages/Home";
-import { NoteDetails } from "@/pages/NoteDetails";
-import { Notes } from "@/pages/Notes";
-import { NotFound } from "@/pages/NotFound";
-import { ProjectDetails } from "@/pages/ProjectDetails";
-import { Projects } from "@/pages/Projects";
+import { AboutPage } from "@/pages/About";
+import { EducationPage } from "@/pages/Education";
+import { HomePage } from "@/pages/Home";
+import { NoteDetailsPage } from "@/pages/NoteDetails";
+import { NotesPage } from "@/pages/Notes";
+import { NotFoundPage } from "@/pages/NotFound";
+import { ProjectDetailsPage } from "@/pages/ProjectDetails";
+import { ProjectsPage } from "@/pages/Projects";
 
 // Layouts
 import { ArticleLayout } from "@/layout/ArticleLayout";
@@ -17,22 +17,22 @@ export const routes = [
   {
     element: <Layout />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "/projects", element: <Projects /> },
-      { path: "/about", element: <About /> },
-      { path: "/notes", element: <Notes /> },
-      { path: "/education", element: <Education /> },
+      { path: "/", element: <HomePage /> },
+      { path: "/projects", element: <ProjectsPage /> },
+      { path: "/about", element: <AboutPage /> },
+      { path: "/notes", element: <NotesPage /> },
+      { path: "/education", element: <EducationPage /> },
     ],
   },
   {
     element: <ArticleLayout />,
     children: [
-      { path: "/notes/:slug", element: <NoteDetails /> },
-      { path: "/projects/:slug", element: <ProjectDetails /> },
+      { path: "/notes/:slug", element: <NoteDetailsPage /> },
+      { path: "/projects/:slug", element: <ProjectDetailsPage /> },
     ],
   },
   {
     element: <BaseLayout />,
-    children: [{ path: "*", element: <NotFound /> }],
+    children: [{ path: "*", element: <NotFoundPage /> }],
   },
 ];

@@ -15,7 +15,7 @@ import { Separator } from "@/components/Separator";
 import { Project } from "@/lib/definitions";
 import { getProjectDetails } from "@/lib/services";
 
-export function ProjectDetails() {
+export function ProjectDetailsPage() {
   const { slug } = useParams<{ slug: string }>();
   const { language } = useLanguage();
   const [project, setProject] = useState<Project | null>(null);

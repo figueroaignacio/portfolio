@@ -13,7 +13,7 @@ import { PortableText } from "@portabletext/react";
 import { Note } from "@/lib/definitions";
 import { getNoteDetails } from "@/lib/services";
 
-export function NoteDetails() {
+export function NoteDetailsPage() {
   const { slug } = useParams<{ slug: string }>();
   const { language } = useLanguage();
   const [note, setNote] = useState<Note | null>(null);

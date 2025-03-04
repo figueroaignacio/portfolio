@@ -15,7 +15,7 @@ import { Project } from "@/lib/definitions";
 // Services
 import { getProjects } from "@/lib/services";
 
-export function Projects() {
+export function ProjectsPage() {
   const { t } = useTranslation();
   const { language } = useLanguage();
   const [projects, setProjects] = useState<Project[] | null>(null);
