@@ -47,3 +47,12 @@ export interface Testinomies {
   profile: string;
   avatar?: string;
 }
+
+export type Education = {
+  title: string;
+  institution: string;
+  startYear?: string;
+  endYear?: string;
+  status?: string;
+  description?: string;
+};
