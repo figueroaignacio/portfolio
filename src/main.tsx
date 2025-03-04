@@ -17,7 +17,7 @@ import { initReactI18next } from "react-i18next";
 import en from "./locales/en/en.json";
 import es from "./locales/es/es.json";
 
-const language = localStorage.getItem("language") || "en";
+const language = localStorage.getItem("language") || "es";
 
 i18next.use(initReactI18next).init({
   lng: language,
