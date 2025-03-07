@@ -14,7 +14,7 @@ export function Hero() {
           {t("sections.hero.intro")}{" "}
           <span className="inline-block animate-wave">👋🏽</span>
         </h1>
-        <p className="text-muted-foreground text-sm my-5">
+        <p className="text-muted-foreground text-sm my-5 leading-6">
           {t("sections.hero.introduction")}
         </p>
         <div>
