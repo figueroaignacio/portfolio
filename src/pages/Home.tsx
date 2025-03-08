@@ -2,6 +2,7 @@
 import { useTranslation } from "react-i18next";
 
 // Components
+import { CVCallToAction } from "@/components/CVCallToAction";
 import { Seo } from "@/components/Seo";
 import { Contact } from "@/sections/Contact";
 import { Hero } from "@/sections/Hero";
@@ -19,6 +20,7 @@ export function HomePage() {
       />
       <Hero />
       <LatestNotes />
+      <CVCallToAction />
       <LatestProjects />
       <Contact />
     </section>
