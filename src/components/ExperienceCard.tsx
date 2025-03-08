@@ -23,7 +23,7 @@ export function ExperienceCard({
         <div className="flex-grow">
           <h3 className="text-lg font-bold tracking-tight upper">{role}</h3>
           <div className="flex items-center gap-x-2 mt-1">
-            <h4 className="text-xs text-muted-foreground">🏢 {company}</h4>
+            <h4 className="text-xs text-muted-foreground">{company}</h4>
           </div>
         </div>
         <span className="text-xs mt-2 md:mt-0 text-muted-foreground whitespace-nowrap font-medium">
