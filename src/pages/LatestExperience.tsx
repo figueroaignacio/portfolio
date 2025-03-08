@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 
 // Components
 import { ExperienceCard } from "@/components/ExperienceCard";
-import { Testimonies } from "@/sections/Testimonies";
 
 // Types
 import { Experience } from "@/lib/definitions";
@@ -32,9 +31,6 @@ export function LatestExperience() {
           </li>
         ))}
       </ul>
-      <div className="mt-12">
-        <Testimonies />
-      </div>
     </div>
   );
 }

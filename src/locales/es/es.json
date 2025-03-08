@@ -200,6 +200,12 @@
       "subtitle": "Contactame y trabajemos juntos.",
       "link": "Mándame un Email"
     },
+    "cvCallToAction": {
+      "title": "¿Quieres conocer mi experiencia profesional?",
+      "text": "Descubre mi trayectoria en mi currículum completo.",
+      "label": "Ver CV",
+      "href": "/assets/pdf/cv-español.pdf"
+    },
     "projectCard": {
       "actions": {
         "liveSite": "Visitar sitio",

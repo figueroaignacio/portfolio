@@ -200,6 +200,12 @@
       "subtitle": "Reach me and let's work together.",
       "link": "Send Me an Email"
     },
+    "cvCallToAction": {
+      "title": "Do you want to know about my professional experience? ",
+      "text": "Discover my career path in my complete resume (Available in Spanish at the moment).",
+      "label": "Check CV",
+      "href": "/assets/pdf/cv-español.pdf"
+    },
     "projectCard": {
       "actions": {
         "liveSite": "Live site",
