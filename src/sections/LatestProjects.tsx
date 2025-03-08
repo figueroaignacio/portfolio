@@ -85,7 +85,7 @@ export function LatestProjects() {
           <li key={project.slug?.current}>
             <TransitionLink
               to={`/projects/${project.slug.current}`}
-              className="flex justify-between w-full h-full border border-border p-5  hover:backdrop-brightness-150 rounded-md hover:shadow-[7px_7px_0px_#26afd9] hover:rotate-[0.3deg] hover:scale-[1.02] transition-all duration-150 group"
+              className="flex justify-between w-full h-full border border-border p-5  hover:backdrop-brightness-150 rounded-md hover:rotate-[0.3deg] hover:scale-[1.02] transition-all duration-150 group"
             >
               <div className="space-y-5">
                 <h3 className="text-sm">{project.title}</h3>
