@@ -212,7 +212,8 @@
         "sourceCode": "Código fuente",
         "moreDetails": "Click para mirar más detalles"
       }
-    }
+    },
+    "workStatus": "Activo para Trabajar"
   },
   "siteConfig": {
     "home": {

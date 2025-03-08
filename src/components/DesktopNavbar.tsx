@@ -14,7 +14,7 @@ export const DesktopNavbar = () => {
       <nav className="max-w-3xl mx-auto flex justify-between">
         <NavLinks
           navItems={navItems}
-          className="md:flex justify-start items-center space-x-1 md:space-x-4 md:py-0 hidden"
+          className="lg:flex justify-start items-center space-x-1 md:space-x-4 md:py-0 hidden"
         />
         <ul className="flex items-center justify-end space-x-6 w-full">
           <li>
