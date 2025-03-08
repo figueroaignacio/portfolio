@@ -157,24 +157,25 @@
       "title": "Educación",
       "items": [
         {
-          "title": "Estudiante Aspirante a la Tecnicatura Universitaria en Programación",
-          "institution": "UTN - Facultad Regional de San Nicolás",
-          "status": "En progreso",
-          "description": "Desarrollando habilidades en algoritmos, programación orientada a objetos y arquitectura de software."
+          "title": "Estudiante en Tecnicatura Universitaria en Programación",
+          "institution": "Universidad Tecnológica Nacional - Facultad Regional de San Nicolás",
+          "startYear": "Marzo 2025",
+          "endYear": "Actualidad",
+          "description": "Formación especializada en desarrollo de software, con enfoque en la gestión de desarrollo de software, paradigmas de programación, estructuras de datos y metodología de sistemas."
         },
         {
           "title": "Educación Autodidacta en Desarrollo Web",
           "institution": "Autodidacta",
-          "startYear": 2022,
-          "endYear": "Actualmente",
-          "description": "Enfocado en tecnologías web modernas como React, Next.js, TypeScript, Nest, Express y optimización de rendimiento."
+          "startYear": "Enero 2022",
+          "endYear": "Actualidad",
+          "description": "Aprendizaje continuo y práctico en tecnologías web modernas, incluyendo React, Next.js, TypeScript, Nest y Express. Enfoque en la creación de aplicaciones optimizadas, escalables y con buenas prácticas de desarrollo."
         },
         {
-          "title": "Bachiller en Ciencias Sociales y Ofimatica Básica",
-          "institution": "Escuela Secundaria N° 11, Esteban Echeverria",
-          "startYear": 2016,
-          "endYear": 2022,
-          "description": "Formación integral con énfasis en pensamiento crítico, metodología de investigación, análisis social y habilidades básicas en herramientas de oficina como procesadores de texto, hojas de cálculo y presentaciones."
+          "title": "Bachiller en Ciencias Sociales y Ofimática Básica",
+          "institution": "Escuela Secundaria N° 11, Esteban Echeverría",
+          "startYear": "Marzo 2016",
+          "endYear": "Noviembre 2022",
+          "description": "Educación integral con énfasis en análisis social, pensamiento crítico y metodología de investigación. Desarrollo de habilidades básicas en herramientas ofimáticas como procesadores de texto, hojas de cálculo y presentaciones."
         }
       ]
     }

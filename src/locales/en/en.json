@@ -157,24 +157,25 @@
       "title": "Education",
       "items": [
         {
-          "title": "Aspiring Student of the University Programming Technician Degree",
-          "institution": "UTN - Regional Faculty of San Nicolás",
-          "status": "In progress",
-          "description": "Developing skills in algorithms, object-oriented programming, and software architecture."
-        },
-        {
-          "title": "Self-taught Education in Web Development",
-          "institution": "Self-taught",
-          "startYear": 2022,
+          "title": "Student in Technical Programming Degree",
+          "institution": "National Technological University - San Nicolás Regional Faculty",
+          "startYear": "March 2025",
           "endYear": "Present",
-          "description": "Focused on modern web technologies like React, Next.js, TypeScript, Nest, Express, and performance optimization."
+          "description": "Specialized training in software development, focusing on software development management, programming paradigms, data structures, and system methodology."
         },
         {
-          "title": "Bachelor in Social Sciences with Basic Office Automation Training",
-          "institution": "Secondary School Number 11",
-          "startYear": 2016,
-          "endYear": 2022,
-          "description": "Comprehensive education with an emphasis on critical thinking, research methodology, social analysis, and basic skills in office tools such as word processors, spreadsheets, and presentations."
+          "title": "Self-Taught Education in Web Development",
+          "institution": "Self-Taught",
+          "startYear": "January 2022",
+          "endYear": "Present",
+          "description": "Focused on modern web technologies such as React, Next.js, TypeScript, Nest, Express, and performance optimization."
+        },
+        {
+          "title": "High School Diploma in Social Sciences and Basic Office Automation",
+          "institution": "Secondary School No. 11, Esteban Echeverría",
+          "startYear": "March 2016",
+          "endYear": "November 2022",
+          "description": "Comprehensive education with an emphasis on critical thinking, research methodology, social analysis, and basic office skills such as word processing, spreadsheets, and presentations."
         }
       ]
     }
