@@ -1,4 +1,5 @@
 // Pages
+import { OpengraphImage } from "@/components/OpengraphImage";
 import { AboutPage } from "@/pages/About";
 import { EducationPage } from "@/pages/Education";
 import { HomePage } from "@/pages/Home";
@@ -33,6 +34,9 @@ export const routes = [
   },
   {
     element: <BaseLayout />,
-    children: [{ path: "*", element: <NotFoundPage /> }],
+    children: [
+      { path: "*", element: <NotFoundPage /> },
+      { path: "/opengraph-image", element: <OpengraphImage /> },
+    ],
   },
 ];
