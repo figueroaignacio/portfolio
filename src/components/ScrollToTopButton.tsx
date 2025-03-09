@@ -20,7 +20,7 @@ export function ScrollToTopButton() {
   return (
     <button
       onClick={scrollToTop}
-      className={`hidden md:block fixed bottom-11 right-14 z-50 p-3 rounded-full bg-foreground text-card border-border border transition-all duration-300 hover:scale-[1.1] ${
+      className={`hidden md:block fixed bottom-11 right-14 z-50 p-3 rounded-full bg-secondary border-border border transition-all duration-300 hover:scale-[1.1] ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       aria-label="Volver al inicio"
