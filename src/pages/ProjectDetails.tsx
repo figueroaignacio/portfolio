@@ -63,7 +63,7 @@ export function ProjectDetailsPage() {
         <p className="text-sm text-foreground">{project.description}</p>
         <Separator className="py-6" />
         {project.technologies.length > 0 && (
-          <div className="border border-border p-3 rounded-md bg-card">
+          <div className="border border-border p-3 rounded-2xl bg-card">
             <p className="text-sm mb-3">Technologies used 👇</p>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, index) => (

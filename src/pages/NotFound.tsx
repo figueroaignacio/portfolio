@@ -15,7 +15,7 @@ export function NotFoundPage() {
         <p className="text-gray-500 mt-4 mb-8">
           The page you are looking for does not exists. Or it does?, God knows
         </p>
-        <Link to="/" className="px-6 py-3 border border-border rounded-md">
+        <Link to="/" className="px-6 py-3 border border-border rounded-2xl">
           Go Back
         </Link>
       </div>

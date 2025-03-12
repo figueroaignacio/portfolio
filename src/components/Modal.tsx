@@ -72,7 +72,7 @@ export function ModalTrigger({
   return (
     <button
       onClick={onClick}
-      className={`px-4 py-2 rounded-md hover:bg-primary-foreground duration-100 border-[1px] border-border ${className}`}
+      className={`px-4 py-2 rounded-2xl hover:bg-primary-foreground duration-100 border-[1px] border-border ${className}`}
     >
       {children}
     </button>

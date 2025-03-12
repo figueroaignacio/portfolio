@@ -42,7 +42,7 @@ export function LatestNotes() {
         <ul className="space-y-5">
           {Array.from({ length: 2 }).map((_, index) => (
             <li key={index}>
-              <div className="flex justify-between w-full h-full border border-border p-5 rounded-md">
+              <div className="flex justify-between w-full h-full border border-border p-5 rounded-2xl">
                 <div className="space-y-5 w-full">
                   <div className="h-4 bg-gray-200 dark:bg-gray-800/40 rounded animate-pulse w-3/4"></div>
                 </div>
@@ -70,7 +70,7 @@ export function LatestNotes() {
           <li key={note.slug.current}>
             <TransitionLink
               to={`/notes/${note.slug.current}`}
-              className="flex justify-between items-center w-full h-full border border-border p-5 rounded-md hover:backdrop-brightness-150 transition-all duration-150 group hover:rotate-[0.3deg] hover:scale-[1.02]"
+              className="flex justify-between items-center w-full h-full border border-border p-5 rounded-2xl hover:backdrop-brightness-150 transition-all duration-150 group hover:rotate-[0.3deg] hover:scale-[1.02]"
             >
               <h3 className="text-sm">{note.title}</h3>
               <div className="lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-150">

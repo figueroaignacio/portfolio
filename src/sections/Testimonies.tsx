@@ -51,14 +51,14 @@ export function Testimonies() {
       {visibleCount < testimonies.length ? (
         <button
           onClick={showMore}
-          className="border border-border w-full mt-5 py-2 rounded-md hover:backdrop-brightness-150 transition-all duration-150 text-xs"
+          className="border border-border w-full mt-5 py-2 rounded-2xl hover:backdrop-brightness-150 transition-all duration-150 text-xs"
         >
           {t("sections.testimonies.showMore")}
         </button>
       ) : (
         <button
           onClick={collapse}
-          className="border border-border w-full mt-5 py-2 rounded-md hover:backdrop-brightness-150 transition-all duration-150 text-xs"
+          className="border border-border w-full mt-5 py-2 rounded-2xl hover:backdrop-brightness-150 transition-all duration-150 text-xs"
         >
           {t("sections.testimonies.collapse")}
         </button>

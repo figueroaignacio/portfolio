@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @font-face {
   font-family: "Onest Variable";
@@ -14,50 +12,64 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@layer {
-  :root {
-    --background: hsl(210, 20%, 98%);
-    --foreground: hsl(220, 20%, 10%);
-    --card: hsl(0, 0%, 100%);
-    --card-foreground: hsl(220, 20%, 10%);
-    --primary: hsl(220, 70%, 50%);
-    --primary-foreground: hsl(210, 20%, 98%);
-    --secondary: hsl(200, 60%, 50%);
-    --secondary-foreground: hsl(210, 20%, 98%);
-    --accent: hsl(194, 70%, 50%);
-    --accent-foreground: hsl(210, 20%, 98%);
-    --muted: hsl(220, 15%, 90%);
-    --muted-foreground: hsl(220, 15%, 40%);
-    --border: hsl(220, 15%, 85%);
-    --input: hsl(220, 15%, 85%);
-    --ring: hsl(220, 70%, 50%);
-    --radius: 1rem;
-  }
+:root {
+  --background: hsl(210, 20%, 98%);
+  --foreground: hsl(220, 20%, 10%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(220, 20%, 10%);
+  --primary: hsl(220, 70%, 50%);
+  --primary-foreground: hsl(210, 20%, 98%);
+  --secondary: hsl(200, 60%, 50%);
+  --secondary-foreground: hsl(210, 20%, 98%);
+  --accent: hsl(194, 70%, 50%);
+  --accent-foreground: hsl(210, 20%, 98%);
+  --muted: hsl(220, 15%, 90%);
+  --muted-foreground: hsl(220, 15%, 40%);
+  --border: hsl(220, 15%, 85%);
+  --input: hsl(220, 15%, 85%);
+}
 
-  .dark {
-    --background: hsl(220, 15%, 5%);
-    --foreground: hsl(210, 20%, 98%);
-    --card: hsl(216, 16%, 6%);
-    --primary: hsl(220, 15%, 20%);
-    --primary-foreground: hsl(220, 15%, 20%);
-    --secondary: hsl(200, 60%, 60%);
-    --secondary-foreground: hsl(220, 15%, 10%);
-    --accent: hsl(194, 70%, 50%);
-    --accent-foreground: hsl(240 5% 64.9%);
-    --muted: hsl(240 4.8% 16.1%);
-    --muted-foreground: hsl(240 3.8% 70%);
-    --input: hsl(220, 15%, 12%);
-    --border: hsl(220, 15%, 12%);
-  }
+.dark {
+  --background: hsl(220, 15%, 5%);
+  --foreground: hsl(210, 20%, 98%);
+  --card: hsl(216, 16%, 6%);
+  --primary: hsl(220, 15%, 20%);
+  --primary-foreground: hsl(220, 15%, 20%);
+  --secondary: hsl(200, 60%, 60%);
+  --secondary-foreground: hsl(220, 15%, 10%);
+  --accent: hsl(194, 70%, 50%);
+  --accent-foreground: hsl(240 5% 64.9%);
+  --muted: hsl(240 4.8% 16.1%);
+  --muted-foreground: hsl(240 3.8% 70%);
+  --input: hsl(220, 15%, 12%);
+  --border: hsl(220, 15%, 12%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-input: var(--input);
+  --color-border: var(--border);
 }
 
 @layer base {
   ::-webkit-scrollbar {
     width: 5px;
   }
+
   ::-webkit-scrollbar-track {
     background: transparent;
   }
+
   ::-webkit-scrollbar-thumb {
     background: var(--border);
     border-radius: 5px;
@@ -78,23 +90,21 @@
   p {
     @apply text-muted-foreground;
   }
-}
 
-@layer utilities {
   .gradient-text {
     @apply bg-gradient-to-r from-primary via-secondary to-accent text-transparent bg-clip-text;
   }
 
   .highlighted-text {
-    @apply bg-accent px-2 py-0.5 rounded-md text-accent-foreground;
+    @apply bg-accent px-2 py-0.5 rounded-2xl text-accent-foreground;
   }
 
   .grid-main-container {
     @apply grid grid-rows-[auto_1fr_auto] min-h-screen;
   }
+}
 
-  .bg-dots {
-    background-image: radial-gradient(var(--muted) 1px, transparent 1px);
-    background-size: 16px 16px;
-  }
+@utility bg-dots {
+  background-image: radial-gradient(var(--muted) 1px, transparent 1px);
+  background-size: 16px 16px;
 }

@@ -20,7 +20,7 @@ export function CallToAction() {
       <div>
         <a
           href="mailto:ignaciofigueroadev@gmail.com"
-          className="flex items-center gap-2 px-6 py-2 rounded-md text-sm bg-transparent hover:bg-card duration-100 border-[1px] border-border"
+          className="flex items-center gap-2 px-6 py-2 rounded-2xl text-sm bg-transparent hover:bg-card duration-100 border-[1px] border-border"
         >
           <Mail />
           {t("components.callToAction.link")}

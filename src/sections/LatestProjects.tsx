@@ -52,7 +52,7 @@ export function LatestProjects() {
         <ul className="space-y-5">
           {Array.from({ length: 2 }).map((_, index) => (
             <li key={index}>
-              <div className="flex justify-between w-full h-full border border-border p-5 rounded-md">
+              <div className="flex justify-between w-full h-full border border-border p-5 rounded-2xl">
                 <div className="space-y-5 w-full">
                   <div className="h-4 bg-gray-200 dark:bg-gray-800/40 rounded animate-pulse w-3/4"></div>
                   <div className="h-3 bg-gray-200 dark:bg-gray-800/40 rounded animate-pulse w-full"></div>
@@ -85,7 +85,7 @@ export function LatestProjects() {
           <li key={project.slug?.current}>
             <TransitionLink
               to={`/projects/${project.slug.current}`}
-              className="flex justify-between w-full h-full border border-border p-5  hover:backdrop-brightness-150 rounded-md hover:rotate-[0.3deg] hover:scale-[1.02] transition-all duration-150 group"
+              className="flex justify-between w-full h-full border border-border p-5  hover:backdrop-brightness-150 rounded-2xl hover:rotate-[0.3deg] hover:scale-[1.02] transition-all duration-150 group"
             >
               <div className="space-y-5">
                 <h3 className="text-sm">{project.title}</h3>

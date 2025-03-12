@@ -20,7 +20,7 @@ export const NavLinks = ({ navItems, className }: NavLinksProps) => {
       {navItems.map((navItem, index) => {
         const isActive = location.pathname === navItem.href;
         const linkClass =
-          "px-3 py-2.5 rounded-md transition-colors duration-200 flex flex-col md:flex-row items-center hover:backdrop-brightness-125 hover:bg-slate-200 dark:hover:bg-gray-600/15" +
+          "px-3 py-2.5 rounded-2xl transition-colors duration-200 flex flex-col md:flex-row items-center hover:backdrop-brightness-125 hover:bg-slate-200 dark:hover:bg-gray-600/15" +
           (isActive ? " bg-slate-300 lg:bg-slate-200 dark:bg-gray-600/15" : "");
 
         return (
@@ -32,7 +32,7 @@ export const NavLinks = ({ navItems, className }: NavLinksProps) => {
             >
               {navItem.icon}
             </TransitionLink>
-            <span className="hidden lg:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-card px-4 border border-border py-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-xs">
+            <span className="hidden lg:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-card px-4 border border-border py-2 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-xs">
               {navItem.label}
             </span>
           </li>

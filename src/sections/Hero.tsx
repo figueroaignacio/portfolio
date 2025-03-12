@@ -20,7 +20,7 @@ export function Hero() {
         </p>
         <div className="flex flex-wrap gap-y-5 items-center gap-x-2">
           <TransitionLink
-            className="group border border-border px-4 py-2 rounded-md text-xs"
+            className="group border border-border px-4 py-2 rounded-2xl text-xs"
             to="/about"
           >
             {t("sections.hero.ctaButton")}

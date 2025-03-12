@@ -41,7 +41,7 @@ export function SelectLanguage() {
         </div>
         <div className="flex flex-col gap-y-2">
           <button
-            className={`p-2 rounded-md hover:hover:backdrop-brightness-200 duration-100 text-sm ${
+            className={`p-2 rounded-2xl hover:hover:backdrop-brightness-200 duration-100 text-sm ${
               language === "en" ? "backdrop-brightness-200" : ""
             }`}
             onClick={() => {
@@ -52,7 +52,7 @@ export function SelectLanguage() {
             English
           </button>
           <button
-            className={`p-2 rounded-md hover:backdrop-brightness-200 duration-100 text-sm ${
+            className={`p-2 rounded-2xl hover:backdrop-brightness-200 duration-100 text-sm ${
               language === "es" ? "backdrop-brightness-200" : ""
             }`}
             onClick={() => {

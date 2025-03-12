@@ -14,7 +14,7 @@ interface NoteCardProps extends Pick<Note, "title" | "description"> {
 export function NoteCard({ title, slug, description }: NoteCardProps) {
   return (
     <TransitionLink
-      className="flex flex-col justify-between w-full h-full border border-border p-5 rounded-md hover:backdrop-brightness-150 transition-all duration-150 group space-y-3"
+      className="flex flex-col justify-between w-full h-full border border-border p-5 rounded-2xl hover:backdrop-brightness-150 transition-all duration-150 group space-y-3"
       to={slug}
     >
       <div className="flex justify-between items-center">
