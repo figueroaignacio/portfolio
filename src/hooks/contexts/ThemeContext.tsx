@@ -1,73 +1,65 @@
-import React, {
-  createContext,
-  useEffect,
-  useLayoutEffect,
-  useState,
-} from "react";
+import { createContext, useEffect, useState } from "react";
 
-type Theme = "light" | "dark";
+type Theme = "dark" | "light" | "system";
 
-interface ThemeContextProps {
+type ThemeProviderProps = {
+  children: React.ReactNode;
+  defaultTheme?: Theme;
+  storageKey?: string;
+};
+
+type ThemeProviderState = {
   theme: Theme;
   setTheme: (theme: Theme) => void;
-  toggleTheme: () => void;
-}
-
-const LIGHT_THEME = "light";
-const DARK_THEME = "dark";
-const MEDIA = "(prefers-color-scheme: dark)";
-
-export const ThemeContext = createContext<ThemeContextProps | undefined>(
-  undefined
-);
-
-const getInitialTheme = (): Theme => {
-  if (typeof window !== "undefined") {
-    const storedTheme = localStorage.getItem("theme") as Theme | null;
-    if (storedTheme === LIGHT_THEME || storedTheme === DARK_THEME) {
-      return storedTheme;
-    }
-    if (window.matchMedia && window.matchMedia(MEDIA).matches) {
-      return DARK_THEME;
-    }
-  }
-
-  return LIGHT_THEME;
 };
 
-const UseIsomorphicLayoutEffect =
-  typeof window !== "undefined" ? useLayoutEffect : useEffect;
-
-const applyTheme = (theme: Theme) => {
-  if (typeof document !== "undefined") {
-    const root = document.documentElement;
-    root.classList.remove(LIGHT_THEME, DARK_THEME);
-    root.classList.add(theme);
-  }
+const initialState: ThemeProviderState = {
+  theme: "system",
+  setTheme: () => null,
 };
 
-if (typeof window !== "undefined") {
-  const initialTheme = getInitialTheme();
-  applyTheme(initialTheme);
-}
+export const ThemeProviderContext =
+  createContext<ThemeProviderState>(initialState);
 
-export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
+export function ThemeProvider({
   children,
-}) => {
-  const [theme, setTheme] = useState<Theme>(getInitialTheme());
+  defaultTheme = "system",
+  storageKey = "vite-ui-theme",
+  ...props
+}: ThemeProviderProps) {
+  const [theme, setTheme] = useState<Theme>(
+    () => (localStorage.getItem(storageKey) as Theme) || defaultTheme
+  );
 
-  UseIsomorphicLayoutEffect(() => {
-    applyTheme(theme);
-    localStorage.setItem("theme", theme);
+  useEffect(() => {
+    const root = window.document.documentElement;
+
+    root.classList.remove("light", "dark");
+
+    if (theme === "system") {
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+        .matches
+        ? "dark"
+        : "light";
+
+      root.classList.add(systemTheme);
+      return;
+    }
+
+    root.classList.add(theme);
   }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme(theme === LIGHT_THEME ? DARK_THEME : LIGHT_THEME);
+  const value = {
+    theme,
+    setTheme: (theme: Theme) => {
+      localStorage.setItem(storageKey, theme);
+      setTheme(theme);
+    },
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme, toggleTheme }}>
+    <ThemeProviderContext.Provider {...props} value={value}>
       {children}
-    </ThemeContext.Provider>
+    </ThemeProviderContext.Provider>
   );
-};
+}
