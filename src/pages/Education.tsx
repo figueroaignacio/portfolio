@@ -7,6 +7,7 @@ import { Seo } from "@/components/Seo";
 
 // Definitions
 import { Education } from "@/lib/definitions";
+import { Certifications } from "@/sections/Certifications";
 
 export function EducationPage() {
   const { t } = useTranslation();
@@ -35,6 +36,7 @@ export function EducationPage() {
           </li>
         ))}
       </ul>
+      <Certifications />
     </section>
   );
 }

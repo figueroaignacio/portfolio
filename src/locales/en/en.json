@@ -105,6 +105,34 @@
     "contact": {
       "title": "Get in Touch",
       "description": "Feel free to reach out via social media or email."
+    },
+    "certifications": {
+      "title": "Licenses and Certifications",
+      "items": [
+        {
+          "title": "Responsive Web Design",
+          "place": "freeCodeCamp",
+          "credential": "figueroaignacio-rwd",
+          "urlCredential": "https://www.freecodecamp.org/certification/FigueroaIgnacio/responsive-web-design",
+          "description": "In this Responsive Web Design Certification, I learned the languages developers use to build web pages: HTML (HyperText Markup Language) for content and CSS (Cascading Style Sheets) for styling."
+        },
+        {
+          "title": "Introduction to Web Development: HTML and CSS (1/2)",
+          "place": "Google Activate",
+          "credential": "NF4 EJX 3YY",
+          "urlCredential": "",
+          "description": "Offered by Google Activate in collaboration with the University of Alicante, this course covered the history of the web, the origins of HTML, and the basic structure of a web page.",
+          "note": "Due to platform changes, it is no longer possible to view the certification with code NF4 EJX 3YY, but it is part of the training that kickstarted my journey in web development."
+        },
+        {
+          "title": "Introduction to Web Development: HTML and CSS (2/2)",
+          "place": "Google Activate",
+          "credential": "TYH 48W AJR",
+          "urlCredential": "",
+          "description": "Following the first module, this course from Google Activate and the University of Alicante focused on CSS, covering selectors, responsive design, and best practices for creating modern interfaces.",
+          "note": "Due to platform changes, it is no longer possible to view the certification with code TYH 48W AJR, but it is part of the training that kickstarted my journey in web development."
+        }
+      ]
     }
   },
   "pages": {

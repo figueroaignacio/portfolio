@@ -105,6 +105,34 @@
     "contact": {
       "title": "Ponte en contacto conmigo",
       "description": "No dudes en comunicarse conmigo a través de las siguientes redes sociales o por correo"
+    },
+    "certifications": {
+      "title": "Licencias y Certificaciones",
+      "items": [
+        {
+          "title": "Responsive Web Design",
+          "place": "freeCodeCamp",
+          "credential": "figueroaignacio-rwd",
+          "urlCredential": "https://www.freecodecamp.org/certification/FigueroaIgnacio/responsive-web-design",
+          "description": "En esta Certificación de Diseño Web Responsivo, aprendí los lenguajes que los desarrolladores usan para crear páginas web: HTML (lenguaje de marcado de hipertexto) para contenido y CSS (hojas de estilo en cascada) para diseño."
+        },
+        {
+          "title": "Curso de Introducción al Desarrollo Web: HTML y CSS (1/2)",
+          "place": "Google Activate",
+          "credential": "NF4 EJX 3YY",
+          "urlCredential": "",
+          "description": "Realizado en Google Activate en colaboración con la Universidad de Alicante, este curso cubrió la historia de la web, el origen de HTML y la estructura básica de una página web.",
+          "note": "Debido a cambios en la plataforma, no es posible visualizar la certificación con el código NF4 EJX 3YY, pero es parte de la formación con la que comencé mi trayectoria en el desarrollo web."
+        },
+        {
+          "title": "Curso de Introducción al Desarrollo Web: HTML y CSS (2/2)",
+          "place": "Google Activate",
+          "credential": "TYH 48W AJR",
+          "urlCredential": "",
+          "description": "Continuación del primer módulo, este curso de Google Activate junto a la Universidad de Alicante se centró en CSS, abordando selectores, diseño responsivo y las mejores prácticas para crear interfaces modernas.",
+          "note": "Debido a cambios en la plataforma, no es posible visualizar la certificación con el código TYH 48W AJR, pero es parte de la formación con la que comencé mi trayectoria en el desarrollo web."
+        }
+      ]
     }
   },
   "pages": {
@@ -157,7 +185,7 @@
       "title": "Educación",
       "items": [
         {
-          "title": "Estudiante en Tecnicatura Universitaria en Programación",
+          "title": "Estudiante de la Tecnicatura Universitaria en Programación",
           "institution": "Universidad Tecnológica Nacional - Facultad Regional de San Nicolás",
           "startYear": "Marzo 2025",
           "endYear": "Actualidad",

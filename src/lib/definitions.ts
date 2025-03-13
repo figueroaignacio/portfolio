@@ -56,3 +56,12 @@ export type Education = {
   status?: string;
   description?: string;
 };
+
+export interface Certification {
+  title: string;
+  place: string;
+  credential: string;
+  urlCredential?: string;
+  description: string;
+  note: string;
+}
