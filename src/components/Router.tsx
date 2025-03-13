@@ -1,22 +1,39 @@
 import { Route, Routes } from "react-router-dom";
 
-// Config
-import { routes } from "@/lib/navigation";
+// Pages
+import { AboutPage } from "@/pages/About";
+import { EducationPage } from "@/pages/Education";
+import { HomePage } from "@/pages/Home";
+import { NoteDetailsPage } from "@/pages/NoteDetails";
+import { NotesPage } from "@/pages/Notes";
+import { NotFoundPage } from "@/pages/NotFound";
+import { ProjectDetailsPage } from "@/pages/ProjectDetails";
+import { ProjectsPage } from "@/pages/Projects";
+
+// Layout
+import { ArticleLayout } from "@/layout/ArticleLayout";
+import { BaseLayout } from "@/layout/BaseLayout";
+import { Layout } from "@/layout/Layout";
 
 export function AppRouter() {
-  const renderRoutes = (
-    routes: Array<{
-      element: React.ReactNode;
-      children?: Array<{ path: string; element: React.ReactNode }>;
-    }>
-  ) =>
-    routes.map((route, index) => (
-      <Route key={index} element={route.element}>
-        {route.children?.map((child, childIndex) => (
-          <Route key={childIndex} path={child.path} element={child.element} />
-        ))}
+  return (
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/notes" element={<NotesPage />} />
+        <Route path="/education" element={<EducationPage />} />
       </Route>
-    ));
 
-  return <Routes>{renderRoutes(routes)}</Routes>;
+      <Route element={<ArticleLayout />}>
+        <Route path="/notes/:slug" element={<NoteDetailsPage />} />
+        <Route path="/projects/:slug" element={<ProjectDetailsPage />} />
+      </Route>
+
+      <Route element={<BaseLayout />}>
+        <Route path="*" element={<NotFoundPage />} />
+      </Route>
+    </Routes>
+  );
 }
