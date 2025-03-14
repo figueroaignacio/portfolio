@@ -22,7 +22,6 @@ export function CertificationItem({
             <h3 className="font-bold">{title}</h3>
             <p className="text-sm font-medium">{place}</p>
           </div>
-
           <div className="gap-3">
             <div className="flex items-center px-3 py-1 rounded-full">
               <span className="text-xs font-medium">
@@ -34,13 +33,11 @@ export function CertificationItem({
             </div>
           </div>
         </div>
-
         {description && (
-          <div className="text-sm text-gray-600 mt-1">
+          <div className="text-sm mt-1">
             <p>{description}</p>
           </div>
         )}
-
         {note && (
           <Alert>
             <span className="flex items-center">{note}</span>
