@@ -21,6 +21,7 @@ export function AppRouter() {
         <Route index path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/education" element={<EducationPage />} />
 
         <Route path="/projects">
           <Route index element={<EducationPage />} />
