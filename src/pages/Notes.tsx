@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 
 // Components
 import { Seo } from "@/components/Seo";
-import { Spinner } from "@/components/Spinner";
 
 // Services
 import { Note } from "@/lib/definitions";
@@ -39,11 +38,56 @@ export function NotesPage() {
     return (
       <section className="relative space-y-4">
         <Seo
-          title={t("siteConfig.projects.title")}
-          description={t("siteConfig.projects.description")}
+          title={t("siteConfig.notes.title")}
+          description={t("siteConfig.notes.description")}
         />
-        <div className="min-h-[50dvh] flex justify-center items-center">
-          <Spinner />
+        <h1>{t("pages.notes.title")}</h1>
+        <p className="text-sm mb-6">{t("pages.notes.description")}</p>
+
+        <div className="w-full overflow-x-auto pb-4">
+          <div className="min-w-full inline-block align-middle">
+            <div className="overflow-hidden">
+              <table className="min-w-full divide-y divide-border">
+                <thead>
+                  <tr>
+                    <th
+                      scope="col"
+                      className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
+                    >
+                      Título
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
+                    >
+                      Fecha
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
+                    >
+                      Acciones
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border">
+                  {Array.from({ length: 5 }).map((_, index) => (
+                    <tr key={`skeleton-${index}`}>
+                      <td className="px-3 sm:px-6 py-4">
+                        <div className="h-4 bg-primary-foreground rounded w-3/4 animate-pulse"></div>
+                      </td>
+                      <td className="px-3 sm:px-6 py-4">
+                        <div className="h-4 bg-primary-foreground rounded w-24 animate-pulse"></div>
+                      </td>
+                      <td className="px-3 sm:px-6 py-4">
+                        <div className="h-4 bg-primary-foreground rounded w-20 animate-pulse"></div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </section>
     );
@@ -66,47 +110,60 @@ export function NotesPage() {
       <h1>{t("pages.notes.title")}</h1>
       <p className="text-sm mb-6">{t("pages.notes.description")}</p>
 
-      <div className="overflow-x-auto">
-        <table className="min-w-full">
-          <thead>
-            <tr>
-              <th className="px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider">
-                Título
-              </th>
-              <th className="px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider">
-                Fecha
-              </th>
-              <th className="px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider">
-                Acciones
-              </th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-border">
-            {notes.map((note) => (
-              <tr key={note.slug.current}>
-                <td className="px-6 py-4 whitespace-nowrap text-sm">
-                  <a
-                    href={`/notes/${note.slug.current}`}
-                    className="underline hover:text-accent"
+      <div className="w-full overflow-x-auto pb-4">
+        <div className="min-w-full inline-block align-middle">
+          <div className="overflow-hidden">
+            <table className="min-w-full divide-y divide-border">
+              <thead>
+                <tr>
+                  <th
+                    scope="col"
+                    className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
                   >
-                    {note.title}
-                  </a>
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm">
-                  {new Date(note.publishedAt).toLocaleDateString()}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm">
-                  <a
-                    href={`/notes/${note.slug.current}`}
-                    className="hover:underline hover:text-accent"
+                    Título
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
                   >
-                    Ver detalles
-                  </a>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                    Fecha
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
+                  >
+                    Acciones
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border">
+                {notes.map((note) => (
+                  <tr key={note.slug.current}>
+                    <td className="px-3 sm:px-6 py-4 text-sm">
+                      <a
+                        href={`/notes/${note.slug.current}`}
+                        className="underline hover:text-accent"
+                      >
+                        {note.title}
+                      </a>
+                    </td>
+                    <td className="px-3 sm:px-6 py-4 text-sm">
+                      {new Date(note.publishedAt).toLocaleDateString()}
+                    </td>
+                    <td className="px-3 sm:px-6 py-4 text-sm">
+                      <a
+                        href={`/notes/${note.slug.current}`}
+                        className="hover:underline hover:text-accent"
+                      >
+                        Ver detalles
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </section>
   );
