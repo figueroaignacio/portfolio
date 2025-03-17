@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 // Components
-import { NoteCard } from "@/components/NoteCard";
 import { Seo } from "@/components/Seo";
 import { Spinner } from "@/components/Spinner";
 
@@ -66,17 +65,49 @@ export function NotesPage() {
       />
       <h1>{t("pages.notes.title")}</h1>
       <p className="text-sm mb-6">{t("pages.notes.description")}</p>
-      <ul className="space-y-6 gap-3">
-        {notes.map((note) => (
-          <li key={note.slug.current}>
-            <NoteCard
-              title={note.title}
-              description={note.description}
-              slug={`/notes/${note.slug.current}`}
-            />
-          </li>
-        ))}
-      </ul>
+
+      <div className="overflow-x-auto">
+        <table className="min-w-full">
+          <thead>
+            <tr>
+              <th className="px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider">
+                Título
+              </th>
+              <th className="px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider">
+                Fecha
+              </th>
+              <th className="px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider">
+                Acciones
+              </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-border">
+            {notes.map((note) => (
+              <tr key={note.slug.current}>
+                <td className="px-6 py-4 whitespace-nowrap text-sm">
+                  <a
+                    href={`/notes/${note.slug.current}`}
+                    className="underline hover:text-accent"
+                  >
+                    {note.title}
+                  </a>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm">
+                  {new Date(note.publishedAt).toLocaleDateString()}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm">
+                  <a
+                    href={`/notes/${note.slug.current}`}
+                    className="hover:underline hover:text-accent"
+                  >
+                    Ver detalles
+                  </a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </section>
   );
 }
