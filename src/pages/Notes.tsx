@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 
 // Components
 import { Seo } from "@/components/Seo";
+import { TransitionLink } from "@/components/TransitionLink";
 
 // Services
 import { Note } from "@/lib/definitions";
@@ -109,7 +110,6 @@ export function NotesPage() {
       />
       <h1>{t("pages.notes.title")}</h1>
       <p className="text-sm mb-6">{t("pages.notes.description")}</p>
-
       <div className="w-full overflow-x-auto pb-4">
         <div className="min-w-full inline-block align-middle">
           <div className="overflow-hidden">
@@ -140,23 +140,23 @@ export function NotesPage() {
                 {notes.map((note) => (
                   <tr key={note.slug.current}>
                     <td className="px-3 sm:px-6 py-4 text-sm">
-                      <a
-                        href={`/notes/${note.slug.current}`}
+                      <TransitionLink
+                        to={`/notes/${note.slug.current}`}
                         className="underline hover:text-accent"
                       >
                         {note.title}
-                      </a>
+                      </TransitionLink>
                     </td>
                     <td className="px-3 sm:px-6 py-4 text-sm">
                       {new Date(note.publishedAt).toLocaleDateString()}
                     </td>
                     <td className="px-3 sm:px-6 py-4 text-sm">
-                      <a
-                        href={`/notes/${note.slug.current}`}
+                      <TransitionLink
+                        to={`/notes/${note.slug.current}`}
                         className="hover:underline hover:text-accent"
                       >
                         Ver detalles
-                      </a>
+                      </TransitionLink>
                     </td>
                   </tr>
                 ))}
