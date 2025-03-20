@@ -11,6 +11,7 @@ import { ProjectDetailsPage } from "@/pages/ProjectDetails";
 import { ProjectsPage } from "@/pages/Projects";
 
 // Layout
+import { ArticleLayout } from "@/layout/ArticleLayout";
 import { BaseLayout } from "@/layout/BaseLayout";
 import { Layout } from "@/layout/Layout";
 
@@ -19,18 +20,22 @@ export function AppRouter() {
     <Routes>
       <Route element={<Layout />}>
         <Route index path="/" element={<HomePage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/education" element={<EducationPage />} />
+        <Route path="projects" element={<ProjectsPage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="education" element={<EducationPage />} />
 
-        <Route path="/projects">
+        <Route path="projects">
           <Route index element={<ProjectsPage />} />
-          <Route path="/projects/:slug" element={<ProjectDetailsPage />} />
+          <Route element={<ArticleLayout />}>
+            <Route path=":slug" element={<ProjectDetailsPage />} />
+          </Route>
         </Route>
 
-        <Route path="/notes">
+        <Route path="notes">
           <Route index element={<NotesPage />} />
-          <Route path=":slug" element={<NoteDetailsPage />} />
+          <Route element={<ArticleLayout />}>
+            <Route path=":slug" element={<NoteDetailsPage />} />
+          </Route>
         </Route>
       </Route>
 

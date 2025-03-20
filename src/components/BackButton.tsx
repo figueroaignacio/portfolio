@@ -17,7 +17,7 @@ export function BackButton() {
   return (
     <button
       onClick={handleBack}
-      className="mb-5 flex items-center gap-3 backdrop-blur-xl p-2 lg:p-0 rounded-2xl"
+      className="inline-flex items-center justify-center mb-5 gap-x-2 px-5 py-2.5 rounded-2xl bg-accent hover:scale-105 transition-transform font-medium text-sm shrink-0 text-white cursor-pointer"
     >
       <ArrowLeftIcon /> Go Back
     </button>
