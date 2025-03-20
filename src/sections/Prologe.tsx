@@ -9,19 +9,19 @@ export function Prologe() {
       <p>
         <Trans
           i18nKey={t("pages.about.intro")}
-          components={{ span: <span className="text-accent" /> }}
+          components={{ span: <span className="font-extrabold" /> }}
         />
       </p>
       <p>
         <Trans
           i18nKey={t("pages.about.expandingKnowledge")}
-          components={{ span: <span className="text-accent"></span> }}
+          components={{ span: <span className="font-extrabold"></span> }}
         />
       </p>
       <p>
         <Trans
           i18nKey={t("pages.about.collaboration")}
-          components={{ span: <span className="text-accent"></span> }}
+          components={{ span: <span className="font-extrabold"></span> }}
         />
       </p>
     </div>
