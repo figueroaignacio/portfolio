@@ -23,9 +23,10 @@ export const techStack = [
     items: [
       "react",
       "next.js",
+      "react router framework",
       "astro",
       "react hook form",
-      "react router",
+      "react router library",
       "react server components (RSC)",
       "tanstack query (react query)",
       "mdx",
