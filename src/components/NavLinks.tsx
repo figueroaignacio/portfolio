@@ -1,5 +1,5 @@
 // Hooks
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router";
 
 // Components
 import { TransitionLink } from "./TransitionLink";

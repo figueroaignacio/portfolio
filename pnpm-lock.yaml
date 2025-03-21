@@ -50,7 +50,7 @@ importers:
       react-i18next:
         specifier: ^15.4.1
         version: 15.4.1(i18next@24.2.3(typescript@5.8.2))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      react-router-dom:
+      react-router:
         specifier: ^7.4.0
         version: 7.4.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react-syntax-highlighter:
@@ -1311,13 +1311,6 @@ packages:
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
-
-  react-router-dom@7.4.0:
-    resolution: {integrity: sha512-VlksBPf3n2bijPvnA7nkTsXxMAKOj+bWp4R9c3i+bnwlSOFAGOkJkKhzy/OsRkWaBMICqcAl1JDzh9ZSOze9CA==}
-    engines: {node: '>=20.0.0'}
-    peerDependencies:
-      react: '>=18'
-      react-dom: '>=18'
 
   react-router@7.4.0:
     resolution: {integrity: sha512-Y2g5ObjkvX3VFeVt+0CIPuYd9PpgqCslG7ASSIdN73LwA1nNWzcMLaoMRJfP3prZFI92svxFwbn7XkLJ+UPQ6A==}
@@ -2592,12 +2585,6 @@ snapshots:
       react-dom: 19.0.0(react@19.0.0)
 
   react-is@16.13.1: {}
-
-  react-router-dom@7.4.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
-    dependencies:
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-      react-router: 7.4.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
 
   react-router@7.4.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:

@@ -1,6 +1,6 @@
 // Components
 import { Seo } from "@/components/Seo";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 export function NotFoundPage() {
   return (

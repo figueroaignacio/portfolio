@@ -1,4 +1,4 @@
-import { LinkProps, Link as RouterLink } from "react-router-dom";
+import { LinkProps, Link as RouterLink } from "react-router";
 
 export function TransitionLink({ to, children, ...rest }: LinkProps) {
   const handleClick = (

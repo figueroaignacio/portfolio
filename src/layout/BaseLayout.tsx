@@ -1,5 +1,5 @@
 import { Footer } from "@/components/Footer";
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router";
 
 export function BaseLayout() {
   return (

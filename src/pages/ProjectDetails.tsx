@@ -1,7 +1,7 @@
 // Hooks
 import { useLanguage } from "@/hooks/useLanguage";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 
 // Components
 import { RichTextComponents } from "@/components/RichTextComponents";

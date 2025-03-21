@@ -1,6 +1,6 @@
 // Components
 import { AppRouter } from "@/components/Router.tsx";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { ScrollToTopButton } from "./components/ScrollToTopButton";
 
