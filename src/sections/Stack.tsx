@@ -19,8 +19,15 @@ export function Stack() {
         <div key={category}>
           <h4>{category}</h4>
           <div className="flex gap-2 flex-wrap mt-3 mb-6">
-            {items.map((item) => (
-              <Badge key={item}>{item}</Badge>
+            {items.map(({ name, href }) => (
+              <a
+                key={name}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Badge>{name}</Badge>
+              </a>
             ))}
           </div>
         </div>
