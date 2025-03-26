@@ -10,35 +10,35 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fontsource-variable/onest": "^5.2.6",
+    "@fontsource-variable/onest": "^5.2.7",
     "@portabletext/react": "^3.2.1",
     "@portabletext/types": "^2.0.13",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^6.28.3",
     "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/vite": "^4.0.14",
-    "@types/node": "^22.13.10",
+    "@tailwindcss/vite": "^4.0.17",
+    "@types/node": "^22.13.13",
     "date-fns": "^4.1.0",
-    "framer-motion": "^12.5.0",
+    "framer-motion": "^12.6.2",
     "i18next": "^24.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.1",
     "react-router": "^7.4.0",
     "react-syntax-highlighter": "^15.6.1",
-    "tailwindcss": "^4.0.14"
+    "tailwindcss": "^4.0.17"
   },
   "devDependencies": {
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
     "@types/react-syntax-highlighter": "^15.5.13",
-    "@typescript-eslint/eslint-plugin": "^8.26.1",
-    "@typescript-eslint/parser": "^8.26.1",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
     "@vitejs/plugin-react-swc": "^3.8.1",
-    "eslint": "^9.22.0",
+    "eslint": "^9.23.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "typescript": "^5.8.2",
-    "vite": "^6.2.2"
+    "vite": "^6.2.3"
   }
 }
