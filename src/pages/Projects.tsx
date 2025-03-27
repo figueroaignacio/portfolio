@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 // Components
+import { Callout } from "@/components/Callout";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Seo } from "@/components/Seo";
 import { Spinner } from "@/components/Spinner";
@@ -67,7 +68,8 @@ export function ProjectsPage() {
         title={t("siteConfig.projects.title")}
         description={t("siteConfig.projects.description")}
       />
-      <h1>{t("pages.projects.title")}</h1>
+      <Callout message={t("pages.projects.callout")} />
+      <h1 className="mt-12">{t("pages.projects.title")}</h1>
       <ul className="space-y-6 items-center">
         {projects.map((project, index) => (
           <li key={index}>

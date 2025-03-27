@@ -149,6 +149,7 @@
     },
     "projects": {
       "title": "Proyectos",
+      "callout": "Algunos proyectos en este portafolio aún están en desarrollo y, por lo tanto, los enlaces en vivo no están disponibles. Sin embargo, el código fuente está disponible para su revisión en GitHub.",
       "items": [
         {
           "name": "Web Society Project",

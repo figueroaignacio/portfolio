@@ -1,4 +1,3 @@
-// EducationItem.tsx
 import { Education } from "@/lib/definitions";
 
 interface EducationItemProps extends Education {}

@@ -149,6 +149,7 @@
     },
     "projects": {
       "title": "Projects",
+      "callout": "Some projects in this portfolio are still in progress, and as a result, live links are not available. However, the source code is available for review on GitHub.",
       "items": [
         {
           "name": "Web Society Project",
