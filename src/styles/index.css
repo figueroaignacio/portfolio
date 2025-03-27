@@ -83,7 +83,7 @@
   }
 
   body {
-    @apply bg-background text-foreground tracking-wider lg:border-l lg:border-r lg:border-border lg:border-dashed lg:mx-12 bg-dots;
+    @apply bg-background text-foreground tracking-wider lg:border-l lg:border-r lg:border-border lg:border-dashed lg:mx-12;
     font-family: "Onest Variable", sans-serif;
   }
 
