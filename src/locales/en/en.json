@@ -242,6 +242,7 @@
         "moreDetails": "Click to see more details"
       }
     },
+    "backButton": "Back",
     "workStatus": "Active To Work"
   },
   "siteConfig": {

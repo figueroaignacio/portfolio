@@ -1,8 +1,13 @@
+// Hooks
+import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router";
+
+// Icons
 import { ArrowLeftIcon } from "./Icons";
 
 export function BackButton() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleBack = () => {
     if (document.startViewTransition) {
@@ -17,9 +22,9 @@ export function BackButton() {
   return (
     <button
       onClick={handleBack}
-      className="inline-flex items-center justify-center mb-5 gap-x-2 px-5 py-2.5 rounded-2xl bg-accent hover:scale-105 transition-transform font-medium text-sm shrink-0 text-white cursor-pointer"
+      className="flex items-center gap-x-3 text-muted-foreground mb-5 cursor-pointer underline"
     >
-      <ArrowLeftIcon /> Go Back
+      <ArrowLeftIcon /> <span>{t("components.backButton")}</span>
     </button>
   );
 }
