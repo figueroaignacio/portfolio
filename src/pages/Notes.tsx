@@ -63,12 +63,6 @@ export function NotesPage() {
                     >
                       Fecha
                     </th>
-                    <th
-                      scope="col"
-                      className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
-                    >
-                      Acciones
-                    </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">
@@ -79,9 +73,6 @@ export function NotesPage() {
                       </td>
                       <td className="px-3 sm:px-6 py-4">
                         <div className="h-4 bg-primary-foreground rounded w-24 animate-pulse"></div>
-                      </td>
-                      <td className="px-3 sm:px-6 py-4">
-                        <div className="h-4 bg-primary-foreground rounded w-20 animate-pulse"></div>
                       </td>
                     </tr>
                   ))}
@@ -120,19 +111,13 @@ export function NotesPage() {
                     scope="col"
                     className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
                   >
-                    Título
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
-                  >
                     Fecha
                   </th>
                   <th
                     scope="col"
                     className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
                   >
-                    Acciones
+                    Título
                   </th>
                 </tr>
               </thead>
@@ -140,22 +125,14 @@ export function NotesPage() {
                 {notes.map((note) => (
                   <tr key={note.slug.current}>
                     <td className="px-3 sm:px-6 py-4 text-sm">
-                      <TransitionLink
-                        to={`/notes/${note.slug.current}`}
-                        className="underline hover:text-accent"
-                      >
-                        {note.title}
-                      </TransitionLink>
-                    </td>
-                    <td className="px-3 sm:px-6 py-4 text-sm">
                       {new Date(note.publishedAt).toLocaleDateString()}
                     </td>
                     <td className="px-3 sm:px-6 py-4 text-sm">
                       <TransitionLink
                         to={`/notes/${note.slug.current}`}
-                        className="hover:underline hover:text-accent"
+                        className="underline hover:text-accent"
                       >
-                        Ver detalles
+                        {note.title}
                       </TransitionLink>
                     </td>
                   </tr>
