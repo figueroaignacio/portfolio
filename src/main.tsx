@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
 
 // Components
 import { Providers } from "./components/Providers.tsx";
@@ -10,6 +9,10 @@ import "../src/styles/index.css";
 
 // Font
 import "@fontsource-variable/onest";
+
+// Router
+import { RouterProvider } from "react-router";
+import { router } from "./components/Router.tsx";
 
 // Locales config
 import i18next from "i18next";
@@ -37,7 +40,7 @@ i18next.use(initReactI18next).init({
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Providers>
-      <App />
+      <RouterProvider router={router} />
     </Providers>
   </React.StrictMode>
 );

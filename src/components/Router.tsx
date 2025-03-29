@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router";
+import { createBrowserRouter } from "react-router";
 
 // Pages
 import { AboutPage } from "@/pages/About";
@@ -10,38 +10,44 @@ import { NotFoundPage } from "@/pages/NotFound";
 import { ProjectDetailsPage } from "@/pages/ProjectDetails";
 import { ProjectsPage } from "@/pages/Projects";
 
-// Layout
+// Layouts
 import { ArticleLayout } from "@/layout/ArticleLayout";
 import { BaseLayout } from "@/layout/BaseLayout";
 import { Layout } from "@/layout/Layout";
 
-export function AppRouter() {
-  return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route index path="/" element={<HomePage />} />
-        <Route path="projects" element={<ProjectsPage />} />
-        <Route path="about" element={<AboutPage />} />
-        <Route path="education" element={<EducationPage />} />
-
-        <Route path="projects">
-          <Route index element={<ProjectsPage />} />
-          <Route element={<ArticleLayout />}>
-            <Route path=":slug" element={<ProjectDetailsPage />} />
-          </Route>
-        </Route>
-
-        <Route path="notes">
-          <Route index element={<NotesPage />} />
-          <Route element={<ArticleLayout />}>
-            <Route path=":slug" element={<NoteDetailsPage />} />
-          </Route>
-        </Route>
-      </Route>
-
-      <Route element={<BaseLayout />}>
-        <Route path="*" element={<NotFoundPage />} />
-      </Route>
-    </Routes>
-  );
-}
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: "projects", element: <ProjectsPage /> },
+      { path: "about", element: <AboutPage /> },
+      { path: "education", element: <EducationPage /> },
+      {
+        path: "projects",
+        children: [
+          { index: true, element: <ProjectsPage /> },
+          {
+            element: <ArticleLayout />,
+            children: [{ path: ":slug", element: <ProjectDetailsPage /> }],
+          },
+        ],
+      },
+      {
+        path: "notes",
+        children: [
+          { index: true, element: <NotesPage /> },
+          {
+            element: <ArticleLayout />,
+            children: [{ path: ":slug", element: <NoteDetailsPage /> }],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    element: <BaseLayout />,
+    children: [{ path: "*", element: <NotFoundPage /> }],
+  },
+]);
