@@ -7,18 +7,28 @@ import { CopyButton } from "./CopyButton";
 
 export const Code = ({ value }: any) => {
   return (
-    <div className="relative my-10">
+    <div className="relative my-6">
       <CopyButton textToCopy={value.code} />
-      <SyntaxHighlighter
-        language={value.language}
-        style={atomOneDarkReasonable}
-        customStyle={{
-          borderRadius: ".75rem",
-          padding: "1.5rem",
-        }}
-      >
-        {value.code}
-      </SyntaxHighlighter>
+      <div className="w-full overflow-x-auto rounded-lg bg-[#282c34]">
+        <SyntaxHighlighter
+          language={value.language}
+          style={atomOneDarkReasonable}
+          customStyle={{
+            borderRadius: "0.5rem",
+            padding: "1rem",
+            fontSize: "0.875rem",
+            margin: 0,
+            overflowX: "auto",
+            whiteSpace: "pre",
+            wordBreak: "normal",
+            minWidth: "100%",
+            width: "fit-content",
+          }}
+          wrapLines={false}
+        >
+          {value.code}
+        </SyntaxHighlighter>
+      </div>
     </div>
   );
 };

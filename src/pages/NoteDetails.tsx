@@ -60,7 +60,7 @@ export function NoteDetailsPage() {
         <h1 className="text-3xl mb-5 font-bold">{note.title}</h1>
         <p className="max-w-xl text-sm">{note.description}</p>
       </div>
-      <div className="space-y-6">
+      <div className="space-y-6 overflow-x-auto">
         <PortableText value={note.body} components={RichTextComponents} />
       </div>
     </article>
