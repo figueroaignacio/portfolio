@@ -53,13 +53,13 @@ export function NotesPage() {
                   <tr>
                     <th
                       scope="col"
-                      className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
+                      className="py-3 border-b border-border text-left text-xs font-medium tracking-wider"
                     >
                       Título
                     </th>
                     <th
                       scope="col"
-                      className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
+                      className="py-3 border-b border-border text-left text-xs font-medium tracking-wider"
                     >
                       Fecha
                     </th>
@@ -68,10 +68,10 @@ export function NotesPage() {
                 <tbody className="divide-y divide-border">
                   {Array.from({ length: 5 }).map((_, index) => (
                     <tr key={`skeleton-${index}`}>
-                      <td className="px-3 sm:px-6 py-4">
+                      <td className="py-4">
                         <div className="h-4 bg-primary-foreground rounded w-3/4 animate-pulse"></div>
                       </td>
-                      <td className="px-3 sm:px-6 py-4">
+                      <td className="py-4">
                         <div className="h-4 bg-primary-foreground rounded w-24 animate-pulse"></div>
                       </td>
                     </tr>
@@ -109,13 +109,13 @@ export function NotesPage() {
                 <tr>
                   <th
                     scope="col"
-                    className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
+                    className="py-3 border-b border-border text-left text-xs font-medium tracking-wider"
                   >
                     Fecha
                   </th>
                   <th
                     scope="col"
-                    className="px-3 sm:px-6 py-3 border-b border-border text-left text-xs font-medium tracking-wider"
+                    className="py-3 border-b border-border text-left text-xs font-medium tracking-wider"
                   >
                     Título
                   </th>
@@ -124,10 +124,10 @@ export function NotesPage() {
               <tbody className="divide-y divide-border">
                 {notes.map((note) => (
                   <tr key={note.slug.current}>
-                    <td className="px-3 sm:px-6 py-4 text-sm">
+                    <td className="py-4 text-xs">
                       {new Date(note.publishedAt).toLocaleDateString()}
                     </td>
-                    <td className="px-3 sm:px-6 py-4 text-sm">
+                    <td className="py-4 text-xs">
                       <TransitionLink
                         to={`/notes/${note.slug.current}`}
                         className="underline hover:text-accent"
