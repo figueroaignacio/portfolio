@@ -21,7 +21,7 @@ export const NavLinks = ({ navItems, className }: NavLinksProps) => {
         const isActive = location.pathname === navItem.href;
         const linkClass =
           "px-3 py-2.5 rounded-2xl transition-colors duration-200 flex flex-col md:flex-row items-center hover:backdrop-brightness-125 hover:bg-slate-200 dark:hover:bg-gray-600/15" +
-          (isActive ? " bg-slate-300 lg:bg-slate-200 dark:bg-gray-600/15" : "");
+          (isActive ? "bg-[#dde3eb] dark:bg-gray-600/15" : "");
 
         return (
           <li key={index} className="relative group">

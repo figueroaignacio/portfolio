@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @font-face {
   font-family: "Onest Variable";
   font-style: normal;
@@ -12,8 +14,24 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-input: var(--input);
+  --color-border: var(--border);
+}
+
 :root {
-  --background: hsl(210, 20%, 98%);
+  --background: hsl(205, 43%, 95%);
   --foreground: hsl(220, 20%, 10%);
   --card: hsl(0, 0%, 100%);
   --card-foreground: hsl(220, 20%, 10%);
@@ -43,22 +61,6 @@
   --muted-foreground: hsl(240 3.8% 70%);
   --input: hsl(220, 15%, 12%);
   --border: hsl(220, 15%, 12%);
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-input: var(--input);
-  --color-border: var(--border);
 }
 
 @layer base {
