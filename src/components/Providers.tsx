@@ -2,8 +2,8 @@
 import React from "react";
 
 // Providers
-import { LanguageProvider } from "@/hooks/contexts/LanguageContext";
-import { ThemeProvider } from "@/hooks/contexts/ThemeContext";
+import { LanguageProvider } from "@/providers/LanguageProvider";
+import { ThemeProvider } from "@/providers/ThemeProvider";
 
 interface ProvidersProps {
   children: React.ReactNode;
