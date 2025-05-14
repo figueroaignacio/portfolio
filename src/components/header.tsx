@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 import { LanguageSwitcher } from './language-switcher';
+import { Logo } from './logo';
 import { ToggleTheme } from './toggle-theme';
 
 // Types
@@ -28,7 +29,7 @@ export function Header() {
     return (
       <header className="border-border border-b py-4">
         <div className="container flex items-center justify-between">
-          <Link to="/">nacho</Link>
+          <Logo />
           <button onClick={toggleMenu}>
             <HamburgerMenuIcon className="size-5" />
           </button>
@@ -70,8 +71,7 @@ export function Header() {
   return (
     <header className="border-border border-b py-4">
       <div className="container flex items-center justify-between">
-        <Link to="/">nacho</Link>
-
+        <Logo />
         <nav className="flex space-x-4">
           <ul className="flex">
             {navigation.map((item, index) => (
