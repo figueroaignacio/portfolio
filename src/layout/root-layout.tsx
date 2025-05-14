@@ -7,7 +7,7 @@ export function RootLayout() {
   return (
     <div className="root-layout-grid">
       <Header />
-      <main>
+      <main className="container">
         <Outlet />
       </main>
       <Footer />

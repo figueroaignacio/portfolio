@@ -75,8 +75,22 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground border-border;
   }
+}
+
+@layer components {
+  .btn {
+    @apply bg-primary text-secondary-foreground rounded-md px-3 py-2;
+  }
+
+  .btn-outline {
+    @apply border-border rounded-md border bg-transparent px-3 py-2;
+  }
+}
+
+.container {
+  @apply mx-auto max-w-4xl px-3;
 }
 
 .root-layout-grid {

@@ -11,5 +11,9 @@ export function ToggleTheme() {
     setTheme(newTheme);
   }
 
-  return <button onClick={handleTheme}>{theme === 'light' ? <MoonIcon /> : <SunIcon />}</button>;
+  return (
+    <button onClick={handleTheme} className="btn-outline">
+      {theme === 'light' ? <MoonIcon /> : <SunIcon />}
+    </button>
+  );
 }
