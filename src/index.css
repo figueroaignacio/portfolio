@@ -73,6 +73,12 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-body {
-  @apply bg-background text-foreground;
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.root-layout-grid {
+  @apply grid min-h-dvh grid-rows-[auto_1fr_auto];
 }
