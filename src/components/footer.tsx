@@ -1,3 +1,3 @@
 export function Footer() {
-  return <footer>Footer</footer>;
+  return <footer>Ignacio Figueroa - Copyright 2025</footer>;
 }
