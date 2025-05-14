@@ -1,0 +1,7 @@
+{
+  "navigation": [
+    { "label": "Home", "href": "/" },
+    { "label": "Education", "href": "/education" },
+    { "label": "Blog", "href": "/blog" }
+  ]
+}

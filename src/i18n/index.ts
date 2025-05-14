@@ -2,7 +2,7 @@ import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
-const namespaces = ['ui', 'components', 'config'];
+const namespaces = ['pages', 'ui'];
 
 i18n
   .use(LanguageDetector)
@@ -11,14 +11,15 @@ i18n
     fallbackLng: 'en',
     debug: import.meta.env.DEV,
     ns: namespaces,
-    defaultNS: 'ui',
     interpolation: { escapeValue: false },
     resources: {
       en: {
         pages: await import('./en/pages.json'),
+        ui: await import('./en/ui.json'),
       },
       es: {
         pages: await import('./es/pages.json'),
+        ui: await import('./es/ui.json'),
       },
     },
   });
