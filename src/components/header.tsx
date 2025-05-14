@@ -1,6 +1,9 @@
 // Hooks
 import { useTranslation } from 'react-i18next';
 
+// Components
+import { Link } from 'react-router';
+
 // Types
 import { type Navigation } from '@/types';
 
@@ -10,12 +13,12 @@ export function Header() {
 
   return (
     <header>
-      <a href="/">nacho</a>
+      <Link to="/">nacho</Link>
       <nav>
         <ul>
           {navigation.map((item, index) => (
             <li key={index}>
-              <a href={item.href}>{item.label}</a>
+              <Link to={item.href}>{item.label}</Link>
             </li>
           ))}
         </ul>
