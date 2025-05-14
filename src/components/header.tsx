@@ -2,7 +2,7 @@
 import { useTranslation } from 'react-i18next';
 
 // Types
-import { type Navigation } from '../types';
+import { type Navigation } from '@/types';
 
 export function Header() {
   const { t } = useTranslation('ui');

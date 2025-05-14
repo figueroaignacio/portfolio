@@ -1,5 +1,5 @@
 // Hooks
-import { useTheme } from '../hooks/use-theme';
+import { useTheme } from '@/hooks/use-theme';
 
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
 
