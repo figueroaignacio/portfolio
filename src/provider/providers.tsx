@@ -1,4 +1,5 @@
 // Providers
+import { BrowserRouter } from 'react-router';
 import { ThemeProvider } from './theme-provider';
 
 interface ProvidersProps {
@@ -7,8 +8,10 @@ interface ProvidersProps {
 
 export function Providers({ children }: ProvidersProps) {
   return (
-    <ThemeProvider defaultTheme="system" storageKey="theme-ui-portfolio">
-      {children}
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider defaultTheme="system" storageKey="theme-ui-portfolio">
+        {children}
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }

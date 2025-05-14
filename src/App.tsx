@@ -1,20 +1,5 @@
-// Hooks
-import { useTranslation } from 'react-i18next';
-
-// Components
-import { Header } from './components/header';
-import { LanguageSwitcher } from './components/language-switcher';
-import { ToggleTheme } from './components/toggle-theme';
+import { AppRouter } from './components/app-router';
 
 export default function App() {
-  const { t } = useTranslation('pages');
-
-  return (
-    <div>
-      <Header />
-      <h1>{t('home.title')}</h1>
-      <LanguageSwitcher />
-      <ToggleTheme />
-    </div>
-  );
+  return <AppRouter />;
 }
