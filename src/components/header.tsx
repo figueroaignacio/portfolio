@@ -1,7 +1,10 @@
+// Hooks
 import useMediaQuery from '@/hooks/use-media-query';
-import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+
+// Components
+import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { Link } from 'react-router';
 import { LanguageSwitcher } from './language-switcher';
 import { Logo } from './logo';
