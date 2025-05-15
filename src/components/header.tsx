@@ -27,7 +27,7 @@ export function Header() {
 
   if (isMobile) {
     return (
-      <header className="border-border border-b py-4">
+      <header className="border-border bg-background border-b py-4">
         <div className="container flex items-center justify-between">
           <Logo />
           <button onClick={toggleMenu}>
@@ -69,7 +69,7 @@ export function Header() {
   }
 
   return (
-    <header className="border-border border-b py-4">
+    <header className="border-border border-b py-4 backdrop-blur-sm">
       <div className="container flex items-center justify-between">
         <Logo />
         <nav className="flex space-x-4">
