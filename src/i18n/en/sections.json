@@ -7,5 +7,12 @@
       "readMyBlog": "Read my Blog",
       "knowMe": "Come to know me."
     }
+  },
+  "about": {
+    "title": "About",
+    "intro": "I'm Ignacio Figueroa, a web developer focused on fullstack development with a strong passion for continuous learning.",
+    "journey": "I discovered programming in 2022, shortly before finishing high school. Since then, I've immersed myself in modern web development, learning independently about technologies, best practices, and interface design.",
+    "education": "I'm currently studying Programming at UTN, combining formal education with my self-taught journey to strengthen my foundation and keep growing professionally.",
+    "project": "This project was born as a way to document my journey, share knowledge, and build my own space on the web as I continue developing as a professional."
   }
 }
