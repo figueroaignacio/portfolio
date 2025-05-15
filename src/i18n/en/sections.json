@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "greeting": "Hello, I am...",
+    "subtitle": "Fullstack Developer",
+    "description": "Aiming to improve experiences",
+    "cta": {
+      "readMyBlog": "Read my Blog",
+      "knowMe": "Come to know me."
+    }
+  }
+}

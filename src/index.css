@@ -91,11 +91,15 @@
   body {
     @apply bg-background text-foreground border-border;
   }
+
+  a {
+    @apply p-0;
+  }
 }
 
 @layer components {
   .btn {
-    @apply bg-primary text-secondary-foreground rounded-md px-3 py-2;
+    @apply bg-primary cursor-pointer rounded-md px-3 py-2 text-white;
   }
 
   .btn-outline {
