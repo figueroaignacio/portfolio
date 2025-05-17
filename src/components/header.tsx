@@ -59,8 +59,6 @@ export function Header() {
           <ul className="flex gap-x-7">
             {navigation.map((item, index) => {
               const isActive = currentPath === item.href;
-              console.log('currentPath:', currentPath, 'item:', item.href);
-
               return (
                 <li key={index}>
                   <Link
