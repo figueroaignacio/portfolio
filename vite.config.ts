@@ -14,6 +14,6 @@ export default defineConfig({
     outDir: 'dist',
   },
   esbuild: {
-    target: 'esnext',
+    target: 'es2022',
   },
 });
