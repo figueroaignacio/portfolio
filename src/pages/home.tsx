@@ -1,5 +1,5 @@
 import { Hero } from '@/sections/hero';
-import { LatestPosts } from '@/sections/latest-post';
+import { LatestPosts } from '@/sections/latest-posts';
 
 export function HomePage() {
   return (
