@@ -99,11 +99,11 @@
 
 @layer components {
   .btn {
-    @apply bg-primary cursor-pointer rounded-md px-4 py-2 text-white;
+    @apply bg-primary cursor-pointer rounded-md px-4 py-2 text-sm text-white;
   }
 
   .btn-outline {
-    @apply border-border hover:bg-secondary rounded-xl border bg-transparent px-4 py-2 transition-colors duration-75 hover:border-transparent;
+    @apply border-border hover:bg-secondary rounded-xl border bg-transparent px-4 py-2 text-sm transition-colors duration-75 hover:border-transparent;
   }
 }
 
