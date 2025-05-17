@@ -14,5 +14,9 @@
     "journey": "Descubrí la programación en 2022, poco antes de terminar la secundaria. Desde entonces, me sumergí en el desarrollo web moderno, aprendiendo de forma autodidacta sobre tecnologías, buenas prácticas y diseño de interfaces.",
     "education": "Actualmente estudio la Tecnicatura en Programación en la UTN, combinando educación formal con mi camino autodidacta para fortalecer mis bases y seguir creciendo profesionalmente.",
     "project": "Este proyecto nace como una forma de documentar mi recorrido, compartir conocimientos y construir mi propio espacio en la web mientras sigo desarrollándome como profesional."
+  },
+  "contact": {
+    "title": "Conectemos",
+    "description": "Contactame por email o en redes sociales"
   }
 }

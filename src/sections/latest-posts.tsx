@@ -26,7 +26,7 @@ export function LatestPosts() {
 
   return (
     <section>
-      <h2>Posts recientes</h2>
+      <h2 className="font-extrabold">Posts recientes</h2>
       <div className="mt-5 space-y-5">
         {latestTwoPosts.map((post) => (
           <PostCard
