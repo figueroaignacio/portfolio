@@ -47,7 +47,7 @@
   --popover-foreground: #f8fafc;
   --primary: #3b82f6;
   --primary-foreground: #0b0c0f;
-  --secondary: #3b83f618;
+  --secondary: #5380c918;
   --secondary-foreground: #3b82f6;
   --muted: #131519;
   --muted-foreground: #94a3b8;
@@ -104,6 +104,10 @@
 
   .btn-outline {
     @apply border-border rounded-md border bg-transparent px-3 py-2;
+  }
+
+  .btn-icon {
+    @apply hover:bg-secondary rounded-md p-2;
   }
 }
 

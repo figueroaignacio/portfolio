@@ -1,91 +1,77 @@
 // Hooks
-import useMediaQuery from '@/hooks/use-media-query';
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+// import useMediaQuery from '@/hooks/use-media-query';
+import { useLocation } from 'react-router';
 
 // Components
-import { HamburgerMenuIcon } from '@radix-ui/react-icons';
+import { HomeIcon } from '@radix-ui/react-icons';
 import { Link } from 'react-router';
 import { LanguageSwitcher } from './language-switcher';
-import { Logo } from './logo';
 import { ToggleTheme } from './toggle-theme';
 
-// Types
-import { type Navigation } from '@/types';
+// Constants
+import { navigation } from '@/lib/navigation';
 
 export function Header() {
-  const { isMobile } = useMediaQuery();
-  const { t } = useTranslation('ui');
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const currentPath = location.pathname;
 
-  const navigation = t('navigation', { returnObjects: true }) as Navigation[];
+  // const { isMobile } = useMediaQuery();
 
-  const toggleMenu = () => {
-    setIsMenuOpen((prevState) => !prevState);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
-
-  if (isMobile) {
-    return (
-      <header className="border-border bg-background border-b py-4">
-        <div className="container flex items-center justify-between">
-          <Logo />
-          <button onClick={toggleMenu}>
-            <HamburgerMenuIcon className="size-5" />
-          </button>
-          {isMenuOpen && (
-            <div
-              className="fixed top-0 left-0 z-40 h-full w-full backdrop-blur-sm"
-              onClick={closeMenu}
-            ></div>
-          )}
-          <div
-            className={`bg-card border-border fixed top-0 right-0 z-50 h-full w-64 transform border-l shadow-lg transition-all duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
-          >
-            <div className="flex justify-end p-4">
-              <button onClick={closeMenu}>
-                <span className="text-2xl">×</span>
-              </button>
-            </div>
-            <nav className="mt-8">
-              <ul className="space-y-8 p-4">
-                {navigation.map((item, index) => (
-                  <li key={index}>
-                    <Link to={item.href} className="block">
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <div className="mt-8 flex flex-col space-y-4 px-4">
-              <ToggleTheme />
-              <LanguageSwitcher />
-            </div>
-          </div>
-        </div>
-      </header>
-    );
-  }
+  // if (isMobile) {
+  //   return (
+  //     <header className="border-border bg-background border-b py-4">
+  //       <div className="container flex items-center justify-between">
+  //         <Link to="/">
+  //           <HomeIcon className="size-4" />
+  //         </Link>
+  //         <div>
+  //           <nav className="mt-8">
+  //             <ul className="space-y-8 p-4">
+  //               {navigation.map((item, index) => (
+  //                 <li key={index}>
+  //                   <Link to={item.href} className="block">
+  //                     <item.icon />
+  //                   </Link>
+  //                 </li>
+  //               ))}
+  //             </ul>
+  //           </nav>
+  //           <div className="mt-8 flex flex-col space-y-4 px-4">
+  //             <ToggleTheme />
+  //             <LanguageSwitcher />
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </header>
+  //   );
+  // }
 
   return (
     <header className="border-border bg-background border-b py-4">
       <div className="container flex items-center justify-between">
-        <Logo />
-        <nav className="flex space-x-4">
-          <ul className="flex">
-            {navigation.map((item, index) => (
-              <li key={index} className="p-2">
-                <Link to={item.href}>{item.label}</Link>
-              </li>
-            ))}
+        <Link to="/" className={`btn-icon ${currentPath === '/' ? 'bg-secondary' : ''}`}>
+          <HomeIcon className="size-4" />
+        </Link>
+        <nav>
+          <ul className="flex gap-x-5">
+            {navigation.map((item, index) => {
+              const isActive = currentPath === item.href;
+              console.log('currentPath:', currentPath, 'item:', item.href);
+
+              return (
+                <li key={index} className={`btn-icon ${isActive ? 'bg-secondary' : ''}`}>
+                  <Link to={item.href} className="h-full w-full">
+                    <item.icon className="size-4" />
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
+        </nav>
+        <div className="flex gap-x-5">
           <ToggleTheme />
           <LanguageSwitcher />
-        </nav>
+        </div>
       </div>
     </header>
   );

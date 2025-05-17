@@ -12,8 +12,8 @@ export function ToggleTheme() {
   }
 
   return (
-    <button onClick={handleTheme} className="btn-outline">
-      {theme === 'light' ? <MoonIcon /> : <SunIcon />}
+    <button onClick={handleTheme}>
+      {theme === 'light' ? <MoonIcon className="size-4" /> : <SunIcon className="size-4" />}
     </button>
   );
 }
