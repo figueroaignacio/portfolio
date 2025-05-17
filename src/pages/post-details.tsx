@@ -9,7 +9,7 @@ import { Markdown } from '@/components/markdown';
 import { posts } from '@content';
 
 // Styles
-import '@/styles/mdx.css';
+import '@/styles/markdown.css';
 
 // Icons
 import { CalendarIcon } from '@radix-ui/react-icons';
