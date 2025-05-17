@@ -223,9 +223,8 @@
 
 .post-tag {
   background-color: var(--color-secondary);
-  color: var(--color-secondary-foreground);
   padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
+  border-radius: var(--radius-md);
   font-size: 0.75rem;
   font-weight: 500;
   transition: all 0.2s ease;

@@ -4,27 +4,37 @@ import { useTranslation } from 'react-i18next';
 // Content
 import { posts } from '@content';
 
+// Components
+import { PostCard } from '@/components/post-card';
+
+// Utils
+import { formatDate } from '@/lib/utils';
+
 // Types
 import { type Locale } from '@/types';
-import { Link } from 'react-router';
 
 export function BlogPage() {
-  const { i18n } = useTranslation();
-  const lang = (i18n.language as Locale) || 'en';
+  const { t, i18n } = useTranslation('pages');
+  const locale = (i18n.language as Locale) || 'en';
 
-  const filteredPosts = posts.filter((post) => post.locale === lang);
+  const filteredPosts = posts.filter((post) => post.locale === locale);
 
   if (filteredPosts.length === 0) {
     return <p>No hay posts para el idioma actual</p>;
   }
 
   return (
-    <section>
+    <section className="space-y-6">
+      <h1 className="text-xl font-extrabold">{t('blog.title')}</h1>
       {filteredPosts.map((item) => (
-        <div key={item.slug}>
-          <h1>{item.title}</h1>
-          <Link to={`/${item.slug}`}>Leer</Link>
-        </div>
+        <PostCard
+          key={item.slug}
+          title={item.title}
+          description={item.description}
+          slug={item.slug}
+          date={formatDate(item.date, locale)}
+          tags={item.tags}
+        />
       ))}
     </section>
   );

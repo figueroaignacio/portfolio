@@ -99,11 +99,19 @@
 
 @layer components {
   .btn {
-    @apply bg-primary cursor-pointer rounded-md px-4 py-2 text-sm text-white;
+    @apply bg-primary cursor-pointer rounded-xl px-4 py-2 text-center text-sm text-white;
   }
 
   .btn-outline {
-    @apply border-border hover:bg-secondary rounded-xl border bg-transparent px-4 py-2 text-sm transition-colors duration-75 hover:border-transparent;
+    @apply border-border hover:bg-secondary rounded-xl border bg-transparent px-4 py-2 text-center text-sm transition-colors duration-75 hover:border-transparent;
+  }
+
+  .badge {
+    @apply bg-secondary rounded-md px-3 py-1 text-xs;
+  }
+
+  .card {
+    @apply border-border bg-card space-y-5 rounded-xl border p-5;
   }
 }
 

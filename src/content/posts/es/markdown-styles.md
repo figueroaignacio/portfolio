@@ -1,5 +1,5 @@
 ---
-title: Post de Ejemplo con Todos los Estilos
+title: Mis estilos en Markdown
 description: Este post demuestra todos los estilos disponibles para contenido Markdown usando mis propios estilos css. A continuación, verás ejemplos de cada tipo de elemento y cómo se visualiza con los estilos que he definido.
 published: true
 locale: es

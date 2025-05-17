@@ -1,5 +1,5 @@
 ---
-title: Example Post with All Styles
+title: My Markdown styles
 description: This post demonstrates all the available styles for Markdown content using my own CSS styles. Below, you'll see examples of each type of element and how it looks with the styles I've defined.
 published: true
 locale: en
