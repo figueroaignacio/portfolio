@@ -8,6 +8,10 @@
       "aboutMe": "About me"
     }
   },
+  "latestPosts": {
+    "title": "Latest Posts",
+    "cta": "All posts"
+  },
   "about": {
     "title": "About",
     "intro": "I'm Ignacio Figueroa, a web developer focused on fullstack development with a strong passion for continuous learning.",

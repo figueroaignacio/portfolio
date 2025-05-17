@@ -1,1 +1,7 @@
-{}
+{
+  "postCard": {
+    "actions": {
+      "readMore": "Leer más"
+    }
+  }
+}

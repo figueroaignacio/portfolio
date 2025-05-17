@@ -8,6 +8,10 @@
       "aboutMe": "Acerca de mí"
     }
   },
+  "latestPosts": {
+    "title": "Publicaciones Recientes",
+    "cta": "Todas las publicaciones"
+  },
   "about": {
     "title": "Sobre mí",
     "intro": "Soy Ignacio Figueroa, desarrollador web con enfoque fullstack y una fuerte pasión por el aprendizaje continuo.",
