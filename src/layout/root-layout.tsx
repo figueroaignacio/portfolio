@@ -5,9 +5,9 @@ import { Outlet } from 'react-router';
 
 export function RootLayout() {
   return (
-    <div className="root-layout-grid gap-y-12">
+    <div className="flex min-h-dvh flex-col gap-y-12">
       <Header />
-      <main className="container">
+      <main className="container flex-1">
         <Outlet />
       </main>
       <Footer />

@@ -45,7 +45,7 @@ export function Header() {
   // }
 
   return (
-    <header className="border-border bg-background border-b py-4">
+    <header className="border-border sticky top-0 border-b py-4 backdrop-blur-md">
       <div className="container flex items-center justify-between">
         <Link
           to="/"
