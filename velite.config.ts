@@ -23,6 +23,8 @@ export const posts = defineCollection({
       published: s.boolean().default(false),
       body: s.markdown(),
       locale: s.enum(['es', 'en']),
+      date: s.isodate(),
+      tags: s.array(s.string()),
     })
     .transform(computedFields),
 });
