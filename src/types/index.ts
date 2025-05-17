@@ -1,4 +1,1 @@
-export type Navigation = {
-  label: string;
-  href: string;
-};
+export type Locale = 'en' | 'es';
