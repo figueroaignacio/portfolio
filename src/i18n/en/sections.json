@@ -4,7 +4,8 @@
     "subtitle": "Fullstack Developer",
     "description": "Focused on building clean, accessible, and high-performance web experiences. Attention to code quality, architecture, and the details that shape great user experiences.",
     "cta": {
-      "readMyBlog": "Read my Blog"
+      "readMyBlog": "Read my Blog",
+      "aboutMe": "About me"
     }
   },
   "about": {
