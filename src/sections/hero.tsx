@@ -10,13 +10,13 @@ export function Hero() {
 
   const actions = [
     {
-      label: t('her.cta.readMyBlog'),
+      label: t('hero.cta.readMyBlog'),
       href: '/blog',
       icon: ChatBubbleIcon,
       variant: 'btn',
     },
     {
-      label: t('her.cta.aboutMe'),
+      label: t('hero.cta.aboutMe'),
       href: '/about',
       icon: PersonIcon,
       variant: 'btn-outline',
