@@ -103,11 +103,7 @@
   }
 
   .btn-outline {
-    @apply border-border rounded-md border bg-transparent px-3 py-2;
-  }
-
-  .btn-icon {
-    @apply hover:bg-secondary rounded-md p-2;
+    @apply border-border hover:bg-muted rounded-md border bg-transparent px-3 py-2;
   }
 }
 

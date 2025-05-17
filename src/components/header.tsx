@@ -49,19 +49,25 @@ export function Header() {
   return (
     <header className="border-border bg-background border-b py-4">
       <div className="container flex items-center justify-between">
-        <Link to="/" className={`btn-icon ${currentPath === '/' ? 'bg-secondary' : ''}`}>
-          <HomeIcon className="size-4" />
+        <Link
+          to="/"
+          className={`btn-icon ${currentPath === '/' ? 'text-foreground border-border' : 'text-muted-foreground'}`}
+        >
+          <HomeIcon className="size-5" />
         </Link>
         <nav>
-          <ul className="flex gap-x-5">
+          <ul className="flex gap-x-7">
             {navigation.map((item, index) => {
               const isActive = currentPath === item.href;
               console.log('currentPath:', currentPath, 'item:', item.href);
 
               return (
-                <li key={index} className={`btn-icon ${isActive ? 'bg-secondary' : ''}`}>
-                  <Link to={item.href} className="h-full w-full">
-                    <item.icon className="size-4" />
+                <li key={index}>
+                  <Link
+                    to={item.href}
+                    className={`btn-icon ${isActive ? 'border-border text-foreground' : 'text-muted-foreground'}`}
+                  >
+                    <item.icon className="hover:text-foreground size-5" />
                   </Link>
                 </li>
               );
