@@ -15,12 +15,12 @@ export function PostCard({ title, description, date, tags, slug }: PostCardProps
   const { t } = useTranslation('ui');
 
   return (
-    <div className="card">
-      <div className="flex flex-wrap-reverse items-center justify-between gap-y-3">
+    <article className="card">
+      <header className="flex flex-wrap-reverse items-center justify-between gap-y-3">
         <p className="text-muted-foreground line-clamp-2 text-sm">{description}</p>
         <h2 className="text-xl font-bold">{title}</h2>
         <span className="text-xs">{date}</span>
-      </div>
+      </header>
       <ul className="flex flex-wrap gap-1">
         {tags?.map((tag, index) => (
           <li key={index}>
@@ -28,12 +28,12 @@ export function PostCard({ title, description, date, tags, slug }: PostCardProps
           </li>
         ))}
       </ul>
-      <div className="flex">
+      <footer className="flex">
         <Link to={`${slug}`} className="btn flex w-full items-center justify-center gap-x-3">
           <span>{t('postCard.actions.readMore')}</span>
           <ArrowRightIcon className="size-4" />
         </Link>
-      </div>
-    </div>
+      </footer>
+    </article>
   );
 }
