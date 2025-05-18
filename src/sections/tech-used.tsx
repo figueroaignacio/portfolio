@@ -6,27 +6,27 @@ export function TechUsed() {
   const tech = [
     {
       title: 'React',
-      href: '/static/icons.svg#react',
+      href: '/icons.svg#react',
     },
     {
       title: 'Vite',
-      href: '/static/icons.svg#vite',
+      href: '/icons.svg#vite',
     },
     {
       title: 'TypeScript',
-      href: '/static/icons.svg#typescript',
+      href: '/icons.svg#typescript',
     },
     {
       title: 'Tailwind',
-      href: '/static/icons.svg#tailwindcss',
+      href: '/icons.svg#tailwindcss',
     },
     {
       title: 'Velite',
-      href: '/static/icons.svg#velite',
+      href: '/icons.svg#velite',
     },
     {
       title: 'Markdown',
-      href: '/static/icons.svg#markdown',
+      href: '/icons.svg#markdown',
     },
   ];
 
