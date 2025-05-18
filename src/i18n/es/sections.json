@@ -12,6 +12,9 @@
     "title": "Publicaciones Recientes",
     "cta": "Todas las publicaciones"
   },
+  "techUsed": {
+    "title": "Sitio construido con"
+  },
   "about": {
     "title": "Sobre mí",
     "intro": "Soy Ignacio Figueroa, desarrollador web con enfoque fullstack y una fuerte pasión por el aprendizaje continuo.",

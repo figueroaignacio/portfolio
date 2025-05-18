@@ -1,6 +1,7 @@
 import { Contact } from '@/sections/contact';
 import { Hero } from '@/sections/hero';
 import { LatestPosts } from '@/sections/latest-posts';
+import { TechUsed } from '@/sections/tech-used';
 
 export function HomePage() {
   return (
@@ -8,6 +9,7 @@ export function HomePage() {
       <Hero />
       <LatestPosts />
       <Contact />
+      <TechUsed />
     </div>
   );
 }
