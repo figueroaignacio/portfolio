@@ -24,7 +24,7 @@
   --primary: #3b82f6;
   --primary-foreground: #f8fafc;
   --secondary: #dbeafe;
-  --secondary-foreground: #1e40af;
+  --secondary-foreground: #1e40af84;
   --muted: #f1f5f9;
   --muted-foreground: #64748b;
   --accent: #f1f5f9;
@@ -99,11 +99,15 @@
 
 @layer components {
   .btn {
-    @apply bg-primary cursor-pointer rounded-xl px-4 py-2 text-center text-sm text-white;
+    @apply bg-primary cursor-pointer rounded-xl px-4 py-2 text-center text-sm text-white transition duration-150 ease-in-out hover:scale-[1.02] hover:shadow hover:brightness-110 active:scale-95;
+  }
+
+  .btn-flat {
+    @apply bg-secondary text-foreground cursor-pointer rounded-xl px-4 py-2 text-center text-sm transition duration-150 ease-in-out hover:scale-[1.02] active:scale-95;
   }
 
   .btn-outline {
-    @apply border-border hover:bg-secondary rounded-xl border bg-transparent px-4 py-2 text-center text-sm transition-colors duration-75 hover:border-transparent;
+    @apply border-border hover:bg-secondary rounded-xl border bg-transparent px-4 py-2 text-center text-sm transition duration-150 ease-in-out hover:scale-[1.02] hover:border-transparent active:scale-95;
   }
 
   .badge {

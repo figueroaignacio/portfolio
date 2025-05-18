@@ -30,7 +30,7 @@ export function Hero() {
         <h2>{t('hero.subtitle')}</h2>
       </div>
       <p className="text-muted-foreground max-w-xl">{t('hero.description')}</p>
-      <div className="flex gap-x-1">
+      <div className="flex gap-x-4">
         {actions.map((action) => (
           <Link
             to={action.href}
