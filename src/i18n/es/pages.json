@@ -1,5 +1,11 @@
 {
   "blog": {
     "title": "Blog de Ignacio"
+  },
+  "about": {
+    "title": "Sobre mi"
+  },
+  "projects": {
+    "title": "Proyectos"
   }
 }

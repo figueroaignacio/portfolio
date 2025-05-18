@@ -1,0 +1,23 @@
+{
+  "homeMetadata": {
+    "title": "Ignacio Figueroa | Desarrollador Fullstack",
+    "description": "Diseño y desarrollo de soluciones digitales enfocadas en rendimiento, escalabilidad y una experiencia de usuario clara.",
+    "keywords": "desarrollador fullstack, programación web, soluciones digitales, diseño y desarrollo, Ignacio, desarrollador web, software profesional, frontend y backend, experiencia de usuario, proyectos digitales"
+  },
+  "blogMetadata": {
+    "title": "Blog | Ignacio Figueroa",
+    "description": "Artículos, tutoriales y guías sobre desarrollo web, buenas prácticas y tendencias para desarrolladores fullstack.",
+    "keywords": "blog desarrollo web, tutoriales programación, guías fullstack, desarrollo frontend, backend, mejores prácticas, Ignacio, programación profesional, artículos web, desarrollo moderno"
+  },
+
+  "aboutMetadata": {
+    "title": "Sobre mí | Ignacio Figueroa",
+    "description": "¡Hola! Soy Ignacio, desarrollador fullstack que ama programar y resolver problemas. Siempre aprendiendo y creando cosas copadas.",
+    "keywords": "desarrollador fullstack, programación, resolución de problemas, aprendizaje, software, Ignacio, desarrollador"
+  },
+  "projectsMetadata": {
+    "title": "Proyectos | Ignacio Figueroa",
+    "description": "Una colección de proyectos indie, experimentos y aplicaciones que armé con pasión y ganas de crear cosas que funcionen.",
+    "keywords": "proyectos indie, experimentos, aplicaciones, desarrollo web, Ignacio, cosas copadas, proyectos personales, creatividad, fullstack"
+  }
+}

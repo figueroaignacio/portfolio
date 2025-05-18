@@ -6,6 +6,7 @@ import { posts } from '@content';
 
 // Components
 import { PostCard } from '@/components/post-card';
+import { Seo } from '@/components/seo';
 
 // Utils
 import { formatDate } from '@/lib/utils';
@@ -14,7 +15,7 @@ import { formatDate } from '@/lib/utils';
 import { type Locale } from '@/types';
 
 export function BlogPage() {
-  const { t, i18n } = useTranslation('pages');
+  const { t, i18n } = useTranslation(['pages', 'siteConfig']);
   const locale = (i18n.language as Locale) || 'en';
 
   const filteredPosts = posts.filter((post) => post.locale === locale);
@@ -25,6 +26,11 @@ export function BlogPage() {
 
   return (
     <section className="space-y-6">
+      <Seo
+        title={t('blogMetadata.title', { ns: 'siteConfig' })}
+        description={t('blogMetadata.description', { ns: 'siteConfig' })}
+        keywords={t('blogMetadata.keywords', { ns: 'siteConfig' })}
+      />
       <h1 className="text-xl font-extrabold">{t('blog.title')}</h1>
       {filteredPosts.map((item) => (
         <PostCard

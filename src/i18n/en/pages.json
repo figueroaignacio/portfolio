@@ -1,5 +1,11 @@
 {
   "blog": {
     "title": "Ignacio's Blog"
+  },
+  "about": {
+    "title": "About me"
+  },
+  "projects": {
+    "title": "Projects"
   }
 }
