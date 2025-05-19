@@ -20,7 +20,7 @@ technologies:
     'clsx',
     'next-intl',
   ]
-category: Proyecto Principal
+category: Proyectos Principales
 ---
 
 # Características

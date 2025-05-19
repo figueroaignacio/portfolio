@@ -1,11 +1,14 @@
 {
   "blog": {
-    "title": "Blog de Ignacio"
+    "title": "Blog de Ignacio",
+    "description": "Explorá artículos, guías y reflexiones sobre desarrollo web, programación y experiencias personales en el mundo tech."
   },
   "about": {
-    "title": "Sobre mi"
+    "title": "Sobre mí",
+    "description": "Conocé quién soy, mi trayectoria como desarrollador, mis intereses y lo que me motiva a seguir aprendiendo y compartiendo."
   },
   "projects": {
-    "title": "Proyectos"
+    "title": "Todos los Proyectos",
+    "description": "Una colección de proyectos en los que trabajé, desde desarrollos personales hasta colaboraciones profesionales, con sus tecnologías y enfoques."
   }
 }

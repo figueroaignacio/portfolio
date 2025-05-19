@@ -1,11 +1,14 @@
 {
   "blog": {
-    "title": "Ignacio's Blog"
+    "title": "Ignacio's Blog",
+    "description": "Discover articles, guides, and thoughts on web development, programming, and personal experiences in tech."
   },
   "about": {
-    "title": "About me"
+    "title": "About me",
+    "description": "Learn more about who I am, my journey as a developer, my interests, and what drives me to keep learning and sharing."
   },
   "projects": {
-    "title": "Projects"
+    "title": "All Projects",
+    "description": "A collection of projects I've worked on — from personal experiments to professional collaborations, with their tech stacks and approaches."
   }
 }

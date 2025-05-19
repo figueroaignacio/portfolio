@@ -20,7 +20,7 @@ technologies:
     'clsx',
     'next-intl',
   ]
-category: Main Project
+category: Main Projects
 ---
 
 # Features

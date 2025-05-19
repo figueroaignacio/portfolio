@@ -7,7 +7,7 @@ site: https://nacho-apuntes.vercel.app
 locale: es
 technologies:
   ['Astro', 'Astro content collections', 'TypeScript', 'CSS Modules', 'Rehype', 'Markdown', 'MDX']
-category: Proyecto Personal
+category: Proyectos Personales
 ---
 
 # Features
