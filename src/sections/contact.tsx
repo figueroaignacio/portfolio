@@ -36,7 +36,7 @@ export function Contact() {
       </div>
       <div className="flex flex-col gap-y-4">
         {contacts.map((contact) => (
-          <div className="space-y-3">
+          <div className="space-y-3" key={contact.href}>
             <div className="flex items-center gap-x-3">
               <contact.icon className="size-5" />
               <h3>{contact.title}</h3>

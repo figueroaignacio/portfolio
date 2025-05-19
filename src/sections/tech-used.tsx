@@ -35,8 +35,8 @@ export function TechUsed() {
       <h2 className="font-extrabold">{t('techUsed.title')}</h2>
       <div className="flex flex-wrap gap-x-1 gap-y-2">
         {tech.map((item, index) => (
-          <div className="border-border bg-card flex gap-1 rounded-xl border px-4 py-1">
-            <svg key={index} width={20} height={20}>
+          <div className="border-border bg-card flex gap-1 rounded-xl border px-4 py-1" key={index}>
+            <svg width={20} height={20}>
               <use xlinkHref={item.href} />
             </svg>
             <span className="text-sm">{item.title}</span>
