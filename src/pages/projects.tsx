@@ -1,3 +1,4 @@
+// Hooks
 import { useTranslation } from 'react-i18next';
 
 // Content
