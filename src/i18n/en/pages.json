@@ -10,5 +10,10 @@
   "projects": {
     "title": "All Projects",
     "description": "A collection of projects I've worked on — from personal experiments to professional collaborations, with their tech stacks and approaches."
+  },
+  "notFound": {
+    "title": "404 - Page Not Found",
+    "description": "Oops... this page doesn't exist or was removed. Try going back to the homepage.",
+    "goHome": "Back to Home"
   }
 }

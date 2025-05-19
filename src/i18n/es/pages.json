@@ -10,5 +10,10 @@
   "projects": {
     "title": "Todos los Proyectos",
     "description": "Una colección de proyectos en los que trabajé, desde desarrollos personales hasta colaboraciones profesionales, con sus tecnologías y enfoques."
+  },
+  "notFound": {
+    "title": "404 - Página no encontrada",
+    "description": "Uy... parece que esta página no existe o fué eliminada. Probá volver al inicio.",
+    "goHome": "Volver al inicio"
   }
 }

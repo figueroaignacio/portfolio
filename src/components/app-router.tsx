@@ -8,6 +8,7 @@ import { RootLayout } from '@/layout/root-layout';
 import { AboutPage } from '@/pages/about';
 import { BlogPage } from '@/pages/blog';
 import { HomePage } from '@/pages/home';
+import { NotFoundPage } from '@/pages/not-found';
 import { PostDetailsPage } from '@/pages/post-details';
 import { ProjectsPage } from '@/pages/projects';
 
@@ -20,6 +21,7 @@ export function AppRouter() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/posts/:slug" element={<PostDetailsPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/*" element={<NotFoundPage />} />
       </Route>
     </Routes>
   );
