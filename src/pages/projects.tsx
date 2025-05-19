@@ -9,7 +9,7 @@ import { ProjectCard } from '@/components/project-card';
 import { Seo } from '@/components/seo';
 
 // Utils
-import { filterByLocale } from '@/lib/utils'; // o donde tengas la función
+import { filterByLocale } from '@/lib/utils';
 
 // Types
 import type { Locale } from '@/types';
