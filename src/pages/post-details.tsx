@@ -5,17 +5,11 @@ import { useParams } from 'react-router';
 // Components
 import { Markdown } from '@/components/markdown';
 import { Metadata } from '@/components/metadata';
+import { PostPageHeader } from '@/components/post-page-header';
 import { Separator } from '@/components/separator';
-import { CalendarIcon } from '@radix-ui/react-icons';
 
 // Content
 import { posts } from '@content';
-
-// Styles
-import '@/styles/markdown.css';
-
-// Utils
-import { formatDate } from '@/lib/utils';
 
 export function PostDetailsPage() {
   const { slug } = useParams();
@@ -27,37 +21,20 @@ export function PostDetailsPage() {
   const post = posts.find((post) => post.slugAsParams === slug && post.locale === locale);
   if (!post) return <p>Post no encontrado</p>;
 
-  const formattedDate = post.date ? formatDate(post.date, locale) : null;
   const keywords = post.tags ? post.tags.join(', ') : '';
 
   return (
     <section>
       <Metadata title={post.title} description={post.description} keywords={keywords} />
-      <header className="mb-8">
-        <h1 className="mb-4 text-3xl font-extrabold lg:text-4xl">{post.title}</h1>
-        <p className="text-muted-foreground mb-6 text-lg">{post.description}</p>
-        <div className="post-meta">
-          {formattedDate && (
-            <div className="post-date">
-              <CalendarIcon className="size-5" />
-              {formattedDate}
-            </div>
-          )}
-        </div>
-        {post.tags && post.tags.length > 0 && (
-          <div className="post-tags">
-            {post.tags.map((tag) => (
-              <span key={tag} className="post-tag">
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
-      </header>
+      <PostPageHeader
+        title={post.title}
+        description={post.description}
+        date={post.date}
+        tags={post.tags}
+        locale={locale}
+      />
       <Separator />
-      <article className="prose">
-        <Markdown code={post.body} />
-      </article>
+      <Markdown code={post.body} />
     </section>
   );
 }
