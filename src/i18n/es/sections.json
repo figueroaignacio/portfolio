@@ -16,7 +16,7 @@
     "title": "Sitio construido con"
   },
   "about": {
-    "title": "Sobre mí",
+    "greeting": "Hola 👋🏽, como estás?",
     "intro": "Soy Ignacio Figueroa, desarrollador web con enfoque fullstack y una fuerte pasión por el aprendizaje continuo.",
     "journey": "Descubrí la programación en 2022, poco antes de terminar la secundaria. Desde entonces, me sumergí en el desarrollo web moderno, aprendiendo de forma autodidacta sobre tecnologías, buenas prácticas y diseño de interfaces.",
     "education": "Actualmente estudio la Tecnicatura en Programación en la UTN, combinando educación formal con mi camino autodidacta para fortalecer mis bases y seguir creciendo profesionalmente.",

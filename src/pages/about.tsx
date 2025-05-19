@@ -5,6 +5,9 @@ import { useTranslation } from 'react-i18next';
 import { Metadata } from '@/components/metadata';
 import { PageHeader } from '@/components/page-header';
 
+// Sections
+import { Intro } from '@/sections/intro';
+
 export function AboutPage() {
   const { t } = useTranslation(['pages', 'siteConfig']);
 
@@ -16,6 +19,7 @@ export function AboutPage() {
         keywords={t('aboutMetadata.keywords', { ns: 'siteConfig' })}
       />
       <PageHeader title={t('about.title')} description={t('about.description')} />
+      <Intro />
     </section>
   );
 }
