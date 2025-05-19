@@ -42,6 +42,8 @@ export const projects = defineCollection({
       source: s.string(),
       site: s.string(),
       locale: s.enum(['es', 'en']),
+      technologies: s.array(s.string()),
+      category: s.string(),
     })
     .transform(computedFields),
 });

@@ -3,5 +3,11 @@
     "actions": {
       "readMore": "Read More"
     }
+  },
+  "projectCard": {
+    "actions": {
+      "details": "View Details",
+      "site": "Visit Site"
+    }
   }
 }
