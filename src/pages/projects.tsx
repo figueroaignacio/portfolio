@@ -5,8 +5,8 @@ import { useTranslation } from 'react-i18next';
 import { projects } from '@content';
 
 // Components
+import { Metadata } from '@/components/metadata';
 import { ProjectCard } from '@/components/project-card';
-import { Seo } from '@/components/seo';
 
 // Utils
 import { filterByLocale } from '@/lib/utils';
@@ -37,7 +37,7 @@ export function ProjectsPage() {
 
   return (
     <section className="space-y-10">
-      <Seo
+      <Metadata
         title={t('projectsMetadata.title', { ns: 'siteConfig' })}
         description={t('projectsMetadata.description', { ns: 'siteConfig' })}
         keywords={t('projectsMetadata.keywords', { ns: 'siteConfig' })}

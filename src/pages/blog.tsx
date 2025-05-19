@@ -5,8 +5,8 @@ import { useTranslation } from 'react-i18next';
 import { posts } from '@content';
 
 // Components
+import { Metadata } from '@/components/metadata';
 import { PostCard } from '@/components/post-card';
-import { Seo } from '@/components/seo';
 
 // Utils
 import { filterByLocale, formatDate } from '@/lib/utils';
@@ -26,7 +26,7 @@ export function BlogPage() {
 
   return (
     <section className="space-y-6">
-      <Seo
+      <Metadata
         title={t('blogMetadata.title', { ns: 'siteConfig' })}
         description={t('blogMetadata.description', { ns: 'siteConfig' })}
         keywords={t('blogMetadata.keywords', { ns: 'siteConfig' })}

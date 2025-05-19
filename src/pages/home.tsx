@@ -9,14 +9,14 @@ import { LatestProjects } from '@/sections/latest-projects';
 import { TechUsed } from '@/sections/tech-used';
 
 // Components
-import { Seo } from '@/components/seo';
+import { Metadata } from '@/components/metadata';
 
 export function HomePage() {
   const { t } = useTranslation('siteConfig');
 
   return (
     <>
-      <Seo
+      <Metadata
         title={t('homeMetadata.title')}
         description={t('homeMetadata.description')}
         keywords={t('homeMetadata.keywords')}

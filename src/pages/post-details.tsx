@@ -4,7 +4,7 @@ import { useParams } from 'react-router';
 
 // Components
 import { Markdown } from '@/components/markdown';
-import { Seo } from '@/components/seo';
+import { Metadata } from '@/components/metadata';
 import { Separator } from '@/components/separator';
 import { CalendarIcon } from '@radix-ui/react-icons';
 
@@ -32,7 +32,7 @@ export function PostDetailsPage() {
 
   return (
     <section>
-      <Seo title={post.title} description={post.description} keywords={keywords} />
+      <Metadata title={post.title} description={post.description} keywords={keywords} />
       <header className="mb-8">
         <h1 className="mb-4 text-3xl font-extrabold lg:text-4xl">{post.title}</h1>
         <p className="text-muted-foreground mb-6 text-lg">{post.description}</p>

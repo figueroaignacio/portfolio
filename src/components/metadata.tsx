@@ -1,4 +1,4 @@
-interface SeoProps {
+interface MetadataProps {
   title: string;
   description: string;
   keywords: string;
@@ -6,7 +6,7 @@ interface SeoProps {
   image?: string;
 }
 
-export function Seo({ description, keywords, title, image, url }: SeoProps) {
+export function Metadata({ description, keywords, title, image, url }: MetadataProps) {
   return (
     <>
       <title>{title}</title>

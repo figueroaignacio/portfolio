@@ -2,14 +2,14 @@
 import { useTranslation } from 'react-i18next';
 
 // Components
-import { Seo } from '@/components/seo';
+import { Metadata } from '@/components/metadata';
 
 export function AboutPage() {
   const { t } = useTranslation(['pages', 'siteConfig']);
 
   return (
     <div>
-      <Seo
+      <Metadata
         title={t('aboutMetadata.title', { ns: 'siteConfig' })}
         description={t('aboutMetadata.description', { ns: 'siteConfig' })}
         keywords={t('aboutMetadata.keywords', { ns: 'siteConfig' })}
