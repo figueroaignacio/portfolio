@@ -9,7 +9,7 @@ import { PostCard } from '@/components/post-card';
 import { Seo } from '@/components/seo';
 
 // Utils
-import { formatDate } from '@/lib/utils';
+import { filterByLocale, formatDate } from '@/lib/utils';
 
 // Types
 import { type Locale } from '@/types';
@@ -18,11 +18,11 @@ export function BlogPage() {
   const { t, i18n } = useTranslation(['pages', 'siteConfig']);
   const locale = (i18n.language as Locale) || 'en';
 
-  const filteredPosts = posts.filter((post) => post.locale === locale);
+  const filteredPosts = filterByLocale(posts, locale);
 
-  if (filteredPosts.length === 0) {
-    return <p>No hay posts para el idioma actual</p>;
-  }
+  // if (filteredPosts.length === 0) {
+  //   return <p>{t('blog.noPosts')}</p>;
+  // }
 
   return (
     <section className="space-y-6">
