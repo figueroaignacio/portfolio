@@ -6,6 +6,7 @@ import { posts } from '@content';
 
 // Components
 import { Metadata } from '@/components/metadata';
+import { PageHeader } from '@/components/page-header';
 import { PostCard } from '@/components/post-card';
 
 // Utils
@@ -31,7 +32,7 @@ export function BlogPage() {
         description={t('blogMetadata.description', { ns: 'siteConfig' })}
         keywords={t('blogMetadata.keywords', { ns: 'siteConfig' })}
       />
-      <h1 className="text-xl font-extrabold">{t('blog.title')}</h1>
+      <PageHeader title={t('blog.title')} description={t('blog.description')} />
       {filteredPosts.map((item) => (
         <PostCard
           key={item.slug}

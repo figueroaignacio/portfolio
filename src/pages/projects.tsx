@@ -6,6 +6,7 @@ import { projects } from '@content';
 
 // Components
 import { Metadata } from '@/components/metadata';
+import { PageHeader } from '@/components/page-header';
 import { ProjectCard } from '@/components/project-card';
 
 // Utils
@@ -36,14 +37,13 @@ export function ProjectsPage() {
   // }
 
   return (
-    <section className="space-y-10">
+    <section className="space-y-6">
       <Metadata
         title={t('projectsMetadata.title', { ns: 'siteConfig' })}
         description={t('projectsMetadata.description', { ns: 'siteConfig' })}
         keywords={t('projectsMetadata.keywords', { ns: 'siteConfig' })}
       />
-      <h1 className="text-xl font-extrabold">{t('projects.title')}</h1>
-
+      <PageHeader title={t('projects.title')} description={t('projects.description')} />
       {Object.entries(projectsByCategory).map(([category, projects]) => (
         <div key={category} className="space-y-4">
           <h2 className="text-lg font-bold">{category}</h2>
