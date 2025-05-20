@@ -1,5 +1,3 @@
-import '@/styles/markdown.css';
-
 interface MarkdownProps {
   code: string;
 }

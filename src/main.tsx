@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client';
 
 // CSS
 import '@/styles/index.css';
+import '@/styles/markdown.css';
 
 // Components
 import App from './App.tsx';
