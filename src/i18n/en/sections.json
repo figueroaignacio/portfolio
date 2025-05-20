@@ -25,5 +25,28 @@
   "contact": {
     "title": "Let's connect",
     "description": "Reach out to me via email or on social media"
+  },
+  "footer": {
+    "navigation": {
+      "title": "Navigation",
+      "items": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Projects",
+          "href": "/projects"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog"
+        },
+        {
+          "label": "About",
+          "href": "/about"
+        }
+      ]
+    }
   }
 }

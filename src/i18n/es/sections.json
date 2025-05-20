@@ -25,5 +25,28 @@
   "contact": {
     "title": "Conectemos",
     "description": "Contactame por email o en redes sociales"
+  },
+  "footer": {
+    "navigation": {
+      "title": "Navegación",
+      "items": [
+        {
+          "label": "Inicio",
+          "href": "/"
+        },
+        {
+          "label": "Projectos",
+          "href": "/projects"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog"
+        },
+        {
+          "label": "Acerca de",
+          "href": "/about"
+        }
+      ]
+    }
   }
 }

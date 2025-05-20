@@ -6,7 +6,6 @@ import { Contact } from '@/sections/contact';
 import { Hero } from '@/sections/hero';
 import { LatestPosts } from '@/sections/latest-posts';
 import { LatestProjects } from '@/sections/latest-projects';
-import { TechUsed } from '@/sections/tech-used';
 
 // Components
 import { Metadata } from '@/components/metadata';
@@ -26,7 +25,6 @@ export function HomePage() {
         <LatestPosts />
         <LatestProjects />
         <Contact />
-        <TechUsed />
       </div>
     </>
   );
