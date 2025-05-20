@@ -6,7 +6,6 @@ import { useParams } from 'react-router';
 import { Markdown } from '@/components/markdown';
 import { Metadata } from '@/components/metadata';
 import { PostPageHeader } from '@/components/post-page-header';
-import { Separator } from '@/components/separator';
 
 // Content
 import { posts } from '@content';
@@ -33,7 +32,6 @@ export function PostDetailsPage() {
         tags={post.tags}
         locale={locale}
       />
-      <Separator />
       <Markdown code={post.body} />
     </section>
   );
