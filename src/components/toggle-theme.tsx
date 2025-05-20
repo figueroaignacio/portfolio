@@ -12,8 +12,10 @@ export function ToggleTheme() {
   }
 
   return (
-    <button onClick={handleTheme}>
-      {theme === 'light' ? <MoonIcon className="size-4" /> : <SunIcon className="size-4" />}
-    </button>
+    <>
+      <button onClick={handleTheme} className="border-border border-r pr-4">
+        {theme === 'light' ? <MoonIcon className="size-4" /> : <SunIcon className="size-4" />}
+      </button>
+    </>
   );
 }
