@@ -27,7 +27,11 @@ export function Footer() {
           <h2 className="font-semibold">{t('footer.navigation.title')}</h2>
           <div className="text-muted-foreground mt-2 flex flex-col gap-y-2">
             {navigation.map((item) => (
-              <Link to={item.href} className="hover:text-primary w-fit hover:underline">
+              <Link
+                to={item.href}
+                key={item.href}
+                className="hover:text-primary w-fit hover:underline"
+              >
                 {item.label}
               </Link>
             ))}
