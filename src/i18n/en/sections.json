@@ -48,5 +48,65 @@
         }
       ]
     }
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "title": "University Technical Degree in Programming",
+        "description": "Career focused on software development, covering data structures, algorithms, databases, operating systems, and modern programming tools.",
+        "place": "UTN (National Technological University)",
+        "date": "Mar 2025 - Present",
+        "tags": [
+          "Software Development",
+          "Programming",
+          "Programming Logic",
+          "Algorithms",
+          "Operating Systems",
+          "Databases",
+          "Python",
+          "Work Methodologies",
+          "Collaboration",
+          "Business Context",
+          "Organization",
+          "Technical English"
+        ]
+      },
+      {
+        "title": "Independent Training",
+        "description": "Self-taught education in web technologies, focused on building frontend and backend applications through online resources, official documentation, and personal projects.",
+        "place": "Self-Learning",
+        "date": "2022 - Present",
+        "tags": [
+          "Self-Taught",
+          "Web Development",
+          "Frontend",
+          "Backend",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node.js",
+          "Git",
+          "REST APIs",
+          "Databases"
+        ]
+      },
+      {
+        "title": "High School Education",
+        "description": "High school diploma with a focus on Social Sciences and Research, developing critical analysis, academic writing, and office software skills.",
+        "place": "Secondary School No. 11",
+        "date": "2016 - 2022",
+        "tags": [
+          "Social Sciences",
+          "Research",
+          "Office Suite",
+          "Microsoft Word",
+          "Microsoft Excel",
+          "Google Docs",
+          "Written Communication"
+        ]
+      }
+    ]
   }
 }

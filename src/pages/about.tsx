@@ -6,6 +6,7 @@ import { Metadata } from '@/components/metadata';
 import { PageHeader } from '@/components/page-header';
 
 // Sections
+import { Education } from '@/sections/education';
 import { Intro } from '@/sections/intro';
 import { Skills } from '@/sections/skills';
 
@@ -21,6 +22,7 @@ export function AboutPage() {
       />
       <PageHeader title={t('about.title')} description={t('about.description')} />
       <Intro />
+      <Education />
       <Skills />
     </section>
   );

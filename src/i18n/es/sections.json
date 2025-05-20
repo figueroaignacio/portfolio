@@ -48,5 +48,65 @@
         }
       ]
     }
+  },
+  "education": {
+    "title": "Educación",
+    "items": [
+      {
+        "title": "Tecnicatura Universitaria en Programación",
+        "description": "Carrera orientada al desarrollo de software, abarcando estructuras de datos, algoritmos, bases de datos, sistemas operativos y herramientas de programación modernas.",
+        "place": "UTN (Universidad Tecnológica Nacional)",
+        "date": "Mar 2025 - Actualidad",
+        "tags": [
+          "Desarrollo de Software",
+          "Programación",
+          "Lógica de Programación",
+          "Algoritmos",
+          "Sistemas Operativos",
+          "Bases de Datos",
+          "Python",
+          "Metodologías de Trabajo",
+          "Colaboración",
+          "Empresas",
+          "Organización",
+          "Inglés Técnico"
+        ]
+      },
+      {
+        "title": "Capacitación independiente",
+        "description": "Formación autodidacta en tecnologías web, enfocada en el desarrollo de aplicaciones frontend y backend mediante recursos online, documentación oficial y proyectos personales.",
+        "place": "Autoformación",
+        "date": "2022 - Actualidad",
+        "tags": [
+          "Autoformación",
+          "Desarrollo Web",
+          "Frontend",
+          "Backend",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node.js",
+          "Git",
+          "APIs REST",
+          "Bases de Datos"
+        ]
+      },
+      {
+        "title": "Educación Secundaria",
+        "description": "Título de bachiller con orientación en Ciencias Sociales e Investigación, incorporando competencias en análisis crítico, redacción académica y herramientas informáticas de oficina.",
+        "place": "Escuela de Educación Secundaria N°11",
+        "date": "2016 - 2022",
+        "tags": [
+          "Ciencias Sociales",
+          "Investigación",
+          "Suite Ofimática",
+          "Microsoft Word",
+          "Microsoft Excel",
+          "Google Docs",
+          "Comunicación Escrita"
+        ]
+      }
+    ]
   }
 }
