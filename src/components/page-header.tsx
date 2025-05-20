@@ -1,5 +1,3 @@
-// Components
-
 interface PageHeaderProps {
   title: string;
   description: string;
