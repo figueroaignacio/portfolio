@@ -7,6 +7,7 @@ import { PageHeader } from '@/components/page-header';
 
 // Sections
 import { Intro } from '@/sections/intro';
+import { Skills } from '@/sections/skills';
 
 export function AboutPage() {
   const { t } = useTranslation(['pages', 'siteConfig']);
@@ -20,6 +21,7 @@ export function AboutPage() {
       />
       <PageHeader title={t('about.title')} description={t('about.description')} />
       <Intro />
+      <Skills />
     </section>
   );
 }
