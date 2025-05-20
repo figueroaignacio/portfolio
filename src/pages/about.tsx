@@ -10,6 +10,8 @@ import { Education } from '@/sections/education';
 import { Intro } from '@/sections/intro';
 import { Skills } from '@/sections/skills';
 
+const sections = [Intro, Education, Skills];
+
 export function AboutPage() {
   const { t } = useTranslation(['pages', 'siteConfig']);
 
@@ -21,9 +23,9 @@ export function AboutPage() {
         keywords={t('aboutMetadata.keywords', { ns: 'siteConfig' })}
       />
       <PageHeader title={t('about.title')} description={t('about.description')} />
-      <Intro />
-      <Education />
-      <Skills />
+      {sections.map((Section, index) => (
+        <Section key={index} />
+      ))}
     </section>
   );
 }

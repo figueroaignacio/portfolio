@@ -10,22 +10,21 @@ import { LatestProjects } from '@/sections/latest-projects';
 // Components
 import { Metadata } from '@/components/metadata';
 
+const sections = [Hero, LatestPosts, LatestProjects, Contact];
+
 export function HomePage() {
   const { t } = useTranslation('siteConfig');
 
   return (
-    <>
+    <div className="space-y-24">
       <Metadata
         title={t('homeMetadata.title')}
         description={t('homeMetadata.description')}
         keywords={t('homeMetadata.keywords')}
       />
-      <div className="space-y-24">
-        <Hero />
-        <LatestPosts />
-        <LatestProjects />
-        <Contact />
-      </div>
-    </>
+      {sections.map((Section, index) => (
+        <Section key={index} />
+      ))}
+    </div>
   );
 }
