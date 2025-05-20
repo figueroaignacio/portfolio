@@ -14,7 +14,7 @@ export function AboutPage() {
   const { t } = useTranslation(['pages', 'siteConfig']);
 
   return (
-    <section className="space-y-12">
+    <section className="space-y-16">
       <Metadata
         title={t('aboutMetadata.title', { ns: 'siteConfig' })}
         description={t('aboutMetadata.description', { ns: 'siteConfig' })}
