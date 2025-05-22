@@ -115,7 +115,7 @@
   }
 
   .card {
-    @apply border-border bg-card space-y-5 rounded-xl border p-5;
+    @apply bg-card border-border space-y-5 rounded-xl border p-5 shadow-sm dark:shadow-lg;
   }
 }
 

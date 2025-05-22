@@ -16,17 +16,19 @@ export function Intro() {
   ];
 
   return (
-    <div className="space-y-5 text-sm">
+    <div className="border-primary space-y-5 rounded-md text-sm shadow-md md:border-l-8 md:p-5">
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-bold">Intro 👋🏽</h2>
         <img
           src="https://github.com/figueroaignacio.png"
           alt="Avatar"
-          className="size-16 rounded-full"
+          className="size-10 rounded-full"
         />
       </div>
       {texts.map((item, index) => (
-        <p key={index}>{item.text}</p>
+        <p key={index} className="text-muted-foreground">
+          {item.text}
+        </p>
       ))}
     </div>
   );
