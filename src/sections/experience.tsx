@@ -1,6 +1,11 @@
-import { ExperienceItem } from '@/components/experience-item';
-import type { Experience } from '@/types';
+// Hooks
 import { useTranslation } from 'react-i18next';
+
+// Components
+import { ExperienceItem } from '@/components/experience-item';
+
+// Types
+import type { Experience } from '@/types';
 
 export function Experience() {
   const { t } = useTranslation('sections');

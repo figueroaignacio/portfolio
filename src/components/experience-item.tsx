@@ -1,5 +1,8 @@
-import type { Experience } from '@/types';
+// Components
 import { Badge } from './badge';
+
+// Types
+import type { Experience } from '@/types';
 
 export function ExperienceItem({
   description,
