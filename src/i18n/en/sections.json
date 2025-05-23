@@ -108,5 +108,31 @@
         ]
       }
     ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "role": "Jr Frontend Developer",
+        "description": "Provides software solutions for veterinary clinics to streamline processes and improve efficiency.",
+        "type": "Internship",
+        "time": "May 2023 - Apr 2024",
+        "place": "Pawtrics Software LLC",
+        "workitems": [
+          "Designed and developed reusable UI components using React and Next.js.",
+          "Integrated and managed data using PostgreSQL through Supabase.",
+          "Implemented Material UI to maintain a consistent and professional design system.",
+          "Developed dynamic CRUD interfaces for data management and table visualization.",
+          "Validated complex forms using Yup.",
+          "Adapted UI for mobile and tablet devices with responsive design techniques.",
+          "Refactored legacy components to improve code maintainability.",
+          "Consumed APIs efficiently using SWR with proper asynchronous state handling.",
+          "Participated in automated CI/CD workflows via Azure DevOps.",
+          "Collaborated using Git and GitHub for version control and code reviews."
+        ],
+        "impact": "Worked the development of reusable components, form validation, and data logic, significantly improving code maintainability and user experience across web and mobile environments.",
+        "tags": ["Next.js", "React", "MUI", "Supabase", "Yup", "PostgreSQL", "Azure DevOps", "SWR"]
+      }
+    ]
   }
 }

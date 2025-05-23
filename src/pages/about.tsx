@@ -7,10 +7,11 @@ import { PageHeader } from '@/components/page-header';
 
 // Sections
 import { Education } from '@/sections/education';
+import { Experience } from '@/sections/experience';
 import { Intro } from '@/sections/intro';
 import { Skills } from '@/sections/skills';
 
-const sections = [Intro, Education, Skills];
+const sections = [Intro, Experience, Education, Skills];
 
 export function AboutPage() {
   const { t } = useTranslation(['pages', 'siteConfig']);

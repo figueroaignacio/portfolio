@@ -7,3 +7,14 @@ export type Education = {
   date: string;
   tags: string[];
 };
+
+export type Experience = {
+  role: string;
+  description: string;
+  type: string;
+  time: string;
+  place: string;
+  workitems: string[];
+  impact: string;
+  tags: string[];
+};

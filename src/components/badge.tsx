@@ -4,5 +4,5 @@ interface BadgeProps {
 }
 
 export function Badge({ children, variant }: BadgeProps) {
-  return <span className={variant}>{children}</span>;
+  return <span className={`w-fit ${variant}`}>{children}</span>;
 }

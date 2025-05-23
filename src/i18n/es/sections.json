@@ -108,5 +108,29 @@
         ]
       }
     ]
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": [
+      {
+        "role": "Desarrollador Frontend Jr",
+        "description": "Proporciona software a clínicas veterinarias para optimizar procesos y aumentar la eficiencia.",
+        "type": "Pasantía",
+        "time": "Mayo 2023 - Abr 2024",
+        "place": "Pawtrics Software LLC",
+        "workitems": [
+          "Diseño y desarrollo de componentes reutilizables de interfaz de usuario con React y Next.js.",
+          "Integración y gestión de datos utilizando PostgreSQL a través de Supabase.",
+          "Implementación de Material UI para mantener una experiencia visual coherente y profesional.",
+          "Desarrollo de interfaces CRUD dinámicas para la administración de datos y visualización en tablas.",
+          "Control de versiones y colaboración en equipo mediante Git y GitHub.",
+          "Validación de formularios complejos utilizando Yup.",
+          "Consumo eficiente de APIs con SWR y manejo de estados asincrónicos.",
+          "Participación en flujos de CI/CD automatizados mediante Azure DevOps."
+        ],
+        "impact": "Trabajé el desarrollo de componentes reutilizables, validación de formularios, y lógica de datos, mejorando significativamente la mantenibilidad del código y la experiencia de usuario en entornos web y móviles.",
+        "tags": ["Next.js", "React", "MUI", "Supabase", "Yup", "PostgreSQL", "Azure DevOps", "SWR"]
+      }
+    ]
   }
 }
