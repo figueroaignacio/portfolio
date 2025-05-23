@@ -16,7 +16,7 @@ export function Intro() {
   ];
 
   return (
-    <div className="border-primary space-y-5 rounded-md text-sm shadow-md md:border-l-8 md:p-5">
+    <div className="border-primary space-y-5 rounded-md text-sm md:border-l-8 md:p-5 md:shadow-md">
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-bold">Intro 👋🏽</h2>
         <img
