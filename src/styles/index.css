@@ -111,6 +111,14 @@
   }
 
   .badge {
+    @apply border-border rounded-md border px-3 py-1 text-xs;
+  }
+
+  .badge-primary {
+    @apply bg-primary rounded-md px-3 py-1 text-xs text-white;
+  }
+
+  .badge-secondary {
     @apply bg-secondary rounded-md px-3 py-1 text-xs;
   }
 

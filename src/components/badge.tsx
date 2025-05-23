@@ -1,7 +1,8 @@
 interface BadgeProps {
   children: React.ReactNode;
+  variant?: 'badge' | 'badge-primary' | 'badge-secondary';
 }
 
-export function Badge({ children }: BadgeProps) {
-  return <span className="badge">{children}</span>;
+export function Badge({ children, variant }: BadgeProps) {
+  return <span className={variant}>{children}</span>;
 }

@@ -18,8 +18,10 @@ export function EducationCard({ date, description, place, tags, title }: Educati
         <p className="text-muted-foreground text-sm">{description}</p>
       </header>
       <div className="flex flex-wrap gap-2">
-        {tags.map((item) => (
-          <Badge>{item}</Badge>
+        {tags.map((item, index) => (
+          <Badge variant="badge-primary" key={index}>
+            {item}
+          </Badge>
         ))}
       </div>
     </div>

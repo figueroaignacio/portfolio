@@ -53,7 +53,9 @@ export function ProjectCard({
       </header>
       <div className="flex flex-wrap gap-1">
         {technologies.map((tech) => (
-          <Badge key={tech}>{tech}</Badge>
+          <Badge key={tech} variant="badge-primary">
+            {tech}
+          </Badge>
         ))}
       </div>
       <footer className="flex justify-end space-x-3">

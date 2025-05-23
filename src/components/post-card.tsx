@@ -24,7 +24,7 @@ export function PostCard({ title, description, date, tags, slug }: PostCardProps
       <ul className="flex flex-wrap gap-1">
         {tags?.map((tag, index) => (
           <li key={index}>
-            <Badge>{tag}</Badge>
+            <Badge variant="badge-secondary">{tag}</Badge>
           </li>
         ))}
       </ul>
