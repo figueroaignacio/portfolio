@@ -10,6 +10,4 @@ technologies:
 category: Personal Projects
 ---
 
-# Features
-
-This project is...
+> ⚠️ **This note is being translated**
