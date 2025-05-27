@@ -38,7 +38,7 @@ export function BlogPage() {
           key={item.slug}
           title={item.title}
           description={item.description}
-          slug={`/${item.slug}`}
+          slug={item.slug}
           date={formatDate(item.date, locale)}
           tags={item.tags}
         />

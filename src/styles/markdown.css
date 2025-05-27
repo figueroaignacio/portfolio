@@ -134,10 +134,6 @@
   @apply bg-secondary rounded-md px-3 py-1 text-xs font-medium transition-all duration-200 ease-in-out;
 }
 
-.post-tag:hover {
-  @apply bg-accent text-accent-foreground;
-}
-
 @media (max-width: 768px) {
   .prose {
     @apply text-[0.9375rem];

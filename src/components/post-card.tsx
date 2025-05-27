@@ -29,7 +29,7 @@ export function PostCard({ title, description, date, tags, slug }: PostCardProps
         ))}
       </ul>
       <footer className="flex">
-        <Link to={`${slug}`} className="btn flex w-full items-center justify-center gap-x-3">
+        <Link to={`/${slug}`} className="btn flex w-full items-center justify-center gap-x-3">
           <span>{t('postCard.actions.readMore')}</span>
           <ArrowRightIcon className="size-4" />
         </Link>
