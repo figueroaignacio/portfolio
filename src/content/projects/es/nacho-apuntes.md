@@ -10,7 +10,7 @@ technologies:
 category: Proyectos Personales
 ---
 
-Nacho Apuntes es un proyecto personal que nace de una necesidad muy sencilla pero poderosa: centralizar y conservar todos los apuntes que voy tomando a lo largo de mi formación profesional y académica. Desde anotaciones de la universidad hasta resúmenes de cursos y formaciones online, este sitio se convierte en mi biblioteca personal —abierta, organizada y fácilmente accesible.
+Nacho Apuntes es un proyecto personal que nace de una necesidad muy sencilla pero poderosa: centralizar y conservar todos los apuntes que voy tomando a lo largo de mi formación profesional y académica. Desde anotaciones de la universidad hasta resúmenes de cursos y formaciones online, este sitio se convierte en mi biblioteca personal abierta, organizada y fácilmente accesible.
 
 ## 🧠 ¿Por qué creé este proyecto?
 
