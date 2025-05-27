@@ -43,4 +43,4 @@ Además, gracias a su estructura basada en contenido estático y colecciones tip
 ## Enlaces
 
 - Sitio en producción: [nacho-apuntes.vercel.app](https://nacho-apuntes.vercel.app)
-- Código fuente: [Repositorio de GitHub](https://github.com/figueroaignacio/apuntes)
+- Código fuente: [Repositorio](https://github.com/figueroaignacio/apuntes) (GitHub)
