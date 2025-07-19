@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
 
+// Components
+import { ThemeProvider } from '@/components/theme-provider';
+
 // Styles
 import './globals.css';
 
@@ -20,10 +23,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.className} antialiased `}>
-        <main className="container">
-          <Hero />
-          {children}
-        </main>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <main className="container">
+            <Hero />
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
