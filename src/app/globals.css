@@ -27,6 +27,6 @@ body {
 
 @layer {
   .container {
-    @apply max-w-2xl min-h-lvh mx-auto;
+    @apply max-w-xl min-h-lvh mx-auto;
   }
 }
