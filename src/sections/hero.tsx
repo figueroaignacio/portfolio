@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="space-y-4">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl">Hi, I'm Ignacio</h1>
+        <h1 className="text-2xl">Hi, I am Ignacio</h1>
         <ToggleTheme />
       </div>
       <p className="text-sm">
