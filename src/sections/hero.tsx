@@ -9,7 +9,7 @@ export function Hero() {
       </div>
       <p className="text-sm">
         Software Developer based in Argentina, currently open to new opportunities. Feel free to
-        reach out. At the moment, building i7a/ui and Commit Emocional.
+        contact me below. At the moment, building i7a/ui and Commit Emocional.
       </p>
       <SocialMedias />
     </section>
