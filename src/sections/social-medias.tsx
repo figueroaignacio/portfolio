@@ -23,7 +23,7 @@ export function SocialMedias() {
   return (
     <ul className="flex gap-x-5">
       {socialMedias.map((item) => (
-        <li>
+        <li key={item.href}>
           <a href={item.href} target={item.target}>
             <item.icon className="size-5" />
           </a>
