@@ -8,6 +8,10 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-family: inherit;
+
+  &:active {
+    scale: 0.9;
+  }
 }
 
 /* Variants */
@@ -15,48 +19,48 @@
 .default {
   background-color: var(--primary);
   color: var(--primary-foreground);
-}
 
-.default:hover {
-  opacity: 0.9;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .outline {
   background-color: transparent;
   color: var(--primary);
   border-color: var(--primary);
-}
 
-.outline:hover {
-  background-color: var(--primary);
-  color: var(--primary-foreground);
+  &:hover {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+  }
 }
 
 .secondary {
   background-color: var(--secondary);
   color: var(--secondary-foreground);
-}
 
-.secondary:hover {
-  opacity: 0.9;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .destructive {
   background-color: var(--destructive);
   color: var(--destructive-foreground);
-}
 
-.destructive:hover {
-  opacity: 0.9;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .ghost {
   background-color: transparent;
   color: var(--foreground);
-}
 
-.ghost:hover {
-  background-color: var(--muted);
+  &:hover {
+    background-color: var(--muted);
+  }
 }
 
 /* Sizes */

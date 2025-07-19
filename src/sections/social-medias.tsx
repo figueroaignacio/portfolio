@@ -24,8 +24,8 @@ export function SocialMedias() {
     <ul className="flex gap-x-5">
       {socialMedias.map((item) => (
         <li key={item.href}>
-          <a href={item.href} target={item.target}>
-            <item.icon className="size-5" />
+          <a href={item.href} target={item.target} className="">
+            <item.icon className="size-5 hover:scale-[1.07] active:scale-[.9] transition-transform duration-150" />
           </a>
         </li>
       ))}
