@@ -42,8 +42,10 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       <body className={`${geistSans.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <main className="container">
-            <Hero />
-            <NextIntlClientProvider>{children}</NextIntlClientProvider>
+            <NextIntlClientProvider>
+              <Hero />
+              {children}
+            </NextIntlClientProvider>
           </main>
         </ThemeProvider>
       </body>
