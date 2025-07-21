@@ -1,9 +1,9 @@
-// Hooks
-import { useTranslations } from 'next-intl';
+'use client';
 
-// Components
-import { Link } from '@/i18n/navigation';
+import { Link, usePathname } from '@/i18n/navigation';
 import { ChatBubbleIcon, GearIcon, PersonIcon } from '@radix-ui/react-icons';
+import clsx from 'clsx';
+import { useTranslations } from 'next-intl';
 import { ToggleTheme } from './toggle-theme';
 
 type Navigation = {
@@ -12,35 +12,46 @@ type Navigation = {
 };
 
 const iconMap: Record<string, React.ReactNode> = {
-  profile: <PersonIcon className=" size-3" />,
-  projects: <GearIcon className=" size-3" />,
-  blog: <ChatBubbleIcon className=" size-3" />,
+  profile: <PersonIcon className="size-5" />,
+  projects: <GearIcon className="size-5" />,
+  blog: <ChatBubbleIcon className="size-5" />,
 };
 
 export function Navigation() {
   const t = useTranslations('ui');
+  const pathname = usePathname();
   const navigation = t.raw('navigation') as Navigation[];
 
   return (
-    <nav className="fixed -bottom-8 sm:-bottom-6 inset-x-0 mx-auto z-50 bg-background border border-border shadow-sm px-4 py-3 flex gap-12 max-w-xl w-full sm:rounded-2xl justify-between items-center">
-      <div className="flex gap-x-12 w-full justify-evenly">
+    <nav className="fixed bottom-4 inset-x-0 z-50 mx-auto max-w-xl w-full rounded-3xl bg-muted/10 border border-border backdrop-blur-md shadow-xl px-6 py-4 flex items-center justify-between">
+      <div className="flex w-full items-center justify-evenly gap-4">
         {navigation.map((item) => {
           const key = item.label.toLowerCase().replace(/\s+/g, '');
-          const icon = iconMap[key];
+          const isActive = pathname === item.href;
           return (
             <Link
               key={item.href}
               href={item.href}
-              className="flex flex-col items-center transition-colors text-xs cursor-pointer select-none"
+              className={clsx(
+                'flex flex-col items-center text-xs transition-all duration-200',
+                isActive ? 'text-foreground' : 'text-muted-foreground hover:text-foreground',
+              )}
             >
-              {icon}
+              <div
+                className={clsx(
+                  'p-2 rounded-full transition-colors',
+                  isActive ? 'bg-accent text-accent-foreground' : 'bg-transparent',
+                )}
+              >
+                {iconMap[key]}
+              </div>
               <span className="mt-1">{item.label}</span>
             </Link>
           );
         })}
       </div>
-      <div className="border-l border-border w-1 h-12"></div>
-      <div className="flex justify-center items-center">
+      <div className="ml-4 pl-4 border-l border-border h-6" />
+      <div>
         <ToggleTheme />
       </div>
     </nav>
