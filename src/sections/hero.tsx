@@ -4,6 +4,8 @@ import { useTranslations } from 'next-intl';
 // Components
 import { LocaleSwitcher } from '@/components/locale-switcher';
 import { ToggleTheme } from '@/components/toggle-theme';
+import { Link } from '@/i18n/navigation';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { SocialMedias } from './social-medias';
 
 export function Hero() {
@@ -18,8 +20,17 @@ export function Hero() {
           <ToggleTheme />
         </div>
       </div>
-      <p className="text-sm">{t('hero.description')}</p>
-      <SocialMedias />
+      <p className="text-sm text-muted-foreground">{t('hero.description')}</p>
+      <div className="flex items-center gap-x-4">
+        <SocialMedias />
+        <Link
+          href={t('hero.cta.href')}
+          className="text-xs flex items-center gap-x-2 hover:underline"
+        >
+          {t('hero.cta.label')}
+          <ArrowRightIcon />
+        </Link>
+      </div>
     </section>
   );
 }

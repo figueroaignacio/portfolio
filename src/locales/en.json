@@ -2,7 +2,11 @@
   "sections": {
     "hero": {
       "title": "Hey, I'm Ignacio",
-      "description": "Software Developer based in Argentina, currently open to new opportunities. Feel free to contact me below. At the moment, building i7a/ui and Commit Emocional."
+      "description": "Software Developer based in Argentina, currently open to new opportunities. Feel free to contact me below. At the moment, building i7a/ui and Commit Emocional.",
+      "cta": {
+        "label": "Want to know me?",
+        "href": "/posts/a-little-bit-about-me"
+      }
     }
   }
 }
