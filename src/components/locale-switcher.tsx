@@ -21,7 +21,7 @@ import { Locale } from 'next-intl';
 
 export function LocaleSwitcher() {
   const router = useRouter();
-  const [_, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
   const pathname = usePathname();
   const locale = useLocale();
 

@@ -6,6 +6,12 @@ import { useEffect, useState } from 'react';
 import { Button } from '../button/button';
 import styles from './dropdown-menu.module.css';
 
+type DropdownChildProps = {
+  isOpen: boolean;
+  toggleMenu: () => void;
+  closeMenu: () => void;
+};
+
 function DropdownMenu({ children, className }: { children: React.ReactNode; className?: string }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,7 +32,7 @@ function DropdownMenu({ children, className }: { children: React.ReactNode; clas
 
   const items = React.Children.map(children, (child) =>
     React.isValidElement(child)
-      ? React.cloneElement(child as React.ReactElement<any>, {
+      ? React.cloneElement(child as React.ReactElement<DropdownChildProps>, {
           isOpen,
           toggleMenu,
           closeMenu,
