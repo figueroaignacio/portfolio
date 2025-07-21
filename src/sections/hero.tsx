@@ -3,7 +3,6 @@ import { useTranslations } from 'next-intl';
 
 // Components
 import { LocaleSwitcher } from '@/components/locale-switcher';
-import { ToggleTheme } from '@/components/toggle-theme';
 import { Link } from '@/i18n/navigation';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { SocialMedias } from './social-medias';
@@ -17,7 +16,6 @@ export function Hero() {
         <h1 className="text-2xl">{t('hero.title')}</h1>
         <div className="flex items-center px-1">
           <LocaleSwitcher />
-          <ToggleTheme />
         </div>
       </div>
       <p className="text-sm text-muted-foreground">{t('hero.description')}</p>
