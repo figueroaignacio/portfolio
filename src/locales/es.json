@@ -8,5 +8,21 @@
         "href": "/posts/un-poco-sobre-mi"
       }
     }
+  },
+  "ui": {
+    "navigation": [
+      {
+        "label": "Perfíl",
+        "href": "/"
+      },
+      {
+        "label": "Proyectos",
+        "href": "/projects"
+      },
+      {
+        "label": "Blog",
+        "href": "/posts"
+      }
+    ]
   }
 }

@@ -8,5 +8,21 @@
         "href": "/posts/a-little-bit-about-me"
       }
     }
+  },
+  "ui": {
+    "navigation": [
+      {
+        "label": "Profile",
+        "href": "/"
+      },
+      {
+        "label": "Projects",
+        "href": "/projects"
+      },
+      {
+        "label": "Blog",
+        "href": "/posts"
+      }
+    ]
   }
 }

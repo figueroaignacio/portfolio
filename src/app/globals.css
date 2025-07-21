@@ -51,9 +51,10 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
   --color-primary: var(--primary);
+  --color-accent: var(--accent);
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

@@ -4,6 +4,7 @@ import { hasLocale, Locale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 
 // Components
+import { Navigation } from '@/components/navigation';
 import { Hero } from '@/sections/hero';
 
 // Utils
@@ -36,9 +37,10 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   setRequestLocale(locale);
 
   return (
-    <>
+    <div className="space-y-8">
       <Hero />
+      <Navigation />
       {children}
-    </>
+    </div>
   );
 }
