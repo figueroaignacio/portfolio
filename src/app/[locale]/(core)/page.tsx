@@ -10,5 +10,5 @@ export default function HomePage({ params }: HomePageProps) {
   const { locale } = use(params);
   setRequestLocale(locale);
 
-  return <div></div>;
+  return <div>asgasdasgsa</div>;
 }
