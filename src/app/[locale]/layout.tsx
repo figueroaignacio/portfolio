@@ -4,7 +4,6 @@ import { hasLocale, Locale, NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 
 // Components
-import { Hero } from '@/sections/hero';
 import { ThemeProvider } from 'next-themes';
 
 // Utils
@@ -42,10 +41,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       <body className={`${geistSans.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <main className="container">
-            <NextIntlClientProvider>
-              <Hero />
-              {children}
-            </NextIntlClientProvider>
+            <NextIntlClientProvider>{children}</NextIntlClientProvider>
           </main>
         </ThemeProvider>
       </body>
