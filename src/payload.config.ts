@@ -14,8 +14,8 @@ export default buildConfig({
   secret: process.env.PAYLOAD_SECRET || '',
   db: sqliteAdapter({
     client: {
-      url: process.env.DATABASE_URL || '',
-      authToken: process.env.DATABASE_AUTH_TOKEN,
+      url: process.env.TURSO_DATABASE_URL || '',
+      authToken: process.env.TURSO_AUTH_TOKEN,
     },
   }),
   sharp,

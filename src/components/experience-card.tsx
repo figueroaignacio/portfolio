@@ -7,8 +7,6 @@ import { Fragment } from 'react';
 // Utils
 import { formatDate } from '@/lib/utils';
 
-interface ExperienceCardProps extends Partial<Experience> {}
-
 export function ExperienceCard({
   title,
   company,
@@ -17,7 +15,7 @@ export function ExperienceCard({
   technologies,
   startDate,
   endDate,
-}: ExperienceCardProps) {
+}: Partial<Experience>) {
   return (
     <div className="space-y-4">
       <div className="flex  justify-between flex-wrap">
