@@ -12,9 +12,9 @@ type Navigation = {
 };
 
 const iconMap: Record<string, React.ReactNode> = {
-  profile: <PersonIcon className="size-5" />,
-  projects: <GearIcon className="size-5" />,
-  blog: <ChatBubbleIcon className="size-5" />,
+  '/': <PersonIcon className="size-5" />,
+  '/projects': <GearIcon className="size-5" />,
+  '/posts': <ChatBubbleIcon className="size-5" />,
 };
 
 export function Navigation() {
@@ -26,7 +26,7 @@ export function Navigation() {
     <nav className="fixed bottom-4 inset-x-0 z-50 mx-auto max-w-xl w-full rounded-3xl bg-muted/10 border border-border backdrop-blur-md shadow-xl px-6 py-4 flex items-center justify-between">
       <div className="flex w-full items-center justify-evenly gap-4">
         {navigation.map((item) => {
-          const key = item.label.toLowerCase().replace(/\s+/g, '');
+          const icon = iconMap[item.href];
           const isActive = pathname === item.href;
           return (
             <Link
@@ -43,7 +43,7 @@ export function Navigation() {
                   isActive ? 'bg-accent text-accent-foreground' : 'bg-transparent',
                 )}
               >
-                {iconMap[key]}
+                {icon}
               </div>
               <span className="mt-1">{item.label}</span>
             </Link>
