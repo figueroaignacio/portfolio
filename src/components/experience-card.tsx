@@ -1,9 +1,11 @@
 // Definitions
 import { Experience } from '@/lib/definitions';
 
+// Components
+import { Fragment } from 'react';
+
 // Utils
 import { formatDate } from '@/lib/utils';
-import React from 'react';
 
 interface ExperienceCardProps extends Partial<Experience> {}
 
@@ -31,12 +33,12 @@ export function ExperienceCard({
       <p className="text-muted-foreground text-sm">{description}</p>
       <ul className="flex gap-x-3 gap-y-1 flex-wrap">
         {technologies?.map((technology) => (
-          <React.Fragment key={technology.id}>
+          <Fragment key={technology.id}>
             <li className="text-xs flex items-center border border-border px-3 py-0.5 rounded-full">
               {technology.name}
             </li>
             <span className="text-muted-foreground text-xs">/</span>
-          </React.Fragment>
+          </Fragment>
         ))}
       </ul>
     </div>
