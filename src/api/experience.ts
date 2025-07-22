@@ -1,7 +1,11 @@
+// Definitions
 import { Experience, ExperienceApiResponse } from '@/lib/definitions';
 
+// Endpoint
+import { API_ENPOINT } from './endpoint';
+
 export async function getExperiences(): Promise<Experience[]> {
-  const res = await fetch('http://localhost:3000/api/experience');
+  const res = await fetch(`${API_ENPOINT}/experience`);
 
   if (!res.ok) {
     console.error('Failed to fetch experiences:', res.statusText);
