@@ -1,10 +1,15 @@
 'use client';
 
+// Hooks
+import { useTranslations } from 'next-intl';
+
+// Components
 import { Link, usePathname } from '@/i18n/navigation';
 import { ChatBubbleIcon, GearIcon, PersonIcon } from '@radix-ui/react-icons';
-import clsx from 'clsx';
-import { useTranslations } from 'next-intl';
 import { ToggleTheme } from './toggle-theme';
+
+// Utils
+import clsx from 'clsx';
 
 type Navigation = {
   label: string;
@@ -23,7 +28,7 @@ export function Navigation() {
   const navigation = t.raw('navigation') as Navigation[];
 
   return (
-    <nav className="fixed bottom-4 inset-x-0 z-50 mx-auto max-w-xl w-full rounded-3xl bg-muted/10 border border-border backdrop-blur-md shadow-xl px-6 py-4 flex items-center justify-between">
+    <nav className="fixed -bottom-5 inset-x-0 z-50 mx-auto max-w-xl w-full rounded-3xl bg-muted/10 border border-border backdrop-blur-md shadow-xl px-6 py-4 flex items-center justify-between">
       <div className="flex w-full items-center justify-evenly gap-4">
         {navigation.map((item) => {
           const icon = iconMap[item.href];
