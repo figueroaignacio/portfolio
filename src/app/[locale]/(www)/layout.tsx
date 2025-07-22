@@ -4,7 +4,7 @@ import { hasLocale, Locale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 
 // Components
-import { Navigation } from '@/components/navigation';
+import { NavigationBar } from '@/components/navigation-bar';
 import { Hero } from '@/sections/hero';
 
 // Utils
@@ -39,7 +39,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   return (
     <div className="space-y-8">
       <Hero />
-      <Navigation />
+      <NavigationBar />
       {children}
     </div>
   );

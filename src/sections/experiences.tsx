@@ -2,7 +2,7 @@
 import { ExperienceCard } from '@/components/experience-card';
 
 // Utils
-import { getExperiences } from '@/api/experience';
+import { getExperiences } from '@/api/get-experience';
 import { Experience } from '@/lib/definitions';
 import { getLocale, getTranslations } from 'next-intl/server';
 

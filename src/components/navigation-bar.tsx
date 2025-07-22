@@ -22,7 +22,7 @@ const iconMap: Record<string, React.ReactNode> = {
   '/posts': <ChatBubbleIcon className="size-5" />,
 };
 
-export function Navigation() {
+export function NavigationBar() {
   const t = useTranslations('ui');
   const pathname = usePathname();
   const navigation = t.raw('navigation') as Navigation[];
