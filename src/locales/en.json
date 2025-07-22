@@ -7,6 +7,9 @@
         "label": "Want to know me?",
         "href": "/posts/a-little-bit-about-me"
       }
+    },
+    "experience": {
+      "title": "Experience"
     }
   },
   "ui": {

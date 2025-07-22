@@ -7,6 +7,9 @@
         "label": "¿Querés conocerme más?",
         "href": "/posts/un-poco-sobre-mi"
       }
+    },
+    "experience": {
+      "title": "Experiencia"
     }
   },
   "ui": {
