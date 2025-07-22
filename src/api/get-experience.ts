@@ -5,7 +5,9 @@ import { Experience, ExperienceApiResponse } from '@/lib/definitions';
 import { API_ENPOINT } from './endpoint';
 
 export async function getExperiences(): Promise<Experience[]> {
-  const res = await fetch(`${API_ENPOINT}/experience`);
+  const res = await fetch(`${API_ENPOINT}/experience`, {
+    cache: 'no-store',
+  });
 
   if (!res.ok) {
     console.error('Failed to fetch experiences:', res.statusText);
