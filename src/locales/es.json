@@ -10,6 +10,9 @@
     },
     "experience": {
       "title": "Experiencia"
+    },
+    "education": {
+      "title": "Educación"
     }
   },
   "ui": {

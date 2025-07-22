@@ -5,6 +5,7 @@ import { Locale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 
 // Sections
+import { Education } from '@/sections/education';
 import { Experiences } from '@/sections/experiences';
 
 type HomePageProps = {
@@ -18,6 +19,7 @@ export default function HomePage({ params }: HomePageProps) {
   return (
     <div>
       <Experiences />
+      <Education />
     </div>
   );
 }
