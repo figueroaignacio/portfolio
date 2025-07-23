@@ -1,7 +1,7 @@
 import { sqliteAdapter } from '@payloadcms/db-sqlite';
 import { lexicalEditor } from '@payloadcms/richtext-lexical';
 import { buildConfig } from 'payload';
-import sharp from 'sharp';
+// import sharp from 'sharp';
 
 // Collections
 import Experience from './payload/collections/experience';
@@ -18,5 +18,9 @@ export default buildConfig({
       authToken: process.env.TURSO_AUTH_TOKEN,
     },
   }),
-  sharp,
+  // sharp,
+  cors: {
+    origins: ['http://localhost:3000', 'https://ignaciofigueroa.vercel.app'],
+    headers: ['x-custom-header'],
+  },
 });
