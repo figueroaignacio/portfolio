@@ -1,7 +1,7 @@
-import { sqliteAdapter } from '@payloadcms/db-sqlite';
+// Payload
+import { vercelPostgresAdapter } from '@payloadcms/db-vercel-postgres';
 import { lexicalEditor } from '@payloadcms/richtext-lexical';
 import { buildConfig } from 'payload';
-// import sharp from 'sharp';
 
 // Collections
 import Experience from './payload/collections/experience';
@@ -12,13 +12,11 @@ export default buildConfig({
   editor: lexicalEditor(),
   collections: [Posts, Experience, Projects],
   secret: process.env.PAYLOAD_SECRET || '',
-  db: sqliteAdapter({
-    client: {
-      url: process.env.TURSO_DATABASE_URL || '',
-      authToken: process.env.TURSO_AUTH_TOKEN,
+  db: vercelPostgresAdapter({
+    pool: {
+      connectionString: process.env.DATABASE_URL,
     },
   }),
-  // sharp,
   cors: {
     origins: ['http://localhost:3000', 'https://ignaciofigueroa.vercel.app'],
     headers: ['x-custom-header'],
