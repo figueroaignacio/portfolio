@@ -4,13 +4,14 @@ import { lexicalEditor } from '@payloadcms/richtext-lexical';
 import { buildConfig } from 'payload';
 
 // Collections
+import Education from './payload/collections/education';
 import Experience from './payload/collections/experience';
 import Posts from './payload/collections/posts';
 import Projects from './payload/collections/projects';
 
 export default buildConfig({
   editor: lexicalEditor(),
-  collections: [Posts, Experience, Projects],
+  collections: [Posts, Experience, Projects, Education],
   secret: process.env.PAYLOAD_SECRET || '',
   db: vercelPostgresAdapter({
     pool: {

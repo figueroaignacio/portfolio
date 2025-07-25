@@ -34,3 +34,14 @@ export interface ExperienceApiResponse {
   totalDocs: number;
   totalPages: number;
 }
+
+type EducationCardProps = {
+  title: string;
+  institution: string;
+  location?: string;
+  description?: string;
+  startDate: string;
+  endDate?: string;
+  isCurrent?: boolean;
+  certificateUrl?: string;
+};
