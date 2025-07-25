@@ -28,7 +28,7 @@ export const EducationCard: React.FC<EducationCardProps> = ({
     });
 
   return (
-    <div className="bg-[var(--card)] text-[var(--card-foreground)] border border-[var(--border)] rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+    <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow border-t-primary border-t-4">
       <div className="flex flex-col gap-1">
         <h3 className="text-lg font-semibold">{title}</h3>
         <p className="text-sm text-[var(--muted-foreground)]">{institution}</p>

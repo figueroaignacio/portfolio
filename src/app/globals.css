@@ -53,6 +53,7 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-primary: var(--primary);
   --color-accent: var(--accent);
+  --color-card: var(--card);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-border: var(--border);
   --font-sans: var(--font-geist-sans);

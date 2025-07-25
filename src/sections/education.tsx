@@ -7,10 +7,10 @@ export async function Education() {
   return (
     <>
       <h2 className="mt-6 mb-5 underline">{t('education.title')}</h2>
-      <section>
+      <section className="space-y-5">
         <EducationCard
           title="Educación Autodidacta en Desarrollo Web"
-          institution="Mi laptop 💻"
+          institution="Mi Laptop"
           location="Argentina"
           description="Formación constante a través de documentación oficial, cursos en línea, proyectos personales y contribuciones reales. Profundicé en tecnologías modernas como JavaScript, TypeScript, React, Next.js y más."
           startDate="2023-01-01"
