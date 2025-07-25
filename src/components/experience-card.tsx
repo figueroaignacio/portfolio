@@ -18,7 +18,7 @@ export function ExperienceCard({
 }: Partial<Experience>) {
   return (
     <div className="space-y-4">
-      <div className="flex  justify-between flex-wrap">
+      <div className="flex items-center justify-between flex-wrap">
         <div>
           <h2>{title}</h2>
           <span className="text-sm">{contractType}</span>
