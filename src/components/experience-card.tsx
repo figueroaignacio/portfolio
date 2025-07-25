@@ -35,7 +35,6 @@ export function ExperienceCard({
             <li className="text-xs flex items-center border border-border px-3 py-0.5 rounded-full">
               {technology.name}
             </li>
-            <span className="text-muted-foreground text-xs">/</span>
           </Fragment>
         ))}
       </ul>
