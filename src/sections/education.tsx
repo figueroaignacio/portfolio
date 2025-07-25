@@ -1,29 +1,35 @@
+// Components
 import { EducationCard } from '@/components/education-card';
-import { getTranslations } from 'next-intl/server';
+
+// Utils
+import { getEducation } from '@/api/get-education';
+import { getLocale, getTranslations } from 'next-intl/server';
+
+// Definitions
+import { type Education } from '@/lib/definitions';
 
 export async function Education() {
+  const locale = await getLocale();
   const t = await getTranslations('sections');
+  const allEducations: Education[] = await getEducation();
+
+  const educations = allEducations.filter((item) => item.locale === locale);
 
   return (
     <>
       <h2 className="mt-6 mb-5 underline">{t('education.title')}</h2>
       <section className="space-y-5">
-        <EducationCard
-          title="Educación Autodidacta en Desarrollo Web"
-          institution="Mi Laptop"
-          location="Argentina"
-          description="Formación constante a través de documentación oficial, cursos en línea, proyectos personales y contribuciones reales. Profundicé en tecnologías modernas como JavaScript, TypeScript, React, Next.js y más."
-          startDate="2023-01-01"
-          isCurrent
-        />
-        <EducationCard
-          title="Tecnicatura Universitaria en Programación"
-          institution="Universidad Tecnológica Nacional (UTN)"
-          location="Argentina"
-          description="Carrera universitaria enfocada en la lógica de programación, algoritmos, estructuras de datos, bases de datos y paradigmas modernos. Complemento académico a mi formación práctica como desarrollador."
-          startDate="2025-03-01"
-          isCurrent
-        />
+        {educations.map((item) => (
+          <EducationCard
+            key={item.id}
+            title={item.title}
+            institution={item.institution}
+            startDate={item.startDate}
+            description={item.description}
+            isCurrent={item.isCurrent}
+            endDate={item.endDate || ''}
+          />
+        ))}
       </section>
     </>
   );

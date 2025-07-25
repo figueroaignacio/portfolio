@@ -35,13 +35,33 @@ export interface ExperienceApiResponse {
   totalPages: number;
 }
 
-type EducationCardProps = {
+export interface Education {
+  id: number;
+  locale: string;
   title: string;
   institution: string;
-  location?: string;
-  description?: string;
+  location: string;
+  description: string;
   startDate: string;
-  endDate?: string;
-  isCurrent?: boolean;
-  certificateUrl?: string;
-};
+  endDate: string | null;
+  isCurrent: boolean;
+  certificateUrl: string | null;
+  highlight: boolean;
+  order: number | null;
+  updatedAt: string;
+  createdAt: string;
+  _status: string;
+}
+
+export interface EducationApiResponse {
+  docs: Education[];
+  hasNextPage: boolean;
+  hasPrevPage: boolean;
+  limit: number;
+  nextPage: number | null;
+  page: number;
+  pagingCounter: number;
+  prevPage: number | null;
+  totalDocs: number;
+  totalPages: number;
+}
